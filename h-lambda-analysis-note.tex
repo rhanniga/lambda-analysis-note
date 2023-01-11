@@ -152,8 +152,8 @@ For the trigger hadron tracks, Hybrid Global constrained tracks were accepted us
 	\item SetMaxDCAToVertexZ: 3.2
 	\item SetMaxDCAToVertexXY: 2.4
 	\item SetDCAToVertex2D: kTRUE
-	\item SetMaxChi2TPCConstrainedGlobal(36)		
-	\item SetMaxFractionSharedTPCClusters(0.4)	
+	\item SetMaxChi2TPCConstrainedGlobal(36)
+	\item SetMaxFractionSharedTPCClusters(0.4)
 \end{itemize}
 
 For the both the di-hadron and h-$\Lambda$ correlation, the trigger hadron is selected in the momentum region:
@@ -166,32 +166,49 @@ with further binning performed offline.
 
 The $\Lambda$ candidates were reconstructed through the $\Lambda \rightarrow p\pi^{-}$ ($\bar{\Lambda} \rightarrow \pi^{+}p$) decay channel with a branching ratio of 63.9\%. The $\Lambda$ candidates in this analysis were reconstructed using two separate techniques:
 \begin{itemize}
-	\item \textbf{V0 Finder Technique} - The V0 finder is a standard method for reconstructing V0s like the $\Lambda$ within the AliRoot framework. Because of its longer decay length, the V0 finder has no trouble resolving secondary vertices coming from a $\Lambda$ decay.
-	\item \textbf{Resonance Technique} - 
- 
-
+	\item \textbf{V0 Finder Technique} - The V0 finder technique reconstructs the $\Lambda$ by combining the proton and pion tracks with the V0 finder algorithm, which can be found within the AliROOT framework.
+	\item \textbf{Resonance Technique} - The resonance technique combines all oppositely charged proton-pion pairs to reconstruct the $\Lambda$, resulting in maximal statistics at the cost of a large combinatorial background.
 \end{itemize}
 
+The central points in this analysis are from $\Lambda$ candidates reconstructed using the V0 finder technique. The resonance technique serves as a powerful cross-check to ensure no topological biases are introduced within the V0 finder algorithm.
 
 
-Kaon candidate tracks are selected from the pool of global AOD tracks with additional wide cuts on $n\sigma_{TPC}$ and $n\sigma_{TOF}$ (fig. \ref{nsigma}):
+For both techniques, the daughter protons and pions were required to meet the following PID cuts using both the TPC and TOF detectors:
 
 \begin{itemize}
-	\item[$\ast$] $|n\sigma_{TPC}| < 3$
-	\item[$\ast$] $|n\sigma_{TOF}| < 3$
+	\item[$\ast$] $|n\sigma_{TPC, p}| < 2$
+	\item[$\ast$] $|n\sigma_{TPC, \pi}| < 3$
+	\item[$\ast$] $|n\sigma_{TOF, p}| < 2$ (if signal exists)
+	\item[$\ast$] $|n\sigma_{TOF, \pi}| < 3$ (if signal exists)
 \end{itemize}
+
+
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{images/nsigmatof_track1024.pdf}}
+\includegraphics[width=3in]{figures/nsigma_tpc_proton.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{images/nsigmatpc_track1024.pdf}}
+\includegraphics[width=3in]{figures/nsigma_tpc_pion.pdf}}
 \end{subfigure}
-\caption{N-sigma for Kaons in the TOF (left) and TPC (right) detectors as a function of $p_{T}$. A wide PID cut is used to maximize the $\phi(1020)$ signal.}
-\label{nsigma}
+\caption{N-sigma for protons (left) and pions (right) in the TPC detector as a function of $p_{T}$. A wider PID cut is used for the pion to maximize the $\Lambda$ signal.}
+\label{nsigma_tof}
 \end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/nsigma_tof_proton.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/nsigma_tof_pion.pdf}}
+\end{subfigure}
+\caption{N-sigma for protons (left) and pions (right) in the TOF detector as a function of $p_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
+\label{nsigma_tof}
+\end{figure}
+
+The $n\sigma$ values for the proton and pion are shown in Figure \ref{nsigma_proton} and Figure \ref{nsigma_pion}, respectively. 
 
 \begin{figure}[ht]
 \centering
@@ -200,21 +217,44 @@ Kaon candidate tracks are selected from the pool of global AOD tracks with addit
 \label{nsigmaTPCvTOF}
 \end{figure}
  
- Since we have no access to the $\phi(1020)$ meson directly, the final correlation will include both signal ($h-\phi$ correlated pairs) and background ($h-(KK)$ correlated pairs).  In order to remove this background, we need both an estimate of the correlation shape of the $h-(KK)$ pairs, as well as an estimate of the Signal/Background in the $\phi(1020)$ mass peak region.
+As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
+
  
- \subsection{Combinatorial Background Estimation}
- The Signal/Background can be estimated using a likesign kaon invariant mass distribution, scaled to the integral of the unlike distribution in the mass sideband regions.  We run a separate check to make sure the like-sign correctly estimates the underlying background by subtracting the scaled like-sign and perform a standard Voigt plus 2nd order polynomial fit to the remaining $\phi(1020)$ resonance peak.  Doing this shows the residual background to be less than 1\% of the total mass peak, so we know that the integral of the scaled like-sign distribution gives us an accurate estimate of the underlying background.
+ \subsection{Combinatorial Background Estimation (Resonance Technique Only)}
+ The background shape of the $\Lambda$ invariant mass distribution can be estimated using one of the two following techniques:
+
+ \begin{itemize}
+	\item \textbf{Like-sign $p\pi$ pairs} - Reconstruct the invariant mass of like-sign $p\pi$ pairs, and scale the like-sign $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
+	\item \textbf{Rotated $p\pi$ pairs} - Reconstruct the invariant mass of unlike-sign $p\pi$ pairs, but rotate either the pion or proton around the z-axis by $\pi$ radians, and scale the rotated $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
+ \end{itemize}
+
+To determine which of these techniques is more effective, we compare the background shape of the $\Lambda$ invariant mass distribution for both techniques in MonteCarlo where we have direct access to the background shape. The like-sign and rotated $p\pi$ pairs are shown along with the extracted signal comparsion in Figure \ref{background_approx_MC}. The like-sign $p\pi$ pairs match the background shape of the $\Lambda$ invariant mass distribution more closely than the rotated $p\pi$ pairs, so we use the like-sign $p\pi$ pairs to estimate the combinatorial background in the $\Lambda$ invariant mass distribution in data.
+
  
  \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{images/narrowmass_invmass.pdf}}
+\includegraphics[width=3in]{figures/background_approx_MC.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{images/corrected_invmass.pdf}}
+\includegraphics[width=3in]{figures/background_subtracted_signal_MC.pdf}}
 \end{subfigure}
-\caption{Left: Invariant Mass distribution for un-like sign Kaon pairs (black) for 0-20\% Multiplicity Percentile p-Pb collisions.  The like sign Kaon pair mass distribution (dashed red) is scaled and used to estimate the combinatorial backgorund under the $\phi$(1020) signal.  The colored region is the final measurement range $1.014 < M_{KK} < 1.026$ GeV, accounting for ~81\% of the total $\phi$ signal.  Right: Corrected un-like sign invariant mass distribution after subtracting the scaled like-sign distribution.  The corrected distribution is fit with a Voigt function to capture the resonance peak, as well as a 2nd order polynomial for the residual background. The residual is $<$1\% of the final signal.}
-\label{rawinvmass}
+\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) in our MonteCarlo sample.  The like-sign $p\pi$ pair mass distribution (purple) and unlike-sign rotated $p\pi$ distributions are scaled to match the unlike-sign distribution within the invariant mass region. The true combinatorial background (red) matches most closesly with the like-sign pairs. Right: The actual $\Lambda$ signal (magenta) compared with the result of subracting the like-sign from the total unlike-sign $p\pi$ distribution (green). The two distributions show good agreement.}
+\label{background_approx_MC}
+\end{figure}
+
+The region outside of the $\Lambda$ signal region used for scaling the background estimates is called the Right SideBand region, or RSB. The choice of RSB has a large systematical effect on the background approximation as neither the like-sign nor rotated $p\pi$ pairs match the background shape throughout the entirety of the distribution. The RSBs were chosen for each multiplicity bin to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$. The raw unlike-sign $p\pi$ distribution for the 0-20\% Multiplicity Percentile is shown in Figure \ref{res_invariant_mass_0_20}, and the extracted signal and comparison with MonteCarlo is shown in Figure \ref{res_invariant_mass_signal_0_20}.
+
+ \begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/res_invariant_mass_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/res_invariant_mass_signal_0_20.pdf}}
+\end{subfigure}
+\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) in our MonteCarlo sample.  The like-sign $p\pi$ pair mass distribution (purple) and unlike-sign rotated $p\pi$ distributions are scaled to match the unlike-sign distribution within the invariant mass region. The true combinatorial background (red) matches most closesly with the like-sign pairs. Right: The actual $\Lambda$ signal (magenta) compared with the result of subracting the like-sign from the total unlike-sign $p\pi$ distribution (green). The two distributions show good agreement.}
+\label{res_invariant_mass_0_20}
 \end{figure}
  
  \subsection{Invariant Mass Regions}
