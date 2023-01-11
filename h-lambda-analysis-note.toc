@@ -1,0 +1,40 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Event and Track Selection}{1}
+\contentsline {subsection}{\numberline {2.1}Dataset}{1}
+\contentsline {subsection}{\numberline {2.2}Event Selection}{1}
+\contentsline {subsection}{\numberline {2.3}Track Selection}{2}
+\contentsline {subsubsection}{\numberline {2.3.1}Associated Hadron Track Cuts}{2}
+\contentsline {subsection}{\numberline {2.4}$\Lambda $ Daughter Proton and Pion Track Cuts}{3}
+\contentsline {subsubsection}{\numberline {2.4.1}Trigger Track Cuts}{3}
+\contentsline {section}{\numberline {3}$\Lambda $ Reconstruction}{3}
+\contentsline {subsection}{\numberline {3.1}Combinatorial Background Estimation}{5}
+\contentsline {subsection}{\numberline {3.2}Invariant Mass Regions}{5}
+\contentsline {section}{\numberline {4}Correlation Measurement}{6}
+\contentsline {subsection}{\numberline {4.1}Full Correlation Measurement Method}{6}
+\contentsline {subsection}{\numberline {4.2}Mixed Event Acceptance Correction}{6}
+\contentsline {subsection}{\numberline {4.3}Reconstruction Efficiency}{7}
+\contentsline {subsection}{\numberline {4.4}Removal of Combinatorial K-K Background}{8}
+\contentsline {subsection}{\numberline {4.5}Full h-$\phi $ and h-h Correlation Measurement}{9}
+\contentsline {section}{\numberline {5}Ratio of Correlated $h-\phi /h-h$ Pairs}{9}
+\contentsline {subsection}{\numberline {5.1}Fit of $\Delta \varphi $ Correlation Structure}{9}
+\contentsline {subsection}{\numberline {5.2}Estimate of Near and Away-side Yields}{10}
+\contentsline {subsection}{\numberline {5.3}Multiplicity Dependent Ratio Measurement}{10}
+\contentsline {section}{\numberline {6}Monte Carlo Studies}{11}
+\contentsline {subsection}{\numberline {6.1}Correlation Method Test using Monte Carlo}{11}
+\contentsline {subsection}{\numberline {6.2}MC Closure Test}{11}
+\contentsline {section}{\numberline {7}Systematic Errors \& Crosschecks}{12}
+\contentsline {subsection}{\numberline {7.1}TOF Efficiency Crosscheck}{13}
+\contentsline {subsection}{\numberline {7.2}Invariant Mass Range Checks}{13}
+\contentsline {subsubsection}{\numberline {7.2.1}Mass Peak Region Check}{13}
+\contentsline {subsubsection}{\numberline {7.2.2}Sideband Region Check}{14}
+\contentsline {subsubsection}{\numberline {7.2.3}Likesign Sideband Scaling Factor Check}{14}
+\contentsline {subsection}{\numberline {7.3}Correlation Fitting Procedure}{15}
+\contentsline {subsection}{\numberline {7.4}PID cuts}{17}
+\contentsline {subsection}{\numberline {7.5}Affect of v2 Assumption on Ratios}{17}
+\contentsline {section}{\numberline {A}Second Momentum Bin Measurement}{26}
+\contentsline {section}{\numberline {B}Jet vs. Total Production comparison}{26}
+\contentsline {section}{\numberline {C}Investigating Radial Flow Effects}{26}
+\contentsline {section}{\numberline {D}Single Trigger Selection and Results}{27}
+\contentsline {section}{\numberline {E}Additional Plots}{35}
+\contentsline {subsection}{\numberline {E.1}Approved Plots}{35}
+\contentsline {subsection}{\numberline {E.2}Misc. Plots}{39}
