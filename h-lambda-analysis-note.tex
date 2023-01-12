@@ -245,24 +245,27 @@ To determine which of these techniques is more effective, we compare the backgro
 
 The region outside of the $\Lambda$ signal region used for scaling the background estimates is called the Right SideBand region, or RSB. The choice of RSB has a large systematical effect on the background approximation as neither the like-sign nor rotated $p\pi$ pairs match the background shape throughout the entirety of the distribution. The RSBs were chosen for each multiplicity bin to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$. The raw unlike-sign $p\pi$ distribution for the 0-20\% Multiplicity Percentile is shown in Figure \ref{res_invariant_mass_0_20}, and the extracted signal and comparison with MonteCarlo is shown in Figure \ref{res_invariant_mass_signal_0_20}.
 
+
  \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/res_invariant_mass_0_20.pdf}}
+\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/res_invariant_mass_signal_0_20.pdf}}
+\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_signal_comp.pdf}}
 \end{subfigure}
-\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) in our MonteCarlo sample.  The like-sign $p\pi$ pair mass distribution (purple) and unlike-sign rotated $p\pi$ distributions are scaled to match the unlike-sign distribution within the invariant mass region. The true combinatorial background (red) matches most closesly with the like-sign pairs. Right: The actual $\Lambda$ signal (magenta) compared with the result of subracting the like-sign from the total unlike-sign $p\pi$ distribution (green). The two distributions show good agreement.}
+\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) along with the like-sign $p\pi$ background (purple) and the RSB region (red) in the 0-20\% multiplicity bin. Right: The extracted signal (green) compared with the resonance-technique reconstructed signal shape in MonteCarlo (magenta). The RSB was chosen such that these shapes are similar. }
 \label{res_invariant_mass_0_20}
 \end{figure}
- 
+
+
+
+
  \subsection{Invariant Mass Regions}
- Since we need to measure the $h-\phi$ correlation and also estimate the contribution to the correlations from the combinatorial background of non-decay kaon pairs, correlated $h-(KK)$ pairs were formed with the following invariant mass bins for kaon pairs:
+ Measuring the $h-\Lambda$ correlation requires a clearly defined signal region for the unlike-sign $p\pi$ pairs, as well as an RSB region (in the case of the resonance technique). The values for each of the signal regions and RSB regions are as follows:
 
 \begin{itemize}
-	\item \makebox[7.5cm][l]{unlike-sign kaons in $\phi$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{KK} < $\SI{1.026}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{like-sign kaons in $\phi$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{KK} < $\SI{1.026}{GeV/c^2}
+	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{KK} < $\SI{1.026}{GeV/c^2}
 	\item  \makebox[7.5cm][l]{unlike-sign kaons in left sideband region:}  \SI{0.995}{GeV/c^2}$< M_{KK} < $\SI{1.005}{GeV/c^2}
 	\item  \makebox[7.5cm][l]{like-sign kaons in left sideband region:} \SI{0.995}{GeV/c^2}$< M_{KK} < $\SI{1.005}{GeV/c^2}
 	\item  \makebox[7.5cm][l]{unlike-sign kaons in right sideband region:} \SI{1.040}{GeV/c^2}$< M_{KK} < $\SI{1.060}{GeV/c^2}
@@ -270,6 +273,11 @@ The region outside of the $\Lambda$ signal region used for scaling the backgroun
 \end{itemize}
 
 Correlation background removal was tested with both unlike-sign Sideband regions, as well as with the like-sign correlation distribution in the mass peak region. Within statistical errors, all combinatorial background estimators gave similar correlation structures. Ultimately, an average of the correlation from the unlike-sign kaon pairs in the left and right sidebands was used to estimate the combinatorial background, with the like-sign Kaon pairs being used only for scaling and to check for consistency.
+
+
+
+
+
 
 \section{Correlation Measurement}
 \label{corrsec}
