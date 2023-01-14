@@ -82,7 +82,7 @@ This MC production contains around N million minimum bias events.
 
 Events were selected by requiring a collision Z-vertex of less than \SI{10}{cm} and at least 3 reconstructed tracks in the event.  
 
-This reduces the total number of events (FAST + CENT\_wo\_SDD) considered to approximately 420 million events (see Table \ref{evttab}). The V0A estimator was chosen to determine event multiplicity percentile, and the correlation measurement was performed in three multiplicity percentile bins: \textbf{0-20\%, 20-50\%, and 50-80\%}.
+This reduces the total number of events (FAST + CENT\_wo\_SDD) considered to approximately 420 million events (see Table \ref{event_table}). The V0A estimator was chosen to determine event multiplicity percentile, and the correlation measurement was performed in three multiplicity percentile bins: \textbf{0-20\%, 20-50\%, and 50-80\%}.
 
 \begin{table}[h!]
     \centering
@@ -96,7 +96,7 @@ Multiplicity & Total Evts. & Has 3 Tracks & $|Z_{vtx}| <$  10cm + 3 tracks & \% 
 \hline
 \end{tabular}
 \caption{Number of events passing our criteria for each multiplicity bin considered.}
-\label{evttab}
+\label{event_table}
 \end{table}
 
 For all events, the standard Physics selection with pile-up cuts was applied with \texttt{AddTaskPhysicsSelection(kFALSE, kTRUE)}.
@@ -158,7 +158,7 @@ For the trigger hadron tracks, Hybrid Global constrained tracks were accepted us
 
 For the both the di-hadron and h-$\Lambda$ correlation, the trigger hadron is selected in the momentum region:
 
-$${4.0 < p_{T} < \SI{8.0}{GeV/c}}$$,
+$${4.0 < p_{T} < \SI{8.0}{GeV/c}},$$
 
 with further binning performed offline.
 
@@ -183,7 +183,6 @@ For both techniques, the daughter protons and pions were required to meet the fo
 \end{itemize}
 
 
-
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
@@ -192,8 +191,8 @@ For both techniques, the daughter protons and pions were required to meet the fo
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/nsigma_tpc_pion.pdf}}
 \end{subfigure}
-\caption{N-sigma for protons (left) and pions (right) in the TPC detector as a function of $p_{T}$. A wider PID cut is used for the pion to maximize the $\Lambda$ signal.}
-\label{nsigma_tof}
+\caption{$n\sigma$ for protons (left) and pions (right) in the TPC detector as a function of $p_{T}$. A wider PID cut is used for the pion to maximize the $\Lambda$ signal.}
+\label{nsigma_tpc}
 \end{figure}
 
 \begin{figure}[ht]
@@ -204,20 +203,26 @@ For both techniques, the daughter protons and pions were required to meet the fo
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/nsigma_tof_pion.pdf}}
 \end{subfigure}
-\caption{N-sigma for protons (left) and pions (right) in the TOF detector as a function of $p_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
+\caption{$n\sigma$ for pions (left) and pions (right) in the TOF detector as a function of $\it{p}_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
 \label{nsigma_tof}
 \end{figure}
 
-The $n\sigma$ values for the proton and pion are shown in Figure \ref{nsigma_proton} and Figure \ref{nsigma_pion}, respectively. 
+The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton and pion are shown in Figure \ref{nsigma_tpc} and Figure \ref{nsigma_tof}, respectively. These values were obtained from the AOD tracks associated with every V0 found by the V0 finder algorithm, provided that those tracks also pass the aforementioned daughter track quality cuts.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=3in]{images/PIDnsigmaTPCvsTOF.pdf}
-\caption{TOF vs TPC n-sigma distribution for Kaons for the momentum range $2.0 < p_{T}^{K} <$ \SI{4.0}{GeV/c}. Pion contamination is seen in the upper left-hand corner (low TOF nsigma and high TPC nsigma). Tighter PID cuts were tested as a systematic check, but show no significant change in the final correlation distribution (section \ref{PIDcuts})}
-\label{nsigmaTPCvTOF}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/nsigma_tof_v_tpc_proton.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/nsigma_tof_v_tpc_pion.pdf}}
+\end{subfigure}
+\caption{$n\sigma$ in TOF vs $n\sigma$ in TPC for protons (left) and pions (right). No contimatination is observed for both of the particle species.}
+\label{nsigmatofvtpc}
 \end{figure}
  
 As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
+
 
  
  \subsection{Combinatorial Background Estimation (Resonance Technique Only)}
