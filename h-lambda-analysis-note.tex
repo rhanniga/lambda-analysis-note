@@ -224,7 +224,6 @@ The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton a
 To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks.
 
 
-As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
 
 \begin{figure}[ht]
 \centering
@@ -251,9 +250,30 @@ As $\Lambda$ baryons reconstructed using the resonance technique will have a lar
 \end{figure}
 
 
+\subsection{V0 Selection}
+The central points in this analysis were generated using $\Lambda$s reconstructed using the V0-finder algorithm found within the AliROOT framework. All of the V0s found by the V0 finder algorithm were required to pass the following cuts:
+
+\begin{itemize}
+	\item $p_{T} > 0.2$ GeV/$c$
+	\item $|\eta| < 0.8$
+	\item On the fly status: disabled (offline V0s only)
+\end{itemize}
+
+There were no additional topological cuts applied to the V0s or their corresponding daughters. This was done to maximize statistics and to minimize any topological biases introduced by reconstructing $\Lambda$s using the V0-finder algorithm itself. The invariant mass distribution in the 0-20\% multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm are shown in Figure \ref{v0_mass}. The $\Lambda$ peak is clearly visible with almost zero background. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}
+\caption{Invariant mass distribution for $\Lambda$s reconstructed using the V0 finder algorithm in the 0-20\% multiplicity bin with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible, despite no topological cuts being applied to the V0s.}
+\label{v0_mass}
+\end{figure}
+
 
  
  \subsection{Combinatorial Background Estimation (Resonance Technique Only)}
+
+As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
+
  The background shape of the $\Lambda$ invariant mass distribution can be estimated using one of the two following techniques:
 
  \begin{itemize}
@@ -264,7 +284,7 @@ As $\Lambda$ baryons reconstructed using the resonance technique will have a lar
 To determine which of these techniques is more effective, we compare the background shape of the $\Lambda$ invariant mass distribution for both techniques in MonteCarlo where we have direct access to the background shape. The like-sign and rotated $p\pi$ pairs are shown along with the extracted signal comparsion in Figure \ref{background_approx_MC}. The like-sign $p\pi$ pairs match the background shape of the $\Lambda$ invariant mass distribution more closely than the rotated $p\pi$ pairs, so we use the like-sign $p\pi$ pairs to estimate the combinatorial background in the $\Lambda$ invariant mass distribution in data.
 
  
- \begin{figure}[ht]
+\begin{figure}[ht]
 \centering
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/background_approx_MC.pdf}}
@@ -279,7 +299,7 @@ To determine which of these techniques is more effective, we compare the backgro
 The region outside of the $\Lambda$ signal region used for scaling the background estimates is called the Right SideBand region, or RSB. The choice of RSB has a large systematical effect on the background approximation as neither the like-sign nor rotated $p\pi$ pairs match the background shape throughout the entirety of the distribution. The RSBs were chosen for each multiplicity bin to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$. The raw unlike-sign $p\pi$ distribution for the 0-20\% Multiplicity Percentile is shown in Figure \ref{res_invariant_mass_0_20}, and the extracted signal and comparison with MonteCarlo is shown in Figure \ref{res_invariant_mass_signal_0_20}.
 
 
- \begin{figure}[ht]
+\begin{figure}[ht]
 \centering
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf}}
@@ -297,59 +317,92 @@ The region outside of the $\Lambda$ signal region used for scaling the backgroun
  \subsection{Invariant Mass Regions}
  Measuring the $h-\Lambda$ correlation requires a clearly defined signal region for the unlike-sign $p\pi$ pairs, as well as an RSB region (in the case of the resonance technique). The values for each of the signal regions and RSB regions are as follows:
 
+ \textbf{V0 Finder Technique:}
 \begin{itemize}
-	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{KK} < $\SI{1.026}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{unlike-sign kaons in left sideband region:}  \SI{0.995}{GeV/c^2}$< M_{KK} < $\SI{1.005}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{like-sign kaons in left sideband region:} \SI{0.995}{GeV/c^2}$< M_{KK} < $\SI{1.005}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{unlike-sign kaons in right sideband region:} \SI{1.040}{GeV/c^2}$< M_{KK} < $\SI{1.060}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{like-sign kaons in right sideband region:} \SI{1.040}{GeV/c^2}$< M_{KK} < $\SI{1.060}{GeV/c^2}
+	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.100}{GeV/c^2}$< M_{p\pi} < $\SI{1.134}{GeV/c^2}
 \end{itemize}
 
-Correlation background removal was tested with both unlike-sign Sideband regions, as well as with the like-sign correlation distribution in the mass peak region. Within statistical errors, all combinatorial background estimators gave similar correlation structures. Ultimately, an average of the correlation from the unlike-sign kaon pairs in the left and right sidebands was used to estimate the combinatorial background, with the like-sign Kaon pairs being used only for scaling and to check for consistency.
+ \textbf{Resonance Technique:}
+\begin{itemize}
+	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
+	\item \makebox[7.5cm][l]{like-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 0-20\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 20-50\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 50-80\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+\end{itemize}
 
+The signal regions were chosen to maximize significance for both techniques and are not multiplicty dependent, whereas the RSB regions (resonance technique only) were chosen to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$, as was demonstrated in Figure \ref{res_invariant_mass_0_20}. This process was repeated for each multiplicity bin resulting in slight fluctuations of the RSB with respect to multiplicity.
 
-
-
+For the resonance technique, the combinatorial background contribution to the correlation was removed using the like-sign $p\pi$ distribution scaled to the RSB for each mulitiplicty bin, a procedure described with more detail in Section \ref{resonance_technique_bg_subtraction}.
 
 
 \section{Correlation Measurement}
 \label{corrsec}
 \subsection{Full Correlation Measurement Method}
 
-The per-trigger correlation is estimated using the formula:
+The per-trigger correlation is approximated using the formula:
 
 \begin{align}
 \label{perTrigEq}
 C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\varphi,\Delta\eta)}{B(\Delta\varphi, \Delta\eta)}
 \end{align}
 
-where $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta$ is the mixed-event correlation.  The properly account for the acceptance effects, the mixed-event distribution is scaled to the value in the $\Delta\varphi = 0$, $\Delta\eta = 0$ bin.
+where $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution. 
 
-However, with the mass peak cut used for the $\phi$(1020) meson, what is actually measured is an angular correlation of $h-(KK)$ pairs that is comprised of the real $h-\phi$ signal as well as a background of $h-(KK)$ pairs.  To obtain the true $h-\phi$ correlation, we must remove the contribution from the random combinatorial Kaon pairs:
+However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. For $\Lambda$s reconstructed using the V0 finder technique, this background is neglibile (see Section ). For the resonance technique, we must account for and subtract the combinatorial background contribution to the correlation. The full correlation is then given by:
 
 \begin{align}
 \label{fullCorrEq}
 \begin{split}
-    C_{h-\phi}(\Delta\varphi, \Delta\eta) = k_{\text{Signal}}\biggl(&C_{(h-KK)^{US}_{\text{Mass Peak}}}(\Delta\varphi, \Delta\eta)\\
-    &- \frac{k_{LS}}{2}*\biggl[\frac{1}{N_{Ent}^{LSB}}C_{(h-KK)^{US}_{\text{Left SB}}}(\Delta\varphi, \Delta\eta) + \frac{1}{N_{Ent}^{RSB}}C_{(h-KK)^{US}_{\text{Right SB}}}(\Delta\varphi, \Delta\eta) \biggr]\biggr)
+    C_{h-\phi}(\Delta\varphi, \Delta\eta) = r_{\text{Signal}}\biggl(&C_{(h-p\pi)^{US}_{\text{Signal}}}(\Delta\varphi, \Delta\eta)\\
+    &- r_{LS}*C_{(h-p\pi)^{US}_{\text{RSB}}}(\Delta\varphi, \Delta\eta)\biggr)
 \end{split}
 \end{align}
 
-Here, $k_{\text{Signal}}$ accounts for the finite window used for the mass peak, and is calculated using the Voigt function shown in figure \ref{rawinvmass}, and is calculated from the fraction of the signal within our mass peak window ($\approx$82\% for our cuts); $k_{LS}$ is a scaling factor determined using the like sign invariant mass distribution to scale the un-like sign and like sign distibutions to the same values in the invariant mass sideband region $1.040 < M_{KK} < 1.060$ GeV (fig. \ref{rawinvmass}). $C_{(h-KK)^{US}_{\text{Mass Peak}}}$ is the correlation of $h-KK$ pairs within the $\phi$(1020) invariant mass peak range (see section \ref{rangeselection} for how this mass peak range is selected), while $\frac{1}{N_{Ent}^{RSB}}C_{(h-KK)^{US}_{\text{Right SB}}}$ is the correlation of $h-KK$ pairs in the $\phi$(1020) mass right sideband region normalized by the number of entries.  The two normalized sideband correlations are averaged together to approximate the combinatorial background of random kaon pairs (see section \ref{removecomb} for details of this procedure).
+Here, $r_{\text{Signal}}$ accounts for the signal that is missed by choosing a finite signal region, and is calculated using the extracted signal shown on the right side of Figure \ref{res_invariant_mass_0_20} by dividing the total number of $p\pi$ pairs in the signal region by the total number of $p\pi$ pairs across the entire distribution, then inverting. The fraction of signal missed is approximately X \% for each multiplicity bin. $r_{LS}$ is used to scale the unlike-sign $p\pi$ distribution in the RSB to match the combinatorial background in the signal region, and is calculated by first scaling the like-sign $p\pi$ distribution to the unlike-sign $p\pi$ distribution in the RSB, then using the scaled like-sign $p\pi$ to calculate the background integral in the signal region. Further details of this procedure can be found in Secion \ref{removecomb}.
+
 
 \subsection{Mixed Event Acceptance Correction}
 
-For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}.  Within each of these multiplicity and z-vertex bins, mixing was performed by filling a pool of all charged hadrons and mixing with the reconstructed KK pairs in a given event (fig. \ref{mix2D}).
+For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) in the 0-20\% multiplicity bin are shown in Figures \ref{uncorr2d_0_20} and \ref{mixed2d_0_20}, respectively.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=4in]{images/mixed_USpeak_mult_0_20.pdf}
-\caption{2D Mixed event h-(US kaon pair) angular correlations for the 0-20\% multiplicity bin (all z-vertex bins merged together) }
-\label{mix2D}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_nomixcor_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_nomixcor_0_20.pdf}}
+\end{subfigure}
+\caption{2-D non-acceptance corrected h-$p\pi$ (left) and h-h (right) angular correlations for the 0-20\% multiplicity bin (all z-vertex bins merged together)}
+\label{uncorr2d_0_20}
 \end{figure}
 
-The mixing pool was chosen to have a track depth of 1000, and the number of files per job was chosen dependent on the multiplicity bin to ensure adequate mixing (fig.\ref{mixstatUS}).
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixed_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixed_0_20.pdf}}
+\end{subfigure}
+\caption{2-D mixed event h-$p\pi$ (left) and h-h (right) angular correlations for the 0-20\% multiplicity bin (all z-vertex bins merged together)}
+\label{mixed2d_0_20}
+\end{figure}
 
+For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figure \ref{mixcor2d}. 
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixcor_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixcor_0_20.pdf}}
+\end{subfigure}
+\caption{2-D h-$p\pi$ (left) and h-h (right) angular correlations for the 0-20\% multiplicity bin after acceptance corrections. Note that the triangular shape in $\Delta\eta$ is no longer present.}
+\label{mixcor2d_0_20}
+\end{figure}
 
 \begin{figure}[ht]
 \centering
@@ -358,15 +411,7 @@ The mixing pool was chosen to have a track depth of 1000, and the number of file
 \label{mixstatUS}
 \end{figure}
 
-Since this analysis relies on three different angular correlations ($h-h$, $h-\phi$, and $h-(\text{like sign } KK$)), mixing was performed with the same trigger pool and the three separate associated particles per event.  After mixing, each of these different correlations are acceptance corrected with their own mixed event distributions (fig. \ref{uncorr2D} \& \ref{corr2D}).
-
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=4in]{images/2D_uncorr_hKK.pdf}
-\caption{An example of the same event $h-(\text{US }KK)$ angular correlation structure before the mixed-event acceptance correction is applied.  Plotted is the 0-20\% Multiplicity Percentile bin.}
-\label{uncorr2D}
-\end{figure}
+As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) and an associated hadron.
 
 \begin{figure}[ht]
 \centering
