@@ -163,17 +163,33 @@ $${4.0 < p_{T} < \SI{8.0}{GeV/c}},$$
 with further binning performed offline.
 
 \section{$\Lambda$ Reconstruction}
+\label{lambda_reconstruction}
 
-The $\Lambda$ candidates were reconstructed through the $\Lambda \rightarrow p\pi^{-}$ ($\bar{\Lambda} \rightarrow \pi^{+}p$) decay channel with a branching ratio of 63.9\%. The $\Lambda$ candidates in this analysis were reconstructed using two separate techniques:
+The $\Lambda$ candidates were reconstructed through the $\Lambda \rightarrow p\pi^{-}$ ($\bar{\Lambda} \rightarrow \pi^{+}p$) decay channel with a branching ratio of 63.9\%. For the majority of this analysis, the $\Lambda$ and $\bar{\Lambda}$ are combined together. Thus, unless otherwise specified, $\Lambda = \Lambda + \bar{\Lambda}$. 
+
+The $\Lambda$ candidates in this analysis were reconstructed using two separate techniques:
 \begin{itemize}
 	\item \textbf{V0 Finder Technique} - The V0 finder technique reconstructs the $\Lambda$ by combining the proton and pion tracks with the V0 finder algorithm, which can be found within the AliROOT framework.
 	\item \textbf{Resonance Technique} - The resonance technique combines all oppositely charged proton-pion pairs to reconstruct the $\Lambda$, resulting in maximal statistics at the cost of a large combinatorial background.
 \end{itemize}
 
-The central points in this analysis are from $\Lambda$ candidates reconstructed using the V0 finder technique. The resonance technique serves as a powerful cross-check to ensure no topological biases are introduced within the V0 finder algorithm.
+The central points in this analysis are from $\Lambda$ candidates reconstructed using the V0 finder technique. The resonance technique serves as a powerful cross-check to ensure no topological biases are introduced within the V0 finder algorithm, and is investigated in detail in Section \ref{resonance_technique}.
 
+\subsection{V0 Selection}
+\label{v0_selection}
+The central points in this analysis were generated using $\Lambda$s reconstructed using the V0-finder algorithm found within the AliROOT framework. All of the V0s found by the V0 finder algorithm were required to pass the following cuts:
 
-For both techniques, the daughter protons and pions were required to meet the following PID cuts using both the TPC and TOF detectors:
+\begin{itemize}
+	\item $p_{T} > 0.2$ GeV/$c$
+	\item $|\eta| < 0.8$
+	\item On the fly status: disabled (offline V0s only)
+\end{itemize}
+
+There were no additional topological cuts applied to the V0s or their corresponding daughters. This was done to maximize statistics and to minimize any topological biases introduced by reconstructing $\Lambda$s using the V0-finder algorithm itself. 
+
+\subsection{V0 Daughter PID Cuts}
+\label{v0_daughter_pid}
+The daughter protons and pions were required to meet the following PID cuts using both the TPC and TOF detectors:
 
 \begin{itemize}
 	\item[$\ast$] $|n\sigma_{TPC, p}| < 2$
@@ -221,8 +237,7 @@ The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton a
 \label{nsigmatofvtpc}
 \end{figure}
  
-To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks.
-
+To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks. These plots also represent the PID cuts used for the resonance technique, which will be discussed in Section \ref{resonance_technique}.
 
 
 \begin{figure}[ht]
@@ -250,90 +265,38 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \end{figure}
 
 
-\subsection{V0 Selection}
-The central points in this analysis were generated using $\Lambda$s reconstructed using the V0-finder algorithm found within the AliROOT framework. All of the V0s found by the V0 finder algorithm were required to pass the following cuts:
 
-\begin{itemize}
-	\item $p_{T} > 0.2$ GeV/$c$
-	\item $|\eta| < 0.8$
-	\item On the fly status: disabled (offline V0s only)
-\end{itemize}
 
-There were no additional topological cuts applied to the V0s or their corresponding daughters. This was done to maximize statistics and to minimize any topological biases introduced by reconstructing $\Lambda$s using the V0-finder algorithm itself. The invariant mass distribution in the 0-20\% multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm are shown in Figure \ref{v0_mass}. The $\Lambda$ peak is clearly visible with almost zero background. 
+ \subsection{Invariant Mass Region}
+ \label{invariant_mass_region}
+
+The invariant mass distributions in each multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm are shown in Figure \ref{v0_mass}. The $\Lambda$ peak is clearly visible with almost zero background. 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=3in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}
-\caption{Invariant mass distribution for $\Lambda$s reconstructed using the V0 finder algorithm in the 0-20\% multiplicity bin with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible, despite no topological cuts being applied to the V0s.}
+\begin{subfigure} {
+\includegraphics[width=2in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=2in]{figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=2in]{figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf}}
+\end{subfigure}
+\caption{Invariant mass distributions in the 0-20\% (left), 20-50\% (center), and 50-80\% (right) multiplicity bins for $\Lambda$s reconstructed using the V0 finder with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible for all multiplicity bins, despite no topological cuts being applied to the V0s.}
 \label{v0_mass}
 \end{figure}
 
-
- 
- \subsection{Combinatorial Background Estimation (Resonance Technique Only)}
-
-As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
-
- The background shape of the $\Lambda$ invariant mass distribution can be estimated using one of the two following techniques:
-
- \begin{itemize}
-	\item \textbf{Like-sign $p\pi$ pairs} - Reconstruct the invariant mass of like-sign $p\pi$ pairs, and scale the like-sign $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
-	\item \textbf{Rotated $p\pi$ pairs} - Reconstruct the invariant mass of unlike-sign $p\pi$ pairs, but rotate either the pion or proton around the z-axis by $\pi$ radians, and scale the rotated $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
- \end{itemize}
-
-To determine which of these techniques is more effective, we compare the background shape of the $\Lambda$ invariant mass distribution for both techniques in MonteCarlo where we have direct access to the background shape. The like-sign and rotated $p\pi$ pairs are shown along with the extracted signal comparsion in Figure \ref{background_approx_MC}. The like-sign $p\pi$ pairs match the background shape of the $\Lambda$ invariant mass distribution more closely than the rotated $p\pi$ pairs, so we use the like-sign $p\pi$ pairs to estimate the combinatorial background in the $\Lambda$ invariant mass distribution in data.
-
- 
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/background_approx_MC.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/background_subtracted_signal_MC.pdf}}
-\end{subfigure}
-\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) in our MonteCarlo sample.  The like-sign $p\pi$ pair mass distribution (purple) and unlike-sign rotated $p\pi$ distributions are scaled to match the unlike-sign distribution within the invariant mass region. The true combinatorial background (red) matches most closesly with the like-sign pairs. Right: The actual $\Lambda$ signal (magenta) compared with the result of subracting the like-sign from the total unlike-sign $p\pi$ distribution (green). The two distributions show good agreement.}
-\label{background_approx_MC}
-\end{figure}
-
-The region outside of the $\Lambda$ signal region used for scaling the background estimates is called the Right SideBand region, or RSB. The choice of RSB has a large systematical effect on the background approximation as neither the like-sign nor rotated $p\pi$ pairs match the background shape throughout the entirety of the distribution. The RSBs were chosen for each multiplicity bin to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$. The raw unlike-sign $p\pi$ distribution for the 0-20\% Multiplicity Percentile is shown in Figure \ref{res_invariant_mass_0_20}, and the extracted signal and comparison with MonteCarlo is shown in Figure \ref{res_invariant_mass_signal_0_20}.
+The relevant parameters for the Voigt fit applied to the invariant mass distributions for each multiplicy bin are shown in Table \ref{voigt_parameters}. While the background is nearly zero for each multiplciity bin, its effect on the final correlation measurement is investigated in Section \ref{systematics}.
 
 
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_signal_comp.pdf}}
-\end{subfigure}
-\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) along with the like-sign $p\pi$ background (purple) and the RSB region (red) in the 0-20\% multiplicity bin. Right: The extracted signal (green) compared with the resonance-technique reconstructed signal shape in MonteCarlo (magenta). The RSB was chosen such that these shapes are similar. }
-\label{res_invariant_mass_0_20}
-\end{figure}
+ Measuring the $h-\Lambda$ correlation requires a clearly defined signal region for the unlike-sign $p\pi$ pairs from the V0 finder. The signal region range is as follows:
 
-
-
-
- \subsection{Invariant Mass Regions}
- Measuring the $h-\Lambda$ correlation requires a clearly defined signal region for the unlike-sign $p\pi$ pairs, as well as an RSB region (in the case of the resonance technique). The values for each of the signal regions and RSB regions are as follows:
-
- \textbf{V0 Finder Technique:}
 \begin{itemize}
 	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.100}{GeV/c^2}$< M_{p\pi} < $\SI{1.134}{GeV/c^2}
 \end{itemize}
 
- \textbf{Resonance Technique:}
-\begin{itemize}
-	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
-	\item \makebox[7.5cm][l]{like-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 0-20\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 20-50\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
-	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 50-80\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
-\end{itemize}
-
-The signal regions were chosen to maximize significance for both techniques and are not multiplicty dependent, whereas the RSB regions (resonance technique only) were chosen to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$, as was demonstrated in Figure \ref{res_invariant_mass_0_20}. This process was repeated for each multiplicity bin resulting in slight fluctuations of the RSB with respect to multiplicity.
-
-For the resonance technique, the combinatorial background contribution to the correlation was removed using the like-sign $p\pi$ distribution scaled to the RSB for each mulitiplicty bin, a procedure described with more detail in Section \ref{resonance_technique_bg_subtraction}.
+This signal region was chosen to maximize statistical significance, and it does not depend on multiplicity. As it accounts for roughly ~99.5\% of the total signal, no correction for the tails of the distribution was applied. However, the choice of signal region and the corresponding correction factors are investigated more closely in Section \ref{systematics}.
 
 
 \section{Correlation Measurement}
@@ -349,7 +312,8 @@ C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\va
 
 where $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution. 
 
-However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. For $\Lambda$s reconstructed using the V0 finder technique, this background is neglibile (see Section ). For the resonance technique, we must account for and subtract the combinatorial background contribution to the correlation. The full correlation is then given by:
+
+However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. The full correlation equation is then:
 
 \begin{align}
 \label{fullCorrEq}
@@ -359,8 +323,10 @@ However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs
 \end{split}
 \end{align}
 
-Here, $r_{\text{Signal}}$ accounts for the signal that is missed by choosing a finite signal region, and is calculated using the extracted signal shown on the right side of Figure \ref{res_invariant_mass_0_20} by dividing the total number of $p\pi$ pairs in the signal region by the total number of $p\pi$ pairs across the entire distribution, then inverting. The fraction of signal missed is approximately X \% for each multiplicity bin. $r_{LS}$ is used to scale the unlike-sign $p\pi$ distribution in the RSB to match the combinatorial background in the signal region, and is calculated by first scaling the like-sign $p\pi$ distribution to the unlike-sign $p\pi$ distribution in the RSB, then using the scaled like-sign $p\pi$ to calculate the background integral in the signal region. Further details of this procedure can be found in Secion \ref{removecomb}.
+Here, $r_{\text{Signal}}$ accounts for the signal that is missed by choosing a finite signal region, and is calculated using the Voigt fit discussed in Section \ref{invariant_mass_region} by dividing the integral of the fit across the entire range by the integral of the fit in the signal region. For our central values, this fraction is nearly unity and is thus not included in the final correlation measurement. $r_{LS}$ is a scaling factor that depends on the technique used to account for the $p\pi$ background and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
 
+
+While the $h-(p\pi)$ background is negligible within our main transverse momentum bin ($2 < \it{p}_{T} < 4$) for $\Lambda$s reconstructed using the V0 finder, the full correlation formula is still used in this analysis and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
 
 \subsection{Mixed Event Acceptance Correction}
 
@@ -404,36 +370,41 @@ For each multiplicity bin, the acceptance correction (as described in Eq. 1) was
 \label{mixcor2d_0_20}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=3.5in]{images/mixedeventstatsUS0_20.pdf}
-\caption{Plot of the number of tracks in the mixed event pool when mixing took place for the h-(US kaon pairs) angular correlations}
-\label{mixstatUS}
-\end{figure}
-
 As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) and an associated hadron.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=4in]{images/2D_corr_hKK.pdf}
-\caption{An example of the same event $h-(\text{US }KK)$ angular correlation structure after the mixed-event acceptance correction is applied.  Again, plotted here is the single 0-20\% Multiplicity Percentile bin.}
-\label{corr2D}
-\end{figure}
-
 \subsection{Reconstruction Efficiency}
-To estimate the $\phi$(1020) reconstruction efficiency, we compare $\phi$ yields from kaon pair reconstruction to the true $\phi$ yields using the MC production LHC17f2b\_FAST (anchored to LHC16q\_FAST production) and LHC17f2b\_CENT\_wo\_SDD (anchored to LHC16q\_CENT\_wo\_SDD production). To calculate the efficiency, the number of $\phi$ mesons that decayed to two Kaons which each passed our track selection criteria was divided by the total number of MC generated $\phi$ mesons with $|\eta_{\phi}| \leq 0.8$ and with daughters in our acceptance ($|\eta_{K}| \leq 0.8$).
+\label{reconstruction_efficiency}
 
-The kaon track selection was separated into two cuts: the standard TPC/ITS track cuts, and the presence of a matching TOF signal:
+\subsubsection{$\Lambda$ Reconstruction Efficiency}
+\label{lambda_efficiency}
+
+To estimate the $\Lambda$ reconstruction efficiency, we compare $\Lambda$ yields reconstructed using the V0 finder to the true $\Lambda$ yields using the MC production LHC17f2b\_FAST (anchored to LHC16q\_FAST production). The efficiency was calculated using the following formula:
 
 \begin{align*}
-    \varepsilon_{\text{Total}} &= \varepsilon_{TPC}*\varepsilon_{TOF\text{hit}}*\varepsilon_{PID}\\
-    \\
-    \phi\text{ Track Efficiency } &= \frac{(\phi\text{: both daughter K pass Track Cuts})}{(\text{Total }\phi\text{ Produced that decay to KK})} * \frac{(\phi\text{: both daughter K pass Track Cuts + TOF hit})}{(\phi\text{: both daughter K pass Track Cuts})}
+	\varepsilon_{\Lambda} &=  \frac{N_{\Lambda\text{, reco with V0 finder}}}{N_{\Lambda\text{, real MC yield}}},
 \end{align*}
 
-Separating the efficiency in this way allowed for a closer look at the non-uniform acceptance of TOF to see if this introduced a bias in the final correlation.
+where each $\Lambda$ in $N_{\Lambda\text{, reco with V0 finder}}$ meets the following criteria:
 
-Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. Similarly to previous efficiency studies in 2013 pPb data, no significant dependency of efficiency on multiplicity was found (fig. \ref{oldeff}). The final efficiency correction was applied as a function of $p_T$ only.
+\begin{itemize}
+	\item Found in the list of offline V0s
+	\item $|\eta_{V0}| \leq 0.8$
+	\item The daughter $p, \pi$ pass the daughter track cuts outlined in Section \ref{daughtercuts}
+	\item The daughter $p, \pi$ tracks have corresponding real $p, \pi$ in the MC stack
+	\item The corresponding MC stack $p, \pi$ daughters come from the same mother $\Lambda$ (also in MC stack)
+\end{itemize}
+
+and each $\Lambda$ in $N_{\Lambda\text{, real MC yield}}$ meets the following criteria:
+
+\begin{itemize}
+	\item Found in the MC stack
+	\item $|\eta_{\Lambda}| \leq 0.8$
+	\item The $\Lambda$ decays to $p\pi$
+\end{itemize}
+
+While previous analyses focus solely on primary $\Lambda$s (exlcuding $\Omega$ and $\Xi$ contamination), there is no requirement for either the V0-reconstructed $\Lambda$ or the MC-generated $\Lambda$ to be a primary particle. As this analysis is mostly interested in the $\Lambda$ due to its strange quark content, whether or not the $\Lambda$ came from a cascade decay is irrelevant. This is important to note when making comparisons between this analysis and previous analyses, as secondary contamination from cascades accounts for nearly 20\% of all $\Lambda$s.
+
+As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the $\bar{\Lambda}$ were combined together for this efficiency calculation. Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. Similarly to previous efficiency studies in 2013 pPb data, no significant dependency of efficiency on multiplicity was found (fig. \ref{oldeff}). The final efficiency correction was applied as a function of $p_T$ only.
 
 \begin{figure}[ht]
 \centering
@@ -447,12 +418,58 @@ Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z 
 \label{oldeff}
 \end{figure}
 
-In addition to the $\phi$ reconstruction efficiency, the efficiency for the trigger track cut criteria (Sec. \ref{trigcuts}) is calculated using the ratio of found triggers to the true trigger yield using the same LHC17f2b MC data.  For our associated hadrons, we use the same track cuts as the kaon candidate tracks (Sec. \ref{assoccuts}), and again calculate the efficiency as the ratio of found hadrons to the true MC hadron yield.  Our final pair efficiency is then:
+\subsection{Trigger and Associated Hadron Reconstruction Efficiency}
+\label{trigassoc_efficiency}
+
+The trigger and associated hadron reconstruction efficiencies are calculated using the following formula:
+
+\begin{align*}
+	\varepsilon_{trig, assoc} &=  \frac{N_{trig, assoc\text{, reco yield}}}{N_{trig, assoc\text{, real MC yield}}},
+\end{align*}
+
+where each trigger or associated hadron in $N_{trig, assoc\text{, reco yield}}$ meets the following criteria:
+
+\begin{itemize}
+	\item Found in the list of AOD tracks
+	\item $|\eta_{track}| \leq 0.8$
+	\item The track passes the track cuts outlined in Section \ref{trigcuts} (trigger) or \ref{assoccuts} (associated)
+	\item The track has a corresponding real track in the MC stack
+	\item The corresponding MC track is either a pion, proton, kaon, electron or muon
+	\item The corresponding MC track is not a secondary particle (IsPhysicalPrimary() == true)
+\end{itemize}
+
+and each trigger or associated hadron in $N_{trig, assoc\text{, real MC yield}}$ meets the following criteria:
+
+\begin{itemize}
+	\item Found in the MC stack
+	\item $|\eta_{track}| \leq 0.8$
+	\item The track is either a pion, proton, kaon, electron or muon
+	\item The track is not a secondary particle (IsPhysicalPrimary() == true)
+\end{itemize}
+
+The efficiencies for both the trigger and associated hadrons as a function of $\it{p}_T$ are shown in Figure \ref{trigassoc_eff_plots}.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{images/myeff_pT.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{images/2013_efficiency_analysisnote.pdf}}
+\end{subfigure}
+\caption{Efficiency vs. $p_T$ for $\phi$ meson reconstruction.  \textbf{Left:} New results for this study using LHC17f2b\_FAST MC dataset anchored to LHC16q\_FAST. \textbf{Right:} Old results using 2013 pPb data.  There is qualitative agreement between the 2013 and new 2016 calculated efficiency, and in both cases, there is no significant dependence on multiplicity.}
+\label{oldeff}
+\end{figure}
+
+As our correlation measurement depends on both the trigger and associated particle, we must combine the two efficiencies to get the overall efficiency for the pair.  This is done using the following formula:
+
 \begin{align*}
     \epsilon_{pair} = \epsilon_{trig}*\epsilon_{assoc}
 \end{align*}
 
-The same trigger efficiency used in the pair efficiency is then also to correct our $N_{trig}$ for our final per-trigger correlation in both the h-h and h-$\phi$ case.
+This efficiency is corrected for on-the-fly as the pairs are being filled into the total correlation distribtuion by using a weighting factor equal to the inverse of $\epsilon_{pair}$. The same trigger efficiency used in the pair efficiency is then also to correct our $N_{trig}$ for our final per-trigger correlation in both the h-h and h-$\Lambda$ case.
+
+
 
 \subsection{Removal of Combinatorial K-K Background}
 \label{removecomb}
@@ -620,10 +637,14 @@ After the MC method test showed that the general measurement method was correctl
 \label{MCClosureFAST}
 \end{figure}
 
+
+\section(Resonance )
 \section{Systematic Errors \& Crosschecks}
+
 
 For all possible sources of systematic errors, the errors are first calculated per $\Delta\varphi$ bin in the full $\Delta\varphi$ distribution.  This is done using a ratio of all variations to the standard cut and finding the overall RMS across all $\Delta\varphi$ bin. After this is done, each variation then undergoes the full yield extraction.  The variation of the final yields is then calculated again as the RMS of all variations, giving a separate systematic error for the near-side, away-side, underlying-event, and total pair yield.  For the final $(h-\phi)/(h-h)$ pair ratios, the systematic errors from the individual $(h-\phi)$ and $(h-h$) yields are treated as uncorrelated.
 
+\subsection()
 \subsection{TOF Efficiency Crosscheck}
 
 Since the TOF does not have uniform coverage in $\varphi$ and $\eta$, a crosscheck was necessary to ensure that the strict TOF PID signal was not influencing the final correlation measurement.  The correlation was performed separately for associated particles that fell in the angular range $0 < \varphi_{assoc} < \pi$ (with gap in TOF coverage), and in the angular range $\pi < \varphi_{assoc} < 2\pi$ (no gap in TOF coverage).  
@@ -832,6 +853,72 @@ By comparing the ratio of $(h-\phi)/(h-h)$ pairs in these two different momentum
 We also note that the low momentum regime shows a smaller separation between the jet-like production and the underlying event production across all multiplicities. In addition, there is a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\phi/h-h$ ratio to approach the underlying event ratio at high multiplicity (fig. \ref{low_momentum_ratio}).
 
 In looking at the underlying event production, the lower momentum $h-\phi/h-h$ ratio shows a little increase across multiplicity, while for the higher momentum region, we see a marked enhancement.  In both momentum regions, the Total ratio's increase as a function of multiplicity is driven in part by the shrinking jet contribution as multiplicity increases.
+
+\section{Resonance Technique for $\Lambda$ Reconstruction}
+\label{resonance_technique}
+
+While using the V0 finder to reconstruct $\Lambda$ baryons is the most common method, it is possible that the V0 finder alogrithm introduces some topological biases in the $\Lambda$ reconstruction, even when no further topological cuts are being applied to the V0 or its corresponding daughters. Because of this, we also investigate another method for reconstructing $\Lambda$ baryons whereby all proton and pion pairs from the global AOD track list that pass the daughter cuts (Section \ref{daughtercuts}) within an event are combined to reconstruct the $\Lambda$s. This method is referred to as the \it{resonance technique}, as it is the technique used to reconstruct short-lived particles that could otherwise not be reconstructed using the V0 finder.
+
+\subsection{Combinatorial Background Estimation}
+
+As $\Lambda$ baryons reconstructed using the resonance technique will have a large combinatorial background, the final correlation will contain $h-(p\pi)$ pairs that need to be removed. In order to remove this background, we need both an estimate of the correlation shape of the $h-(p\pi)$ pairs, as well as an estimate of the Signal/Background in the $\Lambda$ mass peak region.
+
+ The background shape of the $\Lambda$ invariant mass distribution can be estimated using one of the two following techniques:
+
+ \begin{itemize}
+	\item \textbf{Like-sign $p\pi$ pairs} - Reconstruct the invariant mass of like-sign $p\pi$ pairs, and scale the like-sign $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
+	\item \textbf{Rotated $p\pi$ pairs} - Reconstruct the invariant mass of unlike-sign $p\pi$ pairs, but rotate either the pion or proton around the z-axis by $\pi$ radians, and scale the rotated $p\pi$ distribution to the un-like sign $p\pi$ distribution in a region outside of the $\Lambda$ signal region.
+ \end{itemize}
+
+To determine which of these techniques is more effective, we compare the background shape of the $\Lambda$ invariant mass distribution for both techniques in MonteCarlo where we have direct access to the background shape. The like-sign and rotated $p\pi$ pairs are shown along with the extracted signal comparsion in Figure \ref{background_approx_MC}. The like-sign $p\pi$ pairs match the background shape of the $\Lambda$ invariant mass distribution more closely than the rotated $p\pi$ pairs, so we use the like-sign $p\pi$ pairs to estimate the combinatorial background in the $\Lambda$ invariant mass distribution in data.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{
+	\includegraphics[width=3in]{figures/background_approx_MC.pdf}}
+	\end{subfigure}
+	\begin{subfigure}{
+	\includegraphics[width=3in]{figures/background_subtracted_signal_MC.pdf}}
+	\end{subfigure}
+	\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) in our MonteCarlo sample.  The like-sign $p\pi$ pair mass distribution (purple) and unlike-sign rotated $p\pi$ distributions are scaled to match the unlike-sign distribution within the invariant mass region. The true combinatorial background (red) matches most closesly with the like-sign pairs. Right: The actual $\Lambda$ signal (magenta) compared with the result of subracting the like-sign from the total unlike-sign $p\pi$ distribution (green). The two distributions show good agreement.}
+	\label{background_approx_MC}
+	\end{figure}
+	
+	The region outside of the $\Lambda$ signal region used for scaling the background estimates is called the Right SideBand region, or RSB. The choice of RSB has a large systematical effect on the background approximation as neither the like-sign nor rotated $p\pi$ pairs match the background shape throughout the entirety of the distribution. The RSBs were chosen for each multiplicity bin to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$. The raw unlike-sign $p\pi$ distribution for the 0-20\% Multiplicity Percentile is shown in Figure \ref{res_invariant_mass_0_20}, and the extracted signal and comparison with MonteCarlo is shown in Figure \ref{res_invariant_mass_signal_0_20}.
+	
+	
+	\begin{figure}[ht]
+	\centering
+	\begin{subfigure}{
+	\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf}}
+	\end{subfigure}
+	\begin{subfigure}{
+	\includegraphics[width=3in]{figures/lambda_mass_0_20_resonance_signal_comp.pdf}}
+	\end{subfigure}
+	\caption{Left: Invariant Mass distribution for unlike-sign $p\pi$ pairs (black) along with the like-sign $p\pi$ background (purple) and the RSB region (red) in the 0-20\% multiplicity bin. Right: The extracted signal (green) compared with the resonance-technique reconstructed signal shape in MonteCarlo (magenta). The RSB was chosen such that these shapes are similar. }
+	\label{res_invariant_mass_0_20}
+	\end{figure}
+
+
+\subsection{Invariant Mass Regions}
+
+The signal shape and background from $\Lambda$s reconstructed using the resonance technique is vastly different than those reconstructed using the V0 finder, thus it is necessarry to define new invariant mass regions such that the signal can be properly extracted:
+
+\begin{itemize}
+	\item \makebox[7.5cm][l]{unlike-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
+	\item \makebox[7.5cm][l]{like-sign $p\pi$ in $\Lambda$ mass region:}  \SI{1.014}{GeV/c^2}$< M_{p\pi} < $\SI{1.026}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 0-20\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 20-50\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+	\item  \makebox[7.5cm][l]{unlike-sign $p\pi$ in 50-80\% multiplicity bin RSB:}  \SI{0.995}{GeV/c^2}$< M_{p\pi} < $\SI{1.005}{GeV/c^2}
+\end{itemize}
+
+The signal regions were chosen to maximize significance and were not multiplicty dependent, whereas the RSB regions were chosen to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$, as was demonstrated in Figure \ref{res_invariant_mass_0_20}. This process was repeated for each multiplicity bin resulting in slight fluctuations of the RSB with respect to multiplicity.
+
+For the resonance technique, the combinatorial background contribution to the correlation was removed using the like-sign $p\pi$ distribution scaled to the RSB for each mulitiplicty bin, a procedure described with more detail in Section \ref{resonance_technique_bg_subtraction}.
+
+
+ 
+
 
 \section{Jet vs. Total Production comparison}
 
