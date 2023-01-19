@@ -269,7 +269,7 @@ The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton a
 \label{nsigmatofvtpc}
 \end{figure}
  
-To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks. These plots also represent the PID cuts used for the resonance technique, which will be discussed in Section \ref{resonance_technique}.
+To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks. These plots also represent the PID cuts used for the resonance technique, which utilizes the full AOD track list and will be discussed in Section \ref{resonance_technique}.
 
 
 \begin{figure}[ht]
@@ -280,19 +280,19 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/nsigma_tpc_pion_global.pdf}}
 \end{subfigure}
-\caption{$n\sigma$ for protons (left) and pions (right) in the TPC detector as a function of $p_{T}$. A wider PID cut is used for the pion to maximize the $\Lambda$ signal.}
+\caption{$n\sigma$ for protons (left) and pions (right) from the global AOD track list in the TPC detector as a function of $p_{T}$. These plots are very similar to those generated from V0 daughter tracks, so we conclude no PID biases are introduced from the V0 finder method.}
 \label{nsigma_tpc_global}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/nsigma_tof_proton_global.pdf}}
+\includegraphics[width=3in]{figures/nsigma_tof_v_tpc_proton_global.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/nsigma_tof_pion_global.pdf}}
+\includegraphics[width=3in]{figures/nsigma_tof_v_tpc_pion_global.pdf}}
 \end{subfigure}
-\caption{$n\sigma$ for pions (left) and pions (right) in the TOF detector as a function of $\it{p}_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
+\caption{$n\sigma$ for protons (left) and pions (right) from the global AOD track list in the TOF detector as a function of $\it{p}_{T}$. Little to no contamination is observed.}
 \label{nsigma_tof_global}
 \end{figure}
 
