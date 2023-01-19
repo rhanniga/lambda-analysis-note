@@ -217,7 +217,7 @@ The central points in this analysis were generated using $\Lambda$s reconstructe
 	\item On the fly status: disabled (offline V0s only)
 \end{itemize}
 
-There were no additional topological cuts applied to the V0s or their corresponding daughters. This was done to maximize statistics and to minimize any topological biases introduced by reconstructing $\Lambda$s using the V0-finder algorithm itself. 
+There were no additional topological cuts applied to the V0s or their corresponding daughters. This was done to maximize statistics and to minimize any topological biases beyond those introduced by reconstructing $\Lambda$s using the V0-finder algorithm.
 
 \subsection{V0 Daughter PID Cuts}
 \label{v0_daughter_pid}
@@ -229,6 +229,10 @@ The daughter protons and pions were required to meet the following PID cuts usin
 	\item[$\ast$] $|n\sigma_{TOF, p}| < 2$ (if signal exists)
 	\item[$\ast$] $|n\sigma_{TOF, \pi}| < 3$ (if signal exists)
 \end{itemize}
+
+The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton and pion are shown in Figure \ref{nsigma_tpc} and Figure \ref{nsigma_tof}, respectively. These values were obtained from the AOD tracks associated with every V0 found by the V0 finder algorithm, provided that those tracks also pass the aforementioned daughter track quality cuts.
+
+To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks. These plots also represent the PID cuts used for the resonance technique, which utilizes the full AOD track list and will be discussed in Section \ref{resonance_technique}.
 
 
 \begin{figure}[ht]
@@ -255,8 +259,6 @@ The daughter protons and pions were required to meet the following PID cuts usin
 \label{nsigma_tof}
 \end{figure}
 
-The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton and pion are shown in Figure \ref{nsigma_tpc} and Figure \ref{nsigma_tof}, respectively. These values were obtained from the AOD tracks associated with every V0 found by the V0 finder algorithm, provided that those tracks also pass the aforementioned daughter track quality cuts.
-
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
@@ -268,9 +270,6 @@ The $n\sigma$ values for both the TPC and TOF detectors of the daughter proton a
 \caption{$n\sigma$ in TOF vs $n\sigma$ in TPC for protons (left) and pions (right). No contimatination is observed for both of the particle species.}
 \label{nsigmatofvtpc}
 \end{figure}
- 
-To account for any biases introduced from choosing daughter tracks from the V0 finder algorithm, the TPC and TOF $n\sigma_{p, \pi}$ distributions are shown for all AOD tracks in the tracklist in Figure \ref{nsigmatofvtpc}. There are no major differences between the $n\sigma$ distributions of the daughter tracks from the V0 finder algorithm and the AOD tracks in the tracklist. This indicates that the V0 finder algorithm is not introducing any biases in the PID selection of the daughter tracks. These plots also represent the PID cuts used for the resonance technique, which utilizes the full AOD track list and will be discussed in Section \ref{resonance_technique}.
-
 
 \begin{figure}[ht]
 \centering
@@ -297,8 +296,6 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \end{figure}
 
 
-
-
  \subsection{Invariant Mass Region}
  \label{invariant_mass_region}
 
@@ -319,8 +316,22 @@ The invariant mass distributions in each multiplicity bin for the $\Lambda$s rec
 \label{v0_mass}
 \end{figure}
 
-The relevant parameters for the Voigt fit applied to the invariant mass distributions for each multiplicy bin are shown in Table \ref{voigt_parameters}. While the background is nearly zero for each multiplciity bin, its effect on the final correlation measurement is investigated in Section \ref{systematics}.
+ A Voigt (signal) + 2nd order polynomial (BG) fit was applied to the invariant mass distributions for each multiplicy bin. The extracted parameters from the Voigt fit are shown in Table \ref{voigt_parameters}. While the background is nearly zero for each multiplciity bin, its effect on the final correlation measurement is investigated in Section \ref{systematics}.
 
+\begin{table}[h!]
+    \centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2$) \\
+\hline
+0-20\% & 1.82e+02  & 1.116 & 1.24e-03 & 1.10e-03\\
+20-50\% & 8.58e+01 & 1.116 & 1.24e-03 & 1.07e-03\\
+50-80\% & 1.78e+01 & 1.116 & 1.23e-03 & 1.03e-03\\
+\hline
+\end{tabular}
+\caption{Paremeters from the Voigt fit to the invariant mass distributions for the $\Lambda$s reconstructed using the V0 finder. The errors were negligible relative to the values.}
+\label{voigt_parameters}
+\end{table}
 
  Measuring the $h-\Lambda$ correlation requires a clearly defined signal region for the unlike-sign $p\pi$ pairs from the V0 finder. The signal region range is as follows:
 
@@ -436,18 +447,13 @@ and each $\Lambda$ in $N_{\Lambda\text{, real MC yield}}$ meets the following cr
 
 While previous analyses focus solely on primary $\Lambda$s (exlcuding $\Omega$ and $\Xi$ contamination), there is no requirement for either the V0-reconstructed $\Lambda$ or the MC-generated $\Lambda$ to be a primary particle. As this analysis is mostly interested in the $\Lambda$ due to its strange quark content, whether or not the $\Lambda$ came from a cascade decay is irrelevant. This is important to note when making comparisons between this analysis and previous analyses, as secondary contamination from cascades accounts for nearly 20\% of all $\Lambda$s.
 
-As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the $\bar{\Lambda}$ were combined together for this efficiency calculation. Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. Similarly to previous efficiency studies in 2013 pPb data, no significant dependency of efficiency on multiplicity was found (fig. \ref{oldeff}). The final efficiency correction was applied as a function of $p_T$ only.
+As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the $\bar{\Lambda}$ were combined together for this efficiency calculation. Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. However, the final efficiency correction was applied as a function of $p_T$ only and can be seen in Figure \ref{lambda_eff}.
 
 \begin{figure}[ht]
 \centering
-\begin{subfigure}{
-\includegraphics[width=3in]{images/myeff_pT.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{images/2013_efficiency_analysisnote.pdf}}
-\end{subfigure}
-\caption{Efficiency vs. $p_T$ for $\phi$ meson reconstruction.  \textbf{Left:} New results for this study using LHC17f2b\_FAST MC dataset anchored to LHC16q\_FAST. \textbf{Right:} Old results using 2013 pPb data.  There is qualitative agreement between the 2013 and new 2016 calculated efficiency, and in both cases, there is no significant dependence on multiplicity.}
-\label{oldeff}
+\includegraphics[width=4in]{figures/v0_efficiency.pdf}
+\caption{Efficiency vs. $p_T$ for $\Lambda$ reconstruction for each multiplicty bin, along with an integrated 0-100\% point in red. There does not appear to be any significant dependence on multiplicity.}
+\label{lambda_eff}
 \end{figure}
 
 \subsection{Trigger and Associated Hadron Reconstruction Efficiency}
@@ -484,14 +490,16 @@ The efficiencies for both the trigger and associated hadrons as a function of $\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{images/myeff_pT.pdf}}
+\includegraphics[width=3in]{figures/trigger_efficiency.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{images/2013_efficiency_analysisnote.pdf}}
+\includegraphics[width=3in]{figures/associated_efficiency.pdf}}
 \end{subfigure}
-\caption{Efficiency vs. $p_T$ for $\phi$ meson reconstruction.  \textbf{Left:} New results for this study using LHC17f2b\_FAST MC dataset anchored to LHC16q\_FAST. \textbf{Right:} Old results using 2013 pPb data.  There is qualitative agreement between the 2013 and new 2016 calculated efficiency, and in both cases, there is no significant dependence on multiplicity.}
-\label{oldeff}
+\caption{Efficiency vs. $p_T$ for trigger (left) and associated (right) hadrons. Both are slightly above 80\% for the entire $p_\text{T}$ range.}
+\label{trigassoc_eff_plots}
 \end{figure}
+
+Because all of these efficiencies appear to be multiplicty independent, the final efficiency correction is performed using the integrated 0-100\% points shown in red for each of the $\Lambda$, trigger and associated efficiency plots.
 
 As our correlation measurement depends on both the trigger and associated particle, we must combine the two efficiencies to get the overall efficiency for the pair.  This is done using the following formula:
 
@@ -503,76 +511,6 @@ This efficiency is corrected for on-the-fly as the pairs are being filled into t
 
 
 
-\subsection{Removal of Combinatorial K-K Background}
-\label{removecomb}
-
-Since we have no a priori knowledge of which kaon pairs came from a real $\phi$ decay, we must remove the contribution to the angular correlation structure due to the combinatorial background of random kaon pairs.
-
-To do this, h-(KK) angular correlations are measured for un-likesign kaon pairs in two invariant mass sideband regions (fig. \ref{sidebands}).  The correlation structures in these regions are then normalized and averaged together to give an estimate of the combinatorial background shape.  The self-normalized 1D $\Delta\varphi$ correlations in the two sideband regions are shown in figure \ref{normSBcorr}, showing that within statistical fluctuations they have identical correlation shapes.
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=3in]{images/narrowmass_withSB_invmass.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{images/dphi_masspeak.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{images/dphi_LSB.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{images/dphi_RSB.pdf}}
-\end{subfigure}
-\caption{Correlations are measured for three different regions of un-like sign Kaon pair Mass: the left sideband, the mass peak region, and the right sideband (colored regions of invariant mass plot). Each of these correlations are separately corrected for acceptance effects using Mixed-Event techniques. The final $h-\phi$ Correlation is calculated by taking the "mass peak" correlation, and subtracting a scaled average of the two sideband regions.}
-\label{sidebands}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\label{normSBcorr}
-\includegraphics[width=3in]{images/SB_dphicompare.pdf}
-\caption{Self normalized $\Delta\varphi$ correlations for the left and right mass sideband regions, which are averaged together and scaled to estimate the underlying correlation background in the mass peak region.}
-\end{figure}
-
-Next, the h-(LS kaons) angular correlations are measured in the sideband regions, and a scale-factor is calculated to scale the LS and US correlations to the same total integral.  This same scale-factor is then used to scale the combinatorial background shape to the proper values, giving the final formula for the combinatorial BG as:
-
-\begin{align}
-	\text{Combinatorial BG} = \frac{(h-US_{left}) + (h-US_{right})}{2}*{scale}
-\end{align}
-
-In order to understand how the choice of sideband distribution changes the overall correlation structure, the method above was compared to three other methods of estimating the combinatorial background:
-
-\begin{itemize}
-	\item Right US sideband Distribution
-    \item Left US sideband Distribution
-    \item LS Peak region Distribution
-\end{itemize}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=6in]{images/differentBGmethods.pdf}
-\caption{The bin-by-bin difference in three methods of estimating the combinatorial KK background compared to the averaged US sideband method used in this analysis (plotted in units of sigma i.e. the bin statistical error).}
-\label{BGremoval}
-\end{figure}
-
-In order to visualize the differences of the correlation structure from these methods, the bin-by-bin difference was plotted in units of bin statistical error (fig.\ref{BGremoval}).  The two methods using the different US sidebands show only small difference to the average method used, while the larger differences caused by using the LS method can be mostly attributed to the lower statistics of the like-sign correlations.
-
-Finally, once the combinatorial background is removed (fig. \ref{signalBGcorr}), we are left with the full $h-\phi$ 2D angular correlations (fig. \ref{hphi2D})
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=4in]{images/dphi_bgcompare.pdf}
-\caption{Plotted here is the total $\Delta\varphi$ correlation in the $\phi$ mass peak region (signal + background), as well as estimated correlation background given by the scaled average of the two sideband regions.  Within the mass peak region used for this analysis, the Signal/Background is $\approx$ 2.4}
-\label{signalBGcorr}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=4in]{images/2D_corr_hPhi.pdf}
-\caption{The final $h-\phi$ 2D angular correlation measurement, after efficiency, mixed event acceptance, and combinatorial BG subtraction. Shown here is the single 0-20\% Multiplicity Percentile bin. }
-\label{hphi2D}
-\end{figure}
 
 \subsection{Full h-$\phi$ and h-h Correlation Measurement}
 
@@ -670,7 +608,6 @@ After the MC method test showed that the general measurement method was correctl
 \end{figure}
 
 
-\section(Resonance )
 \section{Systematic Errors \& Crosschecks}
 
 
@@ -852,39 +789,68 @@ By computing the pair yields using the non-zero $v_2$ values, we can compare the
 \appendix
 \section{Second Momentum Bin Measurement}
 
-In order to further study the $\phi(1020)$ production in jets vs. the underlying event, we can also split the associated momentum bin into a high and low $p_{\text{T}}$ component.  This allows us to look at the same measurement in a more jet-dominated regime (higher momentum) and in a more underlying-event dominated regime (lower momentum). For this purpose, we chose the associated momentum bins of $1.5 < p^{\phi}_{\text{T}} < \SI{2.5}{GeV/c}$ for the lower bin, and $2.5 < p^{\phi}_{\text{T}} < \SI{4.0}{GeV/c}$ for the higher momentum bin.  The correlation analysis is performed for these two separate momentum bins exactly as laid out in Section 4, and is done for both h-$\phi$ and h-h correlated pairs.
+In order to gain more insight into the $\Lambda$ production in jets vs. the underlying event, we can also split the associated momentum bins into a high $p_{\text{T}}$ bin ($2.5 < p_{\text{T}} < \SI{4.0}{GeV/c}$) and a low $p_{\text{T}}$ bin ($1.5 < p_{\text{T}} < \SI{2.5}{GeV/c}$).  The correlation analysis is performed for these two separate momentum bins exactly as laid out in Section 4, and is done for both h-$\Lambda$ and h-h correlated pairs. The results for the final $Delta\varphi$ distributions are shown in Figures \ref{dphi_all_low_pt} (low $p_{\text{T}}$ bin) and \ref{dphi_all_high_pt} (high $p_{\text{T}}$ bin).
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=5in]{images/addendum/dphi_hphi_25-40.pdf}}
+\includegraphics[width=5in]{figures/h_lambda_dphi_all_15_25.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=5in]{images/addendum/dphi_hphi_15-25.pdf}}
+\includegraphics[width=5in]{figures/h_h_dphi_all_15_25.pdf}}
 \end{subfigure}
-\caption{h-$\phi$ correlations for both the higher momentum (top) and lower momentum (bottom) regimes, after the underlying event has been subtracted.  Jet peaks are structurally similar between the two momentum bins, within the increased errors due to decreased statistics.}
-\label{split_momentum_corr}
-\end{figure}
-
-By comparing the ratio of $(h-\phi)/(h-h)$ pairs in these two different momentum regimes (fig. \ref{high_momentum_ratio} \& \ref{low_momentum_ratio}), we can see that the general trends of an enhanced $\phi$ production in the Underlying Event, and the increase in $\phi/h$ production as a function of multiplicity, both hold true.  This suggests that these general trends are not influenced by being measured in a more jet-production dominated regime (high momentum) vs. an underlying-event production dominated regime (low momentum).
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=5in]{images/addendum/ratio_25-40.pdf}
-\caption{}
-\label{high_momentum_ratio}
+\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the low $p_{\text{T}}$ bin. The jet-like components appear suppressed when compared to our full momentum range measurement.}
+\label{dphi_all_low_pt}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{images/addendum/ratio_15-25.pdf}
-\caption{}
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_lambda_dphi_all_25_40.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_h_dphi_all_25_40.pdf}}
+\end{subfigure}
+\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the high $p_{\text{T}}$ bin. There appears to be a slight enhancement of the jet-like compenents when compared to our full momentum range measurement.}
+\label{dphi_all_high_pt}
+\end{figure}
+
+
+By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momentum regions (Figures \ref{low_momentum_ratio} (low) and \ref{high_momentum_ratio} (high)), we still see the clear separation between the jet-like production and the underlying event production. We also observe a similar increase in the $h-\Lambda$/$h-h$ ratio as a function of multiplicity in both momentum bins. However, the increase in the UE and total ratios appear to be enhanced within the higher $p_{\text{T}}$ bin when compared with the lower $p_{\text{T}}$ bin.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/v0_ratio_plot_15_25.pdf}
+\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
 \label{low_momentum_ratio}
 \end{figure}
 
-We also note that the low momentum regime shows a smaller separation between the jet-like production and the underlying event production across all multiplicities. In addition, there is a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\phi/h-h$ ratio to approach the underlying event ratio at high multiplicity (fig. \ref{low_momentum_ratio}).
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/v0_ratio_plot_25_40.pdf}
+\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
+\label{high_momentum_ratio}
+\end{figure}
 
-In looking at the underlying event production, the lower momentum $h-\phi/h-h$ ratio shows a little increase across multiplicity, while for the higher momentum region, we see a marked enhancement.  In both momentum regions, the Total ratio's increase as a function of multiplicity is driven in part by the shrinking jet contribution as multiplicity increases.
+ The lower momentum bin also sees a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\Lambda/h-h$ ratio to approach the underlying event ratio at high multiplicity.
+
+ The per-trigger pairwise yields for both momentum bins can be seen in Figures \ref{low_momentum_yield} (low) and \ref{high_momentum_yield} (high). We observe similar trends across both momentum bins, including a much larger increase in both jet-like components of the $h-\Lambda$ yields when compared to the $h-h$ yields, which appear mostly flat in both $p_\text{T}$ bins. However, the lower momentum bin sees moderate tension between the near and away-side yields of the $h-\Lambda$ pairs, with the away-side production appearing to be slightly higher than the near-side production across all multiplicity bins. This may also be a hint that $\Lambda$ production is being enhanced via jet-medium interactions.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/per_trigger_yields_15_25.pdf}
+\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
+\label{low_momentum_yield}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/per_trigger_yields_25_40.pdf}
+\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
+\label{high_momentum_yield}
+\end{figure}
+
+
 
 \section{Resonance Technique for $\Lambda$ Reconstruction}
 \label{resonance_technique}
@@ -947,6 +913,77 @@ The signal shape and background from $\Lambda$s reconstructed using the resonanc
 The signal regions were chosen to maximize significance and were not multiplicty dependent, whereas the RSB regions were chosen to minimize the difference in shape between the extracted signal in data (total - like-sign BG) and the resonance-technique reconstructed signal shape in MonteCarlo, generated from all $p\pi$ pairs which guaranteed came from a $\Lambda$, as was demonstrated in Figure \ref{res_invariant_mass_0_20}. This process was repeated for each multiplicity bin resulting in slight fluctuations of the RSB with respect to multiplicity.
 
 For the resonance technique, the combinatorial background contribution to the correlation was removed using the like-sign $p\pi$ distribution scaled to the RSB for each mulitiplicty bin, a procedure described with more detail in Section \ref{resonance_technique_bg_subtraction}.
+
+\subsection{Removal of Combinatorial K-K Background}
+\label{removecomb}
+
+Since we have no a priori knowledge of which kaon pairs came from a real $\phi$ decay, we must remove the contribution to the angular correlation structure due to the combinatorial background of random kaon pairs.
+
+To do this, h-(KK) angular correlations are measured for un-likesign kaon pairs in two invariant mass sideband regions (fig. \ref{sidebands}).  The correlation structures in these regions are then normalized and averaged together to give an estimate of the combinatorial background shape.  The self-normalized 1D $\Delta\varphi$ correlations in the two sideband regions are shown in figure \ref{normSBcorr}, showing that within statistical fluctuations they have identical correlation shapes.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{images/narrowmass_withSB_invmass.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{images/dphi_masspeak.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{images/dphi_LSB.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{images/dphi_RSB.pdf}}
+\end{subfigure}
+\caption{Correlations are measured for three different regions of un-like sign Kaon pair Mass: the left sideband, the mass peak region, and the right sideband (colored regions of invariant mass plot). Each of these correlations are separately corrected for acceptance effects using Mixed-Event techniques. The final $h-\phi$ Correlation is calculated by taking the "mass peak" correlation, and subtracting a scaled average of the two sideband regions.}
+\label{sidebands}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\label{normSBcorr}
+\includegraphics[width=3in]{images/SB_dphicompare.pdf}
+\caption{Self normalized $\Delta\varphi$ correlations for the left and right mass sideband regions, which are averaged together and scaled to estimate the underlying correlation background in the mass peak region.}
+\end{figure}
+
+Next, the h-(LS kaons) angular correlations are measured in the sideband regions, and a scale-factor is calculated to scale the LS and US correlations to the same total integral.  This same scale-factor is then used to scale the combinatorial background shape to the proper values, giving the final formula for the combinatorial BG as:
+
+\begin{align}
+	\text{Combinatorial BG} = \frac{(h-US_{left}) + (h-US_{right})}{2}*{scale}
+\end{align}
+
+In order to understand how the choice of sideband distribution changes the overall correlation structure, the method above was compared to three other methods of estimating the combinatorial background:
+
+\begin{itemize}
+	\item Right US sideband Distribution
+    \item Left US sideband Distribution
+    \item LS Peak region Distribution
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{images/differentBGmethods.pdf}
+\caption{The bin-by-bin difference in three methods of estimating the combinatorial KK background compared to the averaged US sideband method used in this analysis (plotted in units of sigma i.e. the bin statistical error).}
+\label{BGremoval}
+\end{figure}
+
+In order to visualize the differences of the correlation structure from these methods, the bin-by-bin difference was plotted in units of bin statistical error (fig.\ref{BGremoval}).  The two methods using the different US sidebands show only small difference to the average method used, while the larger differences caused by using the LS method can be mostly attributed to the lower statistics of the like-sign correlations.
+
+Finally, once the combinatorial background is removed (fig. \ref{signalBGcorr}), we are left with the full $h-\phi$ 2D angular correlations (fig. \ref{hphi2D})
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{images/dphi_bgcompare.pdf}
+\caption{Plotted here is the total $\Delta\varphi$ correlation in the $\phi$ mass peak region (signal + background), as well as estimated correlation background given by the scaled average of the two sideband regions.  Within the mass peak region used for this analysis, the Signal/Background is $\approx$ 2.4}
+\label{signalBGcorr}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{images/2D_corr_hPhi.pdf}
+\caption{The final $h-\phi$ 2D angular correlation measurement, after efficiency, mixed event acceptance, and combinatorial BG subtraction. Shown here is the single 0-20\% Multiplicity Percentile bin. }
+\label{hphi2D}
+\end{figure}
 
 
  
@@ -1046,6 +1083,36 @@ Dividing the per-trigger measurement by the single-trigger measurement,  effects
 \end{figure}
 
 Since the single trigger analysis acts as a flat scale factor on our original correlation, the effect on our measurement would only be a change of scale on the final $\phi/h$ ratio.  This shows the validity of our method of using standard per-trigger correlations to accurately capture the behavior of the $\phi/h$ ratio in different production regimes, while also demonstrating the care that needs to be taken when directly comparing this measurement to inclusive $\phi/h$ yield measurements. 
+
+
+
+\clearpage
+\section{Searchable Section}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/h_lambda_dphi_all_2_4.pdf}
+\caption{The $h-\Lambda$ $\Delta\varphi$ plots for each multiplicity bin in the $\it{p}_T$ bin $2.0 < \it{p}_T < 4.0$ GeV/\it{c}.}
+\label{h-lambda_dphi_all_2_4}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/h_lambda_dphi_all_15_25.pdf}
+\caption{The $h-\Lambda$ $\Delta\varphi$ plots for each multiplicity bin in the $\it{p}_T$ bin $1.5 < \it{p}_T < 2.5$ GeV/\it{c}.}
+\label{h-lambda_dphi_all_15_25}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/h_lambda_dphi_all_25_40.pdf}
+\caption{The $h-\Lambda$ $\Delta\varphi$ plots for each multiplicity bin in the $\it{p}_T$ bin $2.5 < \it{p}_T < 4.0$ GeV/\it{c}.}
+\label{h-lambda_dphi_all_25_40}
+\end{figure}
+
+
 
 \clearpage
 \section {Additional Plots}
