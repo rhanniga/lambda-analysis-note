@@ -349,7 +349,7 @@ This signal region was chosen to maximize statistical significance, and it does 
 The per-trigger correlation is approximated using the formula:
 
 \begin{align}
-\label{perTrigEq}
+\label{corrEq}
 C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\varphi,\Delta\eta)}{B(\Delta\varphi, \Delta\eta)}
 \end{align}
 
@@ -359,7 +359,7 @@ where $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta
 However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. The full correlation equation is then:
 
 \begin{align}
-\label{fullCorrEq}
+\label{corrEq_withBG}
 \begin{split}
     C_{h-\phi}(\Delta\varphi, \Delta\eta) = r_{\text{Signal}}\biggl(&C_{(h-p\pi)^{US}_{\text{Signal}}}(\Delta\varphi, \Delta\eta)\\
     &- r_{LS}*C_{(h-p\pi)^{US}_{\text{RSB}}}(\Delta\varphi, \Delta\eta)\biggr)
@@ -509,12 +509,99 @@ As our correlation measurement depends on both the trigger and associated partic
 
 This efficiency is corrected for on-the-fly as the pairs are being filled into the total correlation distribtuion by using a weighting factor equal to the inverse of $\epsilon_{pair}$. The same trigger efficiency used in the pair efficiency is then also to correct our $N_{trig}$ for our final per-trigger correlation in both the h-h and h-$\Lambda$ case.
 
+\subsection{Track Merging Efficiency} 
+\label{trackmerge_efficiency}
+Due to the longer decay length of the $\Lambda$ ($c\tau \approx 10$ cm), the daughter proton and pion tracks will normally have less hits in each detector when comapared to the tracks of the trigger and associated hadrons, which are intended to be primary. Because of this, the tracks of the $\Lambda$ daughters are sometimes lost due to them being ``merged'' over by the trigger tracks during the Kalman filtering process (which favors the track with the most hits\ref{kalman}), provided the two tracks are close together in physical space (i.e. $\Delta\varphi, \Delta\eta \approx 0$). This problem is exacerbated by the fact that the $\Lambda$ decay is assymetric ($m_{p}/m_{\pi} \approx 7$), so the $\Lambda$ and daughter proton end up with similar momenta (and thus $\varphi$ and $\eta$). This means that whenever a proton from a $\Lambda$ decay is ``merged'' over by a trigger track, an $h-\Lambda$ pair with small $\Delta\varphi, \Delta\eta$ is lost. A simple diagram of this process is shown in Figure \ref{trackmerge_diagram}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/track_merging_diagram_withborder.pdf}
+\caption{Simple diagram depicting why track merging occurs: The $\Lambda$ daughter proton has fewer possible hits in the detector, and is physically close to the trigger particle. When the tracks are being reconstructed, the proton track is ``merged'' over by the trigger track as the Kalman filtering process favors the track with more hits.}
+\label{trackmerge_diagram}
+\end{figure}
+
+This effect has been seen in previous correlation studies\cite{trackmerge_1}\cite{trackmerge_2}, but due to the nature of the $\Lambda$ decay it is more pronounced in this analysis. As such, we correct this effect by using the following formula:
+
+\begin{align*}
+	C_{corr.}(\Delta\varphi, \Delta\eta) = C_{uncorr.}(\Delta\varphi, \Delta\eta)(\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)})^{-1}
+\end{align*}
+
+where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected correlation, and the efficiency template $\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)}$ is generated with a large MonteCarlo sample using the same procedure as the MonteCarlo closure test described in Section \ref{mc_studies}. The effiicency template is shown in Figure \ref{trackmerge_efficiency_plot}.
 
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/trackmerge_efficiency_PLACEHOLDER.pdf}
+\caption{Efficiency template for track merging correction.}
+\label{trackmerge_efficiency_plot}
+\end{figure}
 
-\subsection{Full h-$\phi$ and h-h Correlation Measurement}
+This effect is investigated more thoroughly in Section \ref{mc_studies}.
 
-Using Equation \ref{fullCorrEq} (Equation \ref{perTrigEq} for the di-hadron case) and the efficiencies calculated above , we can plot the 2D and 1D angular correlations for both h-$\phi$ and $h-h$ pairs.
+\subsection{Full h-$\Lambda$ and h-h Correlation Measurement}
+
+Using Equation \ref{corrEq} and the efficiencies calculated above, we can plot the 2D and 1D angular correlations for both h-$\Lambda$ and $h-h$ pairs. Both the 2D and 1D correlations are such that $|\Delta\eta| < 1.2$.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_50_80.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\label{h_lambda_2d}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_2d_mixcor_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_2d_mixcor_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_2d_mixcor_50_80.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\label{h_h_2d}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_dphi_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_dphi_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_lambda_dphi_50_80.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\label{h_lambda_dphi}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_dphi_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_dphi_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=2in]{figures/h_h_dphi_50_80.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\label{h_h_dphi}
+\end{figure}
+	
 
 \section{Ratio of Correlated $h-\phi/h-h$ Pairs}
 
@@ -855,7 +942,7 @@ By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momen
 \section{Resonance Technique for $\Lambda$ Reconstruction}
 \label{resonance_technique}
 
-While using the V0 finder to reconstruct $\Lambda$ baryons is the most common method, it is possible that the V0 finder alogrithm introduces some topological biases in the $\Lambda$ reconstruction, even when no further topological cuts are being applied to the V0 or its corresponding daughters. Because of this, we also investigate another method for reconstructing $\Lambda$ baryons whereby all proton and pion pairs from the global AOD track list that pass the daughter cuts (Section \ref{daughtercuts}) within an event are combined to reconstruct the $\Lambda$s. This method is referred to as the \it{resonance technique}, as it is the technique used to reconstruct short-lived particles that could otherwise not be reconstructed using the V0 finder.
+While using the V0 finder to reconstruct $\Lambda$ baryons is the most common method, it is possible that the V0 finder alogrithm introduces some topological biases in the $\Lambda$ reconstruction, even when no further topological cuts are being applied to the V0 or its corresponding daughters. Because of this, we also investigate another method for reconstructing $\Lambda$ baryons whereby all proton and pion pairs from the global AOD track list that pass the daughter cuts (Section \ref{daughtercuts}) within an event are combined to reconstruct the $\Lambda$s. This method is referred to as the \textit{resonance technique}, as it is the technique used to reconstruct short-lived particles that could otherwise not be reconstructed using the V0 finder.
 
 \subsection{Combinatorial Background Estimation}
 
