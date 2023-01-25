@@ -61,7 +61,30 @@ By performing angular correlations of a high $p_T$ trigger hadron with an associ
 \item The uncorrelated pairs, corresponding to the ``underlying event'' or soft production within the medium.
 \end{itemize}
 
-For this study, 1-d $\Delta\varphi$ angular correlations of jet-like $h-\Lambda$ and $h-h$ pairs were measured in p-Pb events independently for three multiplicity bins (0-20\%, 20-50\%, 50-80\%), and the final ratios of yields of correlated pairs were compared to study the onset of this enhancement. These correlations were measured using the \texttt{PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatio} class.
+A h-h $\Delta\varphi$ distribution with these regions highlighted is shown in Figure \ref{dphi_regions}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=4in]{figures/dphi_regions.pdf}
+\caption{A h-h $\Delta\varphi$ distribution taken from this analysis with the near-side, away-side, and uncorrelated regions highlighted.}
+\end{figure}
+
+For this study, 1-d $\Delta\varphi$ angular correlations of jet-like $h-\Lambda$ and $h-h$ pairs were measured in p-Pb events independently for three multiplicity bins (0-20\%, 20-50\%, 50-80\%), and the final ratios of yields of correlated pairs were compared to study the onset of this enhancement. 
+
+
+\subsection{Relevant Contributions to ALICE Meetings}
+This analysis was presented at the following ALICE meetings, in reverse chronological order:
+
+
+\begin{itemize}
+\item Strangeness PAG Meeting: 10 January 2023 (https://indico.cern.ch/event/1237832)
+\item Strangeness PAG Meeting: 18 October 2022 (https://indico.cern.ch/event/1211594)
+\item Correlations PAG Meeting: 11 October 2022 (https://indico.cern.ch/event/1210412)
+\item Strangess PAG Meeting: 4 October 2022 (https://indico.cern.ch/event/1206673)
+\item Resonance PAG Meeting: 17 November 2021 (https://indico.cern.ch/event/1096156)
+\item Strangeness PAG Meeting: 4 August 2020 (https://indico.cern.ch/event/943026)
+\item Correlations PAG Meeting: 26 June 2020 (https://indico.cern.ch/event/903613)
+\item Resonance PAG Meeting: 24 June 2020 (https://indico.cern.ch/event/931429)
 
 \subsection{Event and Track Selection}
 
@@ -102,6 +125,26 @@ Multiplicity & Total Evts. & Has 3 Tracks & $|Z_{vtx}| <$  10cm + 3 tracks & \% 
 \end{table}
 
 For all events, the standard Physics selection with pile-up cuts was applied with \texttt{AddTaskPhysicsSelection(kFALSE, kTRUE)}.
+
+\subsection{Code Locations}
+The code for this analysis can be found in the following locations:
+
+\textbf{Correlations in Data and MC}
+\begin{itemize}
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatioV0 (for $\Lambda$s reconstructed using V0 finder)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatioRes (for $\Lambda$s reconstructed using resonance technique)
+\end{itemize}
+
+\textbf{Efficiency Computation}
+\begin{itemize}
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronEfficiency (for $\Lambda$s reconstructed using V0 finder and resonance technique)
+\end{itemize}
+
+\textbf{MonteCarlo Closure Test}
+\begin{itemize}
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronV0Closure (for $\Lambda$s reconstructed using V0 finder)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronResClosure (for $\Lambda$s reconstructed using resonance technique)
+\end{itemize}
 
 \section{Track Selection}
 
@@ -343,35 +386,9 @@ Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2
 
 This signal region was chosen to maximize statistical significance, and it does not depend on multiplicity. As it accounts for roughly ~99.5\% of the total signal, no correction for the tails of the distribution was applied. However, the choice of signal region and the corresponding correction factors are investigated more closely in Section \ref{systematics}.
 
-
-
-\section{Correlation Measurement Technique}
-\label{corrsec}
-\subsection{Full Correlation Measurement Method}
-
-The per-trigger correlation is approximated for each multiplicity bin using the formula:
-
-\begin{align}
-\label{corrEq}
-C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\varphi,\Delta\eta)}{B(\Delta\varphi, \Delta\eta)}
-\end{align}
-
-where $N_{trig}$ is the total number of hadrons in the $4 < p_{T} < 8$ GeV/c range that pass our trigger cuts described in Section \ref{trigcuts}, $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution.
-
-However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. The full correlation equation is then:
-
-\begin{align}
-\label{corrEq_withBG}
-\begin{split}
-    C_{h-\phi}(\Delta\varphi, \Delta\eta) = r_{\text{Signal}}\biggl(&C_{(h-p\pi)^{US}_{\text{Signal}}}(\Delta\varphi, \Delta\eta)\\
-    &- r_{LS}*C_{(h-p\pi)^{US}_{\text{RSB}}}(\Delta\varphi, \Delta\eta)\biggr)
-\end{split}
-\end{align}
-
-Here, $r_{\text{Signal}}$ accounts for the signal that is missed by choosing a finite signal region, and is calculated using the Voigt fit discussed in Section \ref{invariant_mass_region} by dividing the integral of the fit across the entire range by the integral of the fit in the signal region. For our central values, this fraction is nearly unity and is thus not included in the final correlation measurement. $r_{LS}$ is a scaling factor that depends on the technique used to account for the $p\pi$ background and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
-
-
-While the $h-(p\pi)$ background is negligible within our main transverse momentum bin ($2 < \it{p}_{T} < 4$) for $\Lambda$s reconstructed using the V0 finder, the full correlation formula is still used in this analysis and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
+\section{Acceptance and Efficiency Corrections}
+\label{efficiency_acceptance}
+This section details all of the detector acceptance and efficiency corrections applied to the central values of this analysis. All other corrections are discussed in Section \ref{systematics}.
 
 \subsection{Mixed Event Acceptance Correction}
 \label{mixed_event_correction}
@@ -492,6 +509,7 @@ As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), t
 
 \subsection{Reconstruction Efficiency}
 \label{reconstruction_efficiency}
+In this section we investigate the reconstruction efficiency of the $\Lambda$, trigger and associated hadrons.
 
 \subsubsection{$\Lambda$ Reconstruction Efficiency}
 \label{lambda_efficiency}
@@ -531,7 +549,7 @@ As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the 
 \label{lambda_eff}
 \end{figure}
 
-\subsection{Trigger and Associated Hadron Reconstruction Efficiency}
+\subsubsection{Trigger and Associated Hadron Reconstruction Efficiency}
 \label{trigassoc_efficiency}
 
 The trigger and associated hadron reconstruction efficiencies are calculated using the following formula:
@@ -675,52 +693,81 @@ where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected
 
 This effect is investigated more thoroughly in Section \ref{mc_studies}.
 
+\section{Correlation Measurement Technique}
+\label{corrsec}
+\subsection{Full Correlation Measurement Method}
+
+The per-trigger correlation is approximated for each multiplicity bin using the formula:
+
+\begin{align}
+\label{corrEq}
+C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\varphi,\Delta\eta)}{B(\Delta\varphi, \Delta\eta)}
+\end{align}
+
+where $N_{trig}$ is the total number of hadrons in the $4 < p_{T} < 8$ GeV/c range that pass our trigger cuts described in Section \ref{trigcuts}, $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution.
+
+However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. The full correlation equation is then:
+
+\begin{align}
+\label{corrEq_withBG}
+\begin{split}
+    C_{h-\phi}(\Delta\varphi, \Delta\eta) = r_{\text{Signal}}\biggl(&C_{(h-p\pi)^{US}_{\text{Signal}}}(\Delta\varphi, \Delta\eta)\\
+    &- r_{LS}*C_{(h-p\pi)^{US}_{\text{RSB}}}(\Delta\varphi, \Delta\eta)\biggr)
+\end{split}
+\end{align}
+
+Here, $r_{\text{Signal}}$ accounts for the signal that is missed by choosing a finite signal region, and is calculated using the Voigt fit discussed in Section \ref{invariant_mass_region} by dividing the integral of the fit across the entire range by the integral of the fit in the signal region. For our central values, this fraction is nearly unity and is thus not included in the final correlation measurement. $r_{LS}$ is a scaling factor that depends on the technique used to account for the $p\pi$ background and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
+
+
+While the $h-(p\pi)$ background is negligible within our main transverse momentum bin ($2 < \it{p}_{T} < 4$) for $\Lambda$s reconstructed using the V0 finder, the full correlation formula is still used in this analysis and is discussed further in Sections \ref{systematics} and \ref{resonance_technique}.
+
+
 \subsection{Full h-$\Lambda$ and h-h Correlation Measurement}
 
-Using Equation \ref{corrEq} and the efficiencies calculated above, we can plot the 2D and 1D angular correlations for both h-$\Lambda$ and $h-h$ pairs. Both the 2D and 1D correlations are such that $|\Delta\eta| < 1.2$.
+Using Equation \ref{corrEq} and the efficiencies calculated in Section \ref{efficiency_acceptance}, we can plot the 2D and 1D angular correlations for both h-$\Lambda$ and $h-h$ pairs. Both the 2D and 1D correlations are such that $|\Delta\eta| < 1.2$.
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_0_20.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_20_50.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_2d_mixcor_50_80.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
 \label{h_lambda_2d}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_h_2d_mixcor_0_20.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_h_2d_mixcor_20_50.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_h_2d_mixcor_50_80.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
 \label{h_h_2d}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_dphi_0_20.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_dphi_20_50.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/h_lambda_dphi_50_80.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
 \label{h_lambda_dphi}
 \end{figure}
 
@@ -735,7 +782,7 @@ Using Equation \ref{corrEq} and the efficiencies calculated above, we can plot t
 \begin{subfigure}{
 \includegraphics[width=2in]{figures/h_h_dphi_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (left), 20-50\% (center) and 50-80\% multiplicity bins.}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
 \label{h_h_dphi}
 \end{figure}
 	
@@ -743,6 +790,7 @@ Using Equation \ref{corrEq} and the efficiencies calculated above, we can plot t
 \subsection{Extracting Near-side, Away-side, and Underlying Event Yields}
 \label{yield_extraction}
 
+Once the $\Delta\varphi$ distributions are calculated, they are separated into the three kinematic regions discussed in \Section{}
 
 
 
