@@ -1,49 +1,54 @@
-\contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Event and Track Selection}{1}
-\contentsline {subsection}{\numberline {2.1}Dataset}{1}
-\contentsline {subsection}{\numberline {2.2}Event Selection}{1}
-\contentsline {subsection}{\numberline {2.3}Track Selection}{2}
-\contentsline {subsubsection}{\numberline {2.3.1}Associated Hadron Track Cuts}{2}
-\contentsline {subsection}{\numberline {2.4}$\Lambda $ Daughter Proton and Pion Track Cuts}{3}
-\contentsline {subsubsection}{\numberline {2.4.1}Trigger Track Cuts}{3}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Motivation}{2}
+\contentsline {subsection}{\numberline {1.2}Event and Track Selection}{2}
+\contentsline {subsubsection}{\numberline {1.2.1}Dataset}{2}
+\contentsline {subsubsection}{\numberline {1.2.2}Event Selection}{2}
+\contentsline {section}{\numberline {2}Track Selection}{3}
+\contentsline {subsection}{\numberline {2.1}Associated Hadron Track Cuts}{3}
+\contentsline {subsection}{\numberline {2.2}$\Lambda $ Daughter Proton and Pion Track Cuts}{4}
+\contentsline {subsection}{\numberline {2.3}Trigger Track Cuts}{4}
 \contentsline {section}{\numberline {3}$\Lambda $ Reconstruction}{4}
-\contentsline {subsection}{\numberline {3.1}V0 Selection}{4}
+\contentsline {subsection}{\numberline {3.1}V0 Selection}{5}
 \contentsline {subsection}{\numberline {3.2}V0 Daughter PID Cuts}{5}
-\contentsline {subsection}{\numberline {3.3}Invariant Mass Region}{5}
-\contentsline {section}{\numberline {4}Correlation Measurement}{6}
+\contentsline {subsection}{\numberline {3.3}Invariant Mass Region}{6}
+\contentsline {section}{\numberline {4}Correlation Measurement Technique}{6}
 \contentsline {subsection}{\numberline {4.1}Full Correlation Measurement Method}{6}
-\contentsline {subsection}{\numberline {4.2}Mixed Event Acceptance Correction}{8}
-\contentsline {subsection}{\numberline {4.3}Reconstruction Efficiency}{9}
-\contentsline {subsubsection}{\numberline {4.3.1}$\Lambda $ Reconstruction Efficiency}{9}
-\contentsline {subsection}{\numberline {4.4}Trigger and Associated Hadron Reconstruction Efficiency}{10}
-\contentsline {subsection}{\numberline {4.5}Track Merging Efficiency}{12}
-\contentsline {subsection}{\numberline {4.6}Full h-$\Lambda $ and h-h Correlation Measurement}{14}
-\contentsline {section}{\numberline {5}Ratio of Correlated $h-\phi /h-h$ Pairs}{15}
-\contentsline {subsection}{\numberline {5.1}Fit of $\Delta \varphi $ Correlation Structure}{15}
-\contentsline {subsection}{\numberline {5.2}Estimate of Near and Away-side Yields}{16}
-\contentsline {subsection}{\numberline {5.3}Multiplicity Dependent Ratio Measurement}{16}
-\contentsline {section}{\numberline {6}Monte Carlo Studies}{16}
-\contentsline {subsection}{\numberline {6.1}Correlation Method Test using Monte Carlo}{16}
-\contentsline {subsection}{\numberline {6.2}MC Closure Test}{17}
-\contentsline {section}{\numberline {7}Systematic Errors \& Crosschecks}{17}
-\contentsline {subsection}{\numberline {7.1}(}{18}
-\contentsline {subsection}{\numberline {7.2}TOF Efficiency Crosscheck}{18}
-\contentsline {subsection}{\numberline {7.3}Invariant Mass Range Checks}{19}
-\contentsline {subsubsection}{\numberline {7.3.1}Mass Peak Region Check}{19}
-\contentsline {subsubsection}{\numberline {7.3.2}Sideband Region Check}{20}
-\contentsline {subsubsection}{\numberline {7.3.3}Likesign Sideband Scaling Factor Check}{21}
-\contentsline {subsection}{\numberline {7.4}Correlation Fitting Procedure}{23}
-\contentsline {subsection}{\numberline {7.5}PID cuts}{25}
-\contentsline {subsection}{\numberline {7.6}Affect of v2 Assumption on Ratios}{25}
-\contentsline {section}{\numberline {A}Second Momentum Bin Measurement}{26}
-\contentsline {section}{\numberline {B}Resonance Technique for $\Lambda $ Reconstruction}{27}
-\contentsline {subsection}{\numberline {B.1}Combinatorial Background Estimation}{27}
-\contentsline {subsection}{\numberline {B.2}Invariant Mass Regions}{28}
-\contentsline {subsection}{\numberline {B.3}Removal of Combinatorial $p-\pi $ Background}{29}
-\contentsline {section}{\numberline {C}Jet vs. Total Production comparison}{30}
-\contentsline {section}{\numberline {D}Investigating Radial Flow Effects}{32}
-\contentsline {section}{\numberline {E}Single Trigger Selection and Results}{34}
-\contentsline {section}{\numberline {F}Searchable Section}{41}
-\contentsline {section}{\numberline {G}Additional Plots}{42}
-\contentsline {subsection}{\numberline {G.1}Approved Plots}{42}
-\contentsline {subsection}{\numberline {G.2}Misc. Plots}{46}
+\contentsline {subsection}{\numberline {4.2}Mixed Event Acceptance Correction}{7}
+\contentsline {subsection}{\numberline {4.3}Reconstruction Efficiency}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}$\Lambda $ Reconstruction Efficiency}{7}
+\contentsline {subsection}{\numberline {4.4}Trigger and Associated Hadron Reconstruction Efficiency}{8}
+\contentsline {subsection}{\numberline {4.5}Track Merging Efficiency}{9}
+\contentsline {subsection}{\numberline {4.6}Full h-$\Lambda $ and h-h Correlation Measurement}{10}
+\contentsline {subsection}{\numberline {4.7}Extracting Near-side, Away-side, and Underlying Event Yields}{10}
+\contentsline {subsection}{\numberline {4.8}Fit of $\Delta \varphi $ Correlation Structure}{10}
+\contentsline {subsection}{\numberline {4.9}Estimate of Near and Away-side Yields}{10}
+\contentsline {section}{\numberline {5}Multiplicity Dependent Ratio Measurement}{10}
+\contentsline {section}{\numberline {6}Monte Carlo Studies}{11}
+\contentsline {subsection}{\numberline {6.1}Correlation Method Test using Monte Carlo}{11}
+\contentsline {subsection}{\numberline {6.2}MC Closure Test}{11}
+\contentsline {section}{\numberline {7}Systematic Errors \& Crosschecks}{11}
+\contentsline {subsection}{\numberline {7.1}(}{11}
+\contentsline {subsection}{\numberline {7.2}TOF Efficiency Crosscheck}{11}
+\contentsline {subsection}{\numberline {7.3}Invariant Mass Range Checks}{12}
+\contentsline {subsubsection}{\numberline {7.3.1}Mass Peak Region Check}{12}
+\contentsline {subsubsection}{\numberline {7.3.2}Sideband Region Check}{12}
+\contentsline {subsubsection}{\numberline {7.3.3}Likesign Sideband Scaling Factor Check}{12}
+\contentsline {subsection}{\numberline {7.4}Correlation Fitting Procedure}{13}
+\contentsline {subsection}{\numberline {7.5}PID cuts}{13}
+\contentsline {subsection}{\numberline {7.6}Affect of v2 Assumption on Ratios}{13}
+\contentsline {section}{\numberline {A}Resonance Technique for $\Lambda $ Reconstruction}{36}
+\contentsline {subsection}{\numberline {A.1}Combinatorial Background Estimation}{36}
+\contentsline {subsection}{\numberline {A.2}Invariant Mass Regions}{37}
+\contentsline {subsection}{\numberline {A.3}Efficiency Correction}{38}
+\contentsline {subsection}{\numberline {A.4}Mixed Event Acceptance Correction}{39}
+\contentsline {subsection}{\numberline {A.5}Removal of Combinatorial $p-\pi $ Background}{40}
+\contentsline {subsection}{\numberline {A.6}Near-side, Away-side and Underlying Event Yield Extraction}{41}
+\contentsline {subsection}{\numberline {A.7}Results and Comparison with V0 Technique}{41}
+\contentsline {section}{\numberline {B}Second Momentum Bin Measurement}{42}
+\contentsline {section}{\numberline {C}Jet vs. Total Production comparison}{42}
+\contentsline {section}{\numberline {D}Investigating Radial Flow Effects}{42}
+\contentsline {section}{\numberline {E}Single Trigger Selection and Results}{43}
+\contentsline {section}{\numberline {F}Searchable Section}{57}
+\contentsline {section}{\numberline {G}Additional Plots}{58}
+\contentsline {subsection}{\numberline {G.1}Approved Plots}{58}
+\contentsline {subsection}{\numberline {G.2}Misc. Plots}{62}

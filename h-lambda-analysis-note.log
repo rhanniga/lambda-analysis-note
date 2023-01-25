@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  23 JAN 2023 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  25 JAN 2023 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,1697 +683,1567 @@ No file h-lambda-analysis-note.toc.
 \tf@toc=\write3
 \openout3 = `h-lambda-analysis-note.toc'.
 
-
-LaTeX Warning: Reference `event_table' on page 1 undefined on input line 85.
-
 [1]
-Overfull \hbox (65.98071pt too wide) in paragraph at lines 102--103
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 68.
+
+
+LaTeX Warning: Reference `event_table' on page 2 undefined on input line 87.
+
+[2
+
+]
+Overfull \hbox (65.98071pt too wide) in paragraph at lines 104--105
 []\OT1/ptm/m/n/10.95 For all events, the stan-dard Physics se-lec-tion with pile-up cuts was ap-plied with \OT1/cmtt/m/n/10.95 AddTaskPhysicsSelection(kFALSE,
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 106.
 
-LaTeX Warning: Reference `assoc_plots' on page 2 undefined on input line 128.
+LaTeX Warning: Reference `assoc_plots' on page 3 undefined on input line 130.
 
-<figures/assoc_pt_dist_0_20.pdf, id=35, 569.12625pt x 408.52625pt>
+<figures/assoc_pt_dist_0_20.pdf, id=39, 569.12625pt x 408.52625pt>
 File: figures/assoc_pt_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_pt_dist_0_20.pdf>
-Package pdftex.def Info: figures/assoc_pt_dist_0_20.pdf  used on input line 133.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/assoc_phi_dist_0_20.pdf, id=36, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/assoc_pt_dist_0_20.pdf  used on input line 135.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/assoc_phi_dist_0_20.pdf, id=40, 569.12625pt x 408.52625pt>
 File: figures/assoc_phi_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_phi_dist_0_20.pdf>
-Package pdftex.def Info: figures/assoc_phi_dist_0_20.pdf  used on input line 136.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/assoc_eta_dist_0_20.pdf, id=37, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/assoc_phi_dist_0_20.pdf  used on input line 138.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/assoc_eta_dist_0_20.pdf, id=41, 569.12625pt x 408.52625pt>
 File: figures/assoc_eta_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_eta_dist_0_20.pdf>
-Package pdftex.def Info: figures/assoc_eta_dist_0_20.pdf  used on input line 139.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-[2]
+Package pdftex.def Info: figures/assoc_eta_dist_0_20.pdf  used on input line 141.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+[3]
 
-LaTeX Warning: Reference `trig_plots' on page 3 undefined on input line 180.
+LaTeX Warning: Reference `trig_plots' on page 4 undefined on input line 182.
 
-[3 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_pt_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_phi_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_eta_dist_0_20.pdf, page is rotated 90 degrees>]
-<figures/trig_pt_dist_0_20.pdf, id=174, 569.12625pt x 408.52625pt>
+<figures/trig_pt_dist_0_20.pdf, id=45, 569.12625pt x 408.52625pt>
 File: figures/trig_pt_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_pt_dist_0_20.pdf>
-Package pdftex.def Info: figures/trig_pt_dist_0_20.pdf  used on input line 185.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/trig_phi_dist_0_20.pdf, id=175, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/trig_pt_dist_0_20.pdf  used on input line 187.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/trig_phi_dist_0_20.pdf, id=46, 569.12625pt x 408.52625pt>
 File: figures/trig_phi_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_phi_dist_0_20.pdf>
-Package pdftex.def Info: figures/trig_phi_dist_0_20.pdf  used on input line 188.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/trig_eta_dist_0_20.pdf, id=176, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/trig_phi_dist_0_20.pdf  used on input line 190.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/trig_eta_dist_0_20.pdf, id=47, 569.12625pt x 408.52625pt>
 File: figures/trig_eta_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_eta_dist_0_20.pdf>
-Package pdftex.def Info: figures/trig_eta_dist_0_20.pdf  used on input line 191.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
+Package pdftex.def Info: figures/trig_eta_dist_0_20.pdf  used on input line 193.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+LaTeX Warning: Float too large for page by 2.64847pt on input line 197.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 199.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 199.
+[4]
+
+LaTeX Warning: Reference `resonance_technique' on page 5 undefined on input line 210.
 
 
-LaTeX Warning: Reference `resonance_technique' on page 4 undefined on input line 208.
-
-[4 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_pt_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_phi_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_eta_dist_0_20.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `nsigma_tpc' on page 5 undefined on input line 233.
+LaTeX Warning: Reference `nsigma_tpc' on page 5 undefined on input line 235.
 
 
-LaTeX Warning: Reference `nsigma_tof' on page 5 undefined on input line 233.
+LaTeX Warning: Reference `nsigma_tof' on page 5 undefined on input line 235.
 
 
-LaTeX Warning: Reference `nsigmatofvtpc' on page 5 undefined on input line 235.
+LaTeX Warning: Reference `nsigmatofvtpc' on page 5 undefined on input line 237.
 
 
-LaTeX Warning: Reference `resonance_technique' on page 5 undefined on input line 235.
+LaTeX Warning: Reference `resonance_technique' on page 5 undefined on input line 237.
 
-<figures/nsigma_tpc_proton.pdf, id=310, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_proton.pdf, id=51, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_proton.pdf>
-Package pdftex.def Info: figures/nsigma_tpc_proton.pdf  used on input line 241.
+Package pdftex.def Info: figures/nsigma_tpc_proton.pdf  used on input line 243.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_pion.pdf, id=311, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_pion.pdf, id=52, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_pion.pdf>
-Package pdftex.def Info: figures/nsigma_tpc_pion.pdf  used on input line 244.
+Package pdftex.def Info: figures/nsigma_tpc_pion.pdf  used on input line 246.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_proton.pdf, id=312, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_proton.pdf, id=53, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_proton.pdf>
-Package pdftex.def Info: figures/nsigma_tof_proton.pdf  used on input line 253.
+Package pdftex.def Info: figures/nsigma_tof_proton.pdf  used on input line 255.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_pion.pdf, id=313, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_pion.pdf, id=54, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_pion.pdf>
-Package pdftex.def Info: figures/nsigma_tof_pion.pdf  used on input line 256.
+Package pdftex.def Info: figures/nsigma_tof_pion.pdf  used on input line 258.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_proton.pdf, id=314, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_proton.pdf, id=55, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_proton.pdf>
-Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton.pdf  used on input line 265.
+Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton.pdf  used on input line 267.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_pion.pdf, id=315, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_pion.pdf, id=56, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_pion.pdf>
-Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion.pdf  used on input line 268.
+Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion.pdf  used on input line 270.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_proton_global.pdf, id=316, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_proton_global.pdf, id=57, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_proton_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_proton_global.pdf>
-Package pdftex.def Info: figures/nsigma_tpc_proton_global.pdf  used on input line 277.
+Package pdftex.def Info: figures/nsigma_tpc_proton_global.pdf  used on input line 279.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_pion_global.pdf, id=317, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_pion_global.pdf, id=58, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_pion_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_pion_global.pdf>
-Package pdftex.def Info: figures/nsigma_tpc_pion_global.pdf  used on input line 280.
+Package pdftex.def Info: figures/nsigma_tpc_pion_global.pdf  used on input line 282.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_proton_global.pdf, id=318, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_proton_global.pdf, id=59, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_proton_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_proton_global.pdf>
-Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton_global.pdf  used on input line 289.
+Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton_global.pdf  used on input line 291.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_pion_global.pdf, id=319, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_pion_global.pdf, id=60, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_pion_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_pion_global.pdf>
-Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion_global.pdf  used on input line 292.
+Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion_global.pdf  used on input line 294.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-LaTeX Warning: Reference `v0_mass' on page 5 undefined on input line 302.
+LaTeX Warning: Reference `v0_mass' on page 5 undefined on input line 304.
 
-<figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf, id=320, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf, id=61, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf Graphic file (type pdf)
 <use figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf>
-Package pdftex.def Info: figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf  used on input line 307.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf, id=321, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf  used on input line 309.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf, id=62, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf Graphic file (type pdf)
 <use figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf>
-Package pdftex.def Info: figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf  used on input line 310.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf, id=322, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf  used on input line 312.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf, id=63, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf Graphic file (type pdf)
 <use figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf>
-Package pdftex.def Info: figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf  used on input line 313.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
+Package pdftex.def Info: figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf  used on input line 315.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Reference `voigt_parameters' on page 5 undefined on input line 319.
-
-
-LaTeX Warning: Reference `systematics' on page 5 undefined on input line 319.
+LaTeX Warning: Float too large for page by 2.64847pt on input line 319.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `voigt_parameters' on page 5 undefined on input line 321.
 
 
-LaTeX Warning: Reference `systematics' on page 5 undefined on input line 342.
+LaTeX Warning: Reference `systematics' on page 5 undefined on input line 321.
 
-[5 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion.pdf, page is rotated 90 degrees>] [6 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_pion.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion.pdf, page is rotated 90 degrees>]
+[5]
 
-LaTeX Warning: Reference `invariant_mass_region' on page 7 undefined on input line 370.
-
-
-LaTeX Warning: Reference `systematics' on page 7 undefined on input line 370.
+LaTeX Warning: Reference `systematics' on page 6 undefined on input line 344.
 
 
-LaTeX Warning: Reference `resonance_technique' on page 7 undefined on input line 370.
-
-[7 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion_global.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `systematics' on page 8 undefined on input line 373.
+LaTeX Warning: Reference `trigcuts' on page 6 undefined on input line 359.
 
 
-LaTeX Warning: Reference `resonance_technique' on page 8 undefined on input line 373.
+LaTeX Warning: Reference `invariant_mass_region' on page 6 undefined on input line 371.
 
 
-LaTeX Warning: Reference `uncorr2d_0_20' on page 8 undefined on input line 377.
+LaTeX Warning: Reference `systematics' on page 6 undefined on input line 371.
 
 
-LaTeX Warning: Reference `mixed2d_0_20' on page 8 undefined on input line 377.
+LaTeX Warning: Reference `resonance_technique' on page 6 undefined on input line 371.
 
-<figures/h_lambda_2d_nomixcor_0_20.pdf, id=766, 569.12625pt x 408.52625pt>
+[6]
+
+LaTeX Warning: Reference `systematics' on page 7 undefined on input line 374.
+
+
+LaTeX Warning: Reference `resonance_technique' on page 7 undefined on input line 374.
+
+
+LaTeX Warning: Reference `uncorr2d_0_20' on page 7 undefined on input line 379.
+
+
+LaTeX Warning: Reference `mixed2d_50_80' on page 7 undefined on input line 379.
+
+<figures/h_lambda_2d_nomixcor_0_20.pdf, id=72, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_nomixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_nomixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_nomixcor_0_20.pdf  used on input line 382.
+Package pdftex.def Info: figures/h_lambda_2d_nomixcor_0_20.pdf  used on input line 384.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_nomixcor_0_20.pdf, id=767, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_nomixcor_0_20.pdf, id=73, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_nomixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_nomixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_h_2d_nomixcor_0_20.pdf  used on input line 385.
+Package pdftex.def Info: figures/h_h_2d_nomixcor_0_20.pdf  used on input line 387.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixed_0_20.pdf, id=768, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_nomixcor_20_50.pdf, id=74, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_nomixcor_20_50.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_nomixcor_20_50.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_nomixcor_20_50.pdf  used on input line 396.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_nomixcor_20_50.pdf, id=75, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_nomixcor_20_50.pdf Graphic file (type pdf)
+<use figures/h_h_2d_nomixcor_20_50.pdf>
+Package pdftex.def Info: figures/h_h_2d_nomixcor_20_50.pdf  used on input line 399.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_2d_nomixcor_50_80.pdf, id=76, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_nomixcor_50_80.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_nomixcor_50_80.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_nomixcor_50_80.pdf  used on input line 408.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_nomixcor_50_80.pdf, id=77, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_nomixcor_50_80.pdf Graphic file (type pdf)
+<use figures/h_h_2d_nomixcor_50_80.pdf>
+Package pdftex.def Info: figures/h_h_2d_nomixcor_50_80.pdf  used on input line 411.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_2d_mixed_0_20.pdf, id=78, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixed_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixed_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixed_0_20.pdf  used on input line 394.
+Package pdftex.def Info: figures/h_lambda_2d_mixed_0_20.pdf  used on input line 420.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixed_0_20.pdf, id=769, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixed_0_20.pdf, id=79, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixed_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixed_0_20.pdf>
-Package pdftex.def Info: figures/h_h_2d_mixed_0_20.pdf  used on input line 397.
+Package pdftex.def Info: figures/h_h_2d_mixed_0_20.pdf  used on input line 423.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_2d_mixed_20_50.pdf, id=80, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_mixed_20_50.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixed_20_50.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixed_20_50.pdf  used on input line 432.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_mixed_20_50.pdf, id=81, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_mixed_20_50.pdf Graphic file (type pdf)
+<use figures/h_h_2d_mixed_20_50.pdf>
+Package pdftex.def Info: figures/h_h_2d_mixed_20_50.pdf  used on input line 435.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_2d_mixed_50_80.pdf, id=82, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_mixed_50_80.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixed_50_80.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixed_50_80.pdf  used on input line 444.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_mixed_50_80.pdf, id=83, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_mixed_50_80.pdf Graphic file (type pdf)
+<use figures/h_h_2d_mixed_50_80.pdf>
+Package pdftex.def Info: figures/h_h_2d_mixed_50_80.pdf  used on input line 447.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-LaTeX Warning: Reference `mixcor2d' on page 8 undefined on input line 403.
+LaTeX Warning: Reference `mixcor2d_0_20' on page 7 undefined on input line 453.
 
-<figures/h_lambda_2d_mixcor_0_20.pdf, id=770, 569.12625pt x 408.52625pt>
+
+LaTeX Warning: Reference `mixcor2d_50_80' on page 7 undefined on input line 453.
+
+<figures/h_lambda_2d_mixcor_0_20.pdf, id=84, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20.pdf  used on input line 408.
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20.pdf  used on input line 458.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixcor_0_20.pdf, id=771, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixcor_0_20.pdf, id=85, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_h_2d_mixcor_0_20.pdf  used on input line 411.
+Package pdftex.def Info: figures/h_h_2d_mixcor_0_20.pdf  used on input line 461.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-[8 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_nomixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_nomixcor_0_20.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `daughtercuts' on page 9 undefined on input line 436.
-
-[9 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixed_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixed_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_0_20.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `lambda_reconstruction' on page 10 undefined on input line 451.
-
-
-LaTeX Warning: Reference `lambda_eff' on page 10 undefined on input line 451.
-
-<figures/v0_efficiency.pdf, id=1166, 569.12625pt x 547.04375pt>
-File: figures/v0_efficiency.pdf Graphic file (type pdf)
-<use figures/v0_efficiency.pdf>
-Package pdftex.def Info: figures/v0_efficiency.pdf  used on input line 455.
-(pdftex.def)             Requested size: 289.07999pt x 277.87843pt.
-[10 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_efficiency.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `trigcuts' on page 11 undefined on input line 474.
-
-
-LaTeX Warning: Reference `assoccuts' on page 11 undefined on input line 474.
-
-
-LaTeX Warning: Reference `trigassoc_eff_plots' on page 11 undefined on input line 489.
-
-<figures/trigger_efficiency.pdf, id=1213, 569.12625pt x 547.04375pt>
-File: figures/trigger_efficiency.pdf Graphic file (type pdf)
-<use figures/trigger_efficiency.pdf>
-Package pdftex.def Info: figures/trigger_efficiency.pdf  used on input line 494.
-(pdftex.def)             Requested size: 216.81pt x 208.3963pt.
-<figures/associated_efficiency.pdf, id=1214, 569.12625pt x 547.04375pt>
-File: figures/associated_efficiency.pdf Graphic file (type pdf)
-<use figures/associated_efficiency.pdf>
-Package pdftex.def Info: figures/associated_efficiency.pdf  used on input line 497.
-(pdftex.def)             Requested size: 216.81pt x 208.3963pt.
-[11 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trigger_efficiency.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/associated_efficiency.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `trackmerge_diagram_lambda' on page 12 undefined on input line 516.
-
-<figures/trackmerge_lambda_dphi_small_deta.pdf, id=1306, 569.12625pt x 408.52625pt>
-File: figures/trackmerge_lambda_dphi_small_deta.pdf Graphic file (type pdf)
-<use figures/trackmerge_lambda_dphi_small_deta.pdf>
-Package pdftex.def Info: figures/trackmerge_lambda_dphi_small_deta.pdf  used on input line 521.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/trackmerge_lambda_dphi_large_deta.pdf, id=1307, 569.12625pt x 408.52625pt>
-File: figures/trackmerge_lambda_dphi_large_deta.pdf Graphic file (type pdf)
-<use figures/trackmerge_lambda_dphi_large_deta.pdf>
-Package pdftex.def Info: figures/trackmerge_lambda_dphi_large_deta.pdf  used on input line 524.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-
-LaTeX Warning: Citation `kalman' on page 12 undefined on input line 533.
-
-
-LaTeX Warning: Reference `trackmerge_hproton' on page 12 undefined on input line 537.
-
-
-LaTeX Warning: Reference `trigcuts' on page 12 undefined on input line 537.
-
-
-LaTeX Warning: Reference `daughtercuts' on page 12 undefined on input line 537.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:542: Argument of \Gin@ii has an extra }.
-<inserted text> 
-                \par 
-l.542 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_secondary.pdf}}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:542: Paragraph ended before \Gin@ii was complete.
-<to be read again> 
-                   \par 
-l.542 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_secondary.pdf}}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:542: Missing $ inserted.
-<inserted text> 
-                $
-l.542 \includegraphics[width=3in]{figures/track_
-                                                merging_hproton_secondary.pdf}}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:542: Extra }, or forgotten $.
-l.542 ...ures/track_merging_hproton_secondary.pdf}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:542: Extra }, or forgotten $.
-l.542 ...res/track_merging_hproton_secondary.pdf}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:543: Missing $ inserted.
-<inserted text> 
-                $
-l.543 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:543: Missing } inserted.
-<inserted text> 
-                }
-l.543 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:545: Argument of \Gin@ii has an extra }.
-<inserted text> 
-                \par 
-l.545 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_primary.pdf}}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:545: Paragraph ended before \Gin@ii was complete.
-<to be read again> 
-                   \par 
-l.545 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_primary.pdf}}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:545: Missing $ inserted.
-<inserted text> 
-                $
-l.545 \includegraphics[width=3in]{figures/track_
-                                                merging_hproton_primary.pdf}}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:545: Extra }, or forgotten $.
-l.545 ...igures/track_merging_hproton_primary.pdf}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:545: Extra }, or forgotten $.
-l.545 ...gures/track_merging_hproton_primary.pdf}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:546: Missing $ inserted.
-<inserted text> 
-                $
-l.546 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:546: Missing } inserted.
-<inserted text> 
-                }
-l.546 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[12 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_small_deta.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_large_deta.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `trackmerge_diagram_daughters' on page 13 undefined on input line 562.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:567: Argument of \Gin@ii has an extra }.
-<inserted text> 
-                \par 
-l.567 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_fromlambda.p...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:567: Paragraph ended before \Gin@ii was complete.
-<to be read again> 
-                   \par 
-l.567 \includegraphics
-                      [width=3in]{figures/track_merging_hproton_fromlambda.p...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:567: Missing $ inserted.
-<inserted text> 
-                $
-l.567 \includegraphics[width=3in]{figures/track_
-                                                merging_hproton_fromlambda.p...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:567: Extra }, or forgotten $.
-l.567 ...res/track_merging_hproton_fromlambda.pdf}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:567: Extra }, or forgotten $.
-l.567 ...es/track_merging_hproton_fromlambda.pdf}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:568: Missing $ inserted.
-<inserted text> 
-                $
-l.568 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:568: Missing } inserted.
-<inserted text> 
-                }
-l.568 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:570: Argument of \Gin@ii has an extra }.
-<inserted text> 
-                \par 
-l.570 \includegraphics
-                      [width=3in]{figures/track_merging_hpion_fromlambda.pdf}}
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:570: Paragraph ended before \Gin@ii was complete.
-<to be read again> 
-                   \par 
-l.570 \includegraphics
-                      [width=3in]{figures/track_merging_hpion_fromlambda.pdf}}
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:570: Missing $ inserted.
-<inserted text> 
-                $
-l.570 \includegraphics[width=3in]{figures/track_
-                                                merging_hpion_fromlambda.pdf}}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:570: Extra }, or forgotten $.
-l.570 ...gures/track_merging_hpion_fromlambda.pdf}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:570: Extra }, or forgotten $.
-l.570 ...ures/track_merging_hpion_fromlambda.pdf}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:571: Missing $ inserted.
-<inserted text> 
-                $
-l.571 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:571: Missing } inserted.
-<inserted text> 
-                }
-l.571 \end{subfigure}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-<figures/track_merging_diagram_withborder.pdf, id=1397, 722.7pt x 542.025pt>
-File: figures/track_merging_diagram_withborder.pdf Graphic file (type pdf)
-<use figures/track_merging_diagram_withborder.pdf>
-Package pdftex.def Info: figures/track_merging_diagram_withborder.pdf  used on input line 581.
-(pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
-
-LaTeX Warning: Citation `trackmerge_1' on page 13 undefined on input line 586.
-
-
-LaTeX Warning: Citation `trackmerge_2' on page 13 undefined on input line 586.
-
-[13 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>]
-
-LaTeX Warning: Reference `mc_studies' on page 14 undefined on input line 592.
-
-
-LaTeX Warning: Reference `trackmerge_efficiency_plot' on page 14 undefined on input line 592.
-
-<figures/trackmerge_efficiency_PLACEHOLDER.pdf, id=1405, 569.12625pt x 408.52625pt>
-File: figures/trackmerge_efficiency_PLACEHOLDER.pdf Graphic file (type pdf)
-<use figures/trackmerge_efficiency_PLACEHOLDER.pdf>
-Package pdftex.def Info: figures/trackmerge_efficiency_PLACEHOLDER.pdf  used on input line 597.
-(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-
-LaTeX Warning: Reference `mc_studies' on page 14 undefined on input line 602.
-
-
-LaTeX Warning: Reference `corrEq' on page 14 undefined on input line 606.
-
-File: figures/h_lambda_2d_mixcor_0_20.pdf Graphic file (type pdf)
-<use figures/h_lambda_2d_mixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20.pdf  used on input line 611.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_lambda_2d_mixcor_20_50.pdf, id=1406, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_20_50.pdf, id=86, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_20_50.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50.pdf  used on input line 614.
-(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_lambda_2d_mixcor_50_80.pdf, id=1407, 569.12625pt x 408.52625pt>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50.pdf  used on input line 470.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_mixcor_20_50.pdf, id=87, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_mixcor_20_50.pdf Graphic file (type pdf)
+<use figures/h_h_2d_mixcor_20_50.pdf>
+Package pdftex.def Info: figures/h_h_2d_mixcor_20_50.pdf  used on input line 473.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_2d_mixcor_50_80.pdf, id=88, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_50_80.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80.pdf  used on input line 617.
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80.pdf  used on input line 482.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_h_2d_mixcor_50_80.pdf, id=89, 569.12625pt x 408.52625pt>
+File: figures/h_h_2d_mixcor_50_80.pdf Graphic file (type pdf)
+<use figures/h_h_2d_mixcor_50_80.pdf>
+Package pdftex.def Info: figures/h_h_2d_mixcor_50_80.pdf  used on input line 485.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+
+LaTeX Warning: Reference `daughtercuts' on page 7 undefined on input line 510.
+
+[7]
+
+LaTeX Warning: Reference `lambda_reconstruction' on page 8 undefined on input line 525.
+
+
+LaTeX Warning: Reference `lambda_eff' on page 8 undefined on input line 525.
+
+<figures/v0_efficiency.pdf, id=93, 569.12625pt x 547.04375pt>
+File: figures/v0_efficiency.pdf Graphic file (type pdf)
+<use figures/v0_efficiency.pdf>
+Package pdftex.def Info: figures/v0_efficiency.pdf  used on input line 529.
+(pdftex.def)             Requested size: 289.07999pt x 277.87843pt.
+
+LaTeX Warning: Reference `trigcuts' on page 8 undefined on input line 548.
+
+
+LaTeX Warning: Reference `assoccuts' on page 8 undefined on input line 548.
+
+
+LaTeX Warning: Reference `trigassoc_eff_plots' on page 8 undefined on input line 563.
+
+<figures/trigger_efficiency.pdf, id=94, 569.12625pt x 547.04375pt>
+File: figures/trigger_efficiency.pdf Graphic file (type pdf)
+<use figures/trigger_efficiency.pdf>
+Package pdftex.def Info: figures/trigger_efficiency.pdf  used on input line 568.
+(pdftex.def)             Requested size: 216.81pt x 208.3963pt.
+<figures/associated_efficiency.pdf, id=95, 569.12625pt x 547.04375pt>
+File: figures/associated_efficiency.pdf Graphic file (type pdf)
+<use figures/associated_efficiency.pdf>
+Package pdftex.def Info: figures/associated_efficiency.pdf  used on input line 571.
+(pdftex.def)             Requested size: 216.81pt x 208.3963pt.
+[8]
+
+LaTeX Warning: Reference `trackmerge_diagram_lambda' on page 9 undefined on input line 590.
+
+<figures/trackmerge_lambda_dphi_small_deta.pdf, id=99, 569.12625pt x 408.52625pt>
+File: figures/trackmerge_lambda_dphi_small_deta.pdf Graphic file (type pdf)
+<use figures/trackmerge_lambda_dphi_small_deta.pdf>
+Package pdftex.def Info: figures/trackmerge_lambda_dphi_small_deta.pdf  used on input line 595.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/trackmerge_lambda_dphi_large_deta.pdf, id=100, 569.12625pt x 408.52625pt>
+File: figures/trackmerge_lambda_dphi_large_deta.pdf Graphic file (type pdf)
+<use figures/trackmerge_lambda_dphi_large_deta.pdf>
+Package pdftex.def Info: figures/trackmerge_lambda_dphi_large_deta.pdf  used on input line 598.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+
+LaTeX Warning: Citation `kalman' on page 9 undefined on input line 607.
+
+
+LaTeX Warning: Reference `trackmerge_hproton' on page 9 undefined on input line 611.
+
+
+LaTeX Warning: Reference `trigcuts' on page 9 undefined on input line 611.
+
+
+LaTeX Warning: Reference `daughtercuts' on page 9 undefined on input line 611.
+
+
+LaTeX Warning: File `figures/track_merging_hproton_secondary.pdf' not found on input line 616.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:616: Package pdftex.def Error: File `figures/track_merging_hproton_secondary.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.616 ...res/track_merging_hproton_secondary.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `figures/track_merging_hproton_primary.pdf' not found on input line 619.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:619: Package pdftex.def Error: File `figures/track_merging_hproton_primary.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.619 ...gures/track_merging_hproton_primary.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `trackmerge_diagram_daughters' on page 9 undefined on input line 636.
+
+
+LaTeX Warning: File `figures/track_merging_hproton_fromlambda.pdf' not found on input line 641.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:641: Package pdftex.def Error: File `figures/track_merging_hproton_fromlambda.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.641 ...es/track_merging_hproton_fromlambda.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `figures/track_merging_hpion_fromlambda.pdf' not found on input line 644.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:644: Package pdftex.def Error: File `figures/track_merging_hpion_fromlambda.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.644 ...ures/track_merging_hpion_fromlambda.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figures/track_merging_diagram_withborder.pdf, id=101, 722.7pt x 542.025pt>
+File: figures/track_merging_diagram_withborder.pdf Graphic file (type pdf)
+<use figures/track_merging_diagram_withborder.pdf>
+Package pdftex.def Info: figures/track_merging_diagram_withborder.pdf  used on input line 655.
+(pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
+
+LaTeX Warning: Citation `trackmerge_1' on page 9 undefined on input line 660.
+
+
+LaTeX Warning: Citation `trackmerge_2' on page 9 undefined on input line 660.
+
+[9]
+
+LaTeX Warning: Reference `mc_studies' on page 10 undefined on input line 666.
+
+
+LaTeX Warning: Reference `trackmerge_efficiency_plot' on page 10 undefined on input line 666.
+
+<figures/trackmerge_efficiency_PLACEHOLDER.pdf, id=105, 569.12625pt x 408.52625pt>
+File: figures/trackmerge_efficiency_PLACEHOLDER.pdf Graphic file (type pdf)
+<use figures/trackmerge_efficiency_PLACEHOLDER.pdf>
+Package pdftex.def Info: figures/trackmerge_efficiency_PLACEHOLDER.pdf  used on input line 671.
+(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+
+LaTeX Warning: Reference `mc_studies' on page 10 undefined on input line 676.
+
+
+LaTeX Warning: Reference `corrEq' on page 10 undefined on input line 680.
+
+File: figures/h_lambda_2d_mixcor_0_20.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_0_20.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20.pdf  used on input line 685.
+(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
+File: figures/h_lambda_2d_mixcor_20_50.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_20_50.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50.pdf  used on input line 688.
+(pdftex.def)             Requested size: 144.54pt x 103.75204pt.
+File: figures/h_lambda_2d_mixcor_50_80.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_50_80.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80.pdf  used on input line 691.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
 File: figures/h_h_2d_mixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_0_20.pdf>
-Package pdftex.def Info: figures/h_h_2d_mixcor_0_20.pdf  used on input line 626.
+Package pdftex.def Info: figures/h_h_2d_mixcor_0_20.pdf  used on input line 700.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_h_2d_mixcor_20_50.pdf, id=1408, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_20_50.pdf>
-Package pdftex.def Info: figures/h_h_2d_mixcor_20_50.pdf  used on input line 629.
+Package pdftex.def Info: figures/h_h_2d_mixcor_20_50.pdf  used on input line 703.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_h_2d_mixcor_50_80.pdf, id=1409, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_50_80.pdf>
-Package pdftex.def Info: figures/h_h_2d_mixcor_50_80.pdf  used on input line 632.
+Package pdftex.def Info: figures/h_h_2d_mixcor_50_80.pdf  used on input line 706.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_lambda_dphi_0_20.pdf, id=1410, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20.pdf, id=106, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20.pdf  used on input line 641.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20.pdf  used on input line 715.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_lambda_dphi_20_50.pdf, id=1411, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50.pdf, id=107, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50.pdf  used on input line 644.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50.pdf  used on input line 718.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_lambda_dphi_50_80.pdf, id=1412, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80.pdf, id=108, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80.pdf  used on input line 647.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80.pdf  used on input line 721.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_h_dphi_0_20.pdf, id=1413, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20.pdf, id=109, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20.pdf  used on input line 656.
+Package pdftex.def Info: figures/h_h_dphi_0_20.pdf  used on input line 730.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_h_dphi_20_50.pdf, id=1414, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50.pdf, id=110, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50.pdf  used on input line 659.
+Package pdftex.def Info: figures/h_h_dphi_20_50.pdf  used on input line 733.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
-<figures/h_h_dphi_50_80.pdf, id=1415, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80.pdf, id=111, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80.pdf  used on input line 662.
+Package pdftex.def Info: figures/h_h_dphi_50_80.pdf  used on input line 736.
 (pdftex.def)             Requested size: 144.54pt x 103.75204pt.
 
-LaTeX Warning: Reference `corrfitproc' on page 14 undefined on input line 673.
+LaTeX Warning: Reference `corrfitproc' on page 10 undefined on input line 751.
 
 
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [14 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_efficiency_PLACEHOLDER.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_50_80.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `dphi' on page 15 undefined on input line 679.
+LaTeX Warning: Reference `dphi' on page 10 undefined on input line 757.
 
 
-LaTeX Warning: File `images/dphi_hPhi_0_20.pdf' not found on input line 682.
+LaTeX Warning: File `images/dphi_hPhi_0_20.pdf' not found on input line 760.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:682: Package pdftex.def Error: File `images/dphi_hPhi_0_20.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:760: Package pdftex.def Error: File `images/dphi_hPhi_0_20.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.682 ...cs[width=3in]{images/dphi_hPhi_0_20.pdf}}
+l.760 ...cs[width=3in]{images/dphi_hPhi_0_20.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/dphi_hh_0_20.pdf' not found on input line 685.
+LaTeX Warning: File `images/dphi_hh_0_20.pdf' not found on input line 763.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:685: Package pdftex.def Error: File `images/dphi_hh_0_20.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:763: Package pdftex.def Error: File `images/dphi_hh_0_20.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.685 ...hics[width=3in]{images/dphi_hh_0_20.pdf}}
+l.763 ...hics[width=3in]{images/dphi_hh_0_20.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[15 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `regions' on page 16 undefined on input line 692.
-
-
-LaTeX Warning: File `images/dphi_regions.pdf' not found on input line 696.
+LaTeX Warning: Reference `regions' on page 10 undefined on input line 770.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:696: Package pdftex.def Error: File `images/dphi_regions.pdf' not found: using draft setting.
+LaTeX Warning: File `images/dphi_regions.pdf' not found on input line 774.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:774: Package pdftex.def Error: File `images/dphi_regions.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.696 ...hics[width =4in]{images/dphi_regions.pdf}
+l.774 ...hics[width =4in]{images/dphi_regions.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `ratioplot' on page 16 undefined on input line 706.
+LaTeX Warning: Reference `ratioplot' on page 10 undefined on input line 784.
 
 
-LaTeX Warning: File `images/approved/2019-06-04-finalratio.pdf' not found on input line 710.
+LaTeX Warning: File `images/approved/2019-06-04-finalratio.pdf' not found on input line 788.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:710: Package pdftex.def Error: File `images/approved/2019-06-04-finalratio.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:788: Package pdftex.def Error: File `images/approved/2019-06-04-finalratio.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.710 ...mages/approved/2019-06-04-finalratio.pdf}
+l.788 ...mages/approved/2019-06-04-finalratio.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `jetratiofull' on page 16 undefined on input line 715.
+LaTeX Warning: Reference `jetratiofull' on page 10 undefined on input line 793.
+
+[10]
+
+LaTeX Warning: File `images/jetratio_full.pdf' not found on input line 797.
 
 
-LaTeX Warning: File `images/jetratio_full.pdf' not found on input line 719.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:719: Package pdftex.def Error: File `images/jetratio_full.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:797: Package pdftex.def Error: File `images/jetratio_full.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.719 ...hics[width=4in]{images/jetratio_full.pdf}
+l.797 ...hics[width=4in]{images/jetratio_full.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `fullCorrEq' on page 16 undefined on input line 728.
-
-[16]
-
-LaTeX Warning: Reference `methodtestFAST' on page 17 undefined on input line 730.
+LaTeX Warning: Reference `fullCorrEq' on page 11 undefined on input line 806.
 
 
-LaTeX Warning: File `images/truevsmethod.pdf' not found on input line 735.
+LaTeX Warning: Reference `methodtestFAST' on page 11 undefined on input line 808.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:735: Package pdftex.def Error: File `images/truevsmethod.pdf' not found: using draft setting.
+LaTeX Warning: File `images/truevsmethod.pdf' not found on input line 813.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:813: Package pdftex.def Error: File `images/truevsmethod.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.735 ...hics[width=3in]{images/truevsmethod.pdf}}
+l.813 ...hics[width=3in]{images/truevsmethod.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/ratio_method-true_fit.pdf' not found on input line 738.
+LaTeX Warning: File `images/ratio_method-true_fit.pdf' not found on input line 816.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:738: Package pdftex.def Error: File `images/ratio_method-true_fit.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:816: Package pdftex.def Error: File `images/ratio_method-true_fit.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.738 ...h=3in]{images/ratio_method-true_fit.pdf}}
+l.816 ...h=3in]{images/ratio_method-true_fit.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `fullCorrEq' on page 17 undefined on input line 740.
+LaTeX Warning: Reference `fullCorrEq' on page 11 undefined on input line 818.
 
 
-LaTeX Warning: Reference `fullCorrEq' on page 17 undefined on input line 740.
+LaTeX Warning: Reference `fullCorrEq' on page 11 undefined on input line 818.
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 740--740
-[]\OT1/ptm/b/n/10 Fig. 27: \OT1/ptm/m/n/10 Di-rect com-par-i-son of the gen-er-ated (green) and re-con-structed (red) $\OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 cor-re-la-tion, us-ing the
+Underfull \hbox (badness 1024) in paragraph at lines 818--818
+[]\OT1/ptm/b/n/10 Fig. 33: \OT1/ptm/m/n/10 Di-rect com-par-i-son of the gen-er-ated (green) and re-con-structed (red) $\OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 cor-re-la-tion, us-ing the
  []
 
 
-LaTeX Warning: Reference `corrsec' on page 17 undefined on input line 746.
+LaTeX Warning: Reference `corrsec' on page 11 undefined on input line 824.
 
 
-LaTeX Warning: Reference `MCClosureFAST' on page 17 undefined on input line 746.
+LaTeX Warning: Reference `MCClosureFAST' on page 11 undefined on input line 824.
 
 
-Overfull \hbox (19.18784pt too wide) in paragraph at lines 746--747
+Overfull \hbox (19.18784pt too wide) in paragraph at lines 824--825
 \OT1/ptm/m/n/10.95 er-ated $\OML/ztmcm/m/it/10.95 h \OMS/ztmcm/m/n/10.95 ^^@ \OML/ztmcm/m/it/10.95 ^^^$ \OT1/ptm/m/n/10.95 cor-re-la-tions, a full MC clo-sure test was per-formed us-ing LHC17f2b[]FAST and LHC17f2b[]CENT
  []
 
 
-LaTeX Warning: File `images/truevsrecon_notrigger.pdf' not found on input line 751.
+LaTeX Warning: File `images/truevsrecon_notrigger.pdf' not found on input line 829.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:751: Package pdftex.def Error: File `images/truevsrecon_notrigger.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.751 ...h=3in]{images/truevsrecon_notrigger.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/ratio_recon-true_notrigger.pdf' not found on input line 754.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:754: Package pdftex.def Error: File `images/ratio_recon-true_notrigger.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:829: Package pdftex.def Error: File `images/truevsrecon_notrigger.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.754 ...]{images/ratio_recon-true_notrigger.pdf}}
+l.829 ...h=3in]{images/truevsrecon_notrigger.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `fullCorrEq' on page 17 undefined on input line 756.
+LaTeX Warning: File `images/ratio_recon-true_notrigger.pdf' not found on input line 832.
 
 
-LaTeX Warning: Reference `fullCorrEq' on page 17 undefined on input line 756.
-
-[17] [18]
-
-LaTeX Warning: Reference `fullCorrEq' on page 19 undefined on input line 779.
-
-
-LaTeX Warning: File `images/masspeakdphi.pdf' not found on input line 784.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:784: Package pdftex.def Error: File `images/masspeakdphi.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:832: Package pdftex.def Error: File `images/ratio_recon-true_notrigger.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.784 ...hics[width=3in]{images/masspeakdphi.pdf}}
+l.832 ...]{images/ratio_recon-true_notrigger.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/masspeakratios.pdf' not found on input line 787.
+LaTeX Warning: Reference `fullCorrEq' on page 11 undefined on input line 834.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:787: Package pdftex.def Error: File `images/masspeakratios.pdf' not found: using draft setting.
+LaTeX Warning: Reference `fullCorrEq' on page 11 undefined on input line 834.
+
+[11]
+
+LaTeX Warning: Reference `fullCorrEq' on page 12 undefined on input line 857.
+
+
+LaTeX Warning: File `images/masspeakdphi.pdf' not found on input line 862.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:862: Package pdftex.def Error: File `images/masspeakdphi.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.787 ...cs[width=3in]{images/masspeakratios.pdf}}
+l.862 ...hics[width=3in]{images/masspeakdphi.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `masspeakcheck' on page 19 undefined on input line 793.
+LaTeX Warning: File `images/masspeakratios.pdf' not found on input line 865.
 
 
-LaTeX Warning: Reference `masspeakRMS' on page 19 undefined on input line 793.
-
-
-LaTeX Warning: File `images/masspeaksyst.pdf' not found on input line 797.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:797: Package pdftex.def Error: File `images/masspeaksyst.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:865: Package pdftex.def Error: File `images/masspeakratios.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.797 ...phics[width=3in]{images/masspeaksyst.pdf}
+l.865 ...cs[width=3in]{images/masspeakratios.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[19]
 
-LaTeX Warning: Reference `RSBcheck' on page 20 undefined on input line 805.
-
-
-LaTeX Warning: Reference `LSBcheck' on page 20 undefined on input line 805.
+LaTeX Warning: Reference `masspeakcheck' on page 12 undefined on input line 871.
 
 
-LaTeX Warning: File `images/RSBrangedphi.pdf' not found on input line 810.
+LaTeX Warning: Reference `masspeakRMS' on page 12 undefined on input line 871.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:810: Package pdftex.def Error: File `images/RSBrangedphi.pdf' not found: using draft setting.
+LaTeX Warning: File `images/masspeaksyst.pdf' not found on input line 875.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:875: Package pdftex.def Error: File `images/masspeaksyst.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.810 ...hics[width=3in]{images/RSBrangedphi.pdf}}
+l.875 ...phics[width=3in]{images/masspeaksyst.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/RSBrangeratios.pdf' not found on input line 813.
+LaTeX Warning: Reference `RSBcheck' on page 12 undefined on input line 883.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:813: Package pdftex.def Error: File `images/RSBrangeratios.pdf' not found: using draft setting.
+LaTeX Warning: Reference `LSBcheck' on page 12 undefined on input line 883.
+
+
+LaTeX Warning: File `images/RSBrangedphi.pdf' not found on input line 888.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:888: Package pdftex.def Error: File `images/RSBrangedphi.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.813 ...cs[width=3in]{images/RSBrangeratios.pdf}}
+l.888 ...hics[width=3in]{images/RSBrangedphi.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/RSBrangesyst.pdf' not found on input line 821.
+LaTeX Warning: File `images/RSBrangeratios.pdf' not found on input line 891.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:821: Package pdftex.def Error: File `images/RSBrangesyst.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:891: Package pdftex.def Error: File `images/RSBrangeratios.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.821 ...phics[width=3in]{images/RSBrangesyst.pdf}
+l.891 ...cs[width=3in]{images/RSBrangeratios.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/LSBrangedphi.pdf' not found on input line 829.
+LaTeX Warning: File `images/RSBrangesyst.pdf' not found on input line 899.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:829: Package pdftex.def Error: File `images/LSBrangedphi.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:899: Package pdftex.def Error: File `images/RSBrangesyst.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.829 ...hics[width=3in]{images/LSBrangedphi.pdf}}
+l.899 ...phics[width=3in]{images/RSBrangesyst.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/LSBrangeratio.pdf' not found on input line 832.
+LaTeX Warning: File `images/LSBrangedphi.pdf' not found on input line 907.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:832: Package pdftex.def Error: File `images/LSBrangeratio.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:907: Package pdftex.def Error: File `images/LSBrangedphi.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.832 ...ics[width=3in]{images/LSBrangeratio.pdf}}
+l.907 ...hics[width=3in]{images/LSBrangedphi.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/LSBrangesyst.pdf' not found on input line 840.
+LaTeX Warning: File `images/LSBrangeratio.pdf' not found on input line 910.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:840: Package pdftex.def Error: File `images/LSBrangesyst.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:910: Package pdftex.def Error: File `images/LSBrangeratio.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.840 ...phics[width=3in]{images/LSBrangesyst.pdf}
+l.910 ...ics[width=3in]{images/LSBrangeratio.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `LSBcheck' on page 20 undefined on input line 841.
+LaTeX Warning: File `images/LSBrangesyst.pdf' not found on input line 918.
 
 
-LaTeX Warning: Reference `LSBcheck' on page 20 undefined on input line 841.
-
-
-Underfull \vbox (badness 2932) has occurred while \output is active []
-
- [20] [21]
-
-LaTeX Warning: Reference `scalingcheck' on page 22 undefined on input line 861.
-
-
-LaTeX Warning: Reference `scalingRMS' on page 22 undefined on input line 861.
-
-[22]
-
-LaTeX Warning: File `images/sbscalingdphi.pdf' not found on input line 866.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:866: Package pdftex.def Error: File `images/sbscalingdphi.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:918: Package pdftex.def Error: File `images/LSBrangesyst.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.866 ...ics[width=3in]{images/sbscalingdphi.pdf}}
+l.918 ...phics[width=3in]{images/LSBrangesyst.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/sbavgscalingratios.pdf' not found on input line 869.
+LaTeX Warning: Reference `LSBcheck' on page 12 undefined on input line 919.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:869: Package pdftex.def Error: File `images/sbavgscalingratios.pdf' not found: using draft setting.
+LaTeX Warning: Reference `LSBcheck' on page 12 undefined on input line 919.
+
+[12]
+
+LaTeX Warning: Reference `scalingcheck' on page 13 undefined on input line 939.
+
+
+LaTeX Warning: Reference `scalingRMS' on page 13 undefined on input line 939.
+
+
+LaTeX Warning: File `images/sbscalingdphi.pdf' not found on input line 944.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:944: Package pdftex.def Error: File `images/sbscalingdphi.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.869 ...idth=3in]{images/sbavgscalingratios.pdf}}
+l.944 ...ics[width=3in]{images/sbscalingdphi.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/sbavgscalingsyst.pdf' not found on input line 877.
+LaTeX Warning: File `images/sbavgscalingratios.pdf' not found on input line 947.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:877: Package pdftex.def Error: File `images/sbavgscalingsyst.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:947: Package pdftex.def Error: File `images/sbavgscalingratios.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.877 ...s[width=3in]{images/sbavgscalingsyst.pdf}
+l.947 ...idth=3in]{images/sbavgscalingratios.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `scalingcheck' on page 23 undefined on input line 878.
+LaTeX Warning: File `images/sbavgscalingsyst.pdf' not found on input line 955.
 
 
-LaTeX Warning: Reference `scalingcheck' on page 23 undefined on input line 878.
-
-[23]
-
-LaTeX Warning: Reference `uesyst' on page 24 undefined on input line 897.
-
-[24]
-
-LaTeX Warning: File `images/nearside_uesyst.pdf' not found on input line 917.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:917: Package pdftex.def Error: File `images/nearside_uesyst.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:955: Package pdftex.def Error: File `images/sbavgscalingsyst.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.917 ...s[width=3in]{images/nearside_uesyst.pdf}}
+l.955 ...s[width=3in]{images/sbavgscalingsyst.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/awayside_uesyst.pdf' not found on input line 920.
+LaTeX Warning: Reference `scalingcheck' on page 13 undefined on input line 956.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:920: Package pdftex.def Error: File `images/awayside_uesyst.pdf' not found: using draft setting.
+LaTeX Warning: Reference `scalingcheck' on page 13 undefined on input line 956.
+
+
+LaTeX Warning: Reference `uesyst' on page 13 undefined on input line 975.
+
+
+LaTeX Warning: File `images/nearside_uesyst.pdf' not found on input line 995.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:995: Package pdftex.def Error: File `images/nearside_uesyst.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.920 ...s[width=3in]{images/awayside_uesyst.pdf}}
+l.995 ...s[width=3in]{images/nearside_uesyst.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[25]
 
-LaTeX Warning: Reference `dphi_all_low_pt' on page 26 undefined on input line 942.
-
-
-LaTeX Warning: Reference `dphi_all_high_pt' on page 26 undefined on input line 942.
-
-<figures/h_lambda_dphi_all_15_25.pdf, id=1930, 569.12625pt x 236.885pt>
-File: figures/h_lambda_dphi_all_15_25.pdf Graphic file (type pdf)
-<use figures/h_lambda_dphi_all_15_25.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_15_25.pdf  used on input line 947.
-(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_h_dphi_all_15_25.pdf, id=1931, 569.12625pt x 236.885pt>
-File: figures/h_h_dphi_all_15_25.pdf Graphic file (type pdf)
-<use figures/h_h_dphi_all_15_25.pdf>
-Package pdftex.def Info: figures/h_h_dphi_all_15_25.pdf  used on input line 950.
-(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_lambda_dphi_all_25_40.pdf, id=1932, 569.12625pt x 236.885pt>
-File: figures/h_lambda_dphi_all_25_40.pdf Graphic file (type pdf)
-<use figures/h_lambda_dphi_all_25_40.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_25_40.pdf  used on input line 959.
-(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_h_dphi_all_25_40.pdf, id=1933, 569.12625pt x 236.885pt>
-File: figures/h_h_dphi_all_25_40.pdf Graphic file (type pdf)
-<use figures/h_h_dphi_all_25_40.pdf>
-Package pdftex.def Info: figures/h_h_dphi_all_25_40.pdf  used on input line 962.
-(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-
-LaTeX Warning: Reference `low_momentum_ratio' on page 26 undefined on input line 969.
+LaTeX Warning: File `images/awayside_uesyst.pdf' not found on input line 998.
 
 
-LaTeX Warning: Reference `high_momentum_ratio' on page 26 undefined on input line 969.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:998: Package pdftex.def Error: File `images/awayside_uesyst.pdf' not found: using draft setting.
 
-<figures/v0_ratio_plot_15_25.pdf, id=1934, 569.12625pt x 408.52625pt>
-File: figures/v0_ratio_plot_15_25.pdf Graphic file (type pdf)
-<use figures/v0_ratio_plot_15_25.pdf>
-Package pdftex.def Info: figures/v0_ratio_plot_15_25.pdf  used on input line 973.
-(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-<figures/v0_ratio_plot_25_40.pdf, id=1935, 569.12625pt x 408.52625pt>
-File: figures/v0_ratio_plot_25_40.pdf Graphic file (type pdf)
-<use figures/v0_ratio_plot_25_40.pdf>
-Package pdftex.def Info: figures/v0_ratio_plot_25_40.pdf  used on input line 980.
-(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.998 ...s[width=3in]{images/awayside_uesyst.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Reference `low_momentum_yield' on page 26 undefined on input line 987.
+[13] [14] [15 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_pt_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_phi_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/assoc_eta_dist_0_20.pdf, page is rotated 90 degrees>] [16 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_pt_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_phi_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_eta_dist_0_20.pdf, page is rotated 90 degrees>] [17 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_pion.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion.pdf, page is rotated 90 degrees>] [18 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion_global.pdf, page is rotated 90 degrees>] [19 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf, page is rotated 90 degrees>] [20 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_nomixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_nomixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_nomixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_nomixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_nomixcor_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_nomixcor_50_80.pdf, page is rotated 90 degrees>] [21 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixed_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixed_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixed_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixed_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixed_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixed_50_80.pdf, page is rotated 90 degrees>] [22 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_mixcor_50_80.pdf, page is rotated 90 degrees>] [23 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_efficiency.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trigger_efficiency.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/associated_efficiency.pdf, page is rotated 90 degrees>] [24 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_small_deta.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_large_deta.pdf, page is rotated 90 degrees>] [25 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>] [26 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_efficiency_PLACEHOLDER.pdf, page is rotated 90 degrees>] [27 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80.pdf, page is rotated 90 degrees>] [28] [29] [30] [31] [32] [33] [34] [35]
 
-
-LaTeX Warning: Reference `high_momentum_yield' on page 26 undefined on input line 987.
-
-<figures/per_trigger_yields_15_25.pdf, id=1936, 569.12625pt x 408.52625pt>
-File: figures/per_trigger_yields_15_25.pdf Graphic file (type pdf)
-<use figures/per_trigger_yields_15_25.pdf>
-Package pdftex.def Info: figures/per_trigger_yields_15_25.pdf  used on input line 991.
-(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-<figures/per_trigger_yields_25_40.pdf, id=1937, 569.12625pt x 408.52625pt>
-File: figures/per_trigger_yields_25_40.pdf Graphic file (type pdf)
-<use figures/per_trigger_yields_25_40.pdf>
-Package pdftex.def Info: figures/per_trigger_yields_25_40.pdf  used on input line 998.
-(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [26
-
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_15_25.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_15_25.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `daughtercuts' on page 27 undefined on input line 1008.
+LaTeX Warning: Reference `daughtercuts' on page 36 undefined on input line 1022.
 
 
-LaTeX Warning: Reference `background_approx_MC' on page 27 undefined on input line 1021.
+LaTeX Warning: Reference `resonance_fitting_comp' on page 36 undefined on input line 1037.
 
-[27 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_25_40.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_25_40.pdf, page is rotated 90 degrees>]
-<figures/background_approx_MC.pdf, id=2116, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_20_50_resonance_fit.pdf, id=2315, 569.12625pt x 408.52625pt>
+File: figures/lambda_mass_20_50_resonance_fit.pdf Graphic file (type pdf)
+<use figures/lambda_mass_20_50_resonance_fit.pdf>
+Package pdftex.def Info: figures/lambda_mass_20_50_resonance_fit.pdf  used on input line 1042.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/lambda_mass_mc_real_bg.pdf, id=2316, 569.12625pt x 408.52625pt>
+File: figures/lambda_mass_mc_real_bg.pdf Graphic file (type pdf)
+<use figures/lambda_mass_mc_real_bg.pdf>
+Package pdftex.def Info: figures/lambda_mass_mc_real_bg.pdf  used on input line 1045.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+
+LaTeX Warning: Reference `background_approx_MC' on page 36 undefined on input line 1053.
+
+<figures/background_approx_MC.pdf, id=2317, 569.12625pt x 408.52625pt>
 File: figures/background_approx_MC.pdf Graphic file (type pdf)
 <use figures/background_approx_MC.pdf>
-Package pdftex.def Info: figures/background_approx_MC.pdf  used on input line 1026.
+Package pdftex.def Info: figures/background_approx_MC.pdf  used on input line 1058.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/background_subtracted_signal_MC.pdf, id=2117, 569.12625pt x 408.52625pt>
+<figures/background_subtracted_signal_MC.pdf, id=2318, 569.12625pt x 408.52625pt>
 File: figures/background_subtracted_signal_MC.pdf Graphic file (type pdf)
 <use figures/background_subtracted_signal_MC.pdf>
-Package pdftex.def Info: figures/background_subtracted_signal_MC.pdf  used on input line 1029.
+Package pdftex.def Info: figures/background_subtracted_signal_MC.pdf  used on input line 1061.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
+LaTeX Warning: Reference `res_invariant_mass_0_20' on page 36 undefined on input line 1067.
 
-LaTeX Warning: Reference `res_invariant_mass_0_20' on page 28 undefined on input line 1035.
 
+LaTeX Warning: Reference `res_invariant_mass_signal_0_20' on page 36 undefined on input line 1067.
 
-LaTeX Warning: Reference `res_invariant_mass_signal_0_20' on page 28 undefined on input line 1035.
+[36
 
-<figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, id=2118, 569.12625pt x 408.52625pt>
+]
+<figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, id=2322, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf Graphic file (type pdf)
 <use figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf>
-Package pdftex.def Info: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf  used on input line 1041.
+Package pdftex.def Info: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf  used on input line 1073.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/lambda_mass_0_20_resonance_signal_comp.pdf, id=2119, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_0_20_resonance_signal_comp.pdf, id=2323, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_0_20_resonance_signal_comp.pdf Graphic file (type pdf)
 <use figures/lambda_mass_0_20_resonance_signal_comp.pdf>
-Package pdftex.def Info: figures/lambda_mass_0_20_resonance_signal_comp.pdf  used on input line 1044.
+Package pdftex.def Info: figures/lambda_mass_0_20_resonance_signal_comp.pdf  used on input line 1076.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-LaTeX Warning: Reference `res_invariant_mass_0_20' on page 28 undefined on input line 1063.
 
-[28 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_ratio_plot_15_25.pdf, page is rotated 90 degrees>]
+LaTeX Warning: Reference `resonance_mass' on page 37 undefined on input line 1082.
 
-LaTeX Warning: Reference `normRSBcomp' on page 29 undefined on input line 1072.
 
-<figures/h_lambda_dphi_rsbcomp_0_20.pdf, id=2166, 569.12625pt x 408.52625pt>
-File: figures/h_lambda_dphi_rsbcomp_0_20.pdf Graphic file (type pdf)
-<use figures/h_lambda_dphi_rsbcomp_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_rsbcomp_0_20.pdf  used on input line 1076.
+LaTeX Warning: Reference `resonance_mass_table' on page 37 undefined on input line 1082.
+
+
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+ [37 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_20_50_resonance_fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_mc_real_bg.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_approx_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_subtracted_signal_MC.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `res_invariant_mass_0_20' on page 38 undefined on input line 1097.
+
+
+LaTeX Warning: Reference `removecomb' on page 38 undefined on input line 1099.
+
+
+LaTeX Warning: Reference `daughtercuts' on page 38 undefined on input line 1111.
+
+[38 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_signal_comp.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `res_invariant_mass_mc' on page 39 undefined on input line 1126.
+
+
+LaTeX Warning: Reference `removecomb' on page 39 undefined on input line 1126.
+
+<figures/lambda_mass_resonance_mc.pdf, id=2589, 569.12625pt x 408.52625pt>
+File: figures/lambda_mass_resonance_mc.pdf Graphic file (type pdf)
+<use figures/lambda_mass_resonance_mc.pdf>
+Package pdftex.def Info: figures/lambda_mass_resonance_mc.pdf  used on input line 1130.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Reference `normSBcorr' on page 29 undefined on input line 1082.
+LaTeX Warning: Reference `lambda_reconstruction' on page 39 undefined on input line 1137.
 
 
-LaTeX Warning: File `images/narrowmass_withSB_invmass.pdf' not found on input line 1087.
+LaTeX Warning: Reference `lambda_eff' on page 39 undefined on input line 1137.
+
+<figures/res_efficiency.pdf, id=2590, 569.12625pt x 547.04375pt>
+File: figures/res_efficiency.pdf Graphic file (type pdf)
+<use figures/res_efficiency.pdf>
+Package pdftex.def Info: figures/res_efficiency.pdf  used on input line 1141.
+(pdftex.def)             Requested size: 289.07999pt x 277.87843pt.
+
+LaTeX Warning: Reference `trigassoc_efficiency' on page 39 undefined on input line 1146.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1087: Package pdftex.def Error: File `images/narrowmass_withSB_invmass.pdf' not found: using draft setting.
+LaTeX Warning: Reference `mixed_event_correction' on page 39 undefined on input line 1150.
+
+[39 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_resonance_mc.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `normRSBcomp' on page 40 undefined on input line 1158.
+
+<figures/h_lambda_dphi_rsbcomp_0_20.pdf, id=2637, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_rsbcomp_0_20.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_rsbcomp_0_20.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_rsbcomp_0_20.pdf  used on input line 1162.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+LaTeX Warning: Reference `resonance_mass_table' on page 40 undefined on input line 1175.
+
+[40 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/res_efficiency.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `resonance_2d_correlations' on page 41 undefined on input line 1183.
+
+
+LaTeX Warning: Reference `resonance_1d_correlations' on page 41 undefined on input line 1183.
+
+<figures/h_lambda_2d_mixcor_0_20_resonance.pdf, id=2685, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_mixcor_0_20_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_0_20_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20_resonance.pdf  used on input line 1188.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_2d_mixcor_20_50_resonance.pdf, id=2686, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_mixcor_20_50_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_20_50_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50_resonance.pdf  used on input line 1191.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_2d_mixcor_50_80_resonance.pdf, id=2687, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_2d_mixcor_50_80_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_2d_mixcor_50_80_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80_resonance.pdf  used on input line 1194.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_0_20_resonance.pdf, id=2688, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_0_20_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_0_20_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance.pdf  used on input line 1203.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_20_50_resonance.pdf, id=2689, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_20_50_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_20_50_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance.pdf  used on input line 1206.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_50_80_resonance.pdf, id=2690, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_50_80_resonance.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_50_80_resonance.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance.pdf  used on input line 1209.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+LaTeX Warning: Float too large for page by 2.52347pt on input line 1213.
+
+
+LaTeX Warning: Reference `yield_extraction' on page 41 undefined on input line 1216.
+
+
+LaTeX Warning: Reference `resonance_1d_correlations_with_fit' on page 41 undefined on input line 1216.
+
+
+LaTeX Warning: Reference `yield_table_resonance' on page 41 undefined on input line 1216.
+
+<figures/h_lambda_dphi_0_20_resonance_uefit.pdf, id=2691, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_0_20_resonance_uefit.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_0_20_resonance_uefit.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance_uefit.pdf  used on input line 1221.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_20_50_resonance_uefit.pdf, id=2692, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_20_50_resonance_uefit.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_20_50_resonance_uefit.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance_uefit.pdf  used on input line 1224.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_50_80_resonance_uefit.pdf, id=2693, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_50_80_resonance_uefit.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_50_80_resonance_uefit.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance_uefit.pdf  used on input line 1227.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+LaTeX Warning: Reference `yield_extraction' on page 41 undefined on input line 1229.
+
+
+LaTeX Warning: Reference `yield_extraction' on page 41 undefined on input line 1229.
+
+
+LaTeX Warning: Float too large for page by 2.64847pt on input line 1231.
+
+
+LaTeX Warning: Reference `yield_extraction' on page 41 undefined on input line 1244.
+
+
+LaTeX Warning: Reference `yield_extraction' on page 41 undefined on input line 1244.
+
+
+LaTeX Warning: Reference `final_ratio_resonance' on page 41 undefined on input line 1249.
+
+
+LaTeX Warning: Reference `final_pairwise_yields_resonance' on page 41 undefined on input line 1249.
+
+<figures/resonance_ratio_plot_2_4.pdf, id=2694, 569.12625pt x 408.52625pt>
+File: figures/resonance_ratio_plot_2_4.pdf Graphic file (type pdf)
+<use figures/resonance_ratio_plot_2_4.pdf>
+Package pdftex.def Info: figures/resonance_ratio_plot_2_4.pdf  used on input line 1253.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/resonance_pairwise_plot_2_4.pdf, id=2695, 569.12625pt x 408.52625pt>
+File: figures/resonance_pairwise_plot_2_4.pdf Graphic file (type pdf)
+<use figures/resonance_pairwise_plot_2_4.pdf>
+Package pdftex.def Info: figures/resonance_pairwise_plot_2_4.pdf  used on input line 1260.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+LaTeX Warning: Reference `resonance_v0_dphi_comp' on page 41 undefined on input line 1265.
+
+[41 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_rsbcomp_0_20.pdf, page is rotated 90 degrees>]
+<figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, id=2743, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf  used on input line 1270.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, id=2744, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf  used on input line 1273.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, id=2745, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf  used on input line 1276.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+
+LaTeX Warning: Float too large for page by 2.64847pt on input line 1280.
+
+
+LaTeX Warning: Reference `dphi_all_low_pt' on page 42 undefined on input line 1284.
+
+
+LaTeX Warning: Reference `dphi_all_high_pt' on page 42 undefined on input line 1284.
+
+<figures/h_lambda_dphi_all_15_25.pdf, id=2746, 569.12625pt x 236.885pt>
+File: figures/h_lambda_dphi_all_15_25.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_all_15_25.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_all_15_25.pdf  used on input line 1289.
+(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
+<figures/h_h_dphi_all_15_25.pdf, id=2747, 569.12625pt x 236.885pt>
+File: figures/h_h_dphi_all_15_25.pdf Graphic file (type pdf)
+<use figures/h_h_dphi_all_15_25.pdf>
+Package pdftex.def Info: figures/h_h_dphi_all_15_25.pdf  used on input line 1292.
+(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
+<figures/h_lambda_dphi_all_25_40.pdf, id=2748, 569.12625pt x 236.885pt>
+File: figures/h_lambda_dphi_all_25_40.pdf Graphic file (type pdf)
+<use figures/h_lambda_dphi_all_25_40.pdf>
+Package pdftex.def Info: figures/h_lambda_dphi_all_25_40.pdf  used on input line 1301.
+(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
+<figures/h_h_dphi_all_25_40.pdf, id=2749, 569.12625pt x 236.885pt>
+File: figures/h_h_dphi_all_25_40.pdf Graphic file (type pdf)
+<use figures/h_h_dphi_all_25_40.pdf>
+Package pdftex.def Info: figures/h_h_dphi_all_25_40.pdf  used on input line 1304.
+(pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
+
+LaTeX Warning: Reference `low_momentum_ratio' on page 42 undefined on input line 1311.
+
+
+LaTeX Warning: Reference `high_momentum_ratio' on page 42 undefined on input line 1311.
+
+<figures/v0_ratio_plot_15_25.pdf, id=2750, 569.12625pt x 408.52625pt>
+File: figures/v0_ratio_plot_15_25.pdf Graphic file (type pdf)
+<use figures/v0_ratio_plot_15_25.pdf>
+Package pdftex.def Info: figures/v0_ratio_plot_15_25.pdf  used on input line 1315.
+(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+<figures/v0_ratio_plot_25_40.pdf, id=2751, 569.12625pt x 408.52625pt>
+File: figures/v0_ratio_plot_25_40.pdf Graphic file (type pdf)
+<use figures/v0_ratio_plot_25_40.pdf>
+Package pdftex.def Info: figures/v0_ratio_plot_25_40.pdf  used on input line 1322.
+(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+
+LaTeX Warning: Reference `low_momentum_yield' on page 42 undefined on input line 1329.
+
+
+LaTeX Warning: Reference `high_momentum_yield' on page 42 undefined on input line 1329.
+
+<figures/per_trigger_yields_15_25.pdf, id=2752, 569.12625pt x 408.52625pt>
+File: figures/per_trigger_yields_15_25.pdf Graphic file (type pdf)
+<use figures/per_trigger_yields_15_25.pdf>
+Package pdftex.def Info: figures/per_trigger_yields_15_25.pdf  used on input line 1333.
+(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+<figures/per_trigger_yields_25_40.pdf, id=2753, 569.12625pt x 408.52625pt>
+File: figures/per_trigger_yields_25_40.pdf Graphic file (type pdf)
+<use figures/per_trigger_yields_25_40.pdf>
+Package pdftex.def Info: figures/per_trigger_yields_25_40.pdf  used on input line 1340.
+(pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
+
+LaTeX Warning: Reference `jetvstot' on page 42 undefined on input line 1348.
+
+
+LaTeX Warning: File `images/addendum/jet2totratio_lowpt.pdf' not found on input line 1353.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1353: Package pdftex.def Error: File `images/addendum/jet2totratio_lowpt.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1087 ...]{images/narrowmass_withSB_invmass.pdf}}
+l.1353 ...images/addendum/jet2totratio_lowpt.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/dphi_masspeak.pdf' not found on input line 1090.
+LaTeX Warning: File `images/addendum/jet2totratio_highpt.pdf' not found on input line 1356.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1090: Package pdftex.def Error: File `images/dphi_masspeak.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1356: Package pdftex.def Error: File `images/addendum/jet2totratio_highpt.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1090 ...cs[width=3in]{images/dphi_masspeak.pdf}}
+l.1356 ...mages/addendum/jet2totratio_highpt.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+[42]
 
-LaTeX Warning: File `images/dphi_LSB.pdf' not found on input line 1093.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1093: Package pdftex.def Error: File `images/dphi_LSB.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1093 ...raphics[width=3in]{images/dphi_LSB.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `mean_pt' on page 43 undefined on input line 1376.
 
 
-LaTeX Warning: File `images/dphi_RSB.pdf' not found on input line 1096.
+LaTeX Warning: File `images/addendum/boltz/boltz_temp.png' not found on input line 1382.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1096: Package pdftex.def Error: File `images/dphi_RSB.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1382: Package pdftex.def Error: File `images/addendum/boltz/boltz_temp.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1096 ...raphics[width=3in]{images/dphi_RSB.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/SB_dphicompare.pdf' not found on input line 1105.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1105: Package pdftex.def Error: File `images/SB_dphicompare.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1105 ...cs[width=3in]{images/SB_dphicompare.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[29 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_ratio_plot_25_40.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: File `images/differentBGmethods.pdf' not found on input line 1125.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1125: Package pdftex.def Error: File `images/differentBGmethods.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1125 ...idth=6in]{images/differentBGmethods.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `BGremoval' on page 30 undefined on input line 1130.
-
-
-LaTeX Warning: Reference `signalBGcorr' on page 30 undefined on input line 1132.
-
-
-LaTeX Warning: Reference `hphi2D' on page 30 undefined on input line 1132.
-
-
-LaTeX Warning: File `images/dphi_bgcompare.pdf' not found on input line 1136.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1136: Package pdftex.def Error: File `images/dphi_bgcompare.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...cs[width=4in]{images/dphi_bgcompare.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/2D_corr_hPhi.pdf' not found on input line 1143.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1143: Package pdftex.def Error: File `images/2D_corr_hPhi.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1143 ...hics[width=4in]{images/2D_corr_hPhi.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `jetvstot' on page 30 undefined on input line 1154.
-
-
-LaTeX Warning: File `images/addendum/jet2totratio_lowpt.pdf' not found on input line 1159.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1159: Package pdftex.def Error: File `images/addendum/jet2totratio_lowpt.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1159 ...images/addendum/jet2totratio_lowpt.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `images/addendum/jet2totratio_highpt.pdf' not found on input line 1162.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1162: Package pdftex.def Error: File `images/addendum/jet2totratio_highpt.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1162 ...mages/addendum/jet2totratio_highpt.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[30 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/per_trigger_yields_15_25.pdf, page is rotated 90 degrees>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/per_trigger_yields_25_40.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_approx_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_subtracted_signal_MC.pdf, page is rotated 90 degrees>] [32 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_signal_comp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_rsbcomp_0_20.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `mean_pt' on page 33 undefined on input line 1182.
-
-
-LaTeX Warning: File `images/addendum/boltz/boltz_temp.png' not found on input line 1188.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1188: Package pdftex.def Error: File `images/addendum/boltz/boltz_temp.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1188 }
+l.1382 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/boltz/pub_meanpt.png' not found on input line 1192.
+LaTeX Warning: File `images/addendum/boltz/pub_meanpt.png' not found on input line 1386.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1192: Package pdftex.def Error: File `images/addendum/boltz/pub_meanpt.png' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1386: Package pdftex.def Error: File `images/addendum/boltz/pub_meanpt.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1192 }
+l.1386 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `boltzspectra' on page 33 undefined on input line 1198.
+LaTeX Warning: Reference `boltzspectra' on page 43 undefined on input line 1392.
 
 
-LaTeX Warning: File `images/addendum/boltz/boltz_phispectra.png' not found on input line 1204.
+LaTeX Warning: File `images/addendum/boltz/boltz_phispectra.png' not found on input line 1398.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1204: Package pdftex.def Error: File `images/addendum/boltz/boltz_phispectra.png' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1398: Package pdftex.def Error: File `images/addendum/boltz/boltz_phispectra.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1204 }
+l.1398 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/boltz/boltz_pispectra.png' not found on input line 1208.
+LaTeX Warning: File `images/addendum/boltz/boltz_pispectra.png' not found on input line 1402.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1208: Package pdftex.def Error: File `images/addendum/boltz/boltz_pispectra.png' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1402: Package pdftex.def Error: File `images/addendum/boltz/boltz_pispectra.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1208 }
+l.1402 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `boltzratio' on page 33 undefined on input line 1214.
-
-[33]
-
-LaTeX Warning: File `images/addendum/boltz/boltzratio.png' not found on input line 1218.
+LaTeX Warning: Reference `boltzratio' on page 43 undefined on input line 1408.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1218: Package pdftex.def Error: File `images/addendum/boltz/boltzratio.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1218 ...n]{images/addendum/boltz/boltzratio.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: File `images/addendum/boltz/boltzratio.png' not found on input line 1412.
 
 
-LaTeX Warning: Reference `singletrigcorr' on page 34 undefined on input line 1227.
-
-
-LaTeX Warning: File `images/addendum/singletrig_dphi.png' not found on input line 1231.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1231: Package pdftex.def Error: File `images/addendum/singletrig_dphi.png' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1412: Package pdftex.def Error: File `images/addendum/boltz/boltzratio.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1231 ...in]{images/addendum/singletrig_dphi.png}
+l.1412 ...n]{images/addendum/boltz/boltzratio.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `singletrigratio' on page 34 undefined on input line 1236.
+LaTeX Warning: Reference `singletrigcorr' on page 43 undefined on input line 1421.
 
 
-LaTeX Warning: File `images/addendum/singletrig_ratio.png' not found on input line 1240.
+LaTeX Warning: File `images/addendum/singletrig_dphi.png' not found on input line 1425.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1240: Package pdftex.def Error: File `images/addendum/singletrig_ratio.png' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1425: Package pdftex.def Error: File `images/addendum/singletrig_dphi.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1240 ...n]{images/addendum/singletrig_ratio.png}
+l.1425 ...in]{images/addendum/singletrig_dphi.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[34] [35] [36] [37] [38] [39] [40]
-<figures/h_lambda_dphi_all_2_4.pdf, id=2551, 569.12625pt x 236.885pt>
+
+LaTeX Warning: Reference `singletrigratio' on page 43 undefined on input line 1430.
+
+
+LaTeX Warning: File `images/addendum/singletrig_ratio.png' not found on input line 1434.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1434: Package pdftex.def Error: File `images/addendum/singletrig_ratio.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1434 ...n]{images/addendum/singletrig_ratio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[43] [44 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_50_80_resonance.pdf, page is rotated 90 degrees>] [45 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance.pdf, page is rotated 90 degrees>] [46 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance_uefit.pdf, page is rotated 90 degrees>] [47 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/resonance_ratio_plot_2_4.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/resonance_pairwise_plot_2_4.pdf, page is rotated 90 degrees>] [48 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, page is rotated 90 degrees>] [49 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_15_25.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_15_25.pdf, page is rotated 90 degrees>] [50 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_25_40.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_25_40.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_ratio_plot_15_25.pdf, page is rotated 90 degrees>] [51 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_ratio_plot_25_40.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/per_trigger_yields_15_25.pdf, page is rotated 90 degrees>] [52 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/per_trigger_yields_25_40.pdf, page is rotated 90 degrees>] [53] [54] [55] [56]
+<figures/h_lambda_dphi_all_2_4.pdf, id=3751, 569.12625pt x 236.885pt>
 File: figures/h_lambda_dphi_all_2_4.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all_2_4.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_2_4.pdf  used on input line 1254.
+Package pdftex.def Info: figures/h_lambda_dphi_all_2_4.pdf  used on input line 1448.
 (pdftex.def)             Requested size: 289.07999pt x 120.32901pt.
 File: figures/h_lambda_dphi_all_15_25.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all_15_25.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_15_25.pdf  used on input line 1263.
+Package pdftex.def Info: figures/h_lambda_dphi_all_15_25.pdf  used on input line 1457.
 (pdftex.def)             Requested size: 289.07999pt x 120.32901pt.
 File: figures/h_lambda_dphi_all_25_40.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all_25_40.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_25_40.pdf  used on input line 1270.
+Package pdftex.def Info: figures/h_lambda_dphi_all_25_40.pdf  used on input line 1464.
 (pdftex.def)             Requested size: 289.07999pt x 120.32901pt.
- [41
+ [57
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_2_4.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: File `images/approved/2019-06-05-invmass_raw.pdf' not found on input line 1284.
+LaTeX Warning: File `images/approved/2019-06-05-invmass_raw.pdf' not found on input line 1478.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1284: Package pdftex.def Error: File `images/approved/2019-06-05-invmass_raw.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1478: Package pdftex.def Error: File `images/approved/2019-06-05-invmass_raw.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1284 ...ges/approved/2019-06-05-invmass_raw.pdf}
+l.1478 ...ges/approved/2019-06-05-invmass_raw.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/approved/2019-06-05-invmass_corr.pdf' not found on input line 1291.
+LaTeX Warning: File `images/approved/2019-06-05-invmass_corr.pdf' not found on input line 1485.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1291: Package pdftex.def Error: File `images/approved/2019-06-05-invmass_corr.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1485: Package pdftex.def Error: File `images/approved/2019-06-05-invmass_corr.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1291 ...es/approved/2019-06-05-invmass_corr.pdf}
+l.1485 ...es/approved/2019-06-05-invmass_corr.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/approved/2019-06-04-dphi_bgcompare.pdf' not found on input line 1298.
+LaTeX Warning: File `images/approved/2019-06-04-dphi_bgcompare.pdf' not found on input line 1492.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1298: Package pdftex.def Error: File `images/approved/2019-06-04-dphi_bgcompare.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1492: Package pdftex.def Error: File `images/approved/2019-06-04-dphi_bgcompare.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1298 .../approved/2019-06-04-dphi_bgcompare.pdf}
+l.1492 .../approved/2019-06-04-dphi_bgcompare.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/approved/2019-06-05-dphi_SBcompare.pdf' not found on input line 1305.
+LaTeX Warning: File `images/approved/2019-06-05-dphi_SBcompare.pdf' not found on input line 1499.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1305: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_SBcompare.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1499: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_SBcompare.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1305 .../approved/2019-06-05-dphi_SBcompare.pdf}
+l.1499 .../approved/2019-06-05-dphi_SBcompare.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/approved/2019-06-05-dphi_hhall.pdf' not found on input line 1313.
+LaTeX Warning: File `images/approved/2019-06-05-dphi_hhall.pdf' not found on input line 1507.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1313: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_hhall.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1507: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_hhall.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1313 ...ges/approved/2019-06-05-dphi_hhall.pdf}}
+l.1507 ...ges/approved/2019-06-05-dphi_hhall.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/approved/2019-06-05-dphi_hphiall.pdf' not found on input line 1317.
+LaTeX Warning: File `images/approved/2019-06-05-dphi_hphiall.pdf' not found on input line 1511.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1317: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_hphiall.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1511: Package pdftex.def Error: File `images/approved/2019-06-05-dphi_hphiall.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1317 }
+l.1511 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Float too large for page by 214.24684pt on input line 1321.
+LaTeX Warning: Float too large for page by 214.24684pt on input line 1515.
 
-[42
+[58
 
-] [43] [44] [45]
+] [59] [60] [61]
 
-LaTeX Warning: File `images/addendum/hh_50_80_fullbg.pdf' not found on input line 1330.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1330: Package pdftex.def Error: File `images/addendum/hh_50_80_fullbg.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1330 }
-        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: File `images/addendum/hh_50_80_fullbg.pdf' not found on input line 1524.
 
 
-LaTeX Warning: File `images/addendum/hphi_50_80_fullbg.pdf' not found on input line 1334.
-
-
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1334: Package pdftex.def Error: File `images/addendum/hphi_50_80_fullbg.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1524: Package pdftex.def Error: File `images/addendum/hh_50_80_fullbg.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1334 }
+l.1524 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/hh_20_50_fullbg.pdf' not found on input line 1344.
+LaTeX Warning: File `images/addendum/hphi_50_80_fullbg.pdf' not found on input line 1528.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1344: Package pdftex.def Error: File `images/addendum/hh_20_50_fullbg.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1528: Package pdftex.def Error: File `images/addendum/hphi_50_80_fullbg.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1344 }
+l.1528 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/hphi_20_50_fullbg.pdf' not found on input line 1348.
+LaTeX Warning: File `images/addendum/hh_20_50_fullbg.pdf' not found on input line 1538.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1348: Package pdftex.def Error: File `images/addendum/hphi_20_50_fullbg.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1538: Package pdftex.def Error: File `images/addendum/hh_20_50_fullbg.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1348 }
+l.1538 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/hh_0_20_fullbg.pdf' not found on input line 1358.
+LaTeX Warning: File `images/addendum/hphi_20_50_fullbg.pdf' not found on input line 1542.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1358: Package pdftex.def Error: File `images/addendum/hh_0_20_fullbg.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1542: Package pdftex.def Error: File `images/addendum/hphi_20_50_fullbg.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1358 }
+l.1542 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `images/addendum/hphi_0_20_fullbg.pdf' not found on input line 1362.
+LaTeX Warning: File `images/addendum/hh_0_20_fullbg.pdf' not found on input line 1552.
 
 
-/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1362: Package pdftex.def Error: File `images/addendum/hphi_0_20_fullbg.pdf' not found: using draft setting.
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1552: Package pdftex.def Error: File `images/addendum/hh_0_20_fullbg.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1362 }
+l.1552 }
         
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[46
 
-] [47] (/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.aux)
+LaTeX Warning: File `images/addendum/hphi_0_20_fullbg.pdf' not found on input line 1556.
+
+
+/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.tex:1556: Package pdftex.def Error: File `images/addendum/hphi_0_20_fullbg.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1556 }
+        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[62
+
+] [63] (/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.55997pt have occurred.
@@ -2386,18 +2256,18 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 14510 strings out of 492982
- 299313 string characters out of 6134896
- 310471 words of memory out of 5000000
- 17783 multiletter control sequences out of 15000+600000
- 608941 words of font info for 199 fonts, out of 8000000 for 9000
+ 14647 strings out of 492982
+ 305720 string characters out of 6134896
+ 348605 words of memory out of 5000000
+ 17903 multiletter control sequences out of 15000+600000
+ 606655 words of font info for 194 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,45p,10451b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (49 pages, 1799659 bytes).
+Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (65 pages, 2506807 bytes).
 PDF statistics:
- 2661 PDF objects out of 2984 (max. 8388607)
- 1148 compressed objects within 12 object streams
+ 3860 PDF objects out of 4296 (max. 8388607)
+ 1650 compressed objects within 17 object streams
  0 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

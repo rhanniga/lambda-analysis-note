@@ -47,23 +47,25 @@ Two-particle jet-like angular correlations with identified strange hadrons in p-
 %
 %\input{alice_mynote.tex}               %%%%%%%%%%% put the body of the article here
 \tableofcontents
+\clearpage
 
 \section{Introduction}
 
+\subsection{Motivation}
 Recent studies have shown that the ratio of the yield of $\Lambda$ baryons to charged pions differs between pp, p--Pb and PbPb collisions, specifically in the mid-$p_T$ region of $1-$\SI{4}{GeV/c}.  Additionally, similar studies have seen an increase in the $\Lambda/(\pi^{+} + \pi^{-})$ yields as a function of charged particle multiplicity in p--Pb collisions. The origin of this increase is still unknown.
 
 By performing angular correlations of a high $p_T$ trigger hadron with an associated $\Lambda$ (or charged hadron as a proxy for a pion) in p-Pb events, we are able to separate out $\Lambda$ baryon production into three distinct kinematic regions:
 \begin{itemize}
 \item The near-side peak of the correlation, corresponding to jet-like production with no medium interactions,
 \item The away-side peak of the correlation, corresponding to jet-like production with possible medium interaction, and
-\item The underlying event, corresponding to soft production within the medium.
+\item The uncorrelated pairs, corresponding to the ``underlying event'' or soft production within the medium.
 \end{itemize}
 
 For this study, 1-d $\Delta\varphi$ angular correlations of jet-like $h-\Lambda$ and $h-h$ pairs were measured in p-Pb events independently for three multiplicity bins (0-20\%, 20-50\%, 50-80\%), and the final ratios of yields of correlated pairs were compared to study the onset of this enhancement. These correlations were measured using the \texttt{PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatio} class.
 
-\section{Event and Track Selection}
+\subsection{Event and Track Selection}
 
-\subsection{Dataset}
+\subsubsection{Dataset}
 
 Every event in this analysis was a p-Pb collision at $\sqrt{s_{NN}} =$\SI{5.02}{TeV} taken from the following runlist which consists of 32 runs during the LHC16q period:
 
@@ -78,7 +80,7 @@ Larger statistics were needed to correct for a pairwise hadron-$\Lambda$ ineffic
 % TODO: UPDATE THIS
 This MC production contains around N million minimum bias events.
 
-\subsection{Event Selection}
+\subsubsection{Event Selection}
 
 Events were selected by requiring a collision Z-vertex of less than \SI{10}{cm} and at least 3 reconstructed tracks in the event.  
 
@@ -101,9 +103,9 @@ Multiplicity & Total Evts. & Has 3 Tracks & $|Z_{vtx}| <$  10cm + 3 tracks & \% 
 
 For all events, the standard Physics selection with pile-up cuts was applied with \texttt{AddTaskPhysicsSelection(kFALSE, kTRUE)}.
 
-\subsection{Track Selection}
+\section{Track Selection}
 
-\subsubsection{Associated Hadron Track Cuts}
+\subsection{Associated Hadron Track Cuts}
 \label{assoccuts}
 For all associated hadrons, a minimum $p_{T}$ cuts of $p_{T} >$ \SI{0.15}{GeV/c} was applied.  Additinally, an $\eta$ cut of $|{\eta}| < 0.8$ was required. Furthermore, all associated hadrons were required to meet the standard cuts supplied by \texttt{AliESDtrackCuts::GetStandardITSTPCTrackCuts2011()} corresponding to track filter bit 1024, with a modified number of MinNClustersTPC from the standard cut of 50:
 
@@ -130,15 +132,15 @@ with further binning performed offline. The $\it{p}_{T}$, $\varphi$ and $\eta$ d
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/assoc_pt_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/assoc_pt_dist_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/assoc_phi_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/assoc_phi_dist_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/assoc_eta_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/assoc_eta_dist_0_20.pdf}}
 \end{subfigure}
-\caption{The $\it{p}_{T}$ (left), $\varphi$ (center) and $\eta$ (right) distributions for the associated hadrons in the multiplicity range 0-20\%.}
+\caption{The $\it{p}_{T}$ (top), $\varphi$ (center) and $\eta$ (bottom) distributions for the associated hadrons in the multiplicity range 0-20\%.}
 \label{assoc_plots}
 \end{figure}
 
@@ -158,7 +160,7 @@ $${1.0 < p_{T} < \SI{4.0}{GeV/c}},$$
 
 with further binning performed offline.
 
-\subsubsection{Trigger Track Cuts}
+\subsection{Trigger Track Cuts}
 \label{trigcuts}
 For the trigger hadron tracks, Hybrid Global constrained tracks were accepted using the cuts supplied by \texttt{IsHybridGlobalConstrainedGlobal()}, or track bit 768:
 
@@ -182,15 +184,15 @@ with further binning performed offline. The $\it{p}_{T}$, $\varphi$ and $\eta$ d
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/trig_pt_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/trig_pt_dist_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/trig_phi_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/trig_phi_dist_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=2in]{figures/trig_eta_dist_0_20.pdf}}
+\includegraphics[width=4in]{figures/trig_eta_dist_0_20.pdf}}
 \end{subfigure}
-\caption{The $\it{p}_{T}$ (left), $\varphi$ (center) and $\eta$ (right) distributions for the trigger hadrons in the multiplicity range 0-20\%. Note that the $\varphi$ and $\eta$ distributions are uniform, indicating no geometric biases from track selection (TPC sector bounds, etc.) will be introduced into the angular correlations.}
+\caption{The $\it{p}_{T}$ (top), $\varphi$ (center) and $\eta$ (bottom) distributions for the trigger hadrons in the multiplicity range 0-20\%. Note that the $\varphi$ and $\eta$ distributions are uniform, indicating no geometric biases from track selection (TPC sector bounds, etc.) will be introduced into the angular correlations.}
 \label{trig_plots}
 \end{figure}
 
@@ -304,15 +306,15 @@ The invariant mass distributions in each multiplicity bin for the $\Lambda$s rec
 \begin{figure}[ht]
 \centering
 \begin{subfigure} {
-\includegraphics[width=2in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}}
 \end{subfigure}
 \begin{subfigure} {
-\includegraphics[width=2in]{figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf}}
 \end{subfigure}
 \begin{subfigure} {
-\includegraphics[width=2in]{figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf}}
 \end{subfigure}
-\caption{Invariant mass distributions in the 0-20\% (left), 20-50\% (center), and 50-80\% (right) multiplicity bins for $\Lambda$s reconstructed using the V0 finder with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible for all multiplicity bins, despite no topological cuts being applied to the V0s.}
+\caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible for all multiplicity bins, despite no topological cuts being applied to the V0s.}
 \label{v0_mass}
 \end{figure}
 
@@ -320,16 +322,16 @@ The invariant mass distributions in each multiplicity bin for the $\Lambda$s rec
 
 \begin{table}[h!]
     \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c | c | c | c | c | c | }
 \hline
-Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2$) \\
+Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2$) & $\chi^2$/NDF \\
 \hline
-0-20\% & 1.82e+02  & 1.116 & 1.24e-03 & 1.10e-03\\
-20-50\% & 8.58e+01 & 1.116 & 1.24e-03 & 1.07e-03\\
-50-80\% & 1.78e+01 & 1.116 & 1.23e-03 & 1.03e-03\\
+0-20\% & 1.82e+02  & 1.116 & 1.24e-03 & 1.10e-03 & 31.24\\
+20-50\% & 8.58e+01 & 1.116 & 1.24e-03 & 1.07e-03 & 15.55\\
+50-80\% & 1.78e+01 & 1.116 & 1.23e-03 & 1.03e-03 & 4.55\\
 \hline
 \end{tabular}
-\caption{Paremeters from the Voigt fit to the invariant mass distributions for the $\Lambda$s reconstructed using the V0 finder. The errors were negligible relative to the values.}
+\caption{Parameters from the Voigt fit to the invariant mass distributions for the $\Lambda$s reconstructed using the V0 finder, along with the $\chi^2/NDF$ for the total fit. The errors were negligible relative to the values.}
 \label{voigt_parameters}
 \end{table}
 
@@ -343,19 +345,18 @@ This signal region was chosen to maximize statistical significance, and it does 
 
 
 
-\section{Correlation Measurement}
+\section{Correlation Measurement Technique}
 \label{corrsec}
 \subsection{Full Correlation Measurement Method}
 
-The per-trigger correlation is approximated using the formula:
+The per-trigger correlation is approximated for each multiplicity bin using the formula:
 
 \begin{align}
 \label{corrEq}
 C_{trig}(\Delta\varphi, \Delta\eta) = \frac{1}{N_{trig}}\frac{B(0,0)*S(\Delta\varphi,\Delta\eta)}{B(\Delta\varphi, \Delta\eta)}
 \end{align}
 
-where $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution. 
-
+where $N_{trig}$ is the total number of hadrons in the $4 < p_{T} < 8$ GeV/c range that pass our trigger cuts described in Section \ref{trigcuts}, $S(\Delta\varphi, \Delta\eta)$ is the same event correlation and $B(\Delta\varphi, \Delta\eta)$ is the mixed-event correlation.  To properly account for the acceptance effects, the mixed-event distribution is scaled to the value of the $(\Delta\varphi = 0, \Delta\eta = 0)$ bin of the same event distribution.
 
 However, what is actually measured is an angular correlation of $h-(p\pi)$ pairs that is comprised of the real $h-\Lambda$ signal as well as a background of $h-(p\pi)$ pairs. The full correlation equation is then:
 
@@ -375,7 +376,7 @@ While the $h-(p\pi)$ background is negligible within our main transverse momentu
 \subsection{Mixed Event Acceptance Correction}
 \label{mixed_event_correction}
 
-For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) in the 0-20\% multiplicity bin are shown in Figures \ref{uncorr2d_0_20} and \ref{mixed2d_0_20}, respectively.
+For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) for each multiplicity bin are shown in Figures \ref{uncorr2d_0_20} through \ref{mixed2d_50_80}.
 
 \begin{figure}[ht]
 \centering
@@ -392,6 +393,30 @@ For each multiplicity bin, events were separated into z-vertex position bins wit
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_nomixcor_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_nomixcor_20_50.pdf}}
+\end{subfigure}
+\caption{2-D non-acceptance corrected h-$p\pi$ (left) and h-h (right) angular correlations for the 20-50\% multiplicity bin (all z-vertex bins merged together)}
+\label{uncorr2d_20_50}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_nomixcor_50_80.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_nomixcor_50_80.pdf}}
+\end{subfigure}
+\caption{2-D non-acceptance corrected h-$p\pi$ (left) and h-h (right) angular correlations for the 50-80\% multiplicity bin (all z-vertex bins merged together)}
+\label{uncorr2d_50_80}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
 \includegraphics[width=3in]{figures/h_lambda_2d_mixed_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
@@ -401,7 +426,31 @@ For each multiplicity bin, events were separated into z-vertex position bins wit
 \label{mixed2d_0_20}
 \end{figure}
 
-For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figure \ref{mixcor2d}. 
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixed_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixed_20_50.pdf}}
+\end{subfigure}
+\caption{2-D mixed event h-$p\pi$ (left) and h-h (right) angular correlations for the 20-50\% multiplicity bin (all z-vertex bins merged together)}
+\label{mixed2d_20_50}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixed_50_80.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixed_50_80.pdf}}
+\end{subfigure}
+\caption{2-D mixed event h-$p\pi$ (left) and h-h (right) angular correlations for the 50-80\% multiplicity bin (all z-vertex bins merged together)}
+\label{mixed2d_50_80}
+\end{figure}
+
+For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figures \ref{mixcor2d_0_20} through \ref{mixcor2d_50_80}. Each plot was scaled by $1/N_{trig}$.
 
 \begin{figure}[ht]
 \centering
@@ -411,8 +460,32 @@ For each multiplicity bin, the acceptance correction (as described in Eq. 1) was
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/h_h_2d_mixcor_0_20.pdf}}
 \end{subfigure}
-\caption{2-D h-$p\pi$ (left) and h-h (right) angular correlations for the 0-20\% multiplicity bin after acceptance corrections. Note that the triangular shape in $\Delta\eta$ is no longer present.}
+\caption{Per-trigger 2-D h-$p\pi$ (left) and h-h (right) angular correlations for the 0-20\% multiplicity bin after acceptance corrections. Note that the triangular shape in $\Delta\eta$ is no longer present.}
 \label{mixcor2d_0_20}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixcor_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixcor_20_50.pdf}}
+\end{subfigure}
+\caption{Per-trigger 2-D h-$p\pi$ (left) and h-h (right) angular correlations for the 20-50\% multiplicity bin after acceptance corrections. Note that the triangular shape in $\Delta\eta$ is no longer present.}
+\label{mixcor2d_20_50}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_2d_mixcor_50_80.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_2d_mixcor_50_80.pdf}}
+\end{subfigure}
+\caption{Per-trigger 2-D h-$p\pi$ (left) and h-h (right) angular correlations for the 50-80\% multiplicity bin after acceptance corrections. Note that the triangular shape in $\Delta\eta$ is no longer present.}
+\label{mixcor2d_50_80}
 \end{figure}
 
 As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) and an associated hadron.
@@ -706,7 +779,7 @@ Once the fit of the 1D $\Delta\varphi$ angular correlations is performed, the co
 These yields are calculated for the different multiplicity bins in both the near and away-side peaks, as well as the total yield of correlated pairs for both the $h-\phi$ and $h-h$ correlations.
 
 
-\subsection{Multiplicity Dependent Ratio Measurement}
+\section{Multiplicity Dependent Ratio Measurement}
 
 Performing the same type of fit for the $h-\phi$ and the $h-h$ correlations, we are able to measure the ratio of yields of $\frac{h-\phi}{h-h}$ correlated pairs both in the total event, as well as within the near- and away-side jets (fig.\ref{ratioplot}).
 
@@ -942,70 +1015,6 @@ By computing the pair yields using the non-zero $v_2$ values, we can compare the
 
 \clearpage
 \appendix
-\section{Second Momentum Bin Measurement}
-
-In order to gain more insight into the $\Lambda$ production in jets vs. the underlying event, we can also split the associated momentum bins into a high $p_{\text{T}}$ bin ($2.5 < p_{\text{T}} < \SI{4.0}{GeV/c}$) and a low $p_{\text{T}}$ bin ($1.5 < p_{\text{T}} < \SI{2.5}{GeV/c}$).  The correlation analysis is performed for these two separate momentum bins exactly as laid out in Section 4, and is done for both h-$\Lambda$ and h-h correlated pairs. The results for the final $Delta\varphi$ distributions are shown in Figures \ref{dphi_all_low_pt} (low $p_{\text{T}}$ bin) and \ref{dphi_all_high_pt} (high $p_{\text{T}}$ bin).
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=5in]{figures/h_lambda_dphi_all_15_25.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=5in]{figures/h_h_dphi_all_15_25.pdf}}
-\end{subfigure}
-\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the low $p_{\text{T}}$ bin. The jet-like components appear suppressed when compared to our full momentum range measurement.}
-\label{dphi_all_low_pt}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=5in]{figures/h_lambda_dphi_all_25_40.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=5in]{figures/h_h_dphi_all_25_40.pdf}}
-\end{subfigure}
-\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the high $p_{\text{T}}$ bin. There appears to be a slight enhancement of the jet-like compenents when compared to our full momentum range measurement.}
-\label{dphi_all_high_pt}
-\end{figure}
-
-
-By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momentum regions (Figures \ref{low_momentum_ratio} (low) and \ref{high_momentum_ratio} (high)), we still see the clear separation between the jet-like production and the underlying event production. We also observe a similar increase in the $h-\Lambda$/$h-h$ ratio as a function of multiplicity in both momentum bins. However, the increase in the UE and total ratios appear to be enhanced within the higher $p_{\text{T}}$ bin when compared with the lower $p_{\text{T}}$ bin.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=5in]{figures/v0_ratio_plot_15_25.pdf}
-\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
-\label{low_momentum_ratio}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=5in]{figures/v0_ratio_plot_25_40.pdf}
-\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
-\label{high_momentum_ratio}
-\end{figure}
-
- The lower momentum bin also sees a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\Lambda/h-h$ ratio to approach the underlying event ratio at high multiplicity.
-
- The per-trigger pairwise yields for both momentum bins can be seen in Figures \ref{low_momentum_yield} (low) and \ref{high_momentum_yield} (high). We observe similar trends across both momentum bins, including a much larger increase in both jet-like components of the $h-\Lambda$ yields when compared to the $h-h$ yields, which appear mostly flat in both $p_\text{T}$ bins. However, the lower momentum bin sees moderate tension between the near and away-side yields of the $h-\Lambda$ pairs, with the away-side production appearing to be slightly higher than the near-side production across all multiplicity bins. This may also be a hint that $\Lambda$ production is being enhanced via jet-medium interactions.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=5in]{figures/per_trigger_yields_15_25.pdf}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
-\label{low_momentum_yield}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=5in]{figures/per_trigger_yields_25_40.pdf}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
-\label{high_momentum_yield}
-\end{figure}
-
-
 
 \section{Resonance Technique for $\Lambda$ Reconstruction}
 \label{resonance_technique}
@@ -1266,9 +1275,73 @@ A comparison of the final per-trigger $h-\Lambda$ $\Delta\varphi$ correlation st
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf}}
 \end{subfigure}
-\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations for $\Lambda$s reconstructed using the resonance technique (blue) and the V0 technique (red) for each multiplicity bin (from left to right: 0-20\%, 20-50\%, 50-80\%). All three multiplicity bins show very good agreement between the two techniques.}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations for $\Lambda$s reconstructed using the resonance technique (blue) and the V0 technique (red) for each multiplicity bin (from top to bottom). All three multiplicity bins show very good agreement between the two techniques.}
 \label{resonance_v0_dphi_comp}
 \end{figure}
+
+\section{Second Momentum Bin Measurement}
+
+In order to gain more insight into the $\Lambda$ production in jets vs. the underlying event, we can also split the associated momentum bins into a high $p_{\text{T}}$ bin ($2.5 < p_{\text{T}} < \SI{4.0}{GeV/c}$) and a low $p_{\text{T}}$ bin ($1.5 < p_{\text{T}} < \SI{2.5}{GeV/c}$).  The correlation analysis is performed for these two separate momentum bins exactly as laid out in Section 4, and is done for both h-$\Lambda$ and h-h correlated pairs. The results for the final $Delta\varphi$ distributions are shown in Figures \ref{dphi_all_low_pt} (low $p_{\text{T}}$ bin) and \ref{dphi_all_high_pt} (high $p_{\text{T}}$ bin).
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_lambda_dphi_all_15_25.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_h_dphi_all_15_25.pdf}}
+\end{subfigure}
+\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the low $p_{\text{T}}$ bin. The jet-like components appear suppressed when compared to our full momentum range measurement.}
+\label{dphi_all_low_pt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_lambda_dphi_all_25_40.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/h_h_dphi_all_25_40.pdf}}
+\end{subfigure}
+\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the high $p_{\text{T}}$ bin. There appears to be a slight enhancement of the jet-like compenents when compared to our full momentum range measurement.}
+\label{dphi_all_high_pt}
+\end{figure}
+
+
+By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momentum regions (Figures \ref{low_momentum_ratio} (low) and \ref{high_momentum_ratio} (high)), we still see the clear separation between the jet-like production and the underlying event production. We also observe a similar increase in the $h-\Lambda$/$h-h$ ratio as a function of multiplicity in both momentum bins. However, the increase in the UE and total ratios appear to be enhanced within the higher $p_{\text{T}}$ bin when compared with the lower $p_{\text{T}}$ bin.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/v0_ratio_plot_15_25.pdf}
+\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
+\label{low_momentum_ratio}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/v0_ratio_plot_25_40.pdf}
+\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
+\label{high_momentum_ratio}
+\end{figure}
+
+ The lower momentum bin also sees a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\Lambda/h-h$ ratio to approach the underlying event ratio at high multiplicity.
+
+ The per-trigger pairwise yields for both momentum bins can be seen in Figures \ref{low_momentum_yield} (low) and \ref{high_momentum_yield} (high). We observe similar trends across both momentum bins, including a much larger increase in both jet-like components of the $h-\Lambda$ yields when compared to the $h-h$ yields, which appear mostly flat in both $p_\text{T}$ bins. However, the lower momentum bin sees moderate tension between the near and away-side yields of the $h-\Lambda$ pairs, with the away-side production appearing to be slightly higher than the near-side production across all multiplicity bins. This may also be a hint that $\Lambda$ production is being enhanced via jet-medium interactions.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/per_trigger_yields_15_25.pdf}
+\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin.}
+\label{low_momentum_yield}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=5in]{figures/per_trigger_yields_25_40.pdf}
+\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin.}
+\label{high_momentum_yield}
+\end{figure}
+
 
 \section{Jet vs. Total Production comparison}
 
