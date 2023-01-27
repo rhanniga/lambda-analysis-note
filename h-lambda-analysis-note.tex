@@ -850,9 +850,9 @@ The $h-\Lambda$ and $h-h$ near-side, away-side, and underlying-event per-trigger
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 4.14e-03 $\pm$ 1.35e-04 & 4.42e-03 $\pm$ 1.88e-04 & 8.75e-02 $\pm$ 3.84e-04 & 9.58e-02 $\pm$ 2.45e-04 \\
-20-50\% & 3.50e-03 $\pm$ 1.23e-04 & 3.27e-03 $\pm$ 1.45e-04 & 4.69e-02 $\pm$ 3.11e-04 & 5.36e-02 $\pm$ 2.02e-04 \\
-50-80\% & 2.93e-03 $\pm$ 1.61e-04 & 2.80e-03 $\pm$ 2.06e-04 & 2.44e-02 $\pm$ 3.89e-04 & 2.99e-02 $\pm$ 2.66e-04 \\
+0-20\% & 3.90e-03 $\pm$ 1.84e-04 & 4.42e-03 $\pm$ 1.88e-04 & 8.75e-02 $\pm$ 3.84e-04 & 9.58e-02 $\pm$ 2.45e-04 \\
+20-50\% & 3.41e-03 $\pm$ 1.52e-04 & 3.24e-03 $\pm$ 1.54e-04 & 4.69e-02 $\pm$ 3.11e-04 & 5.36e-02 $\pm$ 2.02e-04 \\
+50-80\% & 2.72e-03 $\pm$ 1.94e-04 & 2.80e-03 $\pm$ 2.06e-04 & 2.44e-02 $\pm$ 3.89e-04 & 2.99e-02 $\pm$ 2.66e-04 \\
 
 \hline
 \end{tabular}
@@ -866,9 +866,11 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & 3.60e-01 $\pm$ 8.23e-04 & 2.28e-01 $\pm$ 9.29e-04 & 3.63e+00 $\pm$ 1.88e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
-20-50\% & 3.48e-01 $\pm$ 6.54e-04 & 2.08e-01 $\pm$ 8.38e-04 & 2.18e+00 $\pm$ 1.65e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
-50-80\% & 3.46e-01 $\pm$ 1.02e-03 & 1.99e-01 $\pm$ 1.15e-03 & 1.24e+00 $\pm$ 2.12e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
+0-20\% & 3.54e-01 $\pm$ 9.32e-04 & 2.28e-01 $\pm$ 9.29e-04 & 3.63e+00 $\pm$ 1.88e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
+20-50\% & 3.43e-01 $\pm$ 8.49e-04 & 2.08e-01 $\pm$ 8.38e-04 & 2.18e+00 $\pm$ 1.65e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
+50-80\% & 3.40e-01 $\pm$ 1.24e-03 & 1.99e-01 $\pm$ 1.15e-03 & 1.24e+00 $\pm$ 2.12e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
 \hline
 \end{tabular}
 \caption{Per-trigger pairwise $h-h$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the same procedure described in the previous section.}
@@ -879,7 +881,7 @@ In order to investigate the multiplicity dependence of jet-like $\Lambda$ produc
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=4in]{figures/pairwise_plot_2_4.pdf}
+\includegraphics[width=6in]{figures/pairwise_plot_2_4.pdf}
 \caption{Per-trigger pairwise $h-\Lambda$ (scaled by 200 for clarity) and $h-h$ yields plotted with respect to our multiplicity bins. The $h-\Lambda$ sees roughly a 70\% increase from the lowest multiplicity bin to the highest, while the $h-h$ yield only sees around a 5\% increase.}
 \label{final_pairwise_yields}
 \end{figure}
@@ -892,7 +894,7 @@ Once we have extracted the per-trigger pairwise yields from our $h-\Lambda$ and 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=6in]{figures/v0_ratio_plot_2_4_deta_12.pdf}
+\includegraphics[width=6in]{figures/v0_ratio_plot_2_4.pdf}
 \caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of multiplicity percentile for each of the kinematic regions. The yields are extracted using the procedure described in Section {\ref{yield_extraction}}, with values taken from Tables {\ref{h_lambda_yield_table}} and {\ref{h_h_yield_table}}.}
 \label{ratioplot}
 \end{figure}
@@ -902,19 +904,412 @@ Comparing the ratio in different kinematic regions as a function of multiplicity
 \section{Systematic Errors}
 \label{systematics}
 \subsection{Systematics Overview}
-For all possible sources of systematic errors, the errors are first calculated per $\Delta\varphi$ bin in the full $\Delta\varphi$ distribution.  This is done using a ratio of all variations to the standard cut and finding the overall RMS across all $\Delta\varphi$ bin. After this is done, each variation then undergoes the full yield extraction.  The variation of the final yields is then calculated again as the RMS of all variations, giving a separate systematic error for the near-side, away-side, underlying-event, and total pair yield.  For the final $(h-\phi)/(h-h)$ pair ratios, the systematic errors from the individual $(h-\phi)$ and $(h-h$) yields are treated as uncorrelated.
+This analysis has two major components:
+\begin{enumerate}
+\item The generation of the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions
+\item The extraction of the pairwise yields from the $\Delta\varphi$ distributions
+\end{enumerate}
 
-\subsection{Systematic Error Sources}
+As such, this Systematic Errors section is separated into two subsections, one for each of these components. In each section, we detail the different sources of systematic errors that we encounter, and how we account for them in our final results.
 
-\subsection{PID Cuts}
 
-\subsection{Signal Region Selection}
+\subsection{$\Delta\varphi$ Distribution Generation}
+As our final yields depend on the $\Delta\varphi$ distributions, we must consider all of the sources of systematic errors that can appear during the generation of these distributions. These sources of systematic errors are as follows.
 
-\subsection{Background Subtraction}
+\subsubsection{Signal Region Selection}
+While our central points of this analysis involve almost the entirety of our $\Lambda$ signal region, the final result should not depend on which section of the signal region we choose. To investigate this, we vary the signal region in the following ways:
 
-\subsection{Correlation Fitting Procedure}
+\subsubsection{Signal Region Selection}
+While our central points of this analysis involve almost the entirety of our $\Lambda$ signal region, the final result should not depend on which section of the signal region we choose. To investigate this, we vary the signal region in the following ways:
+
+\subsubsection{Background Subtraction}
+While we don't consider the combinatorial background from our V0-finder reconstructed $\Lambda$s in the central points of this analysis, its effect may still be present in our final correlation distributon. To investigate this effect, we perform a background subtraction procudure on the correlation distribution, similar to the one described in Section \ref{removecomb}. Keeping the signal region fixed ($1.100 < M_{p\pi} < 1.134$ GeV/$c^2$), we vary the RSB region in the following ways:
+
+\subsubsection{Final Systematic Errors from $\Delta\varphi$ Distribution Generation}
+The final systematic errors for the $\Delta\varphi$ distributions are calculated as follows:
+
+\begin{itemize}
+\item For each $\Delta\varphi$ bin, the result of each variation is divided by the central value to generate a list of ratios
+\item The RMS of the list of ratios in each $\Delta\varphi$ bin is calculated
+\item For each $\Delta\varphi$ bin, the systematic error is simply the RMS
+\end{itemize}
+
+As the sources of systematics discussed in this section do not affect our di-hadron distributions, we have assigned a systematic error of 4\% to the di-hadron distributions for each $\Delta\varphi$ distribution as this matches the systematic errors from previous analyses of the same data set \cite{JUSTINS PAPER}.
+
+The $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions with their systematic errors are shown in Figures \ref{h_lambda_dphi_systematics} and \ref{h_h_dphi_systematics}, respectively. The statistical errors are not shown to emphasize the systematic errors, but they are included in the final results (Section \ref{results})
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_onlysyst.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_onlysyst.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_onlysyst.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins with the systematic errors shown for each bin (statistical errors are not shown).}
+\label{h_lambda_dphi_systematics}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_onlysyst.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_onlysyst.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_onlysyst.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins with the sytematic errors shown for each bin (statistical errors are not shown).}
+\label{h_h_dphi}
+\end{figure}
+
+
+\subsection{Yield Extraction}
+The largest systematic error of this analysis corresponds to the different techniques that can be used to extract the yields in each kinematic region from the $\Delta\varphi$ distributions. We have already discussed the \textbf{6-bin underlying event technique} in Section \ref{yield_extraction}, but we will also consider the following methods. 
+
+\subsubsection{4-bin Underlying Event Technique}
+\label{4bin}
+The 4-bin UE technique is very similar to the 6-bin UE technique, but we only select 4 bins to get an average for our UE baseline. The technique is as follows:
+
+\begin{itemize}
+\item The underlying event region is defined using a straight-line fit of the average of bins (1, 8, 9, 16) in the $\Delta\varphi$ distribution
+\item The near-side yield is calculated via $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin
+\item The away-side yield is calculated via $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin
+\item The underlying-event yield is calculated via $\sum_{i=1}^{16} \text{UE}_i = 16 \times UE$
+\item The total-yield is calculated via $\sum_{i=1}^{16} \Delta\varphi_\text{bin i} = \text{near-side} + \text{away-side} + \text{underlying-event}$
+\end{itemize}
+
+The final per-trigger $\Delta\varphi$ plots with the UE fit using the 4-bin UE technique are shown in Figures \ref{h_lambda_dphi_uefit_4bin} ($h-\Lambda$) and \ref{h_h_dphi_uefit_4bin} ($h-h$), and the extracted yields are shown in Table \ref{h_lambda_yield_table_4bin} ($h-\Lambda$) and Table \ref{h_h_yield_table_4bin} ($h-h$).
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_uefit_4bin.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_uefit_4bin.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_uefit_4bin.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 4-bin technique described in this section.} 
+\label{h_lambda_dphi_uefit_4bin}
+\end{figure}
+	
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_uefit_4bin.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_uefit_4bin.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_uefit_4bin.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 4-bin technique described in this section.} 
+\label{h_h_dphi_uefit_4bin}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+	
+0-20\% & 3.73e-03 $\pm$ 1.91e-04 & 4.25e-03 $\pm$ 1.94e-04 & 8.78e-02 $\pm$ 4.72e-04 & 9.58e-02 $\pm$ 2.45e-04 \\
+20-50\% & 3.47e-03 $\pm$ 1.57e-04 & 3.30e-03 $\pm$ 1.59e-04 & 4.68e-02 $\pm$ 3.81e-04 & 5.36e-02 $\pm$ 2.02e-04 \\
+50-80\% & 2.75e-03 $\pm$ 2.00e-04 & 2.83e-03 $\pm$ 2.12e-04 & 2.44e-02 $\pm$ 4.73e-04 & 2.99e-02 $\pm$ 2.66e-04 \\
+	
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-\Lambda$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the 4-bin technique described in this section.}
+\label{h_lambda_yield_table_4bin}
+\end{table}
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+
+0-20\% & 3.56e-01 $\pm$ 9.61e-04 & 2.30e-01 $\pm$ 9.58e-04 & 3.62e+00 $\pm$ 2.30e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
+20-50\% & 3.42e-01 $\pm$ 8.74e-04 & 2.08e-01 $\pm$ 8.63e-04 & 2.18e+00 $\pm$ 2.02e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
+50-80\% & 3.38e-01 $\pm$ 1.27e-03 & 1.96e-01 $\pm$ 1.18e-03 & 1.24e+00 $\pm$ 2.61e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-h$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the 4-bin technique described in this section.}
+\label{h_h_yield_table_4bin}
+\end{table}
+
+\subsubsection{ZYAM Underlying Event Technique}
+\label{zyam}
+The ZYAM (Zero Yield At Minimum) underlying event technique is a modification of the 4 and 6 bin techniques, whereby we only take the minimum bin value in the $\Delta\varphi$ distribution as the underlying event value. The full technique is as follows:
+
+\begin{itemize}
+\item The underlying event region is defined using a straight-line fit with value and error set to the value and error of the minimum bin in the $\Delta\varphi$ distribution
+\item The near-side yield is calculated via $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin
+\item The away-side yield is calculated via $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin
+\item The underlying-event yield is calculated via $\sum_{i=1}^{16} \text{UE}_i = 16 \times UE$
+\item The total-yield is calculated via $\sum_{i=1}^{16} \Delta\varphi_\text{bin i} = \text{near-side} + \text{away-side} + \text{underlying-event}$
+\end{itemize}
+
+The final per-trigger $\Delta\varphi$ plots with the UE fit using the ZYAM UE technique are shown in Figures \ref{h_lambda_dphi_uefit_zyam} ($h-\Lambda$) and \ref{h_h_dphi_uefit_zyam} ($h-h$), and the extracted yields are shown in Table \ref{h_lambda_yield_table_zyam} ($h-\Lambda$) and Table \ref{h_h_yield_table_zyam} ($h-h$).
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_uefit_zyam.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_uefit_zyam.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_uefit_zyam.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the ZYAM technique described in this section.} 
+\label{h_lambda_dphi_uefit_zyam}
+\end{figure}
+	
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_uefit_zyam.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_uefit_zyam.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_uefit_zyam.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the ZYAM technique described in this section.} 
+\label{h_h_dphi_uefit_zyam}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+	
+0-20\% & 4.71e-03 $\pm$ 2.37e-04 & 5.23e-03 $\pm$ 2.40e-04 & 8.58e-02 $\pm$ 9.28e-04 & 9.58e-02 $\pm$ 2.45e-04 \\
+20-50\% & 3.98e-03 $\pm$ 1.95e-04 & 3.81e-03 $\pm$ 1.96e-04 & 4.58e-02 $\pm$ 7.56e-04 & 5.36e-02 $\pm$ 2.02e-04 \\
+50-80\% & 3.55e-03 $\pm$ 2.44e-04 & 3.63e-03 $\pm$ 2.54e-04 & 2.28e-02 $\pm$ 9.26e-04 & 2.99e-02 $\pm$ 2.66e-04 \\
+	
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-\Lambda$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the ZYAM technique described in this section.}
+\label{h_lambda_yield_table_zyam}
+\end{table}
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+
+0-20\% & 3.82e-01 $\pm$ 1.19e-03 & 2.56e-01 $\pm$ 1.18e-03 & 3.57e+00 $\pm$ 4.57e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
+20-50\% & 3.62e-01 $\pm$ 1.07e-03 & 2.28e-01 $\pm$ 1.06e-03 & 2.14e+00 $\pm$ 4.00e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
+50-80\% & 3.58e-01 $\pm$ 1.49e-03 & 2.16e-01 $\pm$ 1.42e-03 & 1.20e+00 $\pm$ 5.13e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-h$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the ZYAM technique described in this section.}
+\label{h_h_yield_table_zyam}
+\end{table}
+
+
+\subsubsection{Full 1D Correlation Fit}
+\label{full_correlation_fit}
+The full 1D correlation fit involves fitting the entire $\Delta\varphi$ distribution with a function that includes near-side, away-side and underlying-event components. The fit function is given by:
+
+\begin{gather*}
+	\text{Fit}(\Delta\varphi) = C + A_{near}*\exp{\frac{(\Delta\varphi - M_{near})^2}{2*\sigma_{near}}} + A_{away}*\exp{\frac{(\Delta\varphi - M_{away})^2}{2*\sigma_{away}}} \\
+	+ (A_{near,mirror}*\exp{\frac{((\Delta\varphi+2\pi) - M_{near,mirror})^2}{2*\sigma_{near,mirror}}} + A_{away,mirror}*\exp{\frac{((\Delta\varphi-2\pi) - M_{away,mirror})^2}{2*\sigma_{away,mirror}}})
+\end{gather*}
+
+where the ``mirror'' terms are added to account for the $2\pi$ periodicity of the $\Delta\varphi$ distribution. The mean in the near-side gaussian (and corresponding mirror term) is fixed to 0 ($2\pi$) and the mean in the away-side guassian (and corresponding mirror term) is fixed to $\pi$ ($-\pi$), but all other paremeters are allowed to vary. The yield extraction procedure is as follows:
+
+\begin{itemize}
+\item The $\Delta\varphi$ distribution is fit with the correlation function described above in the range $\frac{-\pi}{2} < \Delta\varphi < \frac{3\pi}{2}$
+\item The near-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}UE d\Delta\varphi)$, where UE is a constant calculated from the average of bins (1, 2, 7, 8, 9, 16)
+\item The away-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}UE d\Delta\varphi)$
+\item The underlying-event yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}}UE d\Delta\varphi$
+\item The total yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}}Fit(\Delta\varphi) d\Delta\varphi$
+\end{itemize}
+
+The constant $\frac{16}{2\pi}$ being multiplied by each term is just the inverse of the bin width ($2\pi$ radians for 16 $\Delta\varphi$ bins).
+The final per-trigger $\Delta\varphi$ plots with the full correlation fits are shown in Figures \ref{h_lambda_dphi_fullfit} ($h-\Lambda$) and \ref{h_h_dphi_fullfit} ($h-h$), and the extracted yields are shown in Table \ref{h_lambda_yield_table_fullfit} ($h-\Lambda$) and Table \ref{h_h_yield_table_fullfit} ($h-h$). 
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_fullfit.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_fullfit.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_fullfit.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with the full correlation fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The fit was generated using the technique described in this section.}
+\label{h_lambda_dphi_fullfit}
+\end{figure}
+	
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_fullfit.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_fullfit.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_fullfit.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with the full correlation fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The fit was generated using the technique described in this section.}
+\label{h_h_dphi_uefit_fullfit}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+	
+0-20\% & 3.96e-03 & 4.35e-03 & 8.75e-02 & 9.58e-02 \\
+20-50\% & 3.40e-03 & 3.24e-03 & 4.69e-02 & 5.36e-02 \\
+50-80\% & 2.80e-03 & 2.65e-03 & 2.44e-02 & 2.99e-02 \\
+	
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-\Lambda$ extracted yields in the different kinematic regions for each multiplicity bin. The yields were extracted using the full correlation fit procedure described in this section.}
+\label{h_lambda_yield_table_fullfit}
+\end{table}
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+
+0-20\% & 3.54e-01 & 2.27e-01 & 3.63e+00 & 4.21e+00  \\
+20-50\% & 3.44e-01 & 2.08e-01 & 2.18e+00 & 2.73e+00 \\
+50-80\% & 3.42e-01 & 1.97e-01 & 1.24e+00 & 1.78e+00 \\
+
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-h$ extracted yields in the different kinematic regions for each multiplicity bin. The yields were extracted using the full correlation fit procedure described in this section.}
+\label{h_h_yield_table_fullfit}
+\end{table}
+
+\subsubsection{6-bin Underlying Event Technique With Non-Negative Constraint}
+\label{6binnonneg}
+We again consider the 6-bin underlying event technique, but we restrict that each term in $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (near-side yield) and $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (away side yield) is non-negative. The full technique is as follows:
+
+\begin{itemize}
+\item The underlying event region is defined using a straight-line fit of the average of bins (1, 2, 7, 8, 9, 16) in the $\Delta\varphi$ distribution
+\item The near-side yield is calculated via $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin and all negative terms in the sum are manually set to zero
+\item The away-side yield is calculated via $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$, where $\text{UE}_i$ is the value of the straight-line fit at the center of the ith bin and all negative terms in the sum are manually set to zero
+\item The underlying-event yield is calculated via $\sum_{i=1}^{16} \text{UE}_i = 16 \times UE$
+\item The total-yield is calculated via $\sum_{i=1}^{16} \Delta\varphi_\text{bin i} = \text{near-side} + \text{away-side} + \text{underlying-event}$
+\end{itemize}
+
+As this method doesn't change the UE fit line in any way, we report only the extracted yields in Table \ref{h_lambda_yield_table_6bin_nonzero} ($h-\Lambda$) and Table \ref{h_h_yield_table_6bin_nonzero} ($h-h$). (If you would like a reminder of the $\Delta\varphi$ plots with 6-bin UE fits, see Figures \ref{v0_1d_correlations_with_fit} ($h-\Lambda$) and \ref{hh_1d_correlations_with_fit} ($h-h$))
+
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+	
+0-20\% & 4.14e-03 $\pm$ 1.84e-04 & 4.42e-03 $\pm$ 1.88e-04 & 8.75e-02 $\pm$ 3.84e-04 & 9.58e-02 $\pm$ 2.45e-04 \\
+20-50\% & 3.50e-03 $\pm$ 1.52e-04 & 3.27e-03 $\pm$ 1.54e-04 & 4.69e-02 $\pm$ 3.11e-04 & 5.36e-02 $\pm$ 2.02e-04 \\
+50-80\% & 2.93e-03 $\pm$ 1.94e-04 & 2.80e-03 $\pm$ 2.06e-04 & 2.44e-02 $\pm$ 3.89e-04 & 2.99e-02 $\pm$ 2.66e-04 \\
+	
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-\Lambda$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the 6-bin UE technique with non-negative constraint described in this section.}
+\label{h_lambda_yield_table_6bin_nonzero}
+\end{table}
+	
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+
+0-20\% & 3.60e-01 $\pm$ 9.32e-04 & 2.28e-01 $\pm$ 9.29e-04 & 3.63e+00 $\pm$ 1.88e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
+20-50\% & 3.48e-01 $\pm$ 8.49e-04 & 2.08e-01 $\pm$ 8.38e-04 & 2.18e+00 $\pm$ 1.65e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
+50-80\% & 3.46e-01 $\pm$ 1.24e-03 & 1.99e-01 $\pm$ 1.15e-03 & 1.24e+00 $\pm$ 2.12e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
+\hline
+\end{tabular}
+\caption{Per-trigger pairwise $h-h$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the 6-bin UE technique with non-negative constraint described in this section.}
+\label{h_h_yield_table_6bin_nonzero}
+\end{table}
+
+\subsubsection{Additional Systematics for Yield Extraction}
+\subsubsubsection{Track Merging}
+As mentioned in Section \ref{trackmerge_efficiency}, the track merging effect causes an 8\% loss in the $h-\Lambda$ near-side yield extraction. Because we were unable to generate a template in MonteCarlo with enough statistics to correct for this effect, we have assigned an assymetric (above central value) 10\% systematic error to the near-side yields of our $h-\Lambda$ distributions.
+
+\subsubsection{V2 Consideration}
+All of the aforementioned yield extraction techniques rely on the assumption that the background is flat. This assumption would not be valid in the presence of a non-zero $v_{2}$, thus we must perform an additional check to ensure that a non-zero $v_{2}$ does not have a significant effect on our yield extraction and therefore final ratio measurement. To do this, we use the published single-particle p-Pb $v_{2}$ of the $\Lambda$ and charged hadrons,
+
+
+\subsubsection{Final Systematic Errors from Yield Extraction}
+The final systematic errors for the yield extraction are calculated in the following way:
+\begin{itemize}
+\item For every extraction technique, the yield in a given kinematic region is divided by the yield in the same region using our default technique (6-bin UE)
+\item The RMS of the resulting ratios in each kinematic region is calculated
+\item For the near-side, 1/2 the RMS is added in quadrature with our track-merging systematic error (10\%), which gives the upper side of the systematic error. The lower side is simply 1/2 the RMS.
+\item For the rest of the regions, the systematic error is simply the RMS
+\end{itemize}
+
+The final systematic errors from the yield extraction in each kinematic region and multiplicity bin can be seen in Table \ref{yield_extraction_systematics}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+
+0-20\% & 3.60e-01 $\pm$ 9.32e-04 & 2.28e-01 $\pm$ 9.29e-04 & 3.63e+00 $\pm$ 1.88e-03 & 4.21e+00 $\pm$ 1.23e-03 \\
+20-50\% & 3.48e-01 $\pm$ 8.49e-04 & 2.08e-01 $\pm$ 8.38e-04 & 2.18e+00 $\pm$ 1.65e-03 & 2.73e+00 $\pm$ 1.12e-03 \\
+50-80\% & 3.46e-01 $\pm$ 1.24e-03 & 1.99e-01 $\pm$ 1.15e-03 & 1.24e+00 $\pm$ 2.12e-03 & 1.78e+00 $\pm$ 1.60e-03 \\
+
+\hline
+\end{tabular}
+\caption{Final systematic errors from the yield extraction in each kinematic region and multiplicity bin. The systematic errors are calculated using the method described in this section.}
+\label{h_h_yield_table_6bin_nonzero}
+\end{table}
+
+
+\subsection{Summarizing Plots}
+A plot summarizing all of the systematic errors contributing to the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions for each multiplicity bin can be seen in Figure \ref{systematic_summary_dphi}. 
+
+A plot summarizing all of the systematic errors contributing to the $h-\Lambda$ and $h-h$ pairwise yield extractions for each multiplicity bin and kinematic region can be seen in Figure \ref{systematic_summary_yield}. 
+
+
 
 \section{Results and Comparisons}
+\label{results}
 \subsection{Per-trigger $h-\Lambda$, $h-h$ $\Delta\varphi$ Correlations}
 \subsection{$h-\Lambda$, $h-h$ Jet-like Yields}
 \subsection{Multiplicity Dependent $h-\Lambda$/$(h-h)$ Ratios}
