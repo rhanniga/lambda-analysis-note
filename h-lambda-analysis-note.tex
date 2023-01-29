@@ -395,7 +395,7 @@ This section details all of the detector acceptance and efficiency corrections a
 \subsection{Mixed Event Acceptance Correction}
 \label{mixed_event_correction}
 
-For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) for each multiplicity bin are shown in Figures \ref{uncorr2d_0_20} through \ref{mixed2d_50_80}.
+For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The pair-wise efficiency correction in Section \ref{reconstruction_efficiency} is also applied to the mixed event pairs. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) for each multiplicity bin are shown in Figures \ref{uncorr2d_0_20} through \ref{mixed2d_50_80}.
 
 \begin{figure}[ht]
 \centering
@@ -621,60 +621,84 @@ Many correlation studies are susceptible to track merging inefficiencies, whereb
 \label{trackmerge_diagram_lambda}
 \end{figure}
 
-
 The severity of this effect is likely due to two factors:
 \begin{itemize}
-	\item The $\Lambda$ decay length is large ($c\tau \approx 10$ cm), meaning the daughter particles will have less hits in the detector than the trigger particle (which is produced at the primary vertex). As Kalman filtering (track reconstruction) favors the track with more hits, the $\Lambda$ daughter track is ``merged'' over by the trigger track.\cite{kalman}
-	\item The $\Lambda$ decay is assymetric ($m_{p}/m_{\pi} \approx 7$), so the $\Lambda$ and daughter proton end up with similar momenta (and thus $\varphi$ and $\eta$). This means that whenever a proton from a $\Lambda$ decay is ``merged'' over by a trigger track, an $h-\Lambda$ pair with small $\Delta\varphi, \Delta\eta$ is lost.
+\item The $\Lambda$ decay length is large ($c\tau \approx 10$ cm), meaning the daughter particles will have less hits in the detector than the trigger particle (which is produced at the primary vertex). As Kalman filtering (track reconstruction) favors the track with more hits, the $\Lambda$ daughter track is ``merged'' over by the trigger track.
+\item The $\Lambda$ decay is assymetric ($m_{p}/m_{\pi} \approx 7$), so the $\Lambda$ and daughter proton end up with similar momenta (and thus $\varphi$ and $\eta$). This means that whenever a proton from a $\Lambda$ decay is ``merged'' over by a trigger track, an $h-\Lambda$ pair with small $\Delta\varphi, \Delta\eta$ is lost.
 \end{itemize}
 
-To see how the decay length can affect the track merging, we can measure he $\Delta\eta\Delta\varphi$ distributions for $h-$proton and $h-$pion pairs in our MonteCarlo sample where the proton/pion is secondary--meaning it came from a weak decay with decay length > 2cm--and compare it to the same ratio for $h-$proton and $h-$pion pairs where the proton/pion is primary. The result is shown in Figures \ref{trackmerge_hproton} (proton) and \ref{trackmerge_hpion}. All reconstructed triggers and protons are selected from the AOD track list and pass our trigger and daughter cuts from Sections \ref{trigcuts} and \ref{daughtercuts}, respectively (with the caveat being that the protons are required to have a corresponding entry in the MC stack and that entry is either secondary or primary).
+To see how the decay length can affect the track merging, we can measure he $\Delta\varphi$ distributions in the $-1.2 < \Delta\eta < 1.2$ region for $h-$proton and $h-$pion pairs in our MonteCarlo sample where the proton/pion is secondary--meaning it came from a weak decay with decay length > 2cm--and compare it to the same ratio for $h-$proton and $h-$pion pairs where the proton/pion is primary. The result is shown in Figures \ref{trackmerge_hproton} (proton) and \ref{trackmerge_hpion}. All reconstructed triggers and protons are selected from the AOD track list and pass our trigger and daughter cuts from Sections \ref{trigcuts} and \ref{daughtercuts}, respectively (with the caveat being that the protons are required to have a corresponding entry in the MC stack and that entry is either secondary or primary). All distributions were corrected for detector acceptance using the procudure described in Section \ref{mixed_event_correction}, and the baselines were scaled to each-other to emphasize this effect. We clearly observe a large supression in the near side of the reconstructed distributions when compared to the ground truth for the h-secondary proton/pion case, but no significant supression for the h-primary proton/pion case. As such, we conclude that this supression is at least in part due to the decay length of the $\Lambda$, as all protons and pions that come from $\Lambda$s are secondaries (by a long shot).
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/track_merging_hproton_secondary.pdf}}
+\includegraphics[width=3in]{figures/h_proton_dphi_secondary.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/track_merging_hproton_primary.pdf}}
+\includegraphics[width=3in]{figures/h_proton_dphi_primary.pdf}}
 \end{subfigure}
-\caption{The  reconstructed and ground truth $\Delta\eta\Delta\varphi$ distributions for h-(secondary protons) (left) and h-(primary protons) (right). The supression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
+\caption{The  reconstructed and ground truth $\Delta\varphi$ distributions in the $-1.2 < \Delta\eta < 1.2$ region for h-(secondary protons) (left) and h-(primary protons) (right). The supression at smaller $\Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
 \label{trackmerge_hproton}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/track_merging_hpion_secondary.pdf}}
+\includegraphics[width=3in]{figures/h_pion_dphi_secondary.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/track_merging_hpion_primary.pdf}}
+\includegraphics[width=3in]{figures/h_pion_dphi_primary.pdf}}
 \end{subfigure}
-\caption{The  reconstructed and ground truth $\Delta\eta\Delta\varphi$ distributions for h-(secondary pions) (left) and h-(primary pions) (right). The supression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
+\caption{The  reconstructed and ground truth $\Delta\varphi$  distributions in the $-1.2 < \Delta\eta < 1.2$ region for h-(secondary pions) (left) and h-(primary pions) (right). The supression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
 \label{trackmerge_hpion}
 \end{figure}
 
-We can also observe the $p_\text{T}$ dependence of this effect by looking at the reconstructed and ground truth $h-$(secondary proton) and $h-$(secondary pion) $\Delta\varphi$ distributions in different $p_{T}$ bins. This effect 
+Due to statistics, it is not possible to study the full $\Delta\eta\Delta\varphi$ distributions for the h-(secondary proton) case. However, the $\Delta\eta\Delta\varphi$ (reconstructed)/(ground truth) ratio for the h-(secondary pion) case is shown in Figure \ref{h_secondary_pi_mc_ratio}. Even with limited statistics, we can clearly observe a supression ranging from around $-0.8 < \Delta\varphi < 0.8$ and $-0.3 < \Delta\eta < 0.3$.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=3in]{figures/h_secondary_pi_mc_ratio.pdf}
+\caption{The  (reconstructed)/(ground truth)  $\Delta\eta\Delta\varphi$  distribution for h-(secondary pions). There appears to be a dip from around $-0.8 < \Delta\varphi < 0.8$ and $-0.3 < \Delta\eta < 0.3$.}
+\label{h_secondary_pi_mc_ratio}
+\end{figure}
+
+We can also observe the $p_\text{T}$ dependence of this effect by looking at the reconstructed and ground truth $h-$(secondary pion) $\Delta\varphi$ distributions in a low ($0.15 < p_{T} < 2$) and high($2 < p_{T} < 4$) bin. The result is shown in Figure \ref{trackmerge_pt_dependence}. We clearly observe a supression in the near side of the reconstructed distribution for the high $p_\text{T}$ bin, but not for the low $p_\text{T}$ bin.  This is consistent with the decay length dependence shown in the previous figures, as decay length is roughly proportional to $p_\text{T}$.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_pion_dphi_secondary_0_2.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_pion_dphi_secondary_2_4.pdf}}
+\end{subfigure}
+\caption{The  reconstructed and ground truth $\Delta\varphi$  distributions in the $-1.2 < \Delta\eta < 1.2$ region for h-(secondary pions) with $0.15 < p_{T, \pi} < 2$ (left) and $2 < p{T, \pi} < 4$ (right). The supression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the higher momentum bin, but not present in the lower one.}
+\label{trackmerge_pt_dependence}
+\end{figure}
+
+The $p_{T}$ dependence of this inefficiency demonstrates why this effect is so severe in the $h-\Lambda$ case (when compared analyses involving another secondary weak decay, like $h-K^{0}$ from \url{LUCIA_ANALYSIS_NOTE}). Due to the assymetry of the $\Lambda$ decay ($m_{p}/m_{\pi} \approx 7$), the daughter proton receives most of the momentum. Therefore when we are investigating $h-\Lambda$ correlations within $2 < p_{T, \Lambda} < 4$ GeV/c, any inefficiencies present in the corresponding h-(daughter proton) distribution with the same associated momentum would also be present in our final $h-\Lambda$ distribution within the same $\Delta\varphi, \Delta\eta$ range. As we've demonstrated in Figure \ref{trackmerge_hproton}, secondary charged protons with $2 < p_{T} < 4$ GeV/c see a large inefficiency, and therefore we would expect a similar inefficiency to be present in our $h-\Lambda$ distribution (which we've shown in Figure \ref{trackmerge_diagram_lambda}). Such an effect would not be as present in the $h-K^{0}$ case with the same associated momentum, both because the decay length is much shorter (2 cm vs 10 cm), and the $K^{0}$ decay is symmetric, meaning the daughter pions will have a momentum that is much lower than the mother (and therefore less affected by this inefficiency).
 
 
-Due to this effect being seve
-We attempted to correct for this effect using a si As such, we correct this effect by using the following formula:
+Due to the width of this inefficiency (in both $\Delta\varphi$ and $\Delta\eta$) we were unable to correct for this effect using the following techniques:
+\begin{itemize}
+\item Applying a $\Delta\varphi^{*}$ correction, described \href{here}{DPHI_STAR_PAPER}: While $\Delta\varphi$ and $\Delta\varphi^{*}$ are different, they are correlated enough that in order to remove this effect we had to cut on $|\Delta\varphi^{*}| < 0.7$, which removes a significant amount of our near-side yield in the corresponding $\Delta\varphi$ distribution.
+\item Applying a cut on the minimum distance between the fully reconstructed helices of the trigger and $\Lambda$ daughter proton (varied between 0.1 cm and 10 cm): Again, this cut removes roughly the same amount of near-side yield as the $\Delta\varphi^{*}$ cut, as this minimum distance is also highly correlated with $\Delta\varphi$.
+\end{itemize}
 
+The most promising correction procedure is the one described in \url{VICTOR_ANALYSIS_NOTE}, which corrects for this inefficiency using a $\Delta\eta\Delta\varphi$ template generated from MonteCarlo. The formula for this correction is:
 \begin{align*}
 	C_{corr.}(\Delta\varphi, \Delta\eta) = C_{uncorr.}(\Delta\varphi, \Delta\eta)(\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)})^{-1}
 \end{align*}
 
-where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected correlation, and the efficiency template $\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)}$ is generated with a large MonteCarlo sample using the same procedure as the MonteCarlo closure test described in Section \ref{mc_closure}. The efficiency template is shown in Figure \ref{trackmerge_efficiency_plot}.
+where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected correlation, and $\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)}$ is the angular efficiency template generated from MonteCarlo. This template is generated using the exact same procedure as our MonteCarlo closure tests (see Section \ref{}) by taking the fully acceptance and efficiency-corrected reconstructed $\Delta\eta\Delta\varphi$ distribution and dividing it by the ground-truth $\Delta\eta\Delta\varphi$ distribution, and is shown in Figure \ref{trackmerge_efficiency_plot}. However, due to the limited statistics of our MonteCarlo sample (and that using a MonteCarlo sample that is not anchored to our data set would be unwise), we do not apply this correction to our final results. Instead, we apply a 10\% systematic correction to our near-side yields for the $h-\Lambda$ correlation (see Section \ref{systematics}). In the event that more statistics become available, we will revisit this correction.
 
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=5in]{figures/trackmerge_efficiency_PLACEHOLDER.pdf}
-\caption{Efficiency template for track merging correction.}
+\caption{Efficiency template for track merging correction. Due to the poor statistics of this template, the correction is not applied to our final results.}
 \label{trackmerge_efficiency_plot}
 \end{figure}
-
-This effect is investigated more thoroughly in Section \ref{mc_studies}.
 
 \section{Correlation Measurement Technique}
 \label{corrsec}
