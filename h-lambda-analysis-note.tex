@@ -1799,9 +1799,118 @@ As the single-trigger/total-trigger ratio is flat for both the $h-h$ and $h-\Lam
 \end{figure}
 
 \subsection{MonteCarlo Closure Tests}
+In order to test the validity of our correction techniques, we performed a standard MonteCarlo closure test for our $h-h$, $h-\Lambda_{v0}$ and $h-\Lambda_{res}$ $\Delta\varphi$ distributions using our standard MC dataset. In this test, we generate two types of correlation functions. The first is generated using the same analysis technique and corrections described in this note on the reconstructed AOD tracks in the MC dataset: we will call this the ``reconstructed'' distribution. The second is generated using the same analysis technique, but with the particles coming directly from the MC stack: we will call this the ``ground-truth'' distribution. We then take the (reconstructed)/(ground-truth) ratio of these distributions, which should be consistent with unity if our corrections are valid. 
 
-\subsection{Dihadron Comparison with $\phi$ Analysis}
-As both this analysis and the similar analysis for the $\phi$ are run over the same data set, with the same cuts being used on both the trigger and associated particles, we would expect the corresponding dihadron $\Delta\varphi$ correlations from both analyses to be the same. As theses analyses are being performed by humans with vastly different coding styles, we should do a thorough comparison of the final dihadron correlations to ensure they are indeed identical. The final per-trigger dihadron $\Delta\varphi$ distributions in each multiplicity bin for both the $\phi$ and $\Lambda$ analyses are shown in Figure \ref{dihadron_comparison}, with their corresponding ratios shown in Figure \ref{dihadron_ratio_comparison}. The dihadron distributions are identical for both analyses, as expected.
+For the $h-h$ reconstructed case: 
+\begin{itemize}
+\item Both the reconstructed trigger and associated hadron pass the track cuts described in Sections \ref{trigcuts} and \ref{assoccuts}, respectively 
+\item The trigger and associated hadrons were also required to have a corresponding particle in the MC stack, with that particle being physical primary.
+\item The PDG codes of the MC stack particles were verified to be corresponding to either a pion, proton, kaon, electron or muon (with corresponding anti-particles).
+\item The trigger hadron is taken to be between $4 < p_{T} < 8$ GeV/c and the associated hadron between $2 < p_{T} < 4$ GeV/c. 
+\item The efficiency and acceptance corrections are applied in the same was as described in Sections \ref{reconstruction_efficiency} and \ref{mixed_event_correction} (using a reconstructed mixed-event distribution). 
+\item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
+\end{itemize}
+
+For the $h-h$ ground-truth case: 
+\begin{itemize}
+\item The trigger and associated hadrons were taken from the MC stack 
+\item The trigger and associated hadrons were verified via PDG codes to be either a pion, proton, kaon, electron or muon (with corresponding anti-particles).
+\item The trigger and associated hadrons were required to be physical primary particles.
+\item The trigger and associated hadrons were required to fall within $|\eta| < 0.8$.
+\item The trigger hadron is taken to be between $4 < p_{T} < 8$ GeV/c and the associated hadron between $2 < p_{T} < 4$ GeV/c. 
+\item The acceptance corrections are applied in the same was as described in Section \ref{mixed_event_correction} (using a ground-truth mixed-event distribtuion). 
+\item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
+\end{itemize}
+
+The final reconstructed and ground-truth $h-h$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit shown are shown in Figure \ref{h_h_mc_closure}. The ratio is systematically higher than one due to secondary contamination (which is a < 2\% effect), but is consistent with unity. We conclude the corrections applied to the $h-h$ distributions are valid.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_mc_closure.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_mc_closure_ratio.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-h$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The ratio is consistent with unity, and thus the corrections applied to the $h-h$ distributions are valid.}
+\label{h_h_mc_closure}
+\end{figure}
+
+
+For the $h-\Lambda_{v0, res}$ reconstructed case: 
+\begin{itemize}
+\item The trigger is chosen in the same way as the reconstructed $h-h$ case described above
+\item The $\Lambda$ is reconstructed using the V0-finder or resonance technique with the same cuts demonstrated in \Section \ref{v0_selection} (V0) or \Section \ref{resonance_technique} (resonance).
+\item The $\Lambda$ daughter tracks are required to pass the same cuts as shown in \Section \ref{daughtercuts}
+\item The $\Lambda$ daughter tracks are identified as $p (\bar{p})$, $\pi^{-} (\pi^{+})$ using their corresponding entries in the MC stack
+\item The trigger hadron is taken to be between $4 < p_{T} < 8$ GeV/c and the $\Lambda$ between $2 < p_{T} < 4$ GeV/c. 
+\item The efficiency and acceptance corrections are applied in the same was as described in Sections \ref{reconstruction_efficiency} and \ref{mixed_event_correction} (using a reconstructed mixed-event distribution). 
+\item The sideband subtraction is performed in the same way as described in Section \ref{sideband_subtraction} (resonance case only, V0 technique with MC-identified protons and pions gives negligible background)
+\item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
+\end{itemize}
+
+For the $h-\Lambda$ ground-truth case: 
+\begin{itemize}
+\item The trigger is chosen in the same way as the ground-truth $h-h$ case described above
+\item The $\Lambda$ is taken from the MC stack by identifying its PDG code ($\pm$ 3122)
+\item The trigger hadron and $\Lambda$ were required to fall within $|\eta| < 0.8$.
+\item The trigger hadron is taken to be between $4 < p_{T} < 8$ GeV/c and the $\Lambda$ between $2 < p_{T} < 4$ GeV/c. 
+\item The acceptance corrections are applied in the same was as described in Section \ref{mixed_event_correction} (using a ground-truth mixed-event distribtuion). 
+\item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
+\end{itemize}
+
+The final reconstructed and ground-truth $h-\Lambda$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit shown are shown in Figure \ref{h_lambda_mc_closure} (V0 technique) and Figure \ref{h_lambda_mc_closure_res} (resonance technique). Due to the track merging effect described in detail in \Section \ref{track_merging}, there is a substantial non-closure around $\Delta\varphi = 0$ for the $h-\Lambda_{v0}$ case. However, we still conclude that our current corrections are valid, and in the event we are able to generate a template with enough statistics to correct for this track merging effect, we will revisit this non-closure.  
+
+For the $h-\Lambda_{res}$ reconstructed case, we see that the non-closure is gone and the ratio is consistent with unity, implying the track merging inefficiency does seem not affect $\Lambda$s reconstructed using the resonance technique. This is likely due to two factors:
+\begin{itemize}
+\item The resonance technique has a much lower S/B, and therefore the sideband subtraction introduces a large amount of statistical fluctuations
+\item The reconstructed daughter tracks have a larger fraction of higher quality tracks when compared to the V0 technique, and those tracks are less likely to be merged over by the trigger during reconstruction
+\end{itemize}
+
+To elaborate on the second point, while the resonance and V0 techniques use the same loose quality cuts (Section \ref{daughtercuts}), the daughter tracks coming from the V0 finder have a fairly major topological constraint: the V0 finder alogrithm must be able to resolve a secondary vertex. While the $\Lambda$ decay length ($c\tau = 10 cm$) is fairly large, it is important to remember that decay length distributions are exponential ($e^{-t/\tau}$), and therefore there are a significant amount of $\Lambda$s that decay close enough to the primary vertex that the V0 finder cannot resolve a secondary vertex. Such $\Lambda$s are successfully reconstructed by the resonance technique, and their corresponding tracks will have a higher quality than those reconstructed by the V0 finder.
+
+To further investigate this surprising closure of the $h-\Lambda_{res}$ distribution, we perform the same closure test as described above, but for our reconstructed $h-\Lambda_{res}$ distribution, we require that reconstructed $\Lambda$ have a corresponding entry in the MC stack, making our combinatorial background exactly 0 and removing the need for sideband subtraction. The results of this test are shown in Figure \ref{h_lambda_mc_closure_res_no_sideband}. We see now that the ratio is no longer consistent with unity, but with a much smaller non-closure when compared to the V0 technique, as expected.
+
+Even though the resonance technique has less of a non-closure, we still use the V0 technique as the central points of this analysis due to the much better S/B which results in fewer statistical fluctuations in our final $\Delta\varphi$ distributions and corresponding ratios.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure_ratio.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{v0}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The ratio is not consistent with unity due to the track merging effect, but all other corrections appear to be valid.}
+\label{h_lambda_mc_closure}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure_res.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure_ratio_res.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{res}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The is technically consistent with unity, but the statistical fluctuations are quite large.}
+\label{h_lambda_mc_closure_res}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure_res_no_sideband.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{res}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit, but instead requiring the reconstructed $\Lambda$ to have a corresponding entry in the MC stack so that the need for sideband subtraction is removed. The result is no longer consistent with unity due to the track merging effect, but the non-closure is much smaller than the V0 technique.}
+\label{h_lambda_mc_closure_res_no_sideband}
+\end{figure}
+
+\subsection{Dihadron Comparison with $\phi$ Correlation Analysis}
+As both this analysis and the $\phi$ correlation analysis are run over the same data set, with the same cuts being used on both the trigger and associated particles, we would expect the corresponding dihadron $\Delta\varphi$ correlations from both analyses to be the same. As theses analyses are being performed by humans with vastly different coding styles, we should do a thorough comparison of the final dihadron correlations to ensure they are indeed identical. The final per-trigger dihadron $\Delta\varphi$ distributions in each multiplicity bin for both the $\phi$ and $\Lambda$ analyses are shown in Figure \ref{dihadron_comparison}, with their corresponding ratios shown in Figure \ref{dihadron_ratio_comparison}. The dihadron distributions are identical for both analyses, as expected.
 
 \begin{figure}[ht]
 \centering
@@ -1832,25 +1941,6 @@ As both this analysis and the similar analysis for the $\phi$ are run over the s
 \caption{The dihadron ratio between the $\phi$ and $\Lambda$ analyses for the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins. The ratios are consistent with unity for all multiplicty bins.}
 \label{dihadron_ratio_comparison}
 \end{figure}
-	
-
-\subsection{Jet vs. Total Production comparison}
-
-To get a quantitative look at the differences between low multiplicity events (more jet) and high multiplicity events (more underlying event) and the effect this has on the correlation ratios, we can measure the ratio of Jet pairs over Total pairs (i.e. the fraction of correlated pairs that are in a jet) (fig. \ref{jetvstot}).
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=3in]{images/addendum/jet2totratio_lowpt.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{images/addendum/jet2totratio_highpt.pdf}}
-\end{subfigure}
-\caption{Fraction of Jet Produced correlated pairs as a function of multiplicity for low momentum (left) and high momentum (right) regions.  In both momentum regions, the Jet fraction of h-h pairs decreases significantly as a function of multiplicity.  For h-$\phi$ pairs, however, the overall fraction coming from jets only slightly decreases as multiplicity increases.}
-\label{jetvstot}
-\end{figure}
-
-From this measurement, there is a clear difference in behavior of jet production of associated $\phi$ mesons vs. associated inclusive hadrons as multiplicity increases.  The fraction of jet-produced hadrons shows a sharp decrease as a function of multiplicity, while the fraction of jet-produced $\phi$ mesons is significantly lower and flatter as a function of multiplicity. This shows that the balance of production methods of $\phi$ mesons are mostly independent of multiplicity, while the production methods of hadrons significantly shifts from jet production towards underlying event production as multiplicity increases.
 
 \clearpage
 \section {Additional Plots}
