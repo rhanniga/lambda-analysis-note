@@ -134,6 +134,9 @@ The code for this analysis can be found in the following locations:
 \item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronResClosure (for $\Lambda$s reconstructed using resonance technique)
 \end{itemize}
 
+\textit{Offline Code}
+All of the offline analysis (as well as the code listed above) can be found in my personal github repository at \url{https://github.com/rhanniga}. I take no responsibility for profanity in the commit messages.
+
 \subsection{Relevant Contributions to ALICE Meetings}
 This analysis was presented at the following ALICE meetings, in reverse chronological order:
 
@@ -679,10 +682,14 @@ We can also observe the $p_\text{T}$ dependence of this effect by looking at the
 The $p_{T}$ dependence of this inefficiency demonstrates why this effect is so severe in the $h-\Lambda$ case (when compared analyses involving another secondary weak decay, like $h-K^{0}$ from \url{LUCIA_ANALYSIS_NOTE}). Due to the assymetry of the $\Lambda$ decay ($m_{p}/m_{\pi} \approx 7$), the daughter proton receives most of the momentum. Therefore when we are investigating $h-\Lambda$ correlations within $2 < p_{T, \Lambda} < 4$ GeV/c, any inefficiencies present in the corresponding h-(daughter proton) distribution with the same associated momentum would also be present in our final $h-\Lambda$ distribution within the same $\Delta\varphi, \Delta\eta$ range. As we've demonstrated in Figure \ref{trackmerge_hproton}, secondary charged protons with $2 < p_{T} < 4$ GeV/c see a large inefficiency, and therefore we would expect a similar inefficiency to be present in our $h-\Lambda$ distribution (which we've shown in Figure \ref{trackmerge_diagram_lambda}). Such an effect would not be as present in the $h-K^{0}$ case with the same associated momentum, both because the decay length is much shorter (2 cm vs 10 cm), and the $K^{0}$ decay is symmetric, meaning the daughter pions will have a momentum that is much lower than the mother (and therefore less affected by this inefficiency).
 
 
-Due to the width of this inefficiency (in both $\Delta\varphi$ and $\Delta\eta$) we were unable to correct for this effect using the following techniques:
+We have investigated all of the following techniques to correct for this effect:
 \begin{itemize}
 \item Applying a $\Delta\varphi^{*}$ correction, described \href{here}{DPHI_STAR_PAPER}: While $\Delta\varphi$ and $\Delta\varphi^{*}$ are different, they are correlated enough that in order to remove this effect we had to cut on $|\Delta\varphi^{*}| < 0.7$, which removes a significant amount of our near-side yield in the corresponding $\Delta\varphi$ distribution.
 \item Applying a cut on the minimum distance between the fully reconstructed helices of the trigger and $\Lambda$ daughter proton (varied between 0.1 cm and 10 cm): Again, this cut removes roughly the same amount of near-side yield as the $\Delta\varphi^{*}$ cut, as this minimum distance is also highly correlated with $\Delta\varphi$.
+\item Using the resonance technique for $\Lambda$ reconstruction (Section \ref{resonance_technique}): this drastically reduces the severity of this effect, but the statistical fluctuations introduced by the smaller S/B ratio make it difficult to investigate (see Section \ref{mc_closure} for more details)
+\item Only correlating $h-\Lambda$ pairs where the charge of the $\Lambda$ daughter proton (or antiproton) is opposite to the trigger: This reduces the effect by a considerable amount, but reduces our overall correlation statistcs by a factor of 2.
+\item Selecting ``lower quality'' trigger tracks (instead of track bit 128, we use similar cuts as our daughter particle): this reduces the effect, but introduces a large amount of secondary contamination, as well as creates a non-uniform $\phi$ distribution in our trigger (which was the reason for choosing GCG tracks as our trigger in the first place). Furthermore, we would like this analysis to be compared with the $h-\phi$ analysis, and therefore want to maintain the same cuts on the trigger hadron.
+\item Selecting ``higher quality''  $\Lambda$ daughter tracks (we use the kTrkGlobalNoDCA track filter bit): this completely eliminates this effect for $\Lambda$s reconstructed using the resonance technique (at the expense of a massive amount of signal), but for $\Lambda$s reconstructed using the V0 technique we are left with effectively no signal (an extremely small fraction of V0 daughter tracks have this filter bit set)
 \end{itemize}
 
 The most promising correction procedure is the one described in \url{VICTOR_ANALYSIS_NOTE}, which corrects for this inefficiency using a $\Delta\eta\Delta\varphi$ template generated from MonteCarlo. The formula for this correction is:
@@ -1799,6 +1806,7 @@ As the single-trigger/total-trigger ratio is flat for both the $h-h$ and $h-\Lam
 \end{figure}
 
 \subsection{MonteCarlo Closure Tests}
+\label{mc_closure}
 In order to test the validity of our correction techniques, we performed a standard MonteCarlo closure test for our $h-h$, $h-\Lambda_{v0}$ and $h-\Lambda_{res}$ $\Delta\varphi$ distributions using our standard MC dataset. In this test, we generate two types of correlation functions. The first is generated using the same analysis technique and corrections described in this note on the reconstructed AOD tracks in the MC dataset: we will call this the ``reconstructed'' distribution. The second is generated using the same analysis technique, but with the particles coming directly from the MC stack: we will call this the ``ground-truth'' distribution. We then take the (reconstructed)/(ground-truth) ratio of these distributions, which should be consistent with unity if our corrections are valid. 
 
 For the $h-h$ reconstructed case: 
@@ -1869,9 +1877,11 @@ For the $h-\Lambda_{res}$ reconstructed case, we see that the non-closure is gon
 
 To elaborate on the second point, while the resonance and V0 techniques use the same loose quality cuts (Section \ref{daughtercuts}), the daughter tracks coming from the V0 finder have a fairly major topological constraint: the V0 finder alogrithm must be able to resolve a secondary vertex. While the $\Lambda$ decay length ($c\tau = 10 cm$) is fairly large, it is important to remember that decay length distributions are exponential ($e^{-t/\tau}$), and therefore there are a significant amount of $\Lambda$s that decay close enough to the primary vertex that the V0 finder cannot resolve a secondary vertex. Such $\Lambda$s are successfully reconstructed by the resonance technique, and their corresponding tracks will have a higher quality than those reconstructed by the V0 finder.
 
-To further investigate this surprising closure of the $h-\Lambda_{res}$ distribution, we perform the same closure test as described above, but for our reconstructed $h-\Lambda_{res}$ distribution, we require that reconstructed $\Lambda$ have a corresponding entry in the MC stack, making our combinatorial background exactly 0 and removing the need for sideband subtraction. The results of this test are shown in Figure \ref{h_lambda_mc_closure_res_no_sideband}. We see now that the ratio is no longer consistent with unity, but with a much smaller non-closure when compared to the V0 technique, as expected.
+To further investigate this surprising closure of the $h-\Lambda_{res}$ distribution, we perform the same closure test as described above, but for our reconstructed $h-\Lambda_{res}$ distribution, we require that reconstructed $\Lambda$ have a corresponding entry in the MC stack, making our combinatorial background exactly 0 and removing the need for sideband subtraction. The results of this test are shown in Figure \ref{h_lambda_mc_closure_res_no_sideband}. We see now that the ratio is no longer consistent with unity at small $\Delta\varphi$, but with a much smaller non-closure when compared to the V0 technique, as expected.
 
 Even though the resonance technique has less of a non-closure, we still use the V0 technique as the central points of this analysis due to the much better S/B which results in fewer statistical fluctuations in our final $\Delta\varphi$ distributions and corresponding ratios.
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
@@ -1905,12 +1915,16 @@ Even though the resonance technique has less of a non-closure, we still use the 
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf}}
 \end{subfigure}
-\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{res}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit, but instead requiring the reconstructed $\Lambda$ to have a corresponding entry in the MC stack so that the need for sideband subtraction is removed. The result is no longer consistent with unity due to the track merging effect, but the non-closure is much smaller than the V0 technique.}
+\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{res}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit, but instead requiring the reconstructed $\Lambda$ to have a corresponding entry in the MC stack so that the need for sideband subtraction is removed. The result is no longer consistent with unity at small $\Delta\varphi$ due to the track merging effect, but the non-closure is much smaller than the V0 technique.}
 \label{h_lambda_mc_closure_res_no_sideband}
 \end{figure}
 
+\clearpage
+
 \subsection{Dihadron Comparison with $\phi$ Correlation Analysis}
 As both this analysis and the $\phi$ correlation analysis are run over the same data set, with the same cuts being used on both the trigger and associated particles, we would expect the corresponding dihadron $\Delta\varphi$ correlations from both analyses to be the same. As theses analyses are being performed by humans with vastly different coding styles, we should do a thorough comparison of the final dihadron correlations to ensure they are indeed identical. The final per-trigger dihadron $\Delta\varphi$ distributions in each multiplicity bin for both the $\phi$ and $\Lambda$ analyses are shown in Figure \ref{dihadron_comparison}, with their corresponding ratios shown in Figure \ref{dihadron_ratio_comparison}. The dihadron distributions are identical for both analyses, as expected.
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
@@ -1926,6 +1940,8 @@ As both this analysis and the $\phi$ correlation analysis are run over the same 
 \caption{Comparison of the the dihadron $\Delta\varphi$ correlations between the $\phi$ and $\Lambda$ analyses for the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins. They are functionally identical for all multiplicty bins.}
 \label{dihadron_comparison}
 \end{figure}
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
@@ -1943,6 +1959,7 @@ As both this analysis and the $\phi$ correlation analysis are run over the same 
 \end{figure}
 
 \clearpage
+
 \section {Additional Plots}
 
 
