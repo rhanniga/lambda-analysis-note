@@ -346,7 +346,7 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \end{figure}
 
 
- \subsection{Invariant Mass Region}
+ \subsection{Invariant Mass Regions}
  \label{invariant_mass_region}
 
 The invariant mass distributions in each multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm are shown in Figure \ref{v0_mass}. The $\Lambda$ peak is clearly visible with almost zero background. 
@@ -354,19 +354,19 @@ The invariant mass distributions in each multiplicity bin for the $\Lambda$s rec
 \begin{figure}[ht]
 \centering
 \begin{subfigure} {
-\includegraphics[width=4in]{figures/lambda_mass_0_20_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_dist_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure} {
-\includegraphics[width=4in]{figures/lambda_mass_20_50_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_dist_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure} {
-\includegraphics[width=4in]{figures/lambda_mass_50_80_v0_with_fit_zoomed.pdf}}
+\includegraphics[width=4in]{figures/lambda_mass_dist_50_80.pdf}}
 \end{subfigure}
 \caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is negligible for all multiplicity bins, despite no topological cuts being applied to the V0s.}
 \label{v0_mass}
 \end{figure}
 
- A Voigt (signal) + 2nd order polynomial (BG) fit was applied to the invariant mass distributions for each multiplicy bin. The extracted parameters from the Voigt fit are shown in Table \ref{voigt_parameters}. While the background is nearly zero for each multiplciity bin, its effect on the final correlation measurement is investigated in Section \ref{systematics}.
+ A Voigt (signal) + straight line (background) fit was applied to the invariant mass distributions for each multiplicy bin. The extracted parameters from the Voigt fit are shown in Table \ref{voigt_parameters}. While the background is very small for each multiplciity bin, it is still subtracted from our final $h-\Lambda$ correlation distribution using the procedure described in Section \ref{removecomb}. We also investigate the effects of varying our signal and sideband regions in the systematics section of this note.
 
 \begin{table}[h!]
     \centering
