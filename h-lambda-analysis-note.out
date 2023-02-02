@@ -1,0 +1,64 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Motivation}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Dataset and Event Selection}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Dataset}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Event Selection}{subsection.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.3}{Code Locations}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.4}{Relevant Contributions to ALICE Meetings}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{Track Selection}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Associated Hadron Track Cuts}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{ Daughter Proton and Pion Track Cuts}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Trigger Track Cuts}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{ Reconstruction}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{V0 Selection}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{V0 Daughter PID Cuts}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Invariant Mass Regions}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Acceptance and Efficiency Corrections}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Mixed Event Acceptance Correction}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Reconstruction Efficiency}{section.4}% 18
+\BOOKMARK [3][-]{subsubsection.4.2.1}{ Reconstruction Efficiency}{subsection.4.2}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Trigger and Associated Hadron Reconstruction Efficiency}{subsection.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.3}{Track Merging Efficiency}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Correlation Measurement Technique}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Full Correlation Measurement Method}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Combinatorial Background Removal}{subsection.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Signal Region Scaling}{subsection.5.1}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Full h- and h-h Correlation Measurement}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.3}{Extracting Near-side, Away-side, and Underlying Event Yields}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.4}{Per-trigger Pairwise Yields}{section.5}% 28
+\BOOKMARK [1][-]{section.6}{Systematic Errors}{}% 29
+\BOOKMARK [2][-]{subsection.6.1}{Systematics Overview}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.2}{ Distribution Generation}{section.6}% 31
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Signal Region Selection}{subsection.6.2}% 32
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Sideband Region Selection}{subsection.6.2}% 33
+\BOOKMARK [3][-]{subsubsection.6.2.3}{PID Cut Selection}{subsection.6.2}% 34
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Tracking Efficiencies}{subsection.6.2}% 35
+\BOOKMARK [3][-]{subsubsection.6.2.5}{Final Systematic Errors from \040Distribution Generation}{subsection.6.2}% 36
+\BOOKMARK [2][-]{subsection.6.3}{Yield Extraction}{section.6}% 37
+\BOOKMARK [3][-]{subsubsection.6.3.1}{4-bin Underlying Event Technique}{subsection.6.3}% 38
+\BOOKMARK [3][-]{subsubsection.6.3.2}{ZYAM Underlying Event Technique}{subsection.6.3}% 39
+\BOOKMARK [3][-]{subsubsection.6.3.3}{6-bin Underlying Event Technique With Non-Negative Constraint}{subsection.6.3}% 40
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Full 1D Correlation Fit \(2 Gaussians\)}{subsection.6.3}% 41
+\BOOKMARK [3][-]{subsubsection.6.3.5}{Full 1D Correlation Fit \(Von Mises with v2\)}{subsection.6.3}% 42
+\BOOKMARK [3][-]{subsubsection.6.3.6}{v2 Background Technique}{subsection.6.3}% 43
+\BOOKMARK [3][-]{subsubsection.6.3.7}{Additional Systematics for Yield Extraction}{subsection.6.3}% 44
+\BOOKMARK [3][-]{subsubsection.6.3.8}{Final Systematic Errors from Yield Extraction}{subsection.6.3}% 45
+\BOOKMARK [1][-]{section.7}{Results and Comparisons}{}% 46
+\BOOKMARK [2][-]{subsection.7.1}{Per-trigger h-, h-h \040Correlations}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.2}{h-, h-h Jet-like Yields}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.3}{Multiplicity Dependent h-/\(h-h\) Ratios}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.4}{Additional Momentum Bin Measurements}{section.7}% 50
+\BOOKMARK [2][-]{subsection.7.5}{Multiplicity Dependent \(h-\)/\(h-\) Ratios}{section.7}% 51
+\BOOKMARK [1][-]{section.8}{Cross Checks}{}% 52
+\BOOKMARK [2][-]{subsection.8.1}{Resonance Technique for \040Reconstruction}{section.8}% 53
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Combinatorial Background Estimation}{subsection.8.1}% 54
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Invariant Mass Regions}{subsection.8.1}% 55
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Efficiency Correction}{subsection.8.1}% 56
+\BOOKMARK [3][-]{subsubsection.8.1.4}{Mixed Event Acceptance Correction}{subsection.8.1}% 57
+\BOOKMARK [3][-]{subsubsection.8.1.5}{Removal of Combinatorial p- Background}{subsection.8.1}% 58
+\BOOKMARK [3][-]{subsubsection.8.1.6}{Near-side, Away-side and Underlying Event Yield Extraction}{subsection.8.1}% 59
+\BOOKMARK [3][-]{subsubsection.8.1.7}{Results and Comparison with V0 Technique}{subsection.8.1}% 60
+\BOOKMARK [2][-]{subsection.8.2}{Single Trigger h-, h-h Correlations}{section.8}% 61
+\BOOKMARK [2][-]{subsection.8.3}{MonteCarlo Closure Tests}{section.8}% 62
+\BOOKMARK [2][-]{subsection.8.4}{Dihadron Comparison with \040Correlation Analysis}{section.8}% 63
+\BOOKMARK [1][-]{section.9}{Additional Plots}{}% 64
