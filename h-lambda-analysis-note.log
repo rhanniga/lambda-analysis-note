@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  2 FEB 2023 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  2 FEB 2023 18:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,12 +737,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 \c__siunitx_mathtt_int=\count304
-<alicelogo.pdf, id=261, 116.1138pt x 142.61281pt>
+<alicelogo.pdf, id=265, 116.1138pt x 142.61281pt>
 File: alicelogo.pdf Graphic file (type pdf)
 <use alicelogo.pdf>
 Package pdftex.def Info: alicelogo.pdf  used on input line 31.
 (pdftex.def)             Requested size: 46.3313pt x 56.9055pt.
-<cernlogo.pdf, id=262, 426.59375pt x 427.5975pt>
+<cernlogo.pdf, id=266, 426.59375pt x 427.5975pt>
 File: cernlogo.pdf Graphic file (type pdf)
 <use cernlogo.pdf>
 Package pdftex.def Info: cernlogo.pdf  used on input line 31.
@@ -771,13 +771,13 @@ Underfull \vbox (badness 1137) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62 ...teCarlo Closure Tests}{88}{subsection.8.3}
+l.62 ...teCarlo Closure Tests}{89}{subsection.8.3}
                                                    [2])
 \tf@toc=\write4
 \openout4 = `h-lambda-analysis-note.toc'.
 
  [3]
-<figures/dphi_regions.pdf, id=369, 722.7pt x 542.025pt>
+<figures/dphi_regions.pdf, id=374, 722.7pt x 542.025pt>
 File: figures/dphi_regions.pdf Graphic file (type pdf)
 <use figures/dphi_regions.pdf>
 Package pdftex.def Info: figures/dphi_regions.pdf  used on input line 70.
@@ -795,17 +795,17 @@ Overfull \hbox (65.98071pt too wide) in paragraph at lines 112--113
  []
 
 [5] [6]
-<figures/assoc_pt_dist_0_20.pdf, id=409, 569.12625pt x 408.52625pt>
+<figures/assoc_pt_dist_0_20.pdf, id=414, 569.12625pt x 408.52625pt>
 File: figures/assoc_pt_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_pt_dist_0_20.pdf>
 Package pdftex.def Info: figures/assoc_pt_dist_0_20.pdf  used on input line 180.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/assoc_phi_dist_0_20.pdf, id=410, 569.12625pt x 408.52625pt>
+<figures/assoc_phi_dist_0_20.pdf, id=415, 569.12625pt x 408.52625pt>
 File: figures/assoc_phi_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_phi_dist_0_20.pdf>
 Package pdftex.def Info: figures/assoc_phi_dist_0_20.pdf  used on input line 183.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/assoc_eta_dist_0_20.pdf, id=411, 569.12625pt x 408.52625pt>
+<figures/assoc_eta_dist_0_20.pdf, id=416, 569.12625pt x 408.52625pt>
 File: figures/assoc_eta_dist_0_20.pdf Graphic file (type pdf)
 <use figures/assoc_eta_dist_0_20.pdf>
 Package pdftex.def Info: figures/assoc_eta_dist_0_20.pdf  used on input line 186.
@@ -823,17 +823,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 194.
 
-<figures/trig_pt_dist_0_20.pdf, id=413, 569.12625pt x 408.52625pt>
+<figures/trig_pt_dist_0_20.pdf, id=418, 569.12625pt x 408.52625pt>
 File: figures/trig_pt_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_pt_dist_0_20.pdf>
 Package pdftex.def Info: figures/trig_pt_dist_0_20.pdf  used on input line 232.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/trig_phi_dist_0_20.pdf, id=414, 569.12625pt x 408.52625pt>
+<figures/trig_phi_dist_0_20.pdf, id=419, 569.12625pt x 408.52625pt>
 File: figures/trig_phi_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_phi_dist_0_20.pdf>
 Package pdftex.def Info: figures/trig_phi_dist_0_20.pdf  used on input line 235.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/trig_eta_dist_0_20.pdf, id=415, 569.12625pt x 408.52625pt>
+<figures/trig_eta_dist_0_20.pdf, id=420, 569.12625pt x 408.52625pt>
 File: figures/trig_eta_dist_0_20.pdf Graphic file (type pdf)
 <use figures/trig_eta_dist_0_20.pdf>
 Package pdftex.def Info: figures/trig_eta_dist_0_20.pdf  used on input line 238.
@@ -862,52 +862,52 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [10
 
 ]
-<figures/nsigma_tpc_proton.pdf, id=706, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_proton.pdf, id=711, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_proton.pdf>
 Package pdftex.def Info: figures/nsigma_tpc_proton.pdf  used on input line 290.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_pion.pdf, id=707, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_pion.pdf, id=712, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_pion.pdf>
 Package pdftex.def Info: figures/nsigma_tpc_pion.pdf  used on input line 293.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_proton.pdf, id=708, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_proton.pdf, id=713, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_proton.pdf>
 Package pdftex.def Info: figures/nsigma_tof_proton.pdf  used on input line 302.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_pion.pdf, id=709, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_pion.pdf, id=714, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_pion.pdf>
 Package pdftex.def Info: figures/nsigma_tof_pion.pdf  used on input line 305.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_proton.pdf, id=710, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_proton.pdf, id=715, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_proton.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_proton.pdf>
 Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton.pdf  used on input line 314.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_pion.pdf, id=711, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_pion.pdf, id=716, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_pion.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_pion.pdf>
 Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion.pdf  used on input line 317.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_proton_global.pdf, id=712, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_proton_global.pdf, id=717, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_proton_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_proton_global.pdf>
 Package pdftex.def Info: figures/nsigma_tpc_proton_global.pdf  used on input line 326.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tpc_pion_global.pdf, id=713, 569.12625pt x 408.52625pt>
+<figures/nsigma_tpc_pion_global.pdf, id=718, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tpc_pion_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tpc_pion_global.pdf>
 Package pdftex.def Info: figures/nsigma_tpc_pion_global.pdf  used on input line 329.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_proton_global.pdf, id=714, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_proton_global.pdf, id=719, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_proton_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_proton_global.pdf>
 Package pdftex.def Info: figures/nsigma_tof_v_tpc_proton_global.pdf  used on input line 338.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/nsigma_tof_v_tpc_pion_global.pdf, id=715, 569.12625pt x 408.52625pt>
+<figures/nsigma_tof_v_tpc_pion_global.pdf, id=720, 569.12625pt x 408.52625pt>
 File: figures/nsigma_tof_v_tpc_pion_global.pdf Graphic file (type pdf)
 <use figures/nsigma_tof_v_tpc_pion_global.pdf>
 Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion_global.pdf  used on input line 341.
@@ -915,17 +915,17 @@ Package pdftex.def Info: figures/nsigma_tof_v_tpc_pion_global.pdf  used on input
  [11 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_pion.pdf, page is rotated 90 degrees>] [12 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tpc_pion_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_proton_global.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/nsigma_tof_v_tpc_pion_global.pdf, page is rotated 90 degrees>] [13
 
 ]
-<figures/lambda_mass_dist_0_20.pdf, id=1182, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_dist_0_20.pdf, id=1187, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_dist_0_20.pdf Graphic file (type pdf)
 <use figures/lambda_mass_dist_0_20.pdf>
 Package pdftex.def Info: figures/lambda_mass_dist_0_20.pdf  used on input line 381.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_mass_dist_20_50.pdf, id=1183, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_dist_20_50.pdf, id=1188, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_dist_20_50.pdf Graphic file (type pdf)
 <use figures/lambda_mass_dist_20_50.pdf>
 Package pdftex.def Info: figures/lambda_mass_dist_20_50.pdf  used on input line 384.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_mass_dist_50_80.pdf, id=1184, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_dist_50_80.pdf, id=1189, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_dist_50_80.pdf Graphic file (type pdf)
 <use figures/lambda_mass_dist_50_80.pdf>
 Package pdftex.def Info: figures/lambda_mass_dist_50_80.pdf  used on input line 387.
@@ -935,12 +935,12 @@ Package pdftex.def Info: figures/lambda_mass_dist_50_80.pdf  used on input line 
 LaTeX Warning: Float too large for page by 12.64847pt on input line 391.
 
 [14 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_dist_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_dist_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_dist_50_80.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_2d_nomixcor_0_20.pdf, id=1326, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_nomixcor_0_20.pdf, id=1331, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_nomixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_nomixcor_0_20.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_nomixcor_0_20.pdf  used on input line 414.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_nomixcor_0_20.pdf, id=1327, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_nomixcor_0_20.pdf, id=1332, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_nomixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_nomixcor_0_20.pdf>
 Package pdftex.def Info: figures/h_h_2d_nomixcor_0_20.pdf  used on input line 417.
@@ -949,82 +949,82 @@ Package pdftex.def Info: figures/h_h_2d_nomixcor_0_20.pdf  used on input line 41
 
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_nomixcor_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_2d_nomixcor_0_20.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_2d_nomixcor_20_50.pdf, id=1425, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_nomixcor_20_50.pdf, id=1430, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_nomixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_nomixcor_20_50.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_nomixcor_20_50.pdf  used on input line 428.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_nomixcor_20_50.pdf, id=1426, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_nomixcor_20_50.pdf, id=1431, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_nomixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_2d_nomixcor_20_50.pdf>
 Package pdftex.def Info: figures/h_h_2d_nomixcor_20_50.pdf  used on input line 431.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_nomixcor_50_80.pdf, id=1427, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_nomixcor_50_80.pdf, id=1432, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_nomixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_nomixcor_50_80.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_nomixcor_50_80.pdf  used on input line 440.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_nomixcor_50_80.pdf, id=1428, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_nomixcor_50_80.pdf, id=1433, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_nomixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_2d_nomixcor_50_80.pdf>
 Package pdftex.def Info: figures/h_h_2d_nomixcor_50_80.pdf  used on input line 443.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixed_0_20.pdf, id=1429, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixed_0_20.pdf, id=1434, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixed_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixed_0_20.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixed_0_20.pdf  used on input line 452.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixed_0_20.pdf, id=1430, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixed_0_20.pdf, id=1435, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixed_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixed_0_20.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixed_0_20.pdf  used on input line 455.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixed_20_50.pdf, id=1431, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixed_20_50.pdf, id=1436, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixed_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixed_20_50.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixed_20_50.pdf  used on input line 464.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixed_20_50.pdf, id=1432, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixed_20_50.pdf, id=1437, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixed_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixed_20_50.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixed_20_50.pdf  used on input line 467.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixed_50_80.pdf, id=1433, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixed_50_80.pdf, id=1438, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixed_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixed_50_80.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixed_50_80.pdf  used on input line 476.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixed_50_80.pdf, id=1434, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixed_50_80.pdf, id=1439, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixed_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixed_50_80.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixed_50_80.pdf  used on input line 479.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixcor_0_20.pdf, id=1435, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_0_20.pdf, id=1440, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_0_20.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20.pdf  used on input line 489.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixcor_0_20.pdf, id=1436, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixcor_0_20.pdf, id=1441, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_0_20.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixcor_0_20.pdf  used on input line 492.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixcor_20_50.pdf, id=1437, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_20_50.pdf, id=1442, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_20_50.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50.pdf  used on input line 501.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixcor_20_50.pdf, id=1438, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixcor_20_50.pdf, id=1443, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_20_50.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixcor_20_50.pdf  used on input line 504.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_2d_mixcor_50_80.pdf, id=1439, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_50_80.pdf, id=1444, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_50_80.pdf>
 Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80.pdf  used on input line 513.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_2d_mixcor_50_80.pdf, id=1440, 569.12625pt x 408.52625pt>
+<figures/h_h_2d_mixcor_50_80.pdf, id=1445, 569.12625pt x 408.52625pt>
 File: figures/h_h_2d_mixcor_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_2d_mixcor_50_80.pdf>
 Package pdftex.def Info: figures/h_h_2d_mixcor_50_80.pdf  used on input line 516.
@@ -1047,48 +1047,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [19
 
 ]
-<figures/v0_efficiency.pdf, id=2177, 569.12625pt x 547.04375pt>
+<figures/v0_efficiency.pdf, id=2182, 569.12625pt x 547.04375pt>
 File: figures/v0_efficiency.pdf Graphic file (type pdf)
 <use figures/v0_efficiency.pdf>
 Package pdftex.def Info: figures/v0_efficiency.pdf  used on input line 606.
 (pdftex.def)             Requested size: 289.07999pt x 277.87843pt.
-<figures/trigger_efficiency.pdf, id=2178, 569.12625pt x 547.04375pt>
+<figures/trigger_efficiency.pdf, id=2183, 569.12625pt x 547.04375pt>
 File: figures/trigger_efficiency.pdf Graphic file (type pdf)
 <use figures/trigger_efficiency.pdf>
 Package pdftex.def Info: figures/trigger_efficiency.pdf  used on input line 614.
 (pdftex.def)             Requested size: 216.81pt x 208.3963pt.
-<figures/associated_efficiency.pdf, id=2179, 569.12625pt x 547.04375pt>
+<figures/associated_efficiency.pdf, id=2184, 569.12625pt x 547.04375pt>
 File: figures/associated_efficiency.pdf Graphic file (type pdf)
 <use figures/associated_efficiency.pdf>
 Package pdftex.def Info: figures/associated_efficiency.pdf  used on input line 617.
 (pdftex.def)             Requested size: 216.81pt x 208.3963pt.
  [20] [21 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/v0_efficiency.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trigger_efficiency.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/associated_efficiency.pdf, page is rotated 90 degrees>]
-<figures/trackmerge_lambda_dphi_small_deta.pdf, id=2322, 569.12625pt x 408.52625pt>
+<figures/trackmerge_lambda_dphi_small_deta.pdf, id=2327, 569.12625pt x 408.52625pt>
 File: figures/trackmerge_lambda_dphi_small_deta.pdf Graphic file (type pdf)
 <use figures/trackmerge_lambda_dphi_small_deta.pdf>
 Package pdftex.def Info: figures/trackmerge_lambda_dphi_small_deta.pdf  used on input line 634.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/trackmerge_lambda_dphi_large_deta.pdf, id=2323, 569.12625pt x 408.52625pt>
+<figures/trackmerge_lambda_dphi_large_deta.pdf, id=2328, 569.12625pt x 408.52625pt>
 File: figures/trackmerge_lambda_dphi_large_deta.pdf Graphic file (type pdf)
 <use figures/trackmerge_lambda_dphi_large_deta.pdf>
 Package pdftex.def Info: figures/trackmerge_lambda_dphi_large_deta.pdf  used on input line 637.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_proton_dphi_secondary.pdf, id=2329, 569.12625pt x 408.52625pt>
+<figures/h_proton_dphi_secondary.pdf, id=2334, 569.12625pt x 408.52625pt>
 File: figures/h_proton_dphi_secondary.pdf Graphic file (type pdf)
 <use figures/h_proton_dphi_secondary.pdf>
 Package pdftex.def Info: figures/h_proton_dphi_secondary.pdf  used on input line 654.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_proton_dphi_primary.pdf, id=2330, 569.12625pt x 408.52625pt>
+<figures/h_proton_dphi_primary.pdf, id=2335, 569.12625pt x 408.52625pt>
 File: figures/h_proton_dphi_primary.pdf Graphic file (type pdf)
 <use figures/h_proton_dphi_primary.pdf>
 Package pdftex.def Info: figures/h_proton_dphi_primary.pdf  used on input line 657.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_pion_dphi_secondary.pdf, id=2331, 569.12625pt x 408.52625pt>
+<figures/h_pion_dphi_secondary.pdf, id=2336, 569.12625pt x 408.52625pt>
 File: figures/h_pion_dphi_secondary.pdf Graphic file (type pdf)
 <use figures/h_pion_dphi_secondary.pdf>
 Package pdftex.def Info: figures/h_pion_dphi_secondary.pdf  used on input line 666.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_pion_dphi_primary.pdf, id=2332, 569.12625pt x 408.52625pt>
+<figures/h_pion_dphi_primary.pdf, id=2337, 569.12625pt x 408.52625pt>
 File: figures/h_pion_dphi_primary.pdf Graphic file (type pdf)
 <use figures/h_pion_dphi_primary.pdf>
 Package pdftex.def Info: figures/h_pion_dphi_primary.pdf  used on input line 669.
@@ -1096,17 +1096,17 @@ Package pdftex.def Info: figures/h_pion_dphi_primary.pdf  used on input line 669
  [22
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_small_deta.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trackmerge_lambda_dphi_large_deta.pdf, page is rotated 90 degrees>]
-<figures/h_secondary_pi_mc_ratio.pdf, id=2429, 569.12625pt x 408.52625pt>
+<figures/h_secondary_pi_mc_ratio.pdf, id=2434, 569.12625pt x 408.52625pt>
 File: figures/h_secondary_pi_mc_ratio.pdf Graphic file (type pdf)
 <use figures/h_secondary_pi_mc_ratio.pdf>
 Package pdftex.def Info: figures/h_secondary_pi_mc_ratio.pdf  used on input line 679.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_pion_dphi_secondary_0_2.pdf, id=2431, 569.12625pt x 408.52625pt>
+<figures/h_pion_dphi_secondary_0_2.pdf, id=2436, 569.12625pt x 408.52625pt>
 File: figures/h_pion_dphi_secondary_0_2.pdf Graphic file (type pdf)
 <use figures/h_pion_dphi_secondary_0_2.pdf>
 Package pdftex.def Info: figures/h_pion_dphi_secondary_0_2.pdf  used on input line 689.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_pion_dphi_secondary_2_4.pdf, id=2432, 569.12625pt x 408.52625pt>
+<figures/h_pion_dphi_secondary_2_4.pdf, id=2437, 569.12625pt x 408.52625pt>
 File: figures/h_pion_dphi_secondary_2_4.pdf Graphic file (type pdf)
 <use figures/h_pion_dphi_secondary_2_4.pdf>
 Package pdftex.def Info: figures/h_pion_dphi_secondary_2_4.pdf  used on input line 692.
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: figures/h_pion_dphi_secondary_2_4.pdf  used on input li
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
  [23 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_proton_dphi_secondary.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_proton_dphi_primary.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_pion_dphi_secondary.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_pion_dphi_primary.pdf, page is rotated 90 degrees>] [24 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_secondary_pi_mc_ratio.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_pion_dphi_secondary_0_2.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_pion_dphi_secondary_2_4.pdf, page is rotated 90 degrees>]
-<figures/trackmerge_efficiency_PLACEHOLDER.pdf, id=2765, 569.12625pt x 408.52625pt>
+<figures/trackmerge_efficiency_PLACEHOLDER.pdf, id=2770, 569.12625pt x 408.52625pt>
 File: figures/trackmerge_efficiency_PLACEHOLDER.pdf Graphic file (type pdf)
 <use figures/trackmerge_efficiency_PLACEHOLDER.pdf>
 Package pdftex.def Info: figures/trackmerge_efficiency_PLACEHOLDER.pdf  used on input line 721.
@@ -1159,33 +1159,33 @@ File: figures/h_h_2d_mixcor_50_80.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/h_h_2d_mixcor_50_80.pdf  used on input line 817.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [29]
-<figures/h_lambda_dphi_0_20.pdf, id=2853, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20.pdf, id=2858, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_0_20.pdf  used on input line 828.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50.pdf, id=2854, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50.pdf, id=2859, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_20_50.pdf  used on input line 831.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80.pdf, id=2855, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80.pdf, id=2860, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_50_80.pdf  used on input line 834.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [30 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80.pdf, page is rotated 90 degrees>]
-<figures/h_h_dphi_0_20.pdf, id=2994, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20.pdf, id=2999, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20.pdf>
 Package pdftex.def Info: figures/h_h_dphi_0_20.pdf  used on input line 845.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50.pdf, id=2995, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50.pdf, id=3000, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50.pdf>
 Package pdftex.def Info: figures/h_h_dphi_20_50.pdf  used on input line 848.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80.pdf, id=2996, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80.pdf, id=3001, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80.pdf>
 Package pdftex.def Info: figures/h_h_dphi_50_80.pdf  used on input line 851.
@@ -1200,17 +1200,17 @@ Overfull \hbox (47.99948pt too wide) in paragraph at lines 900--911
  [][] 
  []
 
-<figures/h_lambda_dphi_0_20_uefit.pdf, id=3140, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_uefit.pdf, id=3146, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_uefit.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_0_20_uefit.pdf  used on input line 918.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_uefit.pdf, id=3141, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_uefit.pdf, id=3147, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_uefit.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_20_50_uefit.pdf  used on input line 921.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_uefit.pdf, id=3142, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_uefit.pdf, id=3148, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_uefit.pdf>
 Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit.pdf  used on input line 924.
@@ -1218,17 +1218,17 @@ Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit.pdf  used on input li
 
 LaTeX Warning: Float too large for page by 12.64847pt on input line 928.
 
-<figures/h_h_dphi_0_20_uefit.pdf, id=3143, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_uefit.pdf, id=3149, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_uefit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_uefit.pdf>
 Package pdftex.def Info: figures/h_h_dphi_0_20_uefit.pdf  used on input line 933.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_uefit.pdf, id=3144, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_uefit.pdf, id=3150, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_uefit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_uefit.pdf>
 Package pdftex.def Info: figures/h_h_dphi_20_50_uefit.pdf  used on input line 936.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_uefit.pdf, id=3145, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_uefit.pdf, id=3151, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_uefit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_uefit.pdf>
 Package pdftex.def Info: figures/h_h_dphi_50_80_uefit.pdf  used on input line 939.
@@ -1258,32 +1258,32 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 959.
 
-<figures/dphi_mass_variation_0_20_values.pdf, id=3430, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_0_20_values.pdf, id=3435, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_0_20_values.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_0_20_values.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_0_20_values.pdf  used on input line 977.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_mass_variation_0_20_ratios.pdf, id=3431, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_0_20_ratios.pdf, id=3436, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_0_20_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_0_20_ratios.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_0_20_ratios.pdf  used on input line 980.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_mass_variation_20_50_values.pdf, id=3432, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_20_50_values.pdf, id=3437, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_20_50_values.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_20_50_values.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_20_50_values.pdf  used on input line 989.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_mass_variation_20_50_ratios.pdf, id=3433, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_20_50_ratios.pdf, id=3438, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_20_50_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_20_50_ratios.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_20_50_ratios.pdf  used on input line 992.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_mass_variation_50_80_values.pdf, id=3434, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_50_80_values.pdf, id=3439, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_50_80_values.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_50_80_values.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_50_80_values.pdf  used on input line 1001.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_mass_variation_50_80_ratios.pdf, id=3435, 569.12625pt x 408.52625pt>
+<figures/dphi_mass_variation_50_80_ratios.pdf, id=3440, 569.12625pt x 408.52625pt>
 File: figures/dphi_mass_variation_50_80_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_mass_variation_50_80_ratios.pdf>
 Package pdftex.def Info: figures/dphi_mass_variation_50_80_ratios.pdf  used on input line 1004.
@@ -1291,64 +1291,64 @@ Package pdftex.def Info: figures/dphi_mass_variation_50_80_ratios.pdf  used on i
 [35
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_0_20_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_0_20_ratios.pdf, page is rotated 90 degrees>]
-<figures/dphi_sb_variation_0_20_values.pdf, id=3535, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_0_20_values.pdf, id=3540, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_0_20_values.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_0_20_values.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_0_20_values.pdf  used on input line 1025.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_sb_variation_0_20_ratios.pdf, id=3536, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_0_20_ratios.pdf, id=3541, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_0_20_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_0_20_ratios.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_0_20_ratios.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_sb_variation_20_50_values.pdf, id=3537, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_20_50_values.pdf, id=3542, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_20_50_values.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_20_50_values.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_20_50_values.pdf  used on input line 1037.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_sb_variation_20_50_ratios.pdf, id=3538, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_20_50_ratios.pdf, id=3543, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_20_50_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_20_50_ratios.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_20_50_ratios.pdf  used on input line 1040.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_sb_variation_50_80_values.pdf, id=3539, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_50_80_values.pdf, id=3544, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_50_80_values.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_50_80_values.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_50_80_values.pdf  used on input line 1049.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_sb_variation_50_80_ratios.pdf, id=3540, 569.12625pt x 408.52625pt>
+<figures/dphi_sb_variation_50_80_ratios.pdf, id=3545, 569.12625pt x 408.52625pt>
 File: figures/dphi_sb_variation_50_80_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_sb_variation_50_80_ratios.pdf>
 Package pdftex.def Info: figures/dphi_sb_variation_50_80_ratios.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
  [36 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_20_50_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_20_50_ratios.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_50_80_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_mass_variation_50_80_ratios.pdf, page is rotated 90 degrees>]
-<figures/dphi_pid_variation_0_20_values.pdf, id=3728, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_0_20_values.pdf, id=3733, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_0_20_values.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_0_20_values.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_0_20_values.pdf  used on input line 1072.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_pid_variation_0_20_ratios.pdf, id=3729, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_0_20_ratios.pdf, id=3734, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_0_20_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_0_20_ratios.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_0_20_ratios.pdf  used on input line 1075.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_pid_variation_20_50_values.pdf, id=3730, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_20_50_values.pdf, id=3735, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_20_50_values.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_20_50_values.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_20_50_values.pdf  used on input line 1084.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_pid_variation_20_50_ratios.pdf, id=3731, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_20_50_ratios.pdf, id=3736, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_20_50_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_20_50_ratios.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_20_50_ratios.pdf  used on input line 1087.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
  [37 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_0_20_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_0_20_ratios.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_20_50_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_20_50_ratios.pdf, page is rotated 90 degrees>] [38 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_50_80_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_sb_variation_50_80_ratios.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_0_20_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_0_20_ratios.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_20_50_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_20_50_ratios.pdf, page is rotated 90 degrees>]
-<figures/dphi_pid_variation_50_80_values.pdf, id=4186, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_50_80_values.pdf, id=4191, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_50_80_values.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_50_80_values.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_50_80_values.pdf  used on input line 1098.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/dphi_pid_variation_50_80_ratios.pdf, id=4187, 569.12625pt x 408.52625pt>
+<figures/dphi_pid_variation_50_80_ratios.pdf, id=4192, 569.12625pt x 408.52625pt>
 File: figures/dphi_pid_variation_50_80_ratios.pdf Graphic file (type pdf)
 <use figures/dphi_pid_variation_50_80_ratios.pdf>
 Package pdftex.def Info: figures/dphi_pid_variation_50_80_ratios.pdf  used on input line 1101.
@@ -1374,120 +1374,120 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1119.
 
-<figures/h_lambda_dphi_0_20_onlysyst.pdf, id=4195, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_onlysyst.pdf, id=4200, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_onlysyst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_onlysyst.pdf  used on input line 1141.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_onlysyst.pdf  used on input line 1142.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_onlysyst.pdf, id=4196, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_onlysyst.pdf, id=4201, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_onlysyst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_onlysyst.pdf  used on input line 1144.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_onlysyst.pdf  used on input line 1145.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_onlysyst.pdf, id=4197, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_onlysyst.pdf, id=4202, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_onlysyst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_onlysyst.pdf  used on input line 1147.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_onlysyst.pdf  used on input line 1148.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_0_20_onlysyst.pdf, id=4198, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_onlysyst.pdf, id=4203, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_onlysyst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_onlysyst.pdf  used on input line 1156.
+Package pdftex.def Info: figures/h_h_dphi_0_20_onlysyst.pdf  used on input line 1157.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_onlysyst.pdf, id=4199, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_onlysyst.pdf, id=4204, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_onlysyst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_onlysyst.pdf  used on input line 1159.
+Package pdftex.def Info: figures/h_h_dphi_20_50_onlysyst.pdf  used on input line 1160.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_onlysyst.pdf, id=4200, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_onlysyst.pdf, id=4205, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_onlysyst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_onlysyst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_onlysyst.pdf  used on input line 1162.
+Package pdftex.def Info: figures/h_h_dphi_50_80_onlysyst.pdf  used on input line 1163.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 [39
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_50_80_values.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/dphi_pid_variation_50_80_ratios.pdf, page is rotated 90 degrees>] [40 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_onlysyst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_onlysyst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_onlysyst.pdf, page is rotated 90 degrees>] [41 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_onlysyst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_onlysyst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_onlysyst.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_dphi_0_20_uefit_4bin.pdf, id=4578, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_uefit_4bin.pdf, id=4583, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_uefit_4bin.pdf  used on input line 1222.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_uefit_4bin.pdf  used on input line 1223.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_uefit_4bin.pdf, id=4579, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_uefit_4bin.pdf, id=4584, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_uefit_4bin.pdf  used on input line 1225.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_uefit_4bin.pdf  used on input line 1226.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_uefit_4bin.pdf, id=4580, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_uefit_4bin.pdf, id=4585, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit_4bin.pdf  used on input line 1228.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit_4bin.pdf  used on input line 1229.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1232.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1233.
 
 [42
 
 ] [43 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_uefit_4bin.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_uefit_4bin.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_uefit_4bin.pdf, page is rotated 90 degrees>]
-<figures/h_h_dphi_0_20_uefit_4bin.pdf, id=4726, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_uefit_4bin.pdf, id=4731, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_uefit_4bin.pdf  used on input line 1239.
+Package pdftex.def Info: figures/h_h_dphi_0_20_uefit_4bin.pdf  used on input line 1240.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_uefit_4bin.pdf, id=4727, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_uefit_4bin.pdf, id=4732, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_uefit_4bin.pdf  used on input line 1242.
+Package pdftex.def Info: figures/h_h_dphi_20_50_uefit_4bin.pdf  used on input line 1243.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_uefit_4bin.pdf, id=4728, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_uefit_4bin.pdf, id=4733, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_uefit_4bin.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_uefit_4bin.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_uefit_4bin.pdf  used on input line 1245.
+Package pdftex.def Info: figures/h_h_dphi_50_80_uefit_4bin.pdf  used on input line 1246.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1249.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1250.
 
 [44 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_uefit_4bin.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_uefit_4bin.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_uefit_4bin.pdf, page is rotated 90 degrees>] [45
 
 
 ]
-<figures/h_lambda_dphi_0_20_uefit_zyam.pdf, id=4877, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_uefit_zyam.pdf, id=4882, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_uefit_zyam.pdf  used on input line 1309.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_uefit_zyam.pdf  used on input line 1310.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_uefit_zyam.pdf, id=4878, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_uefit_zyam.pdf, id=4883, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_uefit_zyam.pdf  used on input line 1312.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_uefit_zyam.pdf  used on input line 1313.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_uefit_zyam.pdf, id=4879, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_uefit_zyam.pdf, id=4884, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit_zyam.pdf  used on input line 1315.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_uefit_zyam.pdf  used on input line 1316.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1319.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1320.
 
-<figures/h_h_dphi_0_20_uefit_zyam.pdf, id=4880, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_uefit_zyam.pdf, id=4885, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_uefit_zyam.pdf  used on input line 1324.
+Package pdftex.def Info: figures/h_h_dphi_0_20_uefit_zyam.pdf  used on input line 1325.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_uefit_zyam.pdf, id=4881, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_uefit_zyam.pdf, id=4886, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_uefit_zyam.pdf  used on input line 1327.
+Package pdftex.def Info: figures/h_h_dphi_20_50_uefit_zyam.pdf  used on input line 1328.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_uefit_zyam.pdf, id=4882, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_uefit_zyam.pdf, id=4887, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_uefit_zyam.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_uefit_zyam.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_uefit_zyam.pdf  used on input line 1330.
+Package pdftex.def Info: figures/h_h_dphi_50_80_uefit_zyam.pdf  used on input line 1331.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1334.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1335.
 
 [46 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_uefit_zyam.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_uefit_zyam.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_uefit_zyam.pdf, page is rotated 90 degrees>] [47 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_uefit_zyam.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_uefit_zyam.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_uefit_zyam.pdf, page is rotated 90 degrees>] [48
 
@@ -1495,136 +1495,136 @@ LaTeX Warning: Float too large for page by 12.64847pt on input line 1334.
 ] [49
 
 ]
-<figures/h_lambda_dphi_0_20_fullfit.pdf, id=5180, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_fullfit.pdf, id=5185, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_fullfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_fullfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_fullfit.pdf  used on input line 1450.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_fullfit.pdf  used on input line 1451.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_fullfit.pdf, id=5181, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_fullfit.pdf, id=5186, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_fullfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_fullfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_fullfit.pdf  used on input line 1453.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_fullfit.pdf  used on input line 1454.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_fullfit.pdf, id=5182, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_fullfit.pdf, id=5187, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_fullfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_fullfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_fullfit.pdf  used on input line 1456.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_fullfit.pdf  used on input line 1457.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_0_20_fullfit.pdf, id=5183, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_fullfit.pdf, id=5188, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_fullfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_fullfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_fullfit.pdf  used on input line 1465.
+Package pdftex.def Info: figures/h_h_dphi_0_20_fullfit.pdf  used on input line 1466.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_fullfit.pdf, id=5184, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_fullfit.pdf, id=5189, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_fullfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_fullfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_fullfit.pdf  used on input line 1468.
+Package pdftex.def Info: figures/h_h_dphi_20_50_fullfit.pdf  used on input line 1469.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_fullfit.pdf, id=5185, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_fullfit.pdf, id=5190, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_fullfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_fullfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_fullfit.pdf  used on input line 1471.
+Package pdftex.def Info: figures/h_h_dphi_50_80_fullfit.pdf  used on input line 1472.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [50 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_fullfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_fullfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_fullfit.pdf, page is rotated 90 degrees>] [51 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_fullfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_fullfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_fullfit.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1479.
+(hyperref)                removing `math shift' on input line 1480.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1479.
+(hyperref)                removing `subscript' on input line 1480.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1479.
+(hyperref)                removing `math shift' on input line 1480.
 
 [52
 
 
 ]
-<figures/h_lambda_dphi_0_20_vonfit.pdf, id=5472, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_vonfit.pdf, id=5477, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_vonfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_vonfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_vonfit.pdf  used on input line 1541.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_vonfit.pdf  used on input line 1542.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_vonfit.pdf, id=5473, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_vonfit.pdf, id=5478, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_vonfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_vonfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_vonfit.pdf  used on input line 1544.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_vonfit.pdf  used on input line 1545.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_vonfit.pdf, id=5474, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_vonfit.pdf, id=5479, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_vonfit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_vonfit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_vonfit.pdf  used on input line 1547.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_vonfit.pdf  used on input line 1548.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_0_20_vonfit.pdf, id=5475, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_vonfit.pdf, id=5480, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_vonfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_vonfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_vonfit.pdf  used on input line 1556.
+Package pdftex.def Info: figures/h_h_dphi_0_20_vonfit.pdf  used on input line 1557.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_vonfit.pdf, id=5476, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_vonfit.pdf, id=5481, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_vonfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_vonfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_vonfit.pdf  used on input line 1559.
+Package pdftex.def Info: figures/h_h_dphi_20_50_vonfit.pdf  used on input line 1560.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_vonfit.pdf, id=5477, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_vonfit.pdf, id=5482, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_vonfit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_vonfit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_vonfit.pdf  used on input line 1562.
+Package pdftex.def Info: figures/h_h_dphi_50_80_vonfit.pdf  used on input line 1563.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [53 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_vonfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_vonfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_vonfit.pdf, page is rotated 90 degrees>] [54 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_vonfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_vonfit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_vonfit.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1571.
+(hyperref)                removing `math shift' on input line 1572.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1571.
+(hyperref)                removing `subscript' on input line 1572.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1571.
+(hyperref)                removing `math shift' on input line 1572.
 
 [55
 
 
 ]
-<figures/h_lambda_dphi_0_20_v2fit.pdf, id=5765, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_v2fit.pdf, id=5771, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_v2fit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_v2fit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_v2fit.pdf  used on input line 1617.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_v2fit.pdf  used on input line 1618.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_v2fit.pdf, id=5766, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_v2fit.pdf, id=5772, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_v2fit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_v2fit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_v2fit.pdf  used on input line 1620.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_v2fit.pdf  used on input line 1621.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_v2fit.pdf, id=5767, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_v2fit.pdf, id=5773, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_v2fit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_v2fit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_v2fit.pdf  used on input line 1623.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_v2fit.pdf  used on input line 1624.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1627.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1628.
 
-<figures/h_h_dphi_0_20_v2fit.pdf, id=5768, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_v2fit.pdf, id=5774, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_v2fit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_v2fit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_v2fit.pdf  used on input line 1632.
+Package pdftex.def Info: figures/h_h_dphi_0_20_v2fit.pdf  used on input line 1633.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_v2fit.pdf, id=5769, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_v2fit.pdf, id=5775, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_v2fit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_v2fit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_v2fit.pdf  used on input line 1635.
+Package pdftex.def Info: figures/h_h_dphi_20_50_v2fit.pdf  used on input line 1636.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_v2fit.pdf, id=5770, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_v2fit.pdf, id=5776, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_v2fit.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_v2fit.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_v2fit.pdf  used on input line 1638.
+Package pdftex.def Info: figures/h_h_dphi_50_80_v2fit.pdf  used on input line 1639.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 1642.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 1643.
 
 [56 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_v2fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_v2fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_v2fit.pdf, page is rotated 90 degrees>] [57 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_v2fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_v2fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_v2fit.pdf, page is rotated 90 degrees>]
 
@@ -1645,628 +1645,761 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ] [59]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1786.
+(hyperref)                removing `\Lambda' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 1786.
+(hyperref)                removing `\Delta' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\varphi' on input line 1786.
+(hyperref)                removing `\varphi' on input line 1787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1786.
+(hyperref)                removing `math shift' on input line 1787.
 
 [60
 
 ]
-<figures/h_lambda_dphi_0_20_stats_and_syst.pdf, id=6074, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_stats_and_syst.pdf, id=6079, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_stats_and_syst.pdf  used on input line 1794.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_stats_and_syst.pdf  used on input line 1795.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_stats_and_syst.pdf, id=6075, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_stats_and_syst.pdf, id=6080, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_stats_and_syst.pdf  used on input line 1797.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_stats_and_syst.pdf  used on input line 1798.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_stats_and_syst.pdf, id=6076, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_stats_and_syst.pdf, id=6081, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_stats_and_syst.pdf  used on input line 1800.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_stats_and_syst.pdf  used on input line 1801.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [61 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_stats_and_syst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_stats_and_syst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_stats_and_syst.pdf, page is rotated 90 degrees>]
-<figures/h_h_dphi_0_20_stats_and_syst.pdf, id=6214, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_stats_and_syst.pdf, id=6219, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_stats_and_syst.pdf  used on input line 1811.
+Package pdftex.def Info: figures/h_h_dphi_0_20_stats_and_syst.pdf  used on input line 1812.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_stats_and_syst.pdf, id=6215, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_stats_and_syst.pdf, id=6220, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_stats_and_syst.pdf  used on input line 1814.
+Package pdftex.def Info: figures/h_h_dphi_20_50_stats_and_syst.pdf  used on input line 1815.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_stats_and_syst.pdf, id=6216, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_stats_and_syst.pdf, id=6221, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_stats_and_syst.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_stats_and_syst.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_stats_and_syst.pdf  used on input line 1817.
+Package pdftex.def Info: figures/h_h_dphi_50_80_stats_and_syst.pdf  used on input line 1818.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_all.pdf, id=6217, 569.12625pt x 236.885pt>
+<figures/h_lambda_dphi_all.pdf, id=6222, 569.12625pt x 236.885pt>
 File: figures/h_lambda_dphi_all.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all.pdf  used on input line 1826.
+Package pdftex.def Info: figures/h_lambda_dphi_all.pdf  used on input line 1827.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_h_dphi_all.pdf, id=6218, 569.12625pt x 236.885pt>
+<figures/h_h_dphi_all.pdf, id=6223, 569.12625pt x 236.885pt>
 File: figures/h_h_dphi_all.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_all.pdf>
-Package pdftex.def Info: figures/h_h_dphi_all.pdf  used on input line 1829.
+Package pdftex.def Info: figures/h_h_dphi_all.pdf  used on input line 1830.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
  [62 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_stats_and_syst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_stats_and_syst.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_stats_and_syst.pdf, page is rotated 90 degrees>] [63 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1838.
+(hyperref)                removing `math shift' on input line 1839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1838.
+(hyperref)                removing `\Lambda' on input line 1839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1838.
+(hyperref)                removing `math shift' on input line 1839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1838.
+(hyperref)                removing `math shift' on input line 1839.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1838.
+(hyperref)                removing `math shift' on input line 1839.
 
-<figures/pairwise_plot.pdf, id=6449, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot.pdf, id=6454, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot.pdf Graphic file (type pdf)
 <use figures/pairwise_plot.pdf>
-Package pdftex.def Info: figures/pairwise_plot.pdf  used on input line 1844.
+Package pdftex.def Info: figures/pairwise_plot.pdf  used on input line 1845.
 (pdftex.def)             Requested size: 433.62pt x 311.27484pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1850.
+(hyperref)                removing `math shift' on input line 1851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1850.
+(hyperref)                removing `\Lambda' on input line 1851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1850.
+(hyperref)                removing `math shift' on input line 1851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1850.
+(hyperref)                removing `math shift' on input line 1851.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1850.
+(hyperref)                removing `math shift' on input line 1851.
 
 [64
 
 
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot.pdf, page is rotated 90 degrees>]
-<figures/ratio_plot.pdf, id=6500, 569.12625pt x 408.52625pt>
+<figures/ratio_plot.pdf, id=6505, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot.pdf Graphic file (type pdf)
 <use figures/ratio_plot.pdf>
-Package pdftex.def Info: figures/ratio_plot.pdf  used on input line 1858.
+Package pdftex.def Info: figures/ratio_plot.pdf  used on input line 1859.
 (pdftex.def)             Requested size: 433.62pt x 311.27484pt.
-<figures/h_lambda_dphi_all_lowpt.pdf, id=6507, 569.12625pt x 236.885pt>
+<figures/h_lambda_dphi_all_lowpt.pdf, id=6512, 569.12625pt x 236.885pt>
 File: figures/h_lambda_dphi_all_lowpt.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all_lowpt.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_lowpt.pdf  used on input line 1877.
+Package pdftex.def Info: figures/h_lambda_dphi_all_lowpt.pdf  used on input line 1878.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_h_dphi_all_lowpt.pdf, id=6508, 569.12625pt x 236.885pt>
+<figures/h_h_dphi_all_lowpt.pdf, id=6513, 569.12625pt x 236.885pt>
 File: figures/h_h_dphi_all_lowpt.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_all_lowpt.pdf>
-Package pdftex.def Info: figures/h_h_dphi_all_lowpt.pdf  used on input line 1880.
+Package pdftex.def Info: figures/h_h_dphi_all_lowpt.pdf  used on input line 1881.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_lambda_dphi_all_highpt.pdf, id=6509, 569.12625pt x 236.885pt>
+<figures/h_lambda_dphi_all_highpt.pdf, id=6514, 569.12625pt x 236.885pt>
 File: figures/h_lambda_dphi_all_highpt.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_all_highpt.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_all_highpt.pdf  used on input line 1889.
+Package pdftex.def Info: figures/h_lambda_dphi_all_highpt.pdf  used on input line 1890.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/h_h_dphi_all_highpt.pdf, id=6510, 569.12625pt x 236.885pt>
+<figures/h_h_dphi_all_highpt.pdf, id=6515, 569.12625pt x 236.885pt>
 File: figures/h_h_dphi_all_highpt.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_all_highpt.pdf>
-Package pdftex.def Info: figures/h_h_dphi_all_highpt.pdf  used on input line 1892.
+Package pdftex.def Info: figures/h_h_dphi_all_highpt.pdf  used on input line 1893.
 (pdftex.def)             Requested size: 361.34999pt x 150.40945pt.
-<figures/pairwise_plot_lowpt.pdf, id=6511, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_lowpt.pdf, id=6516, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_lowpt.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_lowpt.pdf>
-Package pdftex.def Info: figures/pairwise_plot_lowpt.pdf  used on input line 1900.
+Package pdftex.def Info: figures/pairwise_plot_lowpt.pdf  used on input line 1901.
 (pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-<figures/pairwise_plot_highpt.pdf, id=6512, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_highpt.pdf, id=6517, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_highpt.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_highpt.pdf>
-Package pdftex.def Info: figures/pairwise_plot_highpt.pdf  used on input line 1907.
+Package pdftex.def Info: figures/pairwise_plot_highpt.pdf  used on input line 1908.
 (pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-<figures/ratio_plot_lowpt.pdf, id=6513, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_lowpt.pdf, id=6518, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_lowpt.pdf Graphic file (type pdf)
 <use figures/ratio_plot_lowpt.pdf>
-Package pdftex.def Info: figures/ratio_plot_lowpt.pdf  used on input line 1915.
+Package pdftex.def Info: figures/ratio_plot_lowpt.pdf  used on input line 1916.
 (pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
-<figures/ratio_plot_highpt.pdf, id=6514, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_highpt.pdf, id=6519, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_highpt.pdf Graphic file (type pdf)
 <use figures/ratio_plot_highpt.pdf>
-Package pdftex.def Info: figures/ratio_plot_highpt.pdf  used on input line 1922.
+Package pdftex.def Info: figures/ratio_plot_highpt.pdf  used on input line 1923.
 (pdftex.def)             Requested size: 361.34999pt x 259.39258pt.
  [65
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot.pdf, page is rotated 90 degrees>] [66 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_lowpt.pdf, page is rotated 90 degrees>] [67 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_all_highpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_all_highpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_lowpt.pdf, page is rotated 90 degrees>] [68 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_highpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_lowpt.pdf, page is rotated 90 degrees>] [69 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_highpt.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1930.
+(hyperref)                removing `math shift' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1930.
+(hyperref)                removing `\Lambda' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1930.
+(hyperref)                removing `math shift' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1930.
+(hyperref)                removing `math shift' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 1930.
+(hyperref)                removing `\phi' on input line 1931.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1930.
+(hyperref)                removing `math shift' on input line 1931.
 
 
-Overfull \hbox (34.6827pt too wide) in paragraph at lines 1931--1932
+Overfull \hbox (34.6827pt too wide) in paragraph at lines 1932--1933
 \OT1/ptm/m/n/10.95 Using pre-vi-ously ap-proved re-sults from the $\OML/ztmcm/m/it/10.95 h \OMS/ztmcm/m/n/10.95 ^^@ \OML/ztmcm/m/it/10.95 ^^^$ \OT1/ptm/m/n/10.95 anal-y-sis (found here: https://alice-notes.web.cern.ch/node/919),
  []
 
-<figures/phi_ratio_plot.pdf, id=6937, 569.12625pt x 363.3575pt>
+<figures/phi_ratio_plot.pdf, id=6943, 569.12625pt x 363.3575pt>
 File: figures/phi_ratio_plot.pdf Graphic file (type pdf)
 <use figures/phi_ratio_plot.pdf>
-Package pdftex.def Info: figures/phi_ratio_plot.pdf  used on input line 1938.
+Package pdftex.def Info: figures/phi_ratio_plot.pdf  used on input line 1939.
 (pdftex.def)             Requested size: 216.81pt x 138.42102pt.
 File: figures/ratio_plot.pdf Graphic file (type pdf)
 <use figures/ratio_plot.pdf>
-Package pdftex.def Info: figures/ratio_plot.pdf  used on input line 1941.
+Package pdftex.def Info: figures/ratio_plot.pdf  used on input line 1942.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/lambda_phi_ratio_plot.pdf, id=6938, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot.pdf, id=6944, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot.pdf>
-Package pdftex.def Info: figures/lambda_phi_ratio_plot.pdf  used on input line 1949.
-(pdftex.def)             Requested size: 433.62pt x 311.27484pt.
+Package pdftex.def Info: figures/lambda_phi_ratio_plot.pdf  used on input line 1950.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_lowpt.pdf, id=6945, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_lowpt.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_lowpt.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_lowpt.pdf  used on input line 1957.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_highpt.pdf, id=6946, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_highpt.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_highpt.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_highpt.pdf  used on input line 1964.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 [70
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/phi_ratio_plot.pdf>] [71 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot.pdf, page is rotated 90 degrees>]
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/phi_ratio_plot.pdf>] [71 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_lowpt.pdf, page is rotated 90 degrees>] [72 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_highpt.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1956.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 1956.
+(hyperref)                removing `math shift' on input line 1972.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1956.
+(hyperref)                removing `\Lambda' on input line 1972.
 
-[72
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1972.
+
+[73
 
 ]
-<figures/lambda_mass_20_50_resonance_fit.pdf, id=7013, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_20_50_resonance_fit.pdf, id=7114, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_20_50_resonance_fit.pdf Graphic file (type pdf)
 <use figures/lambda_mass_20_50_resonance_fit.pdf>
-Package pdftex.def Info: figures/lambda_mass_20_50_resonance_fit.pdf  used on input line 1980.
+Package pdftex.def Info: figures/lambda_mass_20_50_resonance_fit.pdf  used on input line 1996.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/lambda_mass_mc_real_bg.pdf, id=7014, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_mc_real_bg.pdf, id=7115, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_mc_real_bg.pdf Graphic file (type pdf)
 <use figures/lambda_mass_mc_real_bg.pdf>
-Package pdftex.def Info: figures/lambda_mass_mc_real_bg.pdf  used on input line 1983.
+Package pdftex.def Info: figures/lambda_mass_mc_real_bg.pdf  used on input line 1999.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/background_approx_MC.pdf, id=7016, 569.12625pt x 408.52625pt>
+<figures/background_approx_MC.pdf, id=7117, 569.12625pt x 408.52625pt>
 File: figures/background_approx_MC.pdf Graphic file (type pdf)
 <use figures/background_approx_MC.pdf>
-Package pdftex.def Info: figures/background_approx_MC.pdf  used on input line 1997.
+Package pdftex.def Info: figures/background_approx_MC.pdf  used on input line 2013.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/background_subtracted_signal_MC.pdf, id=7017, 569.12625pt x 408.52625pt>
+<figures/background_subtracted_signal_MC.pdf, id=7118, 569.12625pt x 408.52625pt>
 File: figures/background_subtracted_signal_MC.pdf Graphic file (type pdf)
 <use figures/background_subtracted_signal_MC.pdf>
-Package pdftex.def Info: figures/background_subtracted_signal_MC.pdf  used on input line 2000.
+Package pdftex.def Info: figures/background_subtracted_signal_MC.pdf  used on input line 2016.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, id=7019, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, id=7120, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf Graphic file (type pdf)
 <use figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf>
-Package pdftex.def Info: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf  used on input line 2012.
+Package pdftex.def Info: figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf  used on input line 2028.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/lambda_mass_0_20_resonance_signal_comp.pdf, id=7020, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_0_20_resonance_signal_comp.pdf, id=7121, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_0_20_resonance_signal_comp.pdf Graphic file (type pdf)
 <use figures/lambda_mass_0_20_resonance_signal_comp.pdf>
-Package pdftex.def Info: figures/lambda_mass_0_20_resonance_signal_comp.pdf  used on input line 2015.
+Package pdftex.def Info: figures/lambda_mass_0_20_resonance_signal_comp.pdf  used on input line 2031.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- [73
+ [74
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_20_50_resonance_fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_mc_real_bg.pdf, page is rotated 90 degrees>] [74 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_approx_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_subtracted_signal_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_signal_comp.pdf, page is rotated 90 degrees>]
-<figures/res_efficiency.pdf, id=7302, 569.12625pt x 547.04375pt>
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_20_50_resonance_fit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_mc_real_bg.pdf, page is rotated 90 degrees>] [75 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_approx_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/background_subtracted_signal_MC.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_with_ls_with_rsb.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_0_20_resonance_signal_comp.pdf, page is rotated 90 degrees>]
+<figures/res_efficiency.pdf, id=7402, 569.12625pt x 547.04375pt>
 File: figures/res_efficiency.pdf Graphic file (type pdf)
 <use figures/res_efficiency.pdf>
-Package pdftex.def Info: figures/res_efficiency.pdf  used on input line 2073.
+Package pdftex.def Info: figures/res_efficiency.pdf  used on input line 2089.
 (pdftex.def)             Requested size: 289.07999pt x 277.87843pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2085.
+(hyperref)                removing `math shift' on input line 2101.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\pi' on input line 2085.
+(hyperref)                removing `\pi' on input line 2101.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2085.
+(hyperref)                removing `math shift' on input line 2101.
 
-[75]
-<figures/h_lambda_dphi_rsbcomp_0_20.pdf, id=7310, 569.12625pt x 408.52625pt>
+[76]
+<figures/h_lambda_dphi_rsbcomp_0_20.pdf, id=7410, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_rsbcomp_0_20.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_rsbcomp_0_20.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_rsbcomp_0_20.pdf  used on input line 2094.
+Package pdftex.def Info: figures/h_lambda_dphi_rsbcomp_0_20.pdf  used on input line 2110.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [76 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/res_efficiency.pdf, page is rotated 90 degrees>] [77 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_rsbcomp_0_20.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_2d_mixcor_0_20_resonance.pdf, id=7415, 569.12625pt x 408.52625pt>
+ [77 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/res_efficiency.pdf, page is rotated 90 degrees>] [78 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_rsbcomp_0_20.pdf, page is rotated 90 degrees>]
+<figures/h_lambda_2d_mixcor_0_20_resonance.pdf, id=7516, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_0_20_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_0_20_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20_resonance.pdf  used on input line 2122.
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_0_20_resonance.pdf  used on input line 2138.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_2d_mixcor_20_50_resonance.pdf, id=7416, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_20_50_resonance.pdf, id=7517, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_20_50_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_20_50_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50_resonance.pdf  used on input line 2125.
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_20_50_resonance.pdf  used on input line 2141.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_2d_mixcor_50_80_resonance.pdf, id=7417, 569.12625pt x 408.52625pt>
+<figures/h_lambda_2d_mixcor_50_80_resonance.pdf, id=7518, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_2d_mixcor_50_80_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_2d_mixcor_50_80_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80_resonance.pdf  used on input line 2128.
+Package pdftex.def Info: figures/h_lambda_2d_mixcor_50_80_resonance.pdf  used on input line 2144.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_0_20_resonance.pdf, id=7418, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_resonance.pdf, id=7519, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance.pdf  used on input line 2137.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance.pdf  used on input line 2153.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_resonance.pdf, id=7419, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_resonance.pdf, id=7520, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance.pdf  used on input line 2140.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance.pdf  used on input line 2156.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_resonance.pdf, id=7420, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_resonance.pdf, id=7521, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_resonance.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_resonance.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance.pdf  used on input line 2143.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance.pdf  used on input line 2159.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.52347pt on input line 2147.
+LaTeX Warning: Float too large for page by 12.52347pt on input line 2163.
 
-[78 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_50_80_resonance.pdf, page is rotated 90 degrees>] [79 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance.pdf, page is rotated 90 degrees>]
-Overfull \hbox (42.94073pt too wide) in paragraph at lines 2155--2166
+[79 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_2d_mixcor_50_80_resonance.pdf, page is rotated 90 degrees>] [80 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance.pdf, page is rotated 90 degrees>]
+Overfull \hbox (42.94073pt too wide) in paragraph at lines 2171--2182
  [][] 
  []
 
-<figures/h_lambda_dphi_0_20_resonance_uefit.pdf, id=7699, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_resonance_uefit.pdf, id=7800, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_resonance_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_resonance_uefit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance_uefit.pdf  used on input line 2173.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_resonance_uefit.pdf  used on input line 2189.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_resonance_uefit.pdf, id=7700, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_resonance_uefit.pdf, id=7801, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_resonance_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_resonance_uefit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance_uefit.pdf  used on input line 2176.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_resonance_uefit.pdf  used on input line 2192.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_resonance_uefit.pdf, id=7701, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_resonance_uefit.pdf, id=7802, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_resonance_uefit.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_resonance_uefit.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance_uefit.pdf  used on input line 2179.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_resonance_uefit.pdf  used on input line 2195.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 2183.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 2199.
 
-[80
+[81
 
 
-] [81 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance_uefit.pdf, page is rotated 90 degrees>]
-<figures/pairwise_plot_resonance.pdf, id=7850, 569.12625pt x 408.52625pt>
+] [82 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_resonance_uefit.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_resonance_uefit.pdf, page is rotated 90 degrees>]
+<figures/pairwise_plot_resonance.pdf, id=7951, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_resonance.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_resonance.pdf>
-Package pdftex.def Info: figures/pairwise_plot_resonance.pdf  used on input line 2193.
+Package pdftex.def Info: figures/pairwise_plot_resonance.pdf  used on input line 2209.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/ratio_plot_resonance.pdf, id=7851, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_resonance.pdf, id=7952, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_resonance.pdf Graphic file (type pdf)
 <use figures/ratio_plot_resonance.pdf>
-Package pdftex.def Info: figures/ratio_plot_resonance.pdf  used on input line 2200.
+Package pdftex.def Info: figures/ratio_plot_resonance.pdf  used on input line 2216.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, id=7852, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, id=7953, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf  used on input line 2209.
+Package pdftex.def Info: figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf  used on input line 2225.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, id=7853, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, id=7954, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf  used on input line 2212.
+Package pdftex.def Info: figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf  used on input line 2228.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, id=7854, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, id=7955, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf  used on input line 2215.
+Package pdftex.def Info: figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf  used on input line 2231.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 2219.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 2235.
 
-[82
+[83
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_resonance.pdf, page is rotated 90 degrees>] [83 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, page is rotated 90 degrees>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2223.
-
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_resonance.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_resonance.pdf, page is rotated 90 degrees>] [84 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_0_20_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_20_50_zeroed_rescomp.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_50_80_zeroed_rescomp.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Lambda' on input line 2223.
+(hyperref)                removing `math shift' on input line 2239.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2223.
+(hyperref)                removing `\Lambda' on input line 2239.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2223.
+(hyperref)                removing `math shift' on input line 2239.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2223.
+(hyperref)                removing `math shift' on input line 2239.
 
-<figures/trig_per_event.pdf, id=8087, 722.7pt x 542.025pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2239.
+
+<figures/trig_per_event.pdf, id=8188, 722.7pt x 542.025pt>
 File: figures/trig_per_event.pdf Graphic file (type pdf)
 <use figures/trig_per_event.pdf>
-Package pdftex.def Info: figures/trig_per_event.pdf  used on input line 2231.
+Package pdftex.def Info: figures/trig_per_event.pdf  used on input line 2247.
 (pdftex.def)             Requested size: 289.07999pt x 216.80615pt.
-<figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf, id=8091, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf, id=8192, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf  used on input line 2243.
+Package pdftex.def Info: figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf  used on input line 2259.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf, id=8092, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf, id=8193, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf  used on input line 2246.
+Package pdftex.def Info: figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf  used on input line 2262.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf, id=8093, 569.12625pt x 408.52625pt>
+<figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf, id=8194, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf>
-Package pdftex.def Info: figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf  used on input line 2249.
+Package pdftex.def Info: figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf  used on input line 2265.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 2253.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 2269.
 
-[84
+[85
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_per_event.pdf>] [85 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf, page is rotated 90 degrees>]
-<figures/h_h_dphi_0_20_singletrigger.pdf, id=8251, 569.12625pt x 408.52625pt>
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/trig_per_event.pdf>] [86 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_0_20_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_20_50_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_dphi_subtracted_50_80_singletrigger.pdf, page is rotated 90 degrees>]
+<figures/h_h_dphi_0_20_singletrigger.pdf, id=8351, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_singletrigger.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_singletrigger.pdf  used on input line 2260.
+Package pdftex.def Info: figures/h_h_dphi_0_20_singletrigger.pdf  used on input line 2276.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_singletrigger.pdf, id=8252, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_singletrigger.pdf, id=8352, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_singletrigger.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_singletrigger.pdf  used on input line 2263.
+Package pdftex.def Info: figures/h_h_dphi_20_50_singletrigger.pdf  used on input line 2279.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_singletrigger.pdf, id=8253, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_singletrigger.pdf, id=8353, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_singletrigger.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_singletrigger.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_singletrigger.pdf  used on input line 2266.
+Package pdftex.def Info: figures/h_h_dphi_50_80_singletrigger.pdf  used on input line 2282.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 
 
-LaTeX Warning: Float too large for page by 12.64847pt on input line 2270.
+LaTeX Warning: Float too large for page by 12.64847pt on input line 2286.
 
-[86 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_singletrigger.pdf, page is rotated 90 degrees>]
-<figures/singletrigger_ratio_0_20.pdf, id=8391, 569.12625pt x 408.52625pt>
+[87 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_singletrigger.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_singletrigger.pdf, page is rotated 90 degrees>]
+<figures/singletrigger_ratio_0_20.pdf, id=8491, 569.12625pt x 408.52625pt>
 File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/singletrigger_ratio_0_20.pdf>
-Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2277.
+Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2293.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/singletrigger_ratio_0_20.pdf>
-Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2280.
+Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2296.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
 File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/singletrigger_ratio_0_20.pdf>
-Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2283.
+Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2299.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [87 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_0_20.pdf, page is rotated 90 degrees>]
-<figures/h_h_mc_closure.pdf, id=8448, 569.12625pt x 408.52625pt>
+ [88 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_0_20.pdf, page is rotated 90 degrees>]
+<figures/h_h_mc_closure.pdf, id=8548, 569.12625pt x 408.52625pt>
 File: figures/h_h_mc_closure.pdf Graphic file (type pdf)
 <use figures/h_h_mc_closure.pdf>
-Package pdftex.def Info: figures/h_h_mc_closure.pdf  used on input line 2321.
+Package pdftex.def Info: figures/h_h_mc_closure.pdf  used on input line 2337.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_mc_closure_ratio.pdf, id=8449, 569.12625pt x 408.52625pt>
+<figures/h_h_mc_closure_ratio.pdf, id=8549, 569.12625pt x 408.52625pt>
 File: figures/h_h_mc_closure_ratio.pdf Graphic file (type pdf)
 <use figures/h_h_mc_closure_ratio.pdf>
-Package pdftex.def Info: figures/h_h_mc_closure_ratio.pdf  used on input line 2324.
+Package pdftex.def Info: figures/h_h_mc_closure_ratio.pdf  used on input line 2340.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-Underfull \hbox (badness 6094) in paragraph at lines 2326--2326
-[]\OT1/ptm/b/n/10 Fig. 82: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OML/ztmcm/m/it/10 h$ $\OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
+Underfull \hbox (badness 6094) in paragraph at lines 2342--2342
+[]\OT1/ptm/b/n/10 Fig. 84: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OML/ztmcm/m/it/10 h$ $\OT1/ztmcm/m/n/10 ^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
  []
 
-[88
+[89
 
 
 
-] [89 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure_ratio.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_mc_closure.pdf, id=8560, 569.12625pt x 408.52625pt>
+] [90 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure_ratio.pdf, page is rotated 90 degrees>]
+<figures/h_lambda_mc_closure.pdf, id=8661, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure.pdf  used on input line 2358.
+Package pdftex.def Info: figures/h_lambda_mc_closure.pdf  used on input line 2374.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio.pdf, id=8561, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_ratio.pdf, id=8662, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_ratio.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_ratio.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure_ratio.pdf  used on input line 2361.
+Package pdftex.def Info: figures/h_lambda_mc_closure_ratio.pdf  used on input line 2377.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-Underfull \hbox (badness 4341) in paragraph at lines 2363--2363
-[]\OT1/ptm/b/n/10 Fig. 83: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
- []
-
-<figures/h_lambda_mc_closure_res.pdf, id=8562, 569.12625pt x 408.52625pt>
-File: figures/h_lambda_mc_closure_res.pdf Graphic file (type pdf)
-<use figures/h_lambda_mc_closure_res.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure_res.pdf  used on input line 2370.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio_res.pdf, id=8563, 569.12625pt x 408.52625pt>
-File: figures/h_lambda_mc_closure_ratio_res.pdf Graphic file (type pdf)
-<use figures/h_lambda_mc_closure_ratio_res.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res.pdf  used on input line 2373.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-
-Underfull \hbox (badness 4013) in paragraph at lines 2375--2375
-[]\OT1/ptm/b/n/10 Fig. 84: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
- []
-
-[90 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_res.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio_res.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_mc_closure_res_no_sideband.pdf, id=8747, 569.12625pt x 408.52625pt>
-File: figures/h_lambda_mc_closure_res_no_sideband.pdf Graphic file (type pdf)
-<use figures/h_lambda_mc_closure_res_no_sideband.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure_res_no_sideband.pdf  used on input line 2397.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf, id=8748, 569.12625pt x 408.52625pt>
-File: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf Graphic file (type pdf)
-<use figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf>
-Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf  used on input line 2400.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-
-Underfull \hbox (badness 4013) in paragraph at lines 2402--2402
+Underfull \hbox (badness 4341) in paragraph at lines 2379--2379
 []\OT1/ptm/b/n/10 Fig. 85: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
  []
 
-[91
+<figures/h_lambda_mc_closure_res.pdf, id=8663, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_mc_closure_res.pdf Graphic file (type pdf)
+<use figures/h_lambda_mc_closure_res.pdf>
+Package pdftex.def Info: figures/h_lambda_mc_closure_res.pdf  used on input line 2386.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_mc_closure_ratio_res.pdf, id=8664, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_mc_closure_ratio_res.pdf Graphic file (type pdf)
+<use figures/h_lambda_mc_closure_ratio_res.pdf>
+Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res.pdf  used on input line 2389.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+
+Underfull \hbox (badness 4013) in paragraph at lines 2391--2391
+[]\OT1/ptm/b/n/10 Fig. 86: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
+ []
+
+[91 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_res.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio_res.pdf, page is rotated 90 degrees>]
+<figures/h_lambda_mc_closure_res_no_sideband.pdf, id=8848, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_mc_closure_res_no_sideband.pdf Graphic file (type pdf)
+<use figures/h_lambda_mc_closure_res_no_sideband.pdf>
+Package pdftex.def Info: figures/h_lambda_mc_closure_res_no_sideband.pdf  used on input line 2413.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+<figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf, id=8849, 569.12625pt x 408.52625pt>
+File: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf Graphic file (type pdf)
+<use figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf>
+Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf  used on input line 2416.
+(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
+
+Underfull \hbox (badness 4013) in paragraph at lines 2418--2418
+[]\OT1/ptm/b/n/10 Fig. 87: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
+ []
+
+[92
 
  </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_res_no_sideband.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf, page is rotated 90 degrees>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2412.
+(hyperref)                removing `math shift' on input line 2425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 2412.
+(hyperref)                removing `\phi' on input line 2425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2412.
+(hyperref)                removing `math shift' on input line 2425.
 
-[92
+[93
 
 ]
-<figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, id=8851, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, id=8951, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_justin_ryan_comparison.pdf>
-Package pdftex.def Info: figures/h_h_dphi_0_20_justin_ryan_comparison.pdf  used on input line 2420.
+Package pdftex.def Info: figures/h_h_dphi_0_20_justin_ryan_comparison.pdf  used on input line 2433.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, id=8852, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, id=8952, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_justin_ryan_comparison.pdf>
-Package pdftex.def Info: figures/h_h_dphi_20_50_justin_ryan_comparison.pdf  used on input line 2423.
+Package pdftex.def Info: figures/h_h_dphi_20_50_justin_ryan_comparison.pdf  used on input line 2436.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, id=8853, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, id=8953, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_justin_ryan_comparison.pdf>
-Package pdftex.def Info: figures/h_h_dphi_50_80_justin_ryan_comparison.pdf  used on input line 2426.
+Package pdftex.def Info: figures/h_h_dphi_50_80_justin_ryan_comparison.pdf  used on input line 2439.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [93 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, page is rotated 90 degrees>]
-<figures/justin_ryan_ratio_0_20.pdf, id=8990, 569.12625pt x 408.52625pt>
+ [94 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, page is rotated 90 degrees>]
+<figures/justin_ryan_ratio_0_20.pdf, id=9091, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_0_20.pdf>
-Package pdftex.def Info: figures/justin_ryan_ratio_0_20.pdf  used on input line 2437.
+Package pdftex.def Info: figures/justin_ryan_ratio_0_20.pdf  used on input line 2450.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/justin_ryan_ratio_20_50.pdf, id=8991, 569.12625pt x 408.52625pt>
+<figures/justin_ryan_ratio_20_50.pdf, id=9092, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_20_50.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_20_50.pdf>
-Package pdftex.def Info: figures/justin_ryan_ratio_20_50.pdf  used on input line 2440.
+Package pdftex.def Info: figures/justin_ryan_ratio_20_50.pdf  used on input line 2453.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/justin_ryan_ratio_50_80.pdf, id=8992, 569.12625pt x 408.52625pt>
+<figures/justin_ryan_ratio_50_80.pdf, id=9093, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_50_80.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_50_80.pdf>
-Package pdftex.def Info: figures/justin_ryan_ratio_50_80.pdf  used on input line 2443.
+Package pdftex.def Info: figures/justin_ryan_ratio_50_80.pdf  used on input line 2456.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [94 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_50_80.pdf, page is rotated 90 degrees>]
-<figures/track_merging_diagram_withborder.pdf, id=9130, 722.7pt x 542.025pt>
+ [95 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/justin_ryan_ratio_50_80.pdf, page is rotated 90 degrees>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delimiter' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 2464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2464.
+
+
+Overfull \hbox (42.60199pt too wide) in paragraph at lines 2485--2494
+ [][] 
+ []
+
+[96
+
+
+
+]
+<figures/ratio_plot_new_x_axis.pdf, id=9249, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis.pdf  used on input line 2503.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/ratio_plot_new_x_axis_lowpt.pdf, id=9250, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis_lowpt.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis_lowpt.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis_lowpt.pdf  used on input line 2506.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/ratio_plot_new_x_axis_highpt.pdf, id=9251, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis_highpt.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis_highpt.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis_highpt.pdf  used on input line 2509.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+
+LaTeX Warning: Float too large for page by 1.86836pt on input line 2513.
+
+[97 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_highpt.pdf, page is rotated 90 degrees>]
+<figures/ratio_plot_new_x_axis_with_fits.pdf, id=9388, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis_with_fits.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis_with_fits.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis_with_fits.pdf  used on input line 2520.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9389, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf  used on input line 2523.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9390, 569.12625pt x 408.52625pt>
+File: figures/ratio_plot_new_x_axis_highpt_with_fits.pdf Graphic file (type pdf)
+<use figures/ratio_plot_new_x_axis_highpt_with_fits.pdf>
+Package pdftex.def Info: figures/ratio_plot_new_x_axis_highpt_with_fits.pdf  used on input line 2526.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+ [98 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_highpt_with_fits.pdf, page is rotated 90 degrees>]
+Overfull \hbox (45.32841pt too wide) in paragraph at lines 2538--2547
+ [][] 
+ []
+
+[99
+
+
+
+]
+<figures/lambda_phi_ratio_plot_new_x_axis.pdf, id=9542, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis.pdf  used on input line 2556.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf, id=9543, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf  used on input line 2559.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf, id=9544, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf  used on input line 2562.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+
+LaTeX Warning: Float too large for page by 3.34708pt on input line 2566.
+
+[100 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf, page is rotated 90 degrees>]
+<figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf, id=9681, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf  used on input line 2573.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9682, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf  used on input line 2576.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9683, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf  used on input line 2579.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+
+
+LaTeX Warning: Float too large for page by 1.30928pt on input line 2583.
+
+[101 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf, page is rotated 90 degrees>]
+<figures/track_merging_diagram_withborder.pdf, id=9824, 722.7pt x 542.025pt>
 File: figures/track_merging_diagram_withborder.pdf Graphic file (type pdf)
 <use figures/track_merging_diagram_withborder.pdf>
-Package pdftex.def Info: figures/track_merging_diagram_withborder.pdf  used on input line 2455.
+Package pdftex.def Info: figures/track_merging_diagram_withborder.pdf  used on input line 2592.
 (pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
-<figures/lambda_mass_resonance_mc.pdf, id=9131, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_resonance_mc.pdf, id=9825, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_resonance_mc.pdf Graphic file (type pdf)
 <use figures/lambda_mass_resonance_mc.pdf>
-Package pdftex.def Info: figures/lambda_mass_resonance_mc.pdf  used on input line 2462.
+Package pdftex.def Info: figures/lambda_mass_resonance_mc.pdf  used on input line 2599.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [95
+ [102
 
 
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>] [96 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_resonance_mc.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2469.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2469.
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>] [103 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_resonance_mc.pdf, page is rotated 90 degrees>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2606.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2606.
  (/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2469.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2469.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2606.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2606.
 Package rerunfilecheck Info: File `h-lambda-analysis-note.out' has not changed.
-(rerunfilecheck)             Checksum: 6C0E7A59B968120AFE966844A469FD8E;5227.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2469.
+(rerunfilecheck)             Checksum: D029508780FC9241F190EABD3DA6A017;5327.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2606.
  ) 
 Here is how much of TeX's memory you used:
- 19091 strings out of 492982
- 387404 string characters out of 6134896
- 423910 words of memory out of 5000000
- 21824 multiletter control sequences out of 15000+600000
- 601049 words of font info for 180 fonts, out of 8000000 for 9000
+ 19202 strings out of 492982
+ 391719 string characters out of 6134896
+ 426115 words of memory out of 5000000
+ 21890 multiletter control sequences out of 15000+600000
+ 601471 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,18n,45p,10451b,817s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (98 pages, 4353180 bytes).
+Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (105 pages, 4568302 bytes).
 PDF statistics:
- 9331 PDF objects out of 10688 (max. 8388607)
- 4496 compressed objects within 45 object streams
- 457 named destinations out of 1000 (max. 500000)
- 1438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10030 PDF objects out of 10688 (max. 8388607)
+ 4815 compressed objects within 49 object streams
+ 486 named destinations out of 1000 (max. 500000)
+ 1516 words of extra memory for PDF output out of 10000 (max. 10000000)
 

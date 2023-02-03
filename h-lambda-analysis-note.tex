@@ -1125,6 +1125,7 @@ A table of the final systematic errors from the $\Delta\varphi$ distribution gen
 \begin{tabular}{|c|c|c|c|c||c|}
 \hline
 Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Tracking & Total \\
+\hline
 0-20\% & 1.0\% & 0.1\% & 1.1\% & 5.2\% & 5.4\% \\
 20-50\% & 0.9\% & 0.3\% & 1.8\% & 5.2\% & 5.6\% \\
 50-80\% & 1.9\% & 0.8\% & 3.7\% & 5.2\% & 6.7\% \\
@@ -1847,7 +1848,7 @@ In order to investigate the multiplicity dependence of jet-like $\Lambda$ produc
 \end{figure}
 
 
-\subsection{Multiplicity Dependent $h-\Lambda$/$(h-h)$ Ratios}
+\subsection{Multiplicity Dependent ($h-\Lambda$)/$(h-h)$ Ratios}
 
 Once we have extracted the per-trigger pairwise yields from our $h-\Lambda$ and $h-h$ correlations, we are able to measure the ratio of yields of $h-\Lambda$/$h-h$ pairs in each of the kinematic regions described in the previous section--near-side of jet, away-side of jet, underlying event and total yield--as a function of multiplicity. This result of this can be seen in Figure \ref{ratioplot}. Comparing the ratio in different kinematic regions as a function of multiplicity, we see a clear separation between the "jet-like" and "underlying event" components, with the underlying event seeing the largest $\frac{h-\Lambda}{h-h}$ ratio in all multiplicity bins, whereas both the near-side and away-side ratios are lower than the total ratio for all multiplicity bins. We also see a clear separation between the near-side and away-side ratios, with the away-side ratio being higher than the near-side across all multiplicity bins. All kinematic region rations see an increase with respect to multiplicity, but the underlying event ratio sees the smallest increase, while the away-side ratio sees the largest increase.
 
@@ -1928,9 +1929,9 @@ By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momen
 \clearpage
 
 \subsection{Multiplicity Dependent ($h-\Lambda$)/($h-\phi$) Ratios}
-Using previously approved results from the $h-\phi$ analysis (found here: https://alice-notes.web.cern.ch/node/919), we can compare our final ($h-\Lambda, \phi$)/($h-h$) ratios. This comparison is shown in Figure \ref{lambda_phi_comp}. We can also investigate the ($h-\Lambda$)/($h-\phi$) ratio in each kinematic region as a function of multiplicity, which is done in Figure \ref{lambda_phi_ratio}. We see from the comparison of the individual ratio plots that both the $\Lambda$ and $\phi$ behave very similarly, with the underlying event ratio dominating across all multiplicity bins. We also observe that the ratios in the jet are lower than the total ratios across all multiplicity bins, with the away side being systematically higher than the near side. However, the $\phi$ ratio in the near side appears much more flat with respect to multiplicity when compared to the $\Lambda$, but this could just be statistical fluctuations.
+Using previously approved results from the $h-\phi$ analysis (found here: https://alice-notes.web.cern.ch/node/919), we can compare our final ($h-\Lambda, \phi$)/($h-h$) ratios. This comparison is shown in Figure \ref{lambda_phi_comp}. We can also investigate the ($h-\Lambda$)/($h-\phi$) ratio in each kinematic region as a function of multiplicity, which is done in Figures \ref{lambda_phi_ratio} through \ref{lambda_phi_ratio_highpt} (for our central, lower, and higher $p_{T}$ bins). We see from the comparison of the individual ratio plots that both the $\Lambda$ and $\phi$ behave very similarly, with the underlying event ratio dominating across all multiplicity bins. We also observe that the ratios in the jet are lower than the total ratios across all multiplicity bins, with the away side being systematically higher than the near side. However, the $\phi$ ratio in the near side appears much more flat with respect to multiplicity when compared to the $\Lambda$, but this could just be statistical fluctuations.
 
-In the ($h-\Lambda$)/($h-\phi$) ratio, we see that the ratio in the near side of the jet is systematically higher across all multiplicity bins. We also observe that the ratio in the away side of the jet seems to decrease with respect to multiplicity.
+In the ($h-\Lambda$)/($h-\phi$) ratio in our central $p_{T}$ bin, we see that the ratio in the near side of the jet is systematically higher across all multiplicity bins. We also observe that the ratio in the away side of the jet seems to decrease with respect to multiplicity. For our lower $p_{T}$ bin, we observe that both the near and away side ratios appear to decrease with respect to multiplicity, whereas the underlying event and total ratios appear mostly flat. For our higher $p_{T}$ bin, we observe a large spike in both the near and away side ratios in our middle multiplicity bin, which is being investigated.
 
 \begin{figure}[ht]
 \centering
@@ -1946,10 +1947,25 @@ In the ($h-\Lambda$)/($h-\phi$) ratio, we see that the ratio in the near side of
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=6in]{figures/lambda_phi_ratio_plot.pdf}
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot.pdf}
 \caption{The final $h-\Lambda$/$h-\phi$ ratios as a function of multiplicity in the $2.0 < p_{\text{T, assoc.}} < 4.0$ GeV/c bin, with systematic errors shown in boxes. We observe that the near side ratio is systematically higher across all multiplicity bins, while the away side appears to decrease with respect to multiplicity.}
 \label{lambda_phi_ratio}
 \end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_lowpt.pdf}
+\caption{The final $h-\Lambda$/$h-\phi$ ratios as a function of multiplicity in the $1.5 < p_{\text{T, assoc.}} < 2.5$ GeV/c bin, with systematic errors shown in boxes. We see a clear decrease in the near and away side ratios with respect to multiplicity, whereas the UE and total ratios appear flat.}
+\label{lambda_phi_ratio_lowpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_highpt.pdf}
+\caption{The final $h-\Lambda$/$h-\phi$ ratios as a function of multiplicity in the $2.5 < p_{\text{T, assoc.}} < 4.0$ GeV/c bin, with systematic errors shown in boxes. We see that the near and away side ratio sees a large spike in our middle multiplicity bin, which is being investigated.}
+\label{lambda_phi_ratio_highpt}
+\end{figure}
+
 
 \clearpage
 \section{Cross Checks}
@@ -2404,9 +2420,6 @@ Even though the resonance technique has less of a non-closure, we still use the 
 \end{figure}
 
 
-
-
-
 \clearpage
 
 \subsection{Dihadron Comparison with $\phi$ Correlation Analysis}
@@ -2445,6 +2458,130 @@ As both this analysis and the $\phi$ correlation analysis are run over the same 
 \caption{The dihadron ratio between the $\phi$ and $\Lambda$ analyses for the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins. The ratios are consistent with unity for all multiplicity bins.}
 \label{dihadron_ratio_comparison}
 \end{figure}
+
+\clearpage
+
+\subsection{Ratio Plots vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$}
+
+Using the values for the number of charged particles with $|\eta| < 0.8$ in each multiplicity bin from Table 1 of this paper: \url{https://link.springer.com/article/10.1140/epjc/s10052-016-3915-1}, we can first calculate $\langle N_{ch} \rangle_{|\eta| < 0.8}$ in the multiplicity bins used in this analysis (shown in Table \ref{mult_to_nch}), and then re-plot our final ($h-\Lambda$)/($h-h$) ratio plots using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ instead of the multiplicity percentile. The results for our normal $p_{T}$ range, and the lower and higher $p_{T}$ ranges are shown in Figure \ref{ratio_vs_nch}. We also present a straight-line fit for each of the kinematic regions in Figure \ref{ratio_vs_nch_with_fits}, with slope values and errors shown in Table \ref{ratio_vs_nch_fit_table}. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+Multiplicity Bin & $\langle N_{ch} \rangle_{|\eta| < 0.8}$ \\
+\hline
+0-20\% & 49.1 $\pm$ 1.4 \\
+20-50\% & 29.3 $\pm$ 0.7 \\
+50-80\% & 15.3 $\pm$ 0.4 \\
+\hline
+\end{tabular}
+\caption{Table containing conversion from our multiplicity percentile bins to $\langle N_{ch} \rangle_{|\eta| < 0.8}$, calculted from Table 1 in this paper: \url{https://link.springer.com/article/10.1140/epjc/s10052-016-3915-1}.}
+\label{mult_to_nch}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+$\Lambda$ $p_{T}$ Bin & Near Slope & Away Slope & UE Slope & Total Slope \\
+\hline
+2.0-4.0 GeV/c & 6.00e-04 $\pm$ 0.91 e-04  & 7.93e-04 $\pm$ 1.52e-04 &  5.70e-04 $\pm$ 0.30e-04 & 8.59e-04 $\pm$ 0.15e-04 \\
+1.5-2.5 GeV/c & 4.64e-04 $\pm$ 1.19e-04 & 4.35e-04 $\pm$ 1.74e-04 & 2.21e-04 $\pm$ 0.24e-04 & 4.03e-04 $\pm$ 0.131e-04 \\
+2.5-4.0 GeV/c & 6.03e-04 $\pm$ 1.01e-04 & 7.95e-04 $\pm$ 1.80e-04 & 7.72e-04 $\pm$ 0.43e-04 & 1.08e-03 $\pm$ 0.21e-04 \\
+\hline
+\end{tabular}
+\caption{Table containing the slope values and errors for the straight-line fits to the ratio plots for each kinematic region shown in Figure \ref{ratio_vs_nch_with_fits}.}
+\label{ratio_vs_nch_fit_table}
+\end{table}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_highpt.pdf}}
+\end{subfigure}
+\caption{The final ($h-\Lambda$)/($h-h$) ratio plots in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
+\label{ratio_vs_nch}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_with_fits.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_highpt_with_fits.pdf}}
+\end{subfigure}
+\caption{The final ($h-\Lambda$)/($h-h$) ratio vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$ plots with straight line fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda}$ bins. The slope values and errors are shown in Table \ref{ratio_vs_nch_fit_table}.}
+\label{ratio_vs_nch_with_fits}
+\end{figure}
+
+\clearpage
+
+We can also repeat the same procedure for the ($h-\Lambda$)/($h-\phi$) ratio plots, shown in Figure \ref{lambda_phi_ratio_vs_nch}. The plots with straight line fits are shown in Figure \ref{lambda_phi_ratio_vs_nch_with_fits}, with slope values and errors reported in Table \ref{lambda_phi_ratio_vs_nch_fit_table}. While most of the slopes are consistent with zero, in our lower momentum bin we see a fairly large negative slope in both the near and away side regions.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c | c | c | c | c | }
+\hline
+$\Lambda$, $\phi$ $p_{T}$ Bin & Near Slope & Away Slope & UE Slope & Total Slope \\
+\hline
+2.0-4.0 GeV/c & -1.80e-02 $\pm$ 2.90e-02 & -4.79e-03 $\pm$ 2.99e-02 & 1.33e-03 $\pm$ 1.58e-03 & -1.64e-03 $\pm$ 2.13e-03 \\
+1.5-2.5 GeV/c & -6.64e-02 $\pm$ 7.03e-02 & -8.55e-02 $\pm$ 5.13e-02  & 1.73e-03 $\pm$ 1.86e-03 & -4.14e-03 $\pm$ 2.97e-03 \\
+2.5-4.0 GeV/c & 1.73e-03 $\pm$ 2.36e-02 & 5.01e-03 $\pm$ 2.55e-02 & 1.10e-02 $\pm$ 0.19e-02 & 6.13e-03 $\pm$ 2.41e-03 \\
+\hline
+\end{tabular}
+\caption{Table containing the slope values and errors for the straight-line fits to the ($h-\Lambda$)/($h-\phi$) ratio plots for each kinematic region shown in Figure \ref{lambda_phi_ratio_vs_nch_with_fits}.}
+\label{lambda_phi_ratio_vs_nch_fit_table}
+\end{table}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf}}
+\end{subfigure}
+\caption{The final ($h-\Lambda$)/($h-\phi$) ratio plots in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, \phi}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
+\label{lambda_phi_ratio_vs_nch}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf}}
+\end{subfigure}
+\caption{The final ($h-\Lambda$)/($h-\phi$) ratio vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$ plots with straight line fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, \phi}$ bins. The slope values and errors are shown in Table \ref{lambda_phi_ratio_vs_nch_fit_table}.}
+\label{lambda_phi_ratio_vs_nch_with_fits}
+\end{figure}
+
 
 \clearpage
 

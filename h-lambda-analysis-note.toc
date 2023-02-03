@@ -46,19 +46,20 @@
 \contentsline {section}{\numberline {7}Results and Comparisons}{60}{section.7}
 \contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{60}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{64}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent $h-\Lambda $/$(h-h)$ Ratios}{64}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{64}{subsection.7.3}
 \contentsline {subsection}{\numberline {7.4}Additional Momentum Bin Measurements}{65}{subsection.7.4}
 \contentsline {subsection}{\numberline {7.5}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{70}{subsection.7.5}
-\contentsline {section}{\numberline {8}Cross Checks}{72}{section.8}
-\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{72}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{72}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{73}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{75}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{75}{subsubsection.8.1.4}
-\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{75}{subsubsection.8.1.5}
-\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{80}{subsubsection.8.1.6}
-\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{82}{subsubsection.8.1.7}
-\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{84}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{88}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{92}{subsection.8.4}
-\contentsline {section}{\numberline {9}Additional Plots}{95}{section.9}
+\contentsline {section}{\numberline {8}Cross Checks}{73}{section.8}
+\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{73}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{73}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{74}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{76}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{76}{subsubsection.8.1.4}
+\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{76}{subsubsection.8.1.5}
+\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{81}{subsubsection.8.1.6}
+\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{83}{subsubsection.8.1.7}
+\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{85}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{89}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{93}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Ratio Plots vs. $\delimiter "426830A N_{ch} \delimiter "526930B _{|\eta | < 0.8}$}{96}{subsection.8.5}
+\contentsline {section}{\numberline {9}Additional Plots}{102}{section.9}
