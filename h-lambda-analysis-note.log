@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  2 FEB 2023 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  2 FEB 2023 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2373,33 +2373,38 @@ File: figures/lambda_mass_resonance_mc.pdf Graphic file (type pdf)
 <use figures/lambda_mass_resonance_mc.pdf>
 Package pdftex.def Info: figures/lambda_mass_resonance_mc.pdf  used on input line 2599.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
+<figures/lambda_phi_ratio_total_comparison.pdf, id=9826, 569.12625pt x 408.52625pt>
+File: figures/lambda_phi_ratio_total_comparison.pdf Graphic file (type pdf)
+<use figures/lambda_phi_ratio_total_comparison.pdf>
+Package pdftex.def Info: figures/lambda_phi_ratio_total_comparison.pdf  used on input line 2606.
+(pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [102
 
 
 
- </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>] [103 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_resonance_mc.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2606.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2606.
+ </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/track_merging_diagram_withborder.pdf>] [103 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_mass_resonance_mc.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_total_comparison.pdf, page is rotated 90 degrees>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2614.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2614.
  (/home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2606.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2606.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2614.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2614.
 Package rerunfilecheck Info: File `h-lambda-analysis-note.out' has not changed.
 (rerunfilecheck)             Checksum: D029508780FC9241F190EABD3DA6A017;5327.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2606.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2614.
  ) 
 Here is how much of TeX's memory you used:
- 19202 strings out of 492982
- 391719 string characters out of 6134896
- 426115 words of memory out of 5000000
- 21890 multiletter control sequences out of 15000+600000
+ 19209 strings out of 492982
+ 392021 string characters out of 6134896
+ 427695 words of memory out of 5000000
+ 21895 multiletter control sequences out of 15000+600000
  601471 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,18n,45p,10451b,817s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (105 pages, 4568577 bytes).
+Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (105 pages, 4582248 bytes).
 PDF statistics:
- 10030 PDF objects out of 10688 (max. 8388607)
- 4815 compressed objects within 49 object streams
- 486 named destinations out of 1000 (max. 500000)
- 1516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10076 PDF objects out of 10688 (max. 8388607)
+ 4835 compressed objects within 49 object streams
+ 487 named destinations out of 1000 (max. 500000)
+ 1521 words of extra memory for PDF output out of 10000 (max. 10000000)
 
