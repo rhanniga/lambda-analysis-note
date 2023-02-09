@@ -403,7 +403,7 @@ This section details all of the detector acceptance and efficiency corrections a
 
 For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The pair-wise efficiency correction in Section \ref{reconstruction_efficiency} is also applied to the mixed event pairs. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) for each multiplicity bin are shown in Figures \ref{uncorr2d_0_20} through \ref{mixed2d_50_80}.
 
-For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figures \ref{mixcor2d_0_20} through \ref{mixcor2d_50_80}. Each plot was scaled by $1/N_{trig}$.
+For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figures \ref{mixcor2d_0_20} through \ref{mixcor2d_50_80}. As our binning does not provide a single bin centered about (0, 0), we instead take average of B(-0.01, 0) and B(0.01, 0) to get an estimate of B(0, 0). Each plot was scaled by $1/N_{trig}$.
 
 As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) and an associated hadron.
 
@@ -1114,7 +1114,7 @@ As this analysis uses track quality cuts that have been used in previous analysi
 \item Associated hadron efficiency: 3.5\% (see here: \url{https://alice-notes.web.cern.ch/node/919})
 \end{itemize}
 
-As it has been observed from previous analyses that the trigger tracking efficiency approximately cancels out in the final per-trigger distributions, we only consider the associated hadron and $\Lambda$ reconstructed efficiency systematic errors in our final systematic calculation for both the per-trigger $\Delta\varphi$ distributions and the final per-trigger yields.
+As it has been observed from previous analyses that the trigger tracking efficiency approximately cancels out in the final per-trigger distributions, we only consider the associated hadron and $\Lambda$ reconstruction efficiency systematic errors in our final systematic calculation for both the per-trigger $\Delta\varphi$ distributions and the final per-trigger yields.
 
 \subsubsection{Final Systematic Errors from $\Delta\varphi$ Distribution Generation}
 A table of the final systematic errors from the $\Delta\varphi$ distribution generation for each multiplicity bin is shown in Table \ref{dphi_systematics_table}. The total systematic is calculated by adding each systematic error in quadrature. The $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions with their systematic errors are shown in Figures \ref{h_lambda_dphi_systematics} and \ref{h_h_dphi_systematics}, respectively. The statistical errors are not shown to emphasize the systematic errors, but they are included in the final results (Section \ref{results})
@@ -2293,10 +2293,10 @@ As the single-trigger/total-trigger ratio is flat for both the $h-h$ and $h-\Lam
 \includegraphics[width=4in]{figures/singletrigger_ratio_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/singletrigger_ratio_0_20.pdf}}
+\includegraphics[width=4in]{figures/singletrigger_ratio_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/singletrigger_ratio_0_20.pdf}}
+\includegraphics[width=4in]{figures/singletrigger_ratio_50_80.pdf}}
 \end{subfigure}
 \caption{The single-trigger/total-trigger ratio for both the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions. The ratios are flat across $\Delta\varphi$, and the scale factor is the same for each multiplicity bin.}
 \label{singletrigger_ratio}

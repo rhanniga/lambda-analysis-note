@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  6 FEB 2023 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.12.5)  8 FEB 2023 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2115,21 +2115,23 @@ File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/singletrigger_ratio_0_20.pdf>
 Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2293.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
-<use figures/singletrigger_ratio_0_20.pdf>
-Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2296.
+<figures/singletrigger_ratio_20_50.pdf, id=8492, 569.12625pt x 408.52625pt>
+File: figures/singletrigger_ratio_20_50.pdf Graphic file (type pdf)
+<use figures/singletrigger_ratio_20_50.pdf>
+Package pdftex.def Info: figures/singletrigger_ratio_20_50.pdf  used on input line 2296.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-File: figures/singletrigger_ratio_0_20.pdf Graphic file (type pdf)
-<use figures/singletrigger_ratio_0_20.pdf>
-Package pdftex.def Info: figures/singletrigger_ratio_0_20.pdf  used on input line 2299.
+<figures/singletrigger_ratio_50_80.pdf, id=8493, 569.12625pt x 408.52625pt>
+File: figures/singletrigger_ratio_50_80.pdf Graphic file (type pdf)
+<use figures/singletrigger_ratio_50_80.pdf>
+Package pdftex.def Info: figures/singletrigger_ratio_50_80.pdf  used on input line 2299.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
- [88 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_0_20.pdf, page is rotated 90 degrees>]
-<figures/h_h_mc_closure.pdf, id=8548, 569.12625pt x 408.52625pt>
+ [88 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_0_20.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_20_50.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/singletrigger_ratio_50_80.pdf, page is rotated 90 degrees>]
+<figures/h_h_mc_closure.pdf, id=8637, 569.12625pt x 408.52625pt>
 File: figures/h_h_mc_closure.pdf Graphic file (type pdf)
 <use figures/h_h_mc_closure.pdf>
 Package pdftex.def Info: figures/h_h_mc_closure.pdf  used on input line 2337.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_h_mc_closure_ratio.pdf, id=8549, 569.12625pt x 408.52625pt>
+<figures/h_h_mc_closure_ratio.pdf, id=8638, 569.12625pt x 408.52625pt>
 File: figures/h_h_mc_closure_ratio.pdf Graphic file (type pdf)
 <use figures/h_h_mc_closure_ratio.pdf>
 Package pdftex.def Info: figures/h_h_mc_closure_ratio.pdf  used on input line 2340.
@@ -2144,12 +2146,12 @@ Underfull \hbox (badness 6094) in paragraph at lines 2342--2342
 
 
 ] [90 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_mc_closure_ratio.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_mc_closure.pdf, id=8661, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure.pdf, id=8749, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure.pdf  used on input line 2374.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio.pdf, id=8662, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_ratio.pdf, id=8750, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_ratio.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_ratio.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure_ratio.pdf  used on input line 2377.
@@ -2159,12 +2161,12 @@ Underfull \hbox (badness 4341) in paragraph at lines 2379--2379
 []\OT1/ptm/b/n/10 Fig. 85: []\OT1/ptm/m/n/10 The re-con-structed (red) and ground-truth (blue) $\OML/ztmcm/m/it/10 h \OMS/ztmcm/m/n/10 ^^@ \OT1/ztmcm/m/n/10 ^^C[]$ $^^A\OML/ztmcm/m/it/10 '$ \OT1/ptm/m/n/10 dis-tri-bu-tions along with a
  []
 
-<figures/h_lambda_mc_closure_res.pdf, id=8663, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_res.pdf, id=8751, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_res.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_res.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure_res.pdf  used on input line 2386.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio_res.pdf, id=8664, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_ratio_res.pdf, id=8752, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_ratio_res.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_ratio_res.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res.pdf  used on input line 2389.
@@ -2175,12 +2177,12 @@ Underfull \hbox (badness 4013) in paragraph at lines 2391--2391
  []
 
 [91 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_res.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_lambda_mc_closure_ratio_res.pdf, page is rotated 90 degrees>]
-<figures/h_lambda_mc_closure_res_no_sideband.pdf, id=8848, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_res_no_sideband.pdf, id=8936, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_res_no_sideband.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_res_no_sideband.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure_res_no_sideband.pdf  used on input line 2413.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
-<figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf, id=8849, 569.12625pt x 408.52625pt>
+<figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf, id=8937, 569.12625pt x 408.52625pt>
 File: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf Graphic file (type pdf)
 <use figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf>
 Package pdftex.def Info: figures/h_lambda_mc_closure_ratio_res_no_sideband.pdf  used on input line 2416.
@@ -2208,33 +2210,33 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [93
 
 ]
-<figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, id=8951, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, id=9040, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_0_20_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_0_20_justin_ryan_comparison.pdf>
 Package pdftex.def Info: figures/h_h_dphi_0_20_justin_ryan_comparison.pdf  used on input line 2433.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, id=8952, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, id=9041, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_20_50_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_20_50_justin_ryan_comparison.pdf>
 Package pdftex.def Info: figures/h_h_dphi_20_50_justin_ryan_comparison.pdf  used on input line 2436.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, id=8953, 569.12625pt x 408.52625pt>
+<figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, id=9042, 569.12625pt x 408.52625pt>
 File: figures/h_h_dphi_50_80_justin_ryan_comparison.pdf Graphic file (type pdf)
 <use figures/h_h_dphi_50_80_justin_ryan_comparison.pdf>
 Package pdftex.def Info: figures/h_h_dphi_50_80_justin_ryan_comparison.pdf  used on input line 2439.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
  [94 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_0_20_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_20_50_justin_ryan_comparison.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/h_h_dphi_50_80_justin_ryan_comparison.pdf, page is rotated 90 degrees>]
-<figures/justin_ryan_ratio_0_20.pdf, id=9091, 569.12625pt x 408.52625pt>
+<figures/justin_ryan_ratio_0_20.pdf, id=9179, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_0_20.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_0_20.pdf>
 Package pdftex.def Info: figures/justin_ryan_ratio_0_20.pdf  used on input line 2450.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/justin_ryan_ratio_20_50.pdf, id=9092, 569.12625pt x 408.52625pt>
+<figures/justin_ryan_ratio_20_50.pdf, id=9180, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_20_50.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_20_50.pdf>
 Package pdftex.def Info: figures/justin_ryan_ratio_20_50.pdf  used on input line 2453.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/justin_ryan_ratio_50_80.pdf, id=9093, 569.12625pt x 408.52625pt>
+<figures/justin_ryan_ratio_50_80.pdf, id=9181, 569.12625pt x 408.52625pt>
 File: figures/justin_ryan_ratio_50_80.pdf Graphic file (type pdf)
 <use figures/justin_ryan_ratio_50_80.pdf>
 Package pdftex.def Info: figures/justin_ryan_ratio_50_80.pdf  used on input line 2456.
@@ -2278,17 +2280,17 @@ Overfull \hbox (42.60199pt too wide) in paragraph at lines 2485--2494
 
 
 ]
-<figures/ratio_plot_new_x_axis.pdf, id=9249, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis.pdf, id=9337, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis.pdf  used on input line 2503.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/ratio_plot_new_x_axis_lowpt.pdf, id=9250, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis_lowpt.pdf, id=9338, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis_lowpt.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis_lowpt.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis_lowpt.pdf  used on input line 2506.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/ratio_plot_new_x_axis_highpt.pdf, id=9251, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis_highpt.pdf, id=9339, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis_highpt.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis_highpt.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis_highpt.pdf  used on input line 2509.
@@ -2298,17 +2300,17 @@ Package pdftex.def Info: figures/ratio_plot_new_x_axis_highpt.pdf  used on input
 LaTeX Warning: Float too large for page by 1.86836pt on input line 2513.
 
 [97 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/ratio_plot_new_x_axis_highpt.pdf, page is rotated 90 degrees>]
-<figures/ratio_plot_new_x_axis_with_fits.pdf, id=9388, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis_with_fits.pdf, id=9477, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis_with_fits.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis_with_fits.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis_with_fits.pdf  used on input line 2520.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9389, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9478, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf  used on input line 2523.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9390, 569.12625pt x 408.52625pt>
+<figures/ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9479, 569.12625pt x 408.52625pt>
 File: figures/ratio_plot_new_x_axis_highpt_with_fits.pdf Graphic file (type pdf)
 <use figures/ratio_plot_new_x_axis_highpt_with_fits.pdf>
 Package pdftex.def Info: figures/ratio_plot_new_x_axis_highpt_with_fits.pdf  used on input line 2526.
@@ -2323,17 +2325,17 @@ Overfull \hbox (45.32841pt too wide) in paragraph at lines 2538--2547
 
 
 ]
-<figures/lambda_phi_ratio_plot_new_x_axis.pdf, id=9542, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis.pdf, id=9630, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis.pdf  used on input line 2556.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf, id=9543, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf, id=9631, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf  used on input line 2559.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf, id=9544, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf, id=9632, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf  used on input line 2562.
@@ -2343,17 +2345,17 @@ Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf  us
 LaTeX Warning: Float too large for page by 3.34708pt on input line 2566.
 
 [100 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf, page is rotated 90 degrees>]
-<figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf, id=9681, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf, id=9770, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf  used on input line 2573.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9682, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf, id=9771, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf  used on input line 2576.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9683, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf, id=9772, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf  used on input line 2579.
@@ -2372,17 +2374,17 @@ Overfull \hbox (34.38951pt too wide) in paragraph at lines 2594--2603
 
 
 ]
-<figures/pairwise_plot_new_x_axis.pdf, id=9836, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis.pdf, id=9925, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis.pdf  used on input line 2612.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/pairwise_plot_new_x_axis_lowpt.pdf, id=9837, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis_lowpt.pdf, id=9926, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis_lowpt.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis_lowpt.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis_lowpt.pdf  used on input line 2615.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/pairwise_plot_new_x_axis_highpt.pdf, id=9838, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis_highpt.pdf, id=9927, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis_highpt.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis_highpt.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis_highpt.pdf  used on input line 2618.
@@ -2392,17 +2394,17 @@ Package pdftex.def Info: figures/pairwise_plot_new_x_axis_highpt.pdf  used on in
 LaTeX Warning: Float too large for page by 0.78438pt on input line 2622.
 
 [103 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis_lowpt.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis_highpt.pdf, page is rotated 90 degrees>]
-<figures/pairwise_plot_new_x_axis_with_fits.pdf, id=9976, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis_with_fits.pdf, id=10064, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis_with_fits.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis_with_fits.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis_with_fits.pdf  used on input line 2629.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf, id=9977, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf, id=10065, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf  used on input line 2632.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf, id=9978, 569.12625pt x 408.52625pt>
+<figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf, id=10066, 569.12625pt x 408.52625pt>
 File: figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf Graphic file (type pdf)
 <use figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf>
 Package pdftex.def Info: figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf  used on input line 2635.
@@ -2412,17 +2414,17 @@ Package pdftex.def Info: figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf  
 LaTeX Warning: Float too large for page by 0.78438pt on input line 2639.
 
 [104 </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf, page is rotated 90 degrees> </home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf, page is rotated 90 degrees>]
-<figures/track_merging_diagram_withborder.pdf, id=10115, 722.7pt x 542.025pt>
+<figures/track_merging_diagram_withborder.pdf, id=10204, 722.7pt x 542.025pt>
 File: figures/track_merging_diagram_withborder.pdf Graphic file (type pdf)
 <use figures/track_merging_diagram_withborder.pdf>
 Package pdftex.def Info: figures/track_merging_diagram_withborder.pdf  used on input line 2647.
 (pdftex.def)             Requested size: 361.34999pt x 271.01183pt.
-<figures/lambda_mass_resonance_mc.pdf, id=10116, 569.12625pt x 408.52625pt>
+<figures/lambda_mass_resonance_mc.pdf, id=10205, 569.12625pt x 408.52625pt>
 File: figures/lambda_mass_resonance_mc.pdf Graphic file (type pdf)
 <use figures/lambda_mass_resonance_mc.pdf>
 Package pdftex.def Info: figures/lambda_mass_resonance_mc.pdf  used on input line 2654.
 (pdftex.def)             Requested size: 289.07999pt x 207.51656pt.
-<figures/lambda_phi_ratio_total_comparison.pdf, id=10117, 569.12625pt x 408.52625pt>
+<figures/lambda_phi_ratio_total_comparison.pdf, id=10206, 569.12625pt x 408.52625pt>
 File: figures/lambda_phi_ratio_total_comparison.pdf Graphic file (type pdf)
 <use figures/lambda_phi_ratio_total_comparison.pdf>
 Package pdftex.def Info: figures/lambda_phi_ratio_total_comparison.pdf  used on input line 2661.
@@ -2442,18 +2444,18 @@ Package rerunfilecheck Info: File `h-lambda-analysis-note.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2669.
  ) 
 Here is how much of TeX's memory you used:
- 19254 strings out of 492982
- 393817 string characters out of 6134896
- 430495 words of memory out of 5000000
- 21922 multiletter control sequences out of 15000+600000
+ 19264 strings out of 492982
+ 394257 string characters out of 6134896
+ 430614 words of memory out of 5000000
+ 21930 multiletter control sequences out of 15000+600000
  601471 words of font info for 182 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,18n,45p,10451b,817s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (108 pages, 4687824 bytes).
+Output written on /home/astrooo/OneDrive/Research/Papers/lambda-analysis-note/h-lambda-analysis-note.pdf (108 pages, 4714585 bytes).
 PDF statistics:
- 10373 PDF objects out of 10688 (max. 8388607)
- 4969 compressed objects within 50 object streams
+ 10462 PDF objects out of 10688 (max. 8388607)
+ 5005 compressed objects within 51 object streams
  499 named destinations out of 1000 (max. 500000)
- 1551 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1561 words of extra memory for PDF output out of 10000 (max. 10000000)
 
