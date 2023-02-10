@@ -305,7 +305,7 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/nsigma_tof_pion.pdf}}
 \end{subfigure}
-\caption{$n\sigma$ for pions (left) and pions (right) in the TOF detector as a function of $\it{p}_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
+\caption{$n\sigma$ for protons (left) and pions (right) in the TOF detector as a function of $\it{p}_{T}$. If there is no TOF signal for the track, the TOF PID cut is not applied.}
 \label{nsigma_tof}
 \end{figure}
 
@@ -705,7 +705,7 @@ We have investigated all of the following techniques to correct for this effect:
 \item Applying a cut on the minimum distance between the fully reconstructed helices of the trigger and $\Lambda$ daughter proton (varied between 0.1 cm and 10 cm): Again, this cut removes roughly the same amount of near-side yield as the $\Delta\varphi^{*}$ cut, as this minimum distance is also highly correlated with $\Delta\varphi$.
 \item Using the resonance technique for $\Lambda$ reconstruction (Section \ref{resonance_technique}): this drastically reduces the severity of this effect, but the statistical fluctuations introduced by the smaller S/B ratio make it difficult to investigate (see Section \ref{mc_closure} for more details)
 \item Only correlating $h-\Lambda$ pairs where the charge of the $\Lambda$ daughter proton (or antiproton) is opposite to the trigger: This reduces the effect by a considerable amount, but reduces our overall correlation statistics by a factor of 2.
-\item Selecting ``lower quality'' trigger tracks (instead of track bit 128, we use similar cuts as our daughter particle): this reduces the effect, but introduces a large amount of secondary contamination. Furthermore, we would like this analysis to be compared with the $h-\phi$ analysis, and therefore want to maintain the same cuts on the trigger hadron.
+\item Selecting ``lower quality'' trigger tracks (instead of track bit kIsHybridGCG, we use similar cuts as our daughter particle): this reduces the effect, but introduces a large amount of secondary contamination. Furthermore, we would like this analysis to be compared with the $h-\phi$ analysis, and therefore want to maintain the same cuts on the trigger hadron.
 \item Selecting ``higher quality''  $\Lambda$ daughter tracks (we use the kTrkGlobalNoDCA track filter bit): this completely eliminates this effect for $\Lambda$s reconstructed using the resonance technique (at the expense of a massive amount of signal), but for $\Lambda$s reconstructed using the V0 technique we are left with effectively no signal (an extremely small fraction of V0 daughter tracks have this filter bit set)
 \end{itemize}
 
@@ -2637,6 +2637,47 @@ $\Lambda$, $h$ $p_{T}$ Bin & $h-\Lambda$ Near Slope & $h-\Lambda$ Away Slope & $
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ and $h-h$  jet-like yield plots with straight line (pol1) fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, h}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
 \label{pairwise_yields_vs_nch_with_fits}
+\end{figure}
+
+\clearpage
+
+\subsection{ZYAM Baseline Projected onto $\Delta\eta$}
+It has been observed in previous analyses (Figure 6 from \url{https://arxiv.org/pdf/2211.08979.pdf}) that the baseline extracted using the ZYAM technique on the corresponding $\Delta\varphi$ distributions is often higher than the what the baseline would be if you were to extract it from the $\Delta\eta$ distribution instead. This is an important consideration, as in principle our ``underlying event'' baseline should contain no correlated pairs in both $\Delta\eta$ and $\Delta\varphi$, and if the ZYAM technique is extracting a baseline that is higher than it should be (and it is our lowest baseline of all the techniques), then it is possible that the baseline from all of our techniques are actually being contaminated by correlated pairs.
+
+As the away-side ridge is present across the entirety of our $\Delta\eta$ range, a true minimum would never be obtained by projecting the entire $\Delta\varphi$ range. Instead, we project only the near-side component ($|\Delta\varphi| < \pi/2$) onto the $\Delta\eta$ axis, as was performed in the analyses mentioned at the beginning of this section. Plots containing these projections for each multiplicity bin can be seen in Figures \ref{h_lambda_deta_zyam_comparison} ($h-\Lambda$) and \ref{h_h_deta_zyam_comparison}  ($h-h$). We observe that the baseline extracted from the $\Delta\varphi$ distributions is in relatively good agreement with the baseline that would be extracted from the $\Delta\eta$ distributions if the ZYAM technique were applied. However, there appears to be a slight multiplicity dependence on the difference between the two baselines, as for higher multiplicity the $\Delta\varphi$ ZYAM baseline is lower than the minimum $\Delta\eta$ bin for both the $h-\Lambda$ and $h-h$ case, whereas at our lowest multiplicity we observe that the $\Delta\varphi$ ZYAM baseline is higher than the minimum $\Delta\eta$ bin for both cases. This is likely due to the small $v_{2}$ contribution that occurs at higher multiplicties, which pushes the ZYAM baseline obtained from the $\Delta\varphi$ distributions upwards.
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_deta_0_20_zyam_comp.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_deta_20_50_zyam_comp.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_deta_50_80_zyam_comp.pdf}}
+\end{subfigure}
+\caption{Comparison of the $h-\Lambda$ baseline extracted from the $\Delta\varphi$ ZYAM technique (grey line) projected onto the $\Delta\eta$ axis for our 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins. We see that the baseline is in relatively good agreement with the minimum $\Delta\eta$ bin for all multiplicity bins, with a small multiplicity dependence discussed in this section.}
+\label{h_lambda_deta_zyam_comparison}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_deta_0_20_zyam_comp.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_deta_20_50_zyam_comp.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_deta_50_80_zyam_comp.pdf}}
+\end{subfigure}
+\caption{Comparison of the $h-h$ baseline extracted from the $\Delta\varphi$ ZYAM technique (grey line) projected onto the $\Delta\eta$ axis for our 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins. We see that the baseline is in relatively good agreement with the minimum $\Delta\eta$ bin for all multiplicity bins, with a small multiplicity dependence discussed in this section.}
+\label{h_h_deta_zyam_comparison}
 \end{figure}
 
 \clearpage

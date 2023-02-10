@@ -62,4 +62,5 @@
 \contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{90}{subsection.8.3}
 \contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{94}{subsection.8.4}
 \contentsline {subsection}{\numberline {8.5}Ratio Plots vs. $\delimiter "426830A N_{ch} \delimiter "526930B _{|\eta | < 0.8}$}{97}{subsection.8.5}
-\contentsline {section}{\numberline {9}Additional Plots}{106}{section.9}
+\contentsline {subsection}{\numberline {8.6}ZYAM Baseline Projected onto $\Delta \eta $}{106}{subsection.8.6}
+\contentsline {section}{\numberline {9}Additional Plots}{109}{section.9}
