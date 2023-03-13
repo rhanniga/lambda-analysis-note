@@ -86,7 +86,7 @@ Every event in this analysis was a p-Pb collision at $\sqrt{s_{NN}} =$\SI{5.02}{
 
 This analysis uses the data from these runs with the FAST reconstruction, corresponding to approximately 400 million minimum bias events.
 
-For the the MC studies (MC method test, MC Closure test), the analysis was performed using the standard purpose generated MC production LHC17f2b\_FAST, anchored to the LHC16q\_FAST production. This production consists of around 30 million minimum bias events.
+For the the MC studies (MC method test, MC Closure test), the analysis was performed using the standard purpose generated MC production LHC17f2b\_FAST, anchored to the LHC16q\_FAST production with DPMJET as the generator. This production consists of around 30 million minimum bias events. As more statistics were required to generate a template to correct for the two-track merging effect, the LHC18f3\_FAST and LHC18f3\_CENT\_woSDD productions were used, which are also anchored to LHC16q with DPMJET as the generator. These productions consist of around 400 million minimum bias events (same as our data).
 
 \subsubsection{Event Selection}
 
@@ -116,19 +116,19 @@ The code for this analysis can be found in the following locations:
 
 \textit{Correlations in Data and MC}:
 \begin{itemize}
-\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatioV0 (for $\Lambda$s reconstructed using V0 finder)
-\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatioRes (for $\Lambda$s reconstructed using resonance technique)
+\item  PWGCF/Correlations/DPhi/AliAnalysisTaskLambdaHadronRatio (for $\Lambda$s reconstructed using V0 finder)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronRatioRes (for $\Lambda$s reconstructed using resonance technique) (TBD)
 \end{itemize}
 
 \textit{Efficiency Computation}:
 \begin{itemize}
-\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronEfficiency (for $\Lambda$s reconstructed using V0 finder and resonance technique)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronEfficiency (for $\Lambda$s reconstructed using V0 finder and resonance technique) (TBD)
 \end{itemize}
 
 \textit{MonteCarlo Closure Test}
 \begin{itemize}
-\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronV0Closure (for $\Lambda$s reconstructed using V0 finder)
-\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronResClosure (for $\Lambda$s reconstructed using resonance technique)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronV0Closure (for $\Lambda$s reconstructed using V0 finder) (TBD)
+\item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronResClosure (for $\Lambda$s reconstructed using resonance technique) (TBD)
 \end{itemize}
 
 \textit{Offline Code}
@@ -138,6 +138,10 @@ All of the offline analysis (as well as the code listed above) can be found in m
 This analysis was presented at the following ALICE meetings, in reverse chronological order:
 
 \begin{itemize}
+\item Physics Forum HP2023 Approvals: 13 March 2023 (\url{https://indico.cern.ch/event/1263018})
+\item PWG-CF HP2023 Approvals: 6 March 2023 (\url{https://indico.cern.ch/event/1259940})
+\item Physics Forum HP2023 Previews: 20 February 2023 (\url{https://indico.cern.ch/event/1253172})
+\item PWG-CF HP2023 Previews: 16 February 2023 (\url{https://indico.cern.ch/event/1252451})
 \item Strangeness PAG Meeting: 7 February 2023 (\url{https://indico.cern.ch/event/1251426/})
 \item Strangeness PAG Meeting: 10 January 2023 (\url{https://indico.cern.ch/event/1237832})
 \item Strangeness PAG Meeting: 18 October 2022 (\url{https://indico.cern.ch/event/1211594})
@@ -208,7 +212,7 @@ with further binning performed offline.
 
 \subsection{Trigger Track Cuts}
 \label{trigcuts}
-For the trigger hadron tracks, Hybrid Global constrained tracks were accepted using the cuts supplied by \texttt{IsHybridGlobalConstrainedGlobal()}, or track bit 20, or BIT(20), or 1048576:
+For the trigger hadron tracks, Hybrid Global constrained tracks were accepted using the cuts supplied by \texttt{IsHybridGlobalConstrainedGlobal()}, or track bit 20, or BIT(20), or 1048576, or filter mask 768:
 
 \begin{itemize}
 	\item SetMinNClustersTPC: 50
@@ -223,9 +227,9 @@ For the trigger hadron tracks, Hybrid Global constrained tracks were accepted us
 
 For the both the di-hadron and h-$\Lambda$ correlation, the trigger hadron is selected in the momentum region:
 
-$${4.0 < p_{T} < \SI{8.0}{GeV/c}},$$
+$${4.0 < p_{T} < \SI{8.0}{GeV/c}}.$$
 
-with further binning performed offline. The $\it{p}_{T}$, $\varphi$ and $\eta$ distributions for the trigger hadrons that pass these cuts in the 0-20\% multiplicity bin can be seen in Figure \ref{trig_plots}.
+The $\it{p}_{T}$, $\varphi$ and $\eta$ distributions for the trigger hadrons that pass these cuts in the 0-20\% multiplicity bin can be seen in Figure \ref{trig_plots}.
 
 \begin{figure}[ht]
 \centering
@@ -357,11 +361,11 @@ To account for any biases introduced from choosing daughter tracks from the V0 f
 \end{itemize}
 
 Both the signal and sideband regions are varied as a systematic check (see Section \ref{systematics})
-The invariant mass distributions in each multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm are shown in Figure \ref{v0_mass}. The $\Lambda$ peak is clearly visible with very little background. A Voigt (signal) + straight line (background) fit was applied to the invariant mass distributions for each multiplicity bin. The extracted parameters from the Voigt fit are shown in Table \ref{voigt_parameters}. While the background is very small for each multiplicity bin, it is still subtracted from our final $h-\Lambda$ correlation distribution using the procedure described in Section \ref{removecomb_v0}.
+The invariant mass distributions in each multiplicity bin for the $\Lambda$s reconstructed using the V0 finder algorithm in events with a trigger hadron are shown in Figures \ref{v0_mass} to \ref{v0_mass_highpt}. The $\Lambda$ peak is clearly visible with very little background. A Voigt (signal) + straight line (background) fit was applied to the invariant mass distributions for each multiplicity bin. The extracted parameters from the Voigt fit are shown in Table \ref{voigt_parameters}. In the end, the Voigt fit is only shown for aesthetic purposes. While the background is very small for each multiplicity bin, it is still subtracted from our final $h-\Lambda$ correlation distribution using the procedure described in Section \ref{removecomb_v0}, which relies only on the background fit. It should also be mentioned that the background line (shown as the purple dashed line) is fixed at the ends to the points where we expect no signal (verified in MonteCarlo, as the signal shapes in data and MonteCarlo are very similar).
 
 \begin{table}[h!]
-    \centering
-\begin{tabular}{| c | c | c | c | c | c | }
+\centering
+\begin{tabular}{| c || c | c | c | c | c | }
 \hline
 Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2$) & $\chi^2$/NDF \\
 \hline
@@ -370,7 +374,7 @@ Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2
 50-80\% & 1.78e+01 & 1.116 & 1.23e-03 & 1.03e-03 & 4.55\\
 \hline
 \end{tabular}
-\caption{Parameters from the Voigt fit to the invariant mass distributions for the $\Lambda$s reconstructed using the V0 finder, along with the $\chi^2/NDF$ for the total fit. The errors were negligible relative to the values.}
+\caption{Parameters from the Voigt fit to the invariant mass distributions for the $\Lambda$s reconstructed using the V0 finder in events with a trigger hadron, along with the $\chi^2/NDF$ for the total fit. The errors were negligible relative to the values.}
 \label{voigt_parameters}
 \end{table}
 
@@ -387,13 +391,45 @@ Multiplicity & A & $\mu$ (GeV/$c^2$) & $\sigma$ (GeV/$c^2$) & $\gamma$ (GeV/$c^2
 \begin{subfigure} {
 \includegraphics[width=4in]{figures/lambda_mass_dist_50_80.pdf}}
 \end{subfigure}
-\caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is small for all multiplicity bins.}
+\caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder in events with a trigger hadron with $2 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is small for all multiplicity bins.}
 \label{v0_mass}
 \end{figure}
 
 \clearpage
 
+\begin{figure}[ht]
+\centering
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_0_20_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_20_50_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_50_80_lowpt.pdf}}
+\end{subfigure}
+\caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder in events with a trigger hadron with $1.5 < \it{p}_T < 2.5$. The background from misidentified $\Lambda$s is small for all multiplicity bins, but it is larger than our higher $p_{T}$ bin.}
+\label{v0_mass_lowpt}
+\end{figure}
 
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_0_20_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_20_50_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure} {
+\includegraphics[width=4in]{figures/lambda_mass_dist_50_80_highpt.pdf}}
+\end{subfigure}
+\caption{Invariant mass distributions in the 0-20\% (top), 20-50\% (center), and 50-80\% (bottom) multiplicity bins for $\Lambda$s reconstructed using the V0 finder in events with a trigger hadron with $2.5 < \it{p}_T < 4$. The background from misidentified $\Lambda$s is the smallest for all multiplicity bins when compared to our other $p_{T}$ bins.}
+\label{v0_mass_highpt}
+\end{figure}
+
+\clearpage
 
 \section{Acceptance and Efficiency Corrections}
 \label{efficiency_acceptance}
@@ -404,9 +440,9 @@ This section details all of the detector acceptance and efficiency corrections a
 
 For each multiplicity bin, events were separated into z-vertex position bins with a width of \SI{2}{cm}, ranging from \SI{-10}{cm} to \SI{10}{cm}. An AliEventPool of size 500 and track-depth 1000 was filled with a list of trigger tracks, then correlated with a list of associated hadrons (or $p\pi$ pairs) for each event once the pool was ready. The pair-wise efficiency correction in Section \ref{reconstruction_efficiency} is also applied to the mixed event pairs. The uncorrected and mixed-event distributions (h-$p\pi$, h-h) for each multiplicity bin are shown in Figures \ref{uncorr2d_0_20} through \ref{mixed2d_50_80}.
 
-For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figures \ref{mixcor2d_0_20} through \ref{mixcor2d_50_80}. As our binning does not provide a single bin centered about (0, 0), we instead take average of B(-0.01, 0) and B(0.01, 0) to get an estimate of B(0, 0). Each plot was scaled by $1/N_{trig}$.
+For each multiplicity bin, the acceptance correction (as described in Eq. 1) was performed for each z-vertex bin, then the results were merged together to form the acceptance-corrected distributions, shown in Figures \ref{mixcor2d_0_20} through \ref{mixcor2d_50_80}. As our binning does not provide a single bin centered about (0, 0), we instead take average of B(-0.01, 0) and B(0.01, 0) to get an estimate of B(0, 0). Each plot was scaled by $1/N_{trig}$. Scaling to the average along B(0, -$\pi$/2) and B(0, $3\pi$/2) was also performed, but the results were identical to the B(0, 0) case.
 
-As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) and an associated hadron.
+As this analysis relies on multiple angular correlations ($h-\Lambda$, $h-h$), the event mixing was done with a shared mixed event pool containing the list of trigger tracks, then the correlation was performed using the associated ($p\pi$) or hadron list for each event. After mixing, each correlation was corrected using its corresponding mixed-event distribution. The event mixing was only performed on events that contained both a $\Lambda$ candidate ($p\pi$ pair from either V0 finder or global AOD list) or an associated hadron.
 
 
 \begin{figure}[ht]
@@ -556,9 +592,7 @@ and each $\Lambda$ in $N_{\Lambda\text{, real MC yield}}$ meets the following cr
 
 While previous analyses focus solely on primary $\Lambda$s (exlcuding $\Omega$ and $\Xi$ contamination), there is no requirement for either the V0-reconstructed $\Lambda$ or the MC-generated $\Lambda$ to be a primary particle. As this analysis is mostly interested in the $\Lambda$ due to its strange quark content, whether or not the $\Lambda$ came from a cascade decay is irrelevant. This is important to note when making comparisons between this analysis and previous analyses, as secondary contamination from cascades accounts for nearly 20\% of all $\Lambda$s.
 
-As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the $\bar{\Lambda}$ were combined together for this efficiency calculation. Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. However, the final efficiency correction was applied as a function of $p_T$ only and can be seen in Figure \ref{lambda_eff}.
-
-
+As mentioned in Section \ref{lambda_reconstruction}, both the $\Lambda$ and the $\bar{\Lambda}$ were combined together for this efficiency calculation (it was verified that their efficiencies are the same). Efficiencies were calculated as a function of $p_T$, $\eta$, $\varphi$, Event Z vertex, and Multiplicity. However, the final efficiency correction was applied as a function of $p_T$, $\eta$ and multiplicity and can be seen in Figures \ref{lambda_eff_pt} and \ref{lambda_eff_eta}. The multiplicity binning was chosen to be the same as the binning used for the final analysis (0-20\%, 20-50\%, 50-80\%).
 
 \subsubsection{Trigger and Associated Hadron Reconstruction Efficiency}
 \label{trigassoc_efficiency}
@@ -591,7 +625,7 @@ and each trigger or associated hadron in $N_{trig, assoc\text{, real MC yield}}$
 
 The efficiencies for both the trigger and associated hadrons as a function of $\it{p}_T$ are shown in Figure \ref{trigassoc_eff_plots}.
 
-Because all of these efficiencies appear to be multiplicty independent, the final efficiency correction is performed using the integrated 0-100\% points shown in red for each of the $\Lambda$, trigger and associated efficiency plots.
+Even though only the $\Lambda$ efficiency shows a non-uniform dependence on $\eta$ and multiplicity, the final efficiency correction for all particles is applied as a function of $p_{T}$, $\eta$ and multiplicity.
 
 As our correlation measurement depends on both the trigger and associated particle, we must combine the two efficiencies to get the overall efficiency for the pair.  This is done using the following formula:
 
@@ -604,18 +638,26 @@ This efficiency is corrected for on-the-fly as the pairs are being filled into t
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=4in]{figures/v0_efficiency.pdf}
-\caption{Efficiency vs. $p_T$ for $\Lambda$ reconstruction for each multiplicty bin, along with an integrated 0-100\% point in red. There does not appear to be any significant dependence on multiplicity.}
-\label{lambda_eff}
+\includegraphics[width=4in]{figures/v0_efficiency_pt.png}
+\caption{Efficiency vs. $p_T$ for $\Lambda$ reconstruction for each multiplicty bin, along with an integrated 0-100\% point in red. There appears to be a slight dependence on multiplicity, which is accounted for.}
+\label{lambda_eff_pt}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
+\includegraphics[width=4in]{figures/v0_efficiency_eta.png}
+\caption{Efficiency vs. $\eta$ for $\Lambda$ reconstruction for each multiplicty bin, along with an integrated 0-100\% point in red. With wider bins (when compared to $p_{T}$), we clearly observe a multiplicity dependence, which is accounted for.}
+\label{lambda_eff_eta}
+\end{figure}
+
+
+\begin{figure}[ht]
+\centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/trigger_efficiency.pdf}}
+\includegraphics[width=3in]{figures/trigger_efficiency.png}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/associated_efficiency.pdf}}
+\includegraphics[width=3in]{figures/associated_efficiency.png}}
 \end{subfigure}
 \caption{Efficiency vs. $p_T$ for trigger (left) and associated (right) hadrons. Both are slightly above 80\% for the entire $p_\text{T}$ range.}
 \label{trigassoc_eff_plots}
@@ -647,42 +689,21 @@ The severity of this effect is likely due to two factors:
 \item The $\Lambda$ decay is assymetric ($m_{p}/m_{\pi} \approx 7$), so the $\Lambda$ and daughter proton end up with similar momenta (and thus $\varphi$ and $\eta$). This means that whenever a proton from a $\Lambda$ decay is ``merged'' over by a trigger track, an $h-\Lambda$ pair with small $\Delta\varphi, \Delta\eta$ is lost.
 \end{itemize}
 
-To see how the decay length can affect the track merging, we can measure he $\Delta\varphi$ distributions in the $-1.2 < \Delta\eta < 1.2$ region for $h-$proton and $h-$pion pairs in our MonteCarlo sample where the proton/pion is secondary--meaning it came from a weak decay with decay length > 2cm--and compare it to the same ratio for $h-$proton and $h-$pion pairs where the proton/pion is primary. The result is shown in Figures \ref{trackmerge_hproton} (proton) and \ref{trackmerge_hpion}. All reconstructed triggers and protons are selected from the AOD track list and pass our trigger and daughter cuts from Sections \ref{trigcuts} and \ref{daughtercuts}, respectively (with the caveat being that the protons are required to have a corresponding entry in the MC stack and that entry is either secondary or primary). All distributions were corrected for detector acceptance using the procedure described in Section \ref{mixed_event_correction}, and the baselines were scaled to each-other to emphasize this effect. We clearly observe a large suppression in the near side of the reconstructed distributions when compared to the ground truth for the h-secondary proton/pion case, but no significant suppression for the h-primary proton/pion case. As such, we conclude that this suppression is at least in part due to the decay length of the $\Lambda$, as all protons and pions that come from $\Lambda$s are secondaries (by a long shot).
+To see how the decay length can affect the track merging, we can measure the $\Delta\eta\Delta\varphi$ distributions for $h-$pion pairs in our MonteCarlo sample where the pion is secondary--meaning it came from a weak decay with decay length > 2cm--and compare it to the same ratio for $h-$pion pairs where the pion is primary. The result is shown in Figures \ref{trackmerge_hproton} (proton) and \ref{trackmerge_hpion}. All reconstructed triggers and pions are selected from the AOD track list and pass our trigger and daughter cuts from Sections \ref{trigcuts} and \ref{daughtercuts}, respectively (with the caveat being that the pions are required to have a corresponding entry in the MC stack and that entry is either secondary or primary). All distributions were corrected for detector acceptance using the procedure described in Section \ref{mixed_event_correction}, and all distributions were corrected for efficiency (where we use the efficiency of primary particles in the primary case and secondary particles in the secondary case) We clearly observe a large suppression in the near side of the reconstructed distributions when compared to the ground truth for the h-secondary pion case, but no significant suppression for the h-primary pion case. As such, we conclude that this suppression is at least in part due to the decay length of the $\Lambda$, as all particles that come from $\Lambda$s are secondaries (by a long shot).
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_proton_dphi_secondary.pdf}}
+\includegraphics[width=3in]{figures/h_pion_2d_secondary.png}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_proton_dphi_primary.pdf}}
+\includegraphics[width=3in]{figures/h_pion_2d_primary.png}}
 \end{subfigure}
-\caption{The  reconstructed and ground truth $\Delta\varphi$ distributions in the $-1.2 < \Delta\eta < 1.2$ region for h-(secondary protons) (left) and h-(primary protons) (right). The suppression at smaller $\Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
-\label{trackmerge_hproton}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/h_pion_dphi_secondary.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=3in]{figures/h_pion_dphi_primary.pdf}}
-\end{subfigure}
-\caption{The  reconstructed and ground truth $\Delta\varphi$  distributions in the $-1.2 < \Delta\eta < 1.2$ region for h-(secondary pions) (left) and h-(primary pions) (right). The suppression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
+\caption{The  reconstructed/ground truth 2d $\Delta\eta\Delta\varphi$ for h-(secondary pions) (left) and h-(primary pions) (right). The suppression at smaller $\Delta\eta, \Delta\varphi$ is clearly seen in the secondary case, but is not observable in the primary case.}
 \label{trackmerge_hpion}
 \end{figure}
 
-Due to statistics, it is not possible to study the full $\Delta\eta\Delta\varphi$ distributions for the h-(secondary proton) case. However, the $\Delta\eta\Delta\varphi$ (reconstructed)/(ground truth) ratio for the h-(secondary pion) case is shown in Figure \ref{h_secondary_pi_mc_ratio}. Even with limited statistics, we can clearly observe a suppression ranging from around $-0.8 < \Delta\varphi < 0.8$ and $-0.3 < \Delta\eta < 0.3$.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=3in]{figures/h_secondary_pi_mc_ratio.pdf}
-\caption{The  (reconstructed)/(ground truth)  $\Delta\eta\Delta\varphi$  distribution for h-(secondary pions). There appears to be a dip from around $-0.8 < \Delta\varphi < 0.8$ and $-0.3 < \Delta\eta < 0.3$.}
-\label{h_secondary_pi_mc_ratio}
-\end{figure}
-
-We can also observe the $p_\text{T}$ dependence of this effect by looking at the reconstructed and ground truth $h-$(secondary pion) $\Delta\varphi$ distributions in a low ($0.15 < p_{T} < 2$) and high($2 < p_{T} < 4$) bin. The result is shown in Figure \ref{trackmerge_pt_dependence}. We clearly observe a suppression in the near side of the reconstructed distribution for the high $p_\text{T}$ bin, but not for the low $p_\text{T}$ bin.  This is consistent with the decay length dependence shown in the previous figures, as decay length is roughly proportional to $p_\text{T}$.
+We can also observe the $p_\text{T}$ dependence of this effect by looking at the reconstructed and ground truth $h-$(secondary pion) $\Delta\varphi$ distributions in a low ($1.0 < p_{T} < 2.0$) and high($2.0 < p_{T} < 4.0$) bin. The result is shown in Figure \ref{trackmerge_pt_dependence}. We clearly observe a suppression in the near side of the reconstructed distribution for the high $p_\text{T}$ bin, but not for the low $p_\text{T}$ bin.  This is consistent with the decay length dependence shown in the previous figures, as decay length is roughly proportional to $p_\text{T}$.
 
 \begin{figure}[ht]
 \centering
@@ -696,7 +717,7 @@ We can also observe the $p_\text{T}$ dependence of this effect by looking at the
 \label{trackmerge_pt_dependence}
 \end{figure}
 
-The $p_{T}$ dependence of this inefficiency demonstrates why this effect is so severe in the $h-\Lambda$ case (when compared analyses involving another secondary weak decay, like $h-K^{0}$ from \url{https://alice-notes.web.cern.ch/node/902}). Due to the asymmetry of the $\Lambda$ decay ($m_{p}/m_{\pi} \approx 7$), the daughter proton receives most of the momentum. Therefore when we are investigating $h-\Lambda$ correlations within $2 < p_{T, \Lambda} < 4$ GeV/c, any inefficiencies present in the corresponding h-(daughter proton) distribution with the same associated momentum would also be present in our final $h-\Lambda$ distribution within the same $\Delta\varphi, \Delta\eta$ range. As we've demonstrated in Figure \ref{trackmerge_hproton}, secondary charged protons with $2 < p_{T} < 4$ GeV/c see a large inefficiency, and therefore we would expect a similar inefficiency to be present in our $h-\Lambda$ distribution (which we've shown in Figure \ref{trackmerge_diagram_lambda}). Such an effect would not be as present in the $h-K^{0}$ case with the same associated momentum, both because the decay length is much shorter (2 cm vs 10 cm), and the $K^{0}$ decay is symmetric, meaning the daughter pions will have a momentum that is much lower than the mother (and therefore less affected by this inefficiency).
+The $p_{T}$ dependence of this inefficiency demonstrates why this effect is so severe in the $h-\Lambda$ case (when compared analyses involving another secondary weak decay, like $h-K^{0}$ from \url{https://alice-notes.web.cern.ch/node/902}). Due to the asymmetry of the $\Lambda$ decay ($m_{p}/m_{\pi} \approx 7$), the daughter proton receives most of the momentum. Therefore when we are investigating $h-\Lambda$ correlations within $2 < p_{T, \Lambda} < 4$ GeV/c, any inefficiencies present in the corresponding h-(daughter proton) distribution with the same associated momentum would also be present in our final $h-\Lambda$ distribution within the same $\Delta\varphi, \Delta\eta$ range. As we've demonstrated in Figure \ref{trackmerge_pt_dependence}, secondary charged particles with $2 < p_{T} < 4$ GeV/c see a large inefficiency, and therefore we would expect a similar inefficiency to be present in our $h-\Lambda$ distribution (which we've shown in Figure \ref{trackmerge_diagram_lambda}). Such an effect would not be as present in the $h-K^{0}$ case with the same associated momentum, both because the decay length is much shorter (2 cm vs 10 cm), and the $K^{0}$ decay is symmetric, meaning the daughter pions will have a momentum that is much lower than the mother (and therefore less affected by this inefficiency).
 
 
 We have investigated all of the following techniques to correct for this effect:
@@ -714,15 +735,28 @@ The most promising correction procedure is the one described in the AN here: \ur
 	C_{corr.}(\Delta\varphi, \Delta\eta) = C_{uncorr.}(\Delta\varphi, \Delta\eta)(\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)})^{-1}
 \end{align*}
 
-where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected correlation, and $\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)}$ is the angular efficiency template generated from MonteCarlo. This template is generated using the exact same procedure as our MonteCarlo closure tests (see Section \ref{mc_closure}) by taking the fully acceptance and efficiency-corrected reconstructed $\Delta\eta\Delta\varphi$ distribution and dividing it by the ground-truth $\Delta\eta\Delta\varphi$ distribution, and is shown in Figure \ref{trackmerge_efficiency_plot}. However, due to the limited statistics of our MonteCarlo sample (and that using a MonteCarlo sample that is not anchored to our data set would be unwise), we do not apply this correction to our final results. Instead, we apply a 8\% systematic correction to our near-side yields for the $h-\Lambda$ correlation (see Section \ref{systematics}). In the event that more statistics become available, we will revisit this correction.
+where $C_{corr.}$ is the corrected correlation, $C_{uncorr.}$ is the uncorrected correlation, and $\frac{C_{reco. MC}(\Delta\varphi, \Delta\eta)}{C_{real. MC}(\Delta\varphi, \Delta\eta)}$ is the angular efficiency template generated from MonteCarlo. This template is generated using a similar procedure as our MonteCarlo closure tests (see Section \ref{mc_closure}) by taking the fully acceptance and efficiency-corrected reconstructed $\Delta\eta\Delta\varphi$ distribution and dividing it by the ground-truth $\Delta\eta\Delta\varphi$ distribution, and is shown in Figure \ref{trackmerge_efficiency_plot}. The main difference between this template and the closure tests is that while the $\Lambda$s in the numerator were ``reconstructed'' using the V0 finder, they were verified to be true $\Lambda$s in MonteCarlo and the kinematics were taken from the corresponding MonteCarlo particle. This bypasses things like sideband subtraction and signal scaling, which are both performed in the standard MC closure tests. 
 
+The templates are shown for each $p_{T}$ bin in Figure \ref{twotrack_templates}. These templates are applied in our final results (after the effiency and acceptance corrections and sideband subtraction). The templates have been thoroughly verified to be independent of event multiplicity and MC event generator.
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figures/trackmerge_efficiency_PLACEHOLDER.pdf}
-\caption{Efficiency template for track merging correction. Due to the poor statistics of this template, the correction is not applied to our final results.}
-\label{trackmerge_efficiency_plot}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/twotrack_template.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/twotrack_template_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/twotrack_template_highpt.pdf}}
+\end{subfigure}
+\caption{Templates for track merging correction in our central (2.0-4.0 GeV/c, top), lower (1.5-2.5 GeV/c, middle) and higher (2.5-4.0 GeV/c, bottom) $p_{T}$ bins. The templates were generated using the procedure described in this section, and are applied to the fully acceptance and efficiency-corrected correlation distributions after sideband-subtraction is performed. While it may be difficult to observe, the lower $p_{T}$ bin has a minimum dip of around 0.84, whereas the higher $p_{T}$ bin has a minimum dip of around 0.81, reflecting the $p_{T}$ dependence discussed in this section.}
+\label{twotrack_templates}
 \end{figure}
+
+\clearpage
 
 \section{Correlation Measurement Technique}
 \label{corrsec}
@@ -753,7 +787,7 @@ Where each term is defined as follows:
 	\item $C_{h-\Lambda}(\Delta\varphi, \Delta\eta)$: The final $h-\Lambda$ correlation distribution
 	\item $C_{(h-p\pi)^{US}_{\text{signal}}}$: The $h-(p\pi)$ correlation in our signal region
 	\item $C_{(h-p\pi)^{US}_{\text{RSB,normalized}}}(\Delta\varphi, \Delta\eta)$: The $h-(p\pi)$ correlation in the right sideband region (RSB) normalized to unity
-	\item $r_{\text{signal}}$: Scaling factor used to account for fraction of the $h-\Lambda$ signal that is missed by choosing a finite signal region
+	\item $r_{\text{signal}}$: Scaling factor used to account for fraction of the $h-\Lambda$ signal that is missed by choosing a finite signal region and for the branching ratio
 	\item $r_{\text{comb}}$: Scaling factor used to account for combinatorial background in the $h-(p\pi)$ correlation
 \end{itemize}
 
@@ -765,13 +799,13 @@ Since we do not know which $p-\pi$ pairs came from a real $\Lambda$ decay, we mu
 
 To do this, h-($p\pi$) angular correlations are measured for unlike-sign $p\pi$ pairs within the right sideband (RSB) for each multiplicity bin. The correlation structure in the RSB is then normalized to its integral to give an estimate of the combinatorial background shape, as the RSB should contain little-to-no $p\pi$ pairs that came from a $\Lambda$. 
 
-Next, the $h-p\pi$ angular correlation in our chosen sideband region is scaled to match the integral of our background in our signal region. However, this scaling is not performed directly as while the Signal/Background and Signal/(Signal + Background) ratios are the same for the single-particle $\Lambda$ distribution and its corresponding invariant mass axis in our $h-\Lambda$ distribution, the total yields are different. We therefore scale the $h-p\pi$ distribution in the RSB to the BG integral in our signal region found using the following formula:
+Next, the $h-p\pi$ angular correlation in our chosen sideband region is scaled to match the integral of our background in our signal region. However, this scaling is not performed directly as while the Signal/Background and Signal/(Signal + Background) ratios are the same for the single-particle $\Lambda$ distribution in a triggered event and its corresponding invariant mass axis in our $h-\Lambda$ distribution, the total yields are different. We therefore scale the $h-p\pi$ distribution in the RSB to the BG integral in our signal region found using the following formula:
 
 \begin{align}
 	h-p\pi \text{\space Combinatorial BG} := r_{Comb} = (\text{Integral of \space} h-p\pi \text{\space in Signal Region}) \times (1 - \frac{S}{S+B}),
 \end{align}
 
-where $S$ and $B$ are calculated using the total (Voigt + straight line) fit functions shown in Figure \ref{v0_mass}.
+where $S$ and $B$ are calculated bin-wise using the straight line backgrounds shown in Figures \ref{v0_mass} through \ref{v0_mass_highpt}.
 
 Once the $h-p\pi$ angular correlation in the RSB is scaled to match the $h-p\pi$ Combinatorial BG, it is subtracted from the total $h-p\pi$ distribution in our signal region. 
 
@@ -779,14 +813,16 @@ Once the $h-p\pi$ angular correlation in the RSB is scaled to match the $h-p\pi$
 As our invariant mass signal region is finite, we must correct for the fraction of the $h-\Lambda$ signal that is missed in the tails of our invariant mass distribution. This is done using the following formula:
 
 \begin{align}
-	r_{\text{signal}} = (\text{Integral of Voigt fit in signal region} / \text{Total integral Voigt fit})^{-1}
+	r_{\text{signal}} = (\text{Integral of residual in signal region} / \text{Integral of residual between 1.098 and 1.134})^{-1}
 \end{align}
 
-Once the scale factor is applied, we are then left with the full $h-\Lambda$ 2D angular correlations and corresponding 1D $\Delta\varphi$ projection.
+where ``1.098'' and ``1.134'' are the points in which we observe effectively zero signal in MonteCarlo (when reconstructed using the same technique with MC-verified $\Lambda$s). 
+
+Once the scale factor is applied, we apply the branching ratio correction (1/0.639), and we are then left with the full $h-\Lambda$ 2D angular correlations and corresponding 1D $\Delta\varphi$ projection.
 
 \subsection{Full h-$\Lambda$ and h-h Correlation Measurement}
 
-Using Equation \ref{corrEq_withBG} and the efficiencies calculated in Section \ref{efficiency_acceptance}, we can plot the 2D and 1D angular correlations for both h-$\Lambda$ and $h-h$ pairs, shown in Figures \ref{h_lambda_2d} through \ref{h_h_dphi}. Both the 2D and 1D correlations are such that $|\Delta\eta| < 1.2$.
+Using Equation \ref{corrEq_withBG} and the efficiencies calculated in Section \ref{efficiency_acceptance}, we can plot the final 2D angular correlations for both h-$\Lambda$ and $h-h$ pairs, shown in for each $p_{T, associated}$ bin Figures \ref{h_lambda_2d} through \ref{h_h_2d_highpt}.
 
 
 \begin{figure}[ht]
@@ -800,12 +836,44 @@ Using Equation \ref{corrEq_withBG} and the efficiencies calculated in Section \r
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_lambda_2d_mixcor_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
+\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
 \label{h_lambda_2d}
 \end{figure}
 
 \clearpage
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_0_20_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_20_50_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_50_80_lowpt.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_lambda_2d_lowpt}
+\end{figure}
 
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_0_20_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_20_50_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_2d_mixcor_50_80_highpt.pdf}}
+\end{subfigure}
+\caption{Per-trigger normalized 2D angular correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_lambda_2d_highpt}
+\end{figure}
+
+\clearpage
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
@@ -817,42 +885,40 @@ Using Equation \ref{corrEq_withBG} and the efficiencies calculated in Section \r
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_h_2d_mixcor_50_80.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
+\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T}$ bin.}
 \label{h_h_2d}
 \end{figure}
 
 \clearpage
-
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_0_20_lowpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_20_50_lowpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_50_80_lowpt.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
-\label{h_lambda_dphi}
+\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T}$ bin.}
+\label{h_h_2d_lowpt}
 \end{figure}
 
 \clearpage
-
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_0_20_highpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_20_50_highpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80.pdf}}
+\includegraphics[width=4in]{figures/h_h_2d_mixcor_50_80_highpt.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins.}
-\label{h_h_dphi}
+\caption{Per-trigger normalized 2D angular correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T}$ bin.}
+\label{h_h_2d_highpt}
 \end{figure}
 
 \clearpage
@@ -860,7 +926,7 @@ Using Equation \ref{corrEq_withBG} and the efficiencies calculated in Section \r
 \subsection{Extracting Near-side, Away-side, and Underlying Event Yields}
 \label{yield_extraction}
 
-Once the $\Delta\varphi$ distributions are calculated, they are separated into the three kinematic regions discussed in Section \ref{motivation}. While this can be done in a multitude of ways, the central points of this analysis were calculated using the following technique (with other techniques discussed in Section \ref{systematics}):
+Once the 2D $\Delta\eta\Delta\varphi$ distributions are calculated, we project onto $\Delta\varphi$ in the $|\Delta\eta| < 1.2$ region. These distributions are separated into the three kinematic regions discussed in Section \ref{motivation}. While this can be done in a multitude of ways, the central points of this analysis were calculated using the following technique (with other techniques discussed in Section \ref{systematics}):
 
 \textbf{6-bin underlying event technique:}
 \begin{itemize}
@@ -871,17 +937,17 @@ Once the $\Delta\varphi$ distributions are calculated, they are separated into t
 \item The total-yield is calculated via $\sum_{i=1}^{16} \Delta\varphi_\text{bin i} = \text{near-side} + \text{away-side} + \text{underlying-event}$
 \end{itemize}
 
-The final per-trigger $\Delta\varphi$ distributions with the 6-bin UE fit for the $h-\Lambda$ and $h-h$ pairs in each multiplicity bin are shown in Figures \ref{v0_1d_correlations_with_fit} and Figure \ref{hh_1d_correlations_with_fit}, respectively. 
+The final per-trigger $\Delta\varphi$ distributions with the 6-bin UE fit for the $h-\Lambda$ and $h-h$ pairs in each multiplicity bin and $p_{T}$ bin are shown in Figures \ref{v0_1d_correlations_with_fit} and Figure \ref{hh_1d_correlations_with_fit}, respectively. 
 
 
 
 \subsection{Per-trigger Pairwise Yields}
 
-The $h-\Lambda$ and $h-h$ near-side, away-side, and underlying-event per-trigger pairwise yields for each multiplicity bin are shown in Table \ref{h_lambda_yield_table} ($h-\Lambda$) and Table \ref{h_h_yield_table} ($h-h$). The errors reported are the statistical errors on the yields. The systematic errors are discussed in Section \ref{systematics}.
+The $h-\Lambda$ and $h-h$ near-side, away-side, and underlying-event per-trigger pairwise yields for each multiplicity bin in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin  are shown in Table \ref{h_lambda_yield_table} ($h-\Lambda$) and Table \ref{h_h_yield_table} ($h-h$). The errors reported are the statistical errors on the yields. The systematic errors are discussed in Section \ref{systematics}.
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
@@ -898,7 +964,7 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
@@ -916,31 +982,91 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_50_80.pdf}}
 \end{subfigure}
-\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 6-bin technique described in this section.} 
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
 \label{v0_1d_correlations_with_fit}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_0_20_lowpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_20_50_lowpt.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_uefit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_50_80_lowpt.pdf}}
 \end{subfigure}
-\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 6-bin technique described in this section.} 
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
+\label{v0_1d_correlations_with_fit_lowpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_0_20_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_20_50_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg6_50_80_highpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
+\label{v0_1d_correlations_with_fit_highpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_50_80.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
 \label{hh_1d_correlations_with_fit}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_0_20_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_20_50_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_50_80_lowpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
+\label{hh_1d_correlations_with_fit_lowpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_0_20_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_20_50_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_avg6_50_80_highpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T}$ bin. The solid line is the central value for the fit. The underlying event fit was taken using the 6-bin technique described in this section.} 
+\label{hh_1d_correlations_with_fit_highpt}
 \end{figure}
 
 \clearpage
@@ -964,21 +1090,21 @@ As our final yields depend on the $\Delta\varphi$ distributions, we must conside
 While our central points of this analysis involve almost the entirety of our $\Lambda$ signal region, the final result should not depend on which section of the signal region we choose. To investigate this, we vary the signal region in the following ways:
 
 \begin{itemize}
-\item $1.112 < M_{p\pi} < 1.122$ GeV/$c^2$ (centered, narrow)
+\item $1.108 < M_{p\pi} < 1.124$ GeV/$c^2$ (centered, narrow)
+\item $1.112 < M_{p\pi} < 1.120$ GeV/$c^2$ (centered, narrower)
 \item $1.100 < M_{p\pi} < 1.132$ GeV/$c^2$ (centered, wide)
-\item $1.106 < M_{p\pi} < 1.116$ GeV/$c^2$ (shifted left)
-\item $1.116 < M_{p\pi} < 1.128$ GeV/$c^2$ (shifted right)
+\item $1.096 < M_{p\pi} < 1.136$ GeV/$c^2$ (centered, wider)
 \end{itemize}
 
-The resulting $\Delta\varphi$ distributions and ratios to central values for each signal region variation in each multiplicity bin are shown in Figures \ref{signal_region_variation_0_20} through \ref{signal_region_variation_50_80}. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
+The resulting $\Delta\varphi$ distributions and ratios to central values for each signal region variation in each multiplicity bin within our central $p_{T, assoc}$ bin are shown in Figures \ref{signal_region_variation_0_20} through \ref{signal_region_variation_50_80}. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_0_20_values.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_0_20_ratios.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_0_20_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 0-20\% multiplicity bin for each of the signal region variations. We observe no dependence on the choice of signal region}
 \label{signal_region_variation_0_20}
@@ -987,10 +1113,10 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_20_50_values.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_20_50_ratios.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_20_50_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 20-50\% multiplicity bin for each of the signal region variations. We observe no dependence on the choice of signal region}
 \label{signal_region_variation_20_50}
@@ -999,10 +1125,10 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_50_80_values.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_50_80.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_mass_variation_50_80_ratios.pdf}}
+\includegraphics[width=3in]{figures/signal_variations_dphi_50_80_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 50-80\% multiplicity bin for each of the signal region variations. We observe no dependence on the choice of signal region}
 \label{signal_region_variation_50_80}
@@ -1018,15 +1144,15 @@ As this analysis relies on the sideband subtraction technique, which in turn rel
 \item $1.086 < M_{p\pi} < 1.098$ GeV/$c^2$ (shifted left (on other side of signal region))
 \end{itemize}
 
-The resulting $\Delta\varphi$ distributions and ratios to central values for each sideband region variation in each multiplicity bin are shown in Figures \ref{sideband_region_variation_0_20} through \ref{sideband_region_variation_50_80}. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
+The resulting $\Delta\varphi$ distributions and ratios to central values for each sideband region variation in each multiplicity bin within our central $p_{T, assoc}$ bin are shown in Figures \ref{sideband_region_variation_0_20} through \ref{sideband_region_variation_50_80}. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_0_20_values.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_0_20_ratios.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_0_20_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 0-20\% multiplicity bin for each of the sideband region variations. We observe no dependence on the choice of sideband region}
 \label{sideband_region_variation_0_20}
@@ -1035,10 +1161,10 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_20_50_values.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_20_50_ratios.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_20_50_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 20-50\% multiplicity bin for each of the sideband region variations. We observe no dependence on the choice of sideband region}
 \label{sideband_region_variation_20_50}
@@ -1047,10 +1173,10 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_50_80_values.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_50_80.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_sb_variation_50_80_ratios.pdf}}
+\includegraphics[width=3in]{figures/sideband_variations_dphi_50_80_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 50-80\% multiplicity bin for each of the sideband region variations. We observe no dependence on the choice of sideband region}
 \label{sideband_region_variation_50_80}
@@ -1065,15 +1191,15 @@ While there appears to be no contamination present in either our daughter proton
 \item $|n\sigma_{TPC, TOF}^{p}| < 2.0$, $|n\sigma_{TPC,TOF}^{\pi}| < 3.0$ (same width, require TOF hit)
 \end{itemize}
 
-The resulting $\Delta\varphi$ distributions and ratios to central values for each PID cut variation in each multiplicity bin are shown in Figures \ref{pid_cut_variation_0_20} through \ref{pid_cut_variation_50_80}. We observe that requiring a TOF hit has a slight systematic effect on the $\Delta\varphi$ distribution, but we still include this variation in our systematic calculation. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
+The resulting $\Delta\varphi$ distributions and ratios to central values for each PID cut variation in each multiplicity bin within our central $p_{T, assoc}$ bin are shown in Figures \ref{pid_cut_variation_0_20} through \ref{pid_cut_variation_50_80}. We observe that requiring a TOF hit has a slight systematic effect on the $\Delta\varphi$ distribution, but we still include this variation in our systematic calculation. As we observe no dependence on $\Delta\varphi$, the systematic is calculated as the RMS of the ratios of within the entire $\Delta\varphi$ range for each variation.
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_0_20_values.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_0_20_ratios.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_0_20_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 0-20\% multiplicity bin for each of the PID cut variations. We observe no dependence on the choice of PID cuts.}
 \label{pid_cut_variation_0_20}
@@ -1082,10 +1208,10 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_20_50_values.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_20_50_ratios.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_20_50_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 20-50\% multiplicity bin for each of the PID cut variations. We observe no dependence on the choice of PID cuts.}
 \label{pid_cut_variation_20_50}
@@ -1096,21 +1222,55 @@ The resulting $\Delta\varphi$ distributions and ratios to central values for eac
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_50_80_values.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_50_80.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/dphi_pid_variation_50_80_ratios.pdf}}
+\includegraphics[width=3in]{figures/pid_variations_dphi_50_80_ratio.pdf}}
 \end{subfigure}
 \caption{The $\Delta\varphi$ distributions (left) and corresponding ratios to our central distribution (right) within the 50-80\% multiplicity bin for each of the PID cut variations. We observe no dependence on the choice of PID cuts.}
 \label{pid_cut_variation_50_80}
 \end{figure}
 
+\subsubsection{Barlow Check ($\Delta\varphi$ distribution generation)}
+\label{barlow_check_dphi}
 
+In order to ensure the variations listed above are sensible and not just variations for the sake of variations, we perform a ``standard'' Barlow check procedure (described here: \url{https://arxiv.org/abs/hep-ex/0207026}). For each $\Delta\varphi$ bin, we calculate the following quantity:
+\begin{equation}
+	N\sigma_{RB} := \frac{y_{var} - y_{central}}{\sqrt{|\sigma_{var}^2 - \sigma_{central}^2|}},
+\end{equation}
+where $y_{var}$ and $\sigma_{var}$ are the yield and statistical uncertainty for the variation, and $y_{central}$ and $\sigma_{central}$ are the yield and statistical uncertainty for the central value. We just count the number of $\Delta\varphi$ bins that have $|N\sigma_{RB}| < 1$, and if this is the majority of the bins (across ALL multiplicity and $p_{T, assoc}$ bins), we exclude the variation from our systematic calculation. The plots of $N\sigma_{RB}$ for each variation in our 0-20\% multiplicity bin and central $p_{T, assoc}$ are shown in Figure \ref{barlow_check_0_20}. The red lines represent $N\sigma_{RB} = \pm 1$.
 
-\subsubsection{Tracking Efficiencies}
-As this analysis uses track quality cuts that have been used in previous analysis, we have assigned the following systematic errors associated with tracking and reconstruction efficiencies:
+As a result of the check, the following variations were excluded from our systematic calculation:
 \begin{itemize}
-\item $\Lambda$ reconstruction efficiency: 3.7\% (see here: \url{https://alice-notes.web.cern.ch/node/1191})
+\item Signal: Wide, Wider
+\item Sideband: Wide, Narrow
+\item PID: require TOF
+\end{itemize}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/signal_barlow_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/sideband_barlow_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pid_barlow_0_20.pdf}}
+\end{subfigure}
+\caption{Barlow check for the signal (top), sideband (middle), and PID (bottom) variations in the 0-20\% multiplicity bin. The red lines represent $N\sigma_{RB} = \pm 1$, and if the majority of the points fall within the red lines (across all $p_{T}$ and multiplicity bins), they are excluded from the systematic uncertainty calculation.}
+\label{barlow_check_0_20}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Other Sources of Systematic Uncertainty}
+As this analysis uses track quality cuts that have been used in previous analysis, we have assigned the following systematic errors:
+\begin{itemize}
+\item $\Lambda$ Topological Selection: 3.2\% (lower $p_{T}$), 3.0\% (central and higher $p_{T}$) (see here: \url{https://alice-notes.web.cern.ch/node/1191})
+\item $\Lambda$ Material Budget: 1.1\% (lower $p_{T}$), 0.6\% (central and higher $p_{T}$) (see here: \url{https://alice-notes.web.cern.ch/node/1191})
 \item Trigger efficiency: 3.5\% (see here: \url{https://alice-notes.web.cern.ch/node/919})
 \item Associated hadron efficiency: 3.5\% (see here: \url{https://alice-notes.web.cern.ch/node/919})
 \end{itemize}
@@ -1118,24 +1278,72 @@ As this analysis uses track quality cuts that have been used in previous analysi
 As it has been observed from previous analyses that the trigger tracking efficiency approximately cancels out in the final per-trigger distributions, we only consider the associated hadron and $\Lambda$ reconstruction efficiency systematic errors in our final systematic calculation for both the per-trigger $\Delta\varphi$ distributions and the final per-trigger yields.
 
 \subsubsection{Final Systematic Errors from $\Delta\varphi$ Distribution Generation}
-A table of the final systematic errors from the $\Delta\varphi$ distribution generation for each multiplicity bin is shown in Table \ref{dphi_systematics_table}. The total systematic is calculated by adding each systematic error in quadrature. The $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions with their systematic errors are shown in Figures \ref{h_lambda_dphi_systematics} and \ref{h_h_dphi_systematics}, respectively. The statistical errors are not shown to emphasize the systematic errors, but they are included in the final results (Section \ref{results})
+A table of the final systematic errors (in percentages) from the $\Delta\varphi$ distribution generation for each multiplicity bin and $p_{T}$ bin is shown in Tables \ref{dphi_systematics_table} through \ref{dphi_systematics_table_highpt}. The total systematic is calculated by adding each systematic error in quadrature. Plots showing the systematic errors for each multiplicity bin and $p_{T}$ bin are shown in Figure \ref{dphi_systematics_plots}. We observe that the total systematic error is mostly $p_{T}$-independent. The $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions with their systematic errors are shown for our central $p_{T, assoc}$ bin in Figures \ref{h_lambda_dphi_systematics} and \ref{h_h_dphi_systematics}, respectively. The statistical errors are not shown to emphasize the systematic errors, but they are included in the final results (Section \ref{results})
 
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{|c|c|c|c|c||c|}
+\begin{tabular}{|c||c|c|c|c|c||c|}
 \hline
-Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Tracking & Total \\
+Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Topo. Selection & Material Budget & Total \\
 \hline
-0-20\% & 1.0\% & 0.1\% & 1.1\% & 3.7\% & 4.0\% \\
-20-50\% & 0.9\% & 0.3\% & 1.8\% & 3.7\% & 4.2\% \\
-50-80\% & 1.9\% & 0.8\% & 3.7\% & 3.7\% & 5.6\% \\
+0-20\% & 0.39 & 0.46 & 0.57 & 3.0 & 0.6 & 3.1 \\
+20-50\% & 0.46 & 0.51 & 0.86 & 3.0  & 0.6 & 3.2 \\
+50-80\% & 0.87 & 1.1 & 1.4 & 3.0  & 0.6 & 3.6 \\
 \hline
 \end{tabular}
-\caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ distribution generation for each multiplicity bin. The $h-h$ distribution just the 3.5\% systematic from above and is thus not shown. The total systematic error is calculated by adding each systematic error in quadrature.}
+\caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ distribution generation for each multiplicity bin in our central $p_{T, assoc}$ bin. The $h-h$ distribution just the 3.5\% systematic from above and is thus not shown. The total systematic error is calculated by adding each systematic error in quadrature.}
 \label{dphi_systematics_table}
 \end{table}
 
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c||c|c|c|c|c||c|}
+\hline
+Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Topo. Selection & Material Budget & Total \\
+\hline
+0-20\% & 0.36 & 0.53 & 0.64 & 3.2 & 1.1 & 3.3 \\
+20-50\% & 0.35 & 0.67 & 0.65 & 3.2  & 1.1 & 3.4 \\
+50-80\% & 0.76 & 1.1 & 1.4 & 3.2  & 1.1 & 3.8 \\
+\hline
+\end{tabular}
+\caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ distribution generation for each multiplicity bin in our lower $p_{T, assoc}$ bin.}
+\label{dphi_systematics_table_lowpt}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c||c|c|c|c|c||c|}
+\hline
+Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Topo. Selection & Material Budget & Total \\
+\hline
+0-20\% & 0.42 & 0.42 & 0.76 & 3.0 & 0.6 & 3.2 \\
+20-50\% & 0.4 & 0.71 & 1.2 & 3.0  & 0.6 & 3.3 \\
+50-80\% & 1.1 & 1.6 & 2.0 & 3.0  & 0.6 & 4.1 \\
+\hline
+\end{tabular}
+\caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ distribution generation for each multiplicity bin in our higher $p_{T, assoc}$ bin.}
+\label{dphi_systematics_table_highpt}
+\end{table}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_dphi_postbarlow.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_dphi_postbarlow_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_dphi_postbarlow_highpt.pdf}}
+\end{subfigure}
+\caption{Final systematic errors for the $h-\Lambda$ $\Delta\varphi$ distributions for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins. We observe little-to-no dependence on $p_{T, assoc}$ for the total systematic error in each multiplicity bin.}
+\label{dphi_systematics_plots}
+\end{figure}
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
@@ -1148,7 +1356,7 @@ Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Tracking & Total
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_lambda_dphi_50_80_onlysyst.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins with the systematic errors shown for each bin (statistical errors are not shown).}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-$\Lambda$ pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our central $p_{T, assoc}$ bin with the systematic errors shown for each bin (statistical errors are not shown).}
 \label{h_lambda_dphi_systematics}
 \end{figure}
 
@@ -1163,14 +1371,48 @@ Multiplicity Bin & Signal Region & Sideband Region & PID Cuts & Tracking & Total
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_h_dphi_50_80_onlysyst.pdf}}
 \end{subfigure}
-\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins with the systematic errors shown for each bin (statistical errors are not shown).}
+\caption{Per-trigger normalized $\Delta\varphi$ correlations for h-h pairs in the 0-20\% (top), 20-50\% (center) and 50-80\% (bottom) multiplicity bins in our central $p_{T, assoc}$ bin with the systematic errors shown for each bin (statistical errors are not shown).}
 \label{h_h_dphi_systematics}
 \end{figure}
 
 \clearpage
 
+\subsubsection{$N_{ch}$-Dependent Systematics (for $\Delta\varphi$ distributions)}
+
+\label{nch_dep_systematics_dphi}
+In some of the results for this analysis, we take straight-line (pol1) fits of points vs. $<\frac{dN_{ch}}{d\eta}>$. Such fits should only be taken considering the fraction of systematic uncertainty that is uncorrelated with multiplicity ($N_{ch}$-dependent). Because of this, we approximate this multiplicity-uncorrelated fraction using the following formula:
+\begin{equation}
+\sigma_{uncor, i}^2 = \sum_{var}(R_{var, i} - 1)^2,
+\end{equation}
+where 
+\begin{equation}
+R_{var, i} = \frac{y_{var, i}}{y_{central, i}}/ \frac{y_{var}^{MB}}{y_{central}^{MB}},
+\end{equation}
+where ``i'' refers to the ith multiplicity bin, and ``MB'' refers to the min-bias (multiplicity-integrated) results. We compute $\sigma_{uncor, i}$ in each $\Delta\varphi$ bin, then take the RMS across all $\Delta\varphi$ bins (as there is no $\Delta\varphi$ dependence) to obtain the final multiplicity-uncorrelated portion of our systematic errors. The results for each $p_{T, assoc}$ bin are shown in Figure \ref{dphi_nch_dep_systematics_plots}.
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/nch_dep_systematics_dphi_postbarlow.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/nch_dep_systematics_dphi_postbarlow_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/nch_dep_systematics_dphi_postbarlow_highpt.pdf}}
+\end{subfigure}
+\caption{Final multiplicity-uncorrelated systematic errors for the $h-\Lambda$ $\Delta\varphi$ distributions for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins, along with the total systematic error shown in black.}
+\label{dphi_nch_dep_systematics_plots}
+\end{figure}
+
+\clearpage
+
+
+
 \subsection{Yield Extraction}
-The largest systematic error of this analysis corresponds to the different techniques that can be used to extract the yields in each kinematic region from the $\Delta\varphi$ distributions. We have already discussed the \textbf{6-bin underlying event technique} in Section \ref{yield_extraction}, but we will also consider the following methods. 
+The largest source of systematic uncertainty of this analysis corresponds to the different techniques that can be used to extract the yields in each kinematic region from the $\Delta\varphi$ distributions. We have already discussed the \textbf{6-bin underlying event technique} in Section \ref{yield_extraction}, but we will also consider the following methods. We present only the tables and plots for each technique in our central $p_{T, assoc}$ bin, but the extraction procedures are indentical for each $p_{T, assoc}$ bin.
 
 \subsubsection{4-bin Underlying Event Technique}
 \label{4bin}
@@ -1188,13 +1430,15 @@ The final per-trigger $\Delta\varphi$ plots with the UE fit using the 4-bin UE t
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & 2.28e-02  & 2.33e-02  & 5.04e-01 & 5.50e-01 \\
-20-50\% & 1.83e-02 & 1.88e-02  & 2.80e-01 & 3.17e-01 \\
-50-80\% & 1.49e-02 & 1.41e-02  & 1.47e-01 & 1.76e-01 \\
+
+0-20\% & 4.25e-02  & 3.41e-02  & 7.31e-01 & 8.07e-01 \\
+20-50\% & 3.30e-02 & 2.72e-02  & 3.89e-01 & 4.49e-01 \\
+50-80\% & 2.62e-02 & 2.01e-02  & 1.92e-01 & 2.39e-01 \\
+
 \hline
 \end{tabular}
 \caption{Per-trigger pairwise $h-\Lambda$ extracted yields and corresponding statistical errors in the different kinematic regions for each multiplicity bin. The yields were extracted using the 4-bin technique described in this section.}
@@ -1203,14 +1447,14 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 	
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 3.50e-01  & 2.30e-01  & 3.57e+00 & 4.15e+00 \\
-20-50\% & 3.39e-01 & 2.05e-01  & 2.15e+00 & 2.70e+00 \\
-50-80\% & 3.36e-01 & 1.92e-01  & 1.22e+00 & 1.74e+00 \\
+0-20\% & 3.50e-01  & 2.27e-01  & 3.55e+00 & 4.12e+00 \\
+20-50\% & 3.34e-01 & 2.05e-01  & 2.13e+00 & 2.67e+00 \\
+50-80\% & 3.31e-01 & 1.90e-01  & 1.21e+00 & 1.73e+00 \\
 
 \hline
 \end{tabular}
@@ -1221,13 +1465,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg4_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg4_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_avg4_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 4-bin technique described in this section.} 
 \label{h_lambda_dphi_uefit_4bin}
@@ -1238,20 +1482,19 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_avg4_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_avg4_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_uefit_4bin.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_avg4_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the 4-bin technique described in this section.} 
 \label{h_h_dphi_uefit_4bin}
 \end{figure}
 
 \clearpage
-
 
 
 
@@ -1271,14 +1514,14 @@ The final per-trigger $\Delta\varphi$ plots with the UE fit using the ZYAM UE te
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 	
-0-20\% & 2.64e-02  & 2.70e-02  & 4.97e-01 & 5.50e-01 \\
-20-50\% & 2.11e-02 & 2.16e-02  & 2.74e-01 & 3.17e-01 \\
-50-80\% & 1.60e-02 & 1.52e-02  & 1.45e-01 & 1.76e-01 \\
+0-20\% & 4.69e-02  & 3.86e-02  & 7.22e-01 & 8.07e-01 \\
+20-50\% & 3.63e-02 & 3.04e-02  & 3.82e-01 & 4.49e-01 \\
+50-80\% & 2.84e-02 & 2.22e-02  & 1.88e-01 & 2.39e-01 \\
 	
 \hline
 \end{tabular}
@@ -1288,14 +1531,14 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 	
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 3.79e-01  & 2.59e-01  & 3.51e+00 & 4.15e+00 \\
-20-50\% & 3.57e-01 & 2.23e-01  & 2.12e+00 & 2.70e+00 \\
-50-80\% & 3.58e-01 & 2.14e-01  & 1.17e+00 & 1.74e+00 \\
+0-20\% & 3.77e-01  & 2.53e-01  & 3.49e+00 & 4.12e+00 \\
+20-50\% & 3.54e-01 & 2.25e-01  & 2.09e+00 & 2.67e+00 \\
+50-80\% & 3.52e-01 & 2.11e-01  & 1.16e+00 & 1.73e+00 \\
 
 \hline
 \end{tabular}
@@ -1308,13 +1551,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_zyam_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_zyam_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_zyam_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the ZYAM technique described in this section.} 
 \label{h_lambda_dphi_uefit_zyam}
@@ -1323,13 +1566,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_zyam_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_zyam_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_uefit_zyam.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_zyam_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with underlying event fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The solid line is the central value for the fit, with the dashed lines representing the error (+/-). The underlying event fit was taken using the ZYAM technique described in this section.} 
 \label{h_h_dphi_uefit_zyam}
@@ -1339,7 +1582,7 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 
 \subsubsection{6-bin Underlying Event Technique With Non-Negative Constraint}
 \label{6binnonneg}
-We again consider the 6-bin underlying event technique, but we restrict that each term in $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (near-side yield) and $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (away side yield) is non-negative. The full technique is as follows:
+We again consider the 6-bin underlying event technique, but we restrict that each term in $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (near-side yield) and $\sum_{i=9}^{16} (\Delta\varphi_\text{bin i} - \text{UE}_i)$ (away side yield) is non-negative, as ``negative'' contributions to the yield are unphysical. The full technique is as follows:
 
 \begin{itemize}
 \item The underlying event region is defined using a straight-line fit of the average of bins (1, 2, 7, 8, 9, 16) in the $\Delta\varphi$ distribution
@@ -1354,14 +1597,14 @@ As this method doesn't change the UE fit line in any way, we report only the ext
 	
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 	
-0-20\% & 2.32e-02  & 2.29e-02  & 5.05e-01 & 5.50e-01 \\
-20-50\% & 1.89e-02 & 1.86e-02  & 2.80e-01 & 3.17e-01 \\
-50-80\% & 1.50e-02 & 1.40e-02  & 1.47e-01 & 1.76e-01 \\
+0-20\% & 4.21e-02  & 3.27e-02  & 7.34e-01 & 8.07e-01 \\
+20-50\% & 3.23e-02 & 2.55e-02  & 3.92e-01 & 4.49e-01 \\
+50-80\% & 2.53e-02 & 1.89e-02  & 1.95e-01 & 2.39e-01 \\
 	
 \hline
 \end{tabular}
@@ -1371,14 +1614,14 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 	
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 3.55e-01  & 2.28e-01  & 3.57e+00 & 4.15e+00 \\
-20-50\% & 3.43e-01 & 2.05e-01  & 2.15e+00 & 2.70e+00 \\
-50-80\% & 3.42e-01 & 1.94e-01  & 1.21e+00 & 1.74e+00 \\
+0-20\% & 3.54e-01  & 2.24e-01  & 3.55e+00 & 4.12e+00 \\
+20-50\% & 3.40e-01 & 2.06e-01  & 2.13e+00 & 2.67e+00 \\
+50-80\% & 3.38e-01 & 1.92e-01  & 1.20e+00 & 1.73e+00 \\
 
 \hline
 \end{tabular}
@@ -1408,7 +1651,7 @@ where the ``mirror'' terms are added to account for the $2\pi$ periodicity of th
 \end{itemize}
 
 The constant $\frac{16}{2\pi}$ being multiplied by each term is just the inverse of the bin width ($2\pi$ radians for 16 $\Delta\varphi$ bins).
-The final per-trigger $\Delta\varphi$ plots with the full correlation fits are shown in Figures \ref{h_lambda_dphi_fullfit} ($h-\Lambda$) and \ref{h_h_dphi_fullfit} ($h-h$), and the extracted yields are shown in Table \ref{h_lambda_yield_table_fullfit} ($h-\Lambda$) and Table \ref{h_h_yield_table_fullfit} ($h-h$). 
+The final per-trigger $\Delta\varphi$ plots with the full correlation fits are shown in Figures \ref{h_lambda_dphi_fullfit} ($h-\Lambda$) and \ref{h_h_dphi_fullfit} ($h-h$), and the extracted yields are shown in Table \ref{h_lambda_yield_table_fullfit} ($h-\Lambda$) and Table \ref{h_h_yield_table_fullfit} ($h-h$). It's worth nothing that the yields are extremely similar to those from our central technique, as the UE is the same and the fits are very good.
 
 \begin{table}[h!]
 \centering
@@ -1417,9 +1660,9 @@ The final per-trigger $\Delta\varphi$ plots with the full correlation fits are s
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 	
-0-20\% & 2.24e-02  & 2.29e-02  & 5.05e-01 & 5.50e-01 \\
-20-50\% & 1.82e-02 & 1.84e-02  & 2.80e-01 & 3.17e-01 \\
-50-80\% & 1.48e-02 & 1.41e-02  & 1.47e-01 & 1.76e-01 \\
+0-20\% & 4.07e-02  & 3.26e-02  & 7.34e-01 & 8.07e-01 \\
+20-50\% & 3.11e-02 & 2.55e-02  & 3.92e-01 & 4.49e-01 \\
+50-80\% & 2.44e-02 & 1.88e-02  & 1.95e-01 & 2.38e-01 \\
 	
 \hline
 \end{tabular}
@@ -1434,9 +1677,9 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 3.52e-01  & 2.26e-01  & 3.57e+00 & 4.15e+00 \\
-20-50\% & 3.40e-01 & 2.03e-01  & 2.15e+00 & 2.69e+00 \\
-50-80\% & 3.39e-01 & 1.92e-01  & 1.21e+00 & 1.74e+00 \\
+0-20\% & 3.48e-01  & 2.24e-01  & 3.55e+00 & 4.12e+00 \\
+20-50\% & 3.36e-01 & 2.05e-01  & 2.13e+00 & 2.67e+00 \\
+50-80\% & 3.35e-01 & 1.90e-01  & 1.20e+00 & 1.73e+00 \\
 
 \hline
 \end{tabular}
@@ -1449,13 +1692,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_gaus_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_gaus_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_gaus_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with the full 2xGaussian fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The fit was generated using the technique described in this section.}
 \label{h_lambda_dphi_fullfit}
@@ -1464,13 +1707,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_gaus_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_gaus_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_fullfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_gaus_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with the full 2xGaussian fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The fit was generated using the technique described in this section.}
 \label{h_h_dphi_fullfit}
@@ -1478,23 +1721,52 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 
 \clearpage
 
+\subsubsection{Including $v_{2}$ (Von Mises and just $v_{2}$)}
+\label{including_v2}
+For the final two technqiues, we investigate the inclusion of a non-zero $v_{2}$ (which is definitely the case, especially in our 0-20\% multiplicity bin). First, the $v_{2}$ values are determined as a function of $p_{T}$ from Figure 31 in this AN: \url{https://alice-notes.web.cern.ch/system/files/notes/analysis/1228/2022-09-15-AN_PIDflowInSmallSystems_v4.pdf}. As our $p_{T}$ binning is much wider, we then take the weighted average across each of our $p_{T}$ bins using the published $p_{T}$ spectra for charged hadrons and $\Lambda$s from HEPData (found here: \url{https://www.hepdata.net/record/ins1244523?version=2}). The final values in the 0-20\% multiplicity bin for each $p_{T, assoc}$ bin are shown in Table \ref{v2_table}. 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c || c | c | c | c | }
+\hline
+$p_{T, assoc}$ & $v_{2}^{trigger}$ & $v_{2}^{assoc h}$ & $v_{2}^{assoc \Lambda}$ \\
+\hline
+2.0 - 4.0 & 0.092 & 0.112 & 0.111 \\
+1.5 - 2.5 & 0.092 & 0.100 & 0.075 \\
+2.5 - 4.0 & 0.092 & 0.119 & 0.137 \\
+\hline
+\end{tabular}
+\caption{$v_{2}$ values used in this analysis for each $p_{T, assoc}$ bin.}
+\label{v2_table}
+\end{table}
+
+As there is no data available for the 20-50\% and 50-80\% multiplicity bins, we take 0.85 and 0.5 times the 0-20\% value, respectively. 
+
+Using these $v_{2}$ values, we then fit the following function to the $\Delta\varphi$ distribution in the regions $-\pi/2 < \Delta\varphi < -1$ and $1 < \Delta\varphi < +\pi/2$ (i.e., regions with little-to-no jet components). The fit function is given by:
+
+\begin{equation}
+Fit_{v_{2}}(\Delta\varphi) = A\times(1 + 2v_{2, trig}v_{2, assoc}cos(2\Delta\varphi))
+\end{equation}
+
+where A is the underlying event pedestal, which is allowed to vary during the fit. The $v_{2}$ values are fixed to the values in Table \ref{v2_table}. The final two techniques both use the same fit function for the UE.
+
 \subsubsection{Full 1D Correlation Fit (Von Mises with $v_{2}$)}
 \label{full_correlation_fit_von}
 The full 1D correlation fit with  Von Mises involves fitting the entire $\Delta\varphi$ distribution with a function that includes near-side, away-side and underlying-event components. The fit function is given by:
 
 \begin{gather*}
-	\text{Fit}(\Delta\varphi) = UE\times(1 + 2v_{2, trig}v_{2, assoc}cos(2\Delta\varphi)) +
+	\text{Fit}(\Delta\varphi) = Fit_{v_{2}} +
 	(\frac{1}{2\pi I_{0}(\kappa_{near})})e^{\kappa_{near} \cos(\Delta\varphi)} +  \\
 	(\frac{1}{2\pi I_{0}(\kappa_{away})})e^{\kappa_{away} \cos(\Delta\varphi)} 
 \end{gather*}
 
-where UE is the underlying event pedestal and I$_0$ is the modified Bessel function of zero order. During fitting, UE is fixed to the average of $\Delta\varphi$ bins (1, 2, 7, 8, 9, 16), the $v_2$ values are fixed to the published $v_2$ values in our momentum ranges (see Section \ref{v2_background_technique}). All other parameters are allowed to vary. The full technique is as follows:
+where $Fit_{v_{2}}$ is fixed using the procedure described in the previous section (\ref{including_v2}) and I$_0$ is the modified Bessel function of zero order. All other parameters are allowed to vary. The full technique is as follows:
 
 \begin{itemize}
 \item The $\Delta\varphi$ distribution is fit with the correlation function described above in the range $\frac{-\pi}{2} < \Delta\varphi < \frac{3\pi}{2}$
-\item The near-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}v_{2}(\Delta\varphi) d\Delta\varphi)$
-\item The away-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}v_{2}(\Delta\varphi)\Delta\varphi)$
-\item The underlying-event yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}}v_{2}(\Delta\varphi) d\Delta\varphi$
+\item The near-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}}Fit_{v_{2}}(\Delta\varphi) d\Delta\varphi)$
+\item The away-side yield is calculated via $\frac{16}{2\pi}(\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}Fit(\Delta\varphi)d\Delta\varphi - \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}Fit_{v_{2}}(\Delta\varphi)\Delta\varphi)$
+\item The underlying-event yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}}Fit_{v_{2}}(\Delta\varphi) d\Delta\varphi$
 \item The total yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}}Fit(\Delta\varphi) d\Delta\varphi$
 \end{itemize}
 
@@ -1503,14 +1775,14 @@ The final per-trigger $\Delta\varphi$ plots with the full Von Mises fits and $v_
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 	
-0-20\% & 2.28e-02  & 2.26e-02  & 5.05e-01 & 5.50e-01 \\
-20-50\% & 1.84e-02 & 1.83e-02  & 2.80e-01 & 3.17e-01 \\
-50-80\% & 1.48e-02 & 1.41e-02  & 1.47e-01 & 1.76e-01 \\
+0-20\% & 3.87e-02  & 3.03e-02  & 7.38e-01 & 8.07e-01 \\
+20-50\% & 3.27e-02 & 2.69e-02  & 3.89e-01 & 4.49e-01 \\
+50-80\% & 2.60e-02 & 2.04e-02  & 1.92e-01 & 2.38e-01 \\
 	
 \hline
 \end{tabular}
@@ -1520,14 +1792,14 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 	
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 
-0-20\% & 3.45e-01  & 2.28e-01  & 3.57e+00 & 4.15e+00 \\
-20-50\% & 3.36e-01 & 2.04e-01  & 2.15e+00 & 2.69e+00 \\
-50-80\% & 3.42e-01 & 1.92e-01  & 1.21e+00 & 1.75e+00 \\
+0-20\% & 3.41e-01  & 2.15e-01  & 3.57e+00 & 4.12e+00 \\
+20-50\% & 3.40e-01 & 2.08e-01  & 2.12e+00 & 2.67e+00 \\
+50-80\% & 3.49e-01 & 2.04e-01  & 1.17e+00 & 1.73e+00 \\
 
 \hline
 \end{tabular}
@@ -1540,13 +1812,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_von_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_von_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_von_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with the full Von Mises fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The fit was generated using the technique described in this section.}
 \label{h_lambda_dphi_vonfit}
@@ -1555,13 +1827,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_von_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_von_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_vonfit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_von_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with the full Von Mises fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The fit was generated using the technique described in this section.}
 \label{h_h_dphi_vonfit}
@@ -1570,20 +1842,12 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \clearpage
 
 
-\subsubsection{$v_{2}$ Background Technique}
+\subsubsection{Just $v_{2}$}
 \label{v2_background_technique}
-All of the aforementioned yield extraction techniques rely on the assumption that the background is flat. This assumption would not be valid in the presence of a non-zero $v_{2}$, thus we must perform an additional check to ensure that a non-zero $v_{2}$ does not have a significant effect on our yield extraction and therefore final ratio measurement. To do this, we use the single-particle p-Pb $v_{2}$ of the $\Lambda$ and charged hadrons, found in this Analysis Note: \url{https://alice-notes.web.cern.ch/node/660}. The values were taken as an average over the $2 < p_{T} < 4$ GeV/$c$ bins for the $\Lambda$ and associated hadron, and the $4 < p_{T} < 6$ GeV/$c$ bins for the trigger hadron (there was no data up to 8 GeV, but the $v_{2}$ is mostly flat at higher $p_{T}$ anyway). The $v_{2}$ values in the 0-20\% multiplicity bin are as follows:
+For this technique, we repeat the same procedure as the Von Mises technique, but we use bin-wise integration to extract the yields (i.e. we do not use the full Von Mises fit). The yields are extracted using the following method:
 
 \begin{itemize}
-\item $\Lambda$: 0.155
-\item Associated hadron: 0.150
-\item Trigger hadron: 0.190
-\end{itemize}
-
-As there is no published data corresponding to the multiplicity bins chosen in this analysis, the $v_{2}$ values in the 20-50\% and 50-80\% bins are taken as 85\% and 50\% of the 0-20\% values, respectively. Using these $v_{2}$ values, we extract the yields using the following method:
-
-\begin{itemize}
-\item Let $Fit_{v_{2}}(\Delta\varphi) = UE\times(1 + 2v_{2, trig}v_{2, assoc}cos(2\Delta\varphi))$, where UE is the average of bins (1, 2, 7, 8, 9, 16) in the $\Delta\varphi$ distribution
+\item Let $Fit_{v_{2}}(\Delta\varphi) = A\times(1 + 2v_{2, trig}v_{2, assoc}cos(2\Delta\varphi))$, where this is fit using the technique described in Section \ref{including_v2}
 \item The near-side yield is calculated via $\sum_{i=1}^{8} (\Delta\varphi_\text{bin i} - Fit_{v_{2}, \text{bin i}})$, where $Fit_{v_{2}, \text{bin i}}$ is the value of $Fit_{v_{2}}$ at the center of the ith $\Delta\varphi$ bin
 \item The away-side yield is calculated via $\sum_{i=8}^{16} (\Delta\varphi_\text{bin i} - Fit_{v_{2}, \text{bin i}})$
 \item The underlying-event yield is calculated via $\frac{16}{2\pi}\int_{\frac{-\pi}{2}}^{\frac{3\pi}{2}} Fit_{v_{2}} d\Delta\varphi$
@@ -1594,35 +1858,31 @@ The constant $\frac{16}{2\pi}$ being multiplied by the underlying event integral
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-	
-0-20\% & 2.24e-02  & 2.29e-02  & 5.05e-01 & 5.50e-01 \\
-20-50\% & 1.81e-02 & 1.86e-02  & 2.80e-01 & 3.17e-01 \\
-50-80\% & 1.48e-02 & 1.40e-02  & 1.47e-01 & 1.76e-01 \\
-	
+0-20\% & 3.87e-02  & 3.04e-02  & 7.38e-01 & 8.07e-01 \\
+20-50\% & 3.28e-02 & 2.69e-02  & 3.89e-01 & 4.49e-01 \\
+50-80\% & 2.63e-02 & 2.02e-02  & 1.92e-01 & 2.39e-01 \\
 \hline
 \end{tabular}
 \caption{Per-trigger pairwise $h-\Lambda$ extracted yields in the different kinematic regions for each multiplicity bin. The yields were extracted using the $v_{2}$ fit procedure described in this section. Despite the optically large contribution from $v_{2}$ in the most central multiplicity bin, the extracted yields are still very similar to the other tehniques.}
 \label{h_lambda_yield_table_v2fit}
 \end{table}
-	
-
 
 \clearpage
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_v2_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_v2_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_lambda_dphi_v2_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with the $v_2$ fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The $v_2$ fit was generated using the technique described in this section. The most central multiplicity bin sees a substantial contribution from $v_{2}$, whereas the other bins only see a small contribution.}
 \label{h_lambda_dphi_v2fit}
@@ -1631,13 +1891,13 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_0_20_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_v2_0_20.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_20_50_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_v2_20_50.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=4in]{figures/h_h_dphi_50_80_v2fit.pdf}}
+\includegraphics[width=4in]{figures/h_h_dphi_v2_50_80.pdf}}
 \end{subfigure}
 \caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with the $v_{2}$ fit for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins. The fit was generated using the technique described in this section. All multiplicity bins see a mostly negligible contribution from $v_{2}$.}
 \label{h_h_dphi_v2fit}
@@ -1647,25 +1907,100 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{| c | c | c | c | c | }
+\begin{tabular}{| c || c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-
-0-20\% & 3.48e-01  & 2.28e-01  & 3.57e+00 & 4.15e+00 \\
-20-50\% & 3.39e-01 & 2.05e-01  & 2.15e+00 & 2.70e+00 \\
-50-80\% & 3.37e-01 & 1.94e-01  & 1.21e+00 & 1.74e+00 \\
-
+0-20\% & 3.39e-01  & 2.16e-01  & 3.57e+00 & 4.12e+00 \\
+20-50\% & 3.38e-01 & 2.09e-01  & 2.12e+00 & 2.67e+00 \\
+50-80\% & 3.47e-01 & 2.06e-01  & 1.17e+00 & 1.73e+00 \\
 \hline
 \end{tabular}
 \caption{Per-trigger pairwise $h-h$ extracted yields in the different kinematic regions for each multiplicity bin. The yields were extracted using the $v_{2}$ fit procedure described in this section.}
 \label{h_h_yield_table_v2fit}
 \end{table}
 
-\subsubsection{Additional Systematics for Yield Extraction}
-\textbf{Track Merging}:
+\subsubsection{Barlow Check (yield extraction)}
+\label{barlow_check_yield}
+For the yield extraction technique variations, we repeat the same Barlow check procedure as described in Section \ref{barlow_check_dphi}, where for each kinematic region we calculate:
+\begin{equation}
+	N\sigma_{RB} := \frac{y_{var} - y_{central}}{\sqrt{|\sigma_{var}^2 - \sigma_{central}^2|}},
+\end{equation}
 
-As mentioned in Section \ref{trackmerge_efficiency}, the track merging effect causes an 8\% loss in the $h-\Lambda$ near-side yield extraction. Because we were unable to generate a template in MonteCarlo with enough statistics to correct for this effect, we have assigned an assymetric (above central value) 8\% systematic error to the near-side yields of our $h-\Lambda$ distributions.
+ Again, we just count the number of kinematic regions that have $|N\sigma_{RB}| < 1$, and if this is the majority of the regions (across ALL multiplicity and $p_{T, assoc}$ bins), we exclude the variation from our systematic calculation. The plots of $N\sigma_{RB}$ for each variation in our 0-20\% multiplicity bin for each $p_{T, assoc}$ bin are shown in Figure \ref{barlow_check_0_20}. The red lines represent $N\sigma_{RB} = \pm 1$.
+
+As a result of the check, the following variations were excluded from our systematic calculation:
+\begin{itemize}
+\item Double Gaussian
+\item Von Mises
+\end{itemize}
+
+The exclusion of the Double Gaussian fit technique comes directly from the test: as we use the same UE (6 bin average) with this technique as we do for our central point, and the fits are very nice, the resulting yields end up being extremely similar. The exclusion of Von Mises comes from the fact that the results are nearly identical to the ones obtained by just including the $v_{2}$ fit and doing bin-wise integration. Again, this is because the Von Mises fit describes the data very well, so including it along with just the $v_{2}$ fit is redundant. All 36 fits for the Von Mises and Double Gaussian techniques behave very well, with nice error matrices, and will therefore be saved for a rainy day (or for future studies).
+
+Every technique excluded from the $h-\Lambda$ yield extraction systematic uncertainty calculation is also excluded from the $h-h$ yield extraction systematic uncertainty calculation.
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_yield_barlow_0_20.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_yield_barlow_0_20_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_yield_barlow_0_20_highpt.pdf}}
+\end{subfigure}
+\caption{Barlow check for the yield extraction techniques in the 0-20\% multiplicity bin. The top plot shows the $N\sigma_{RB}$ for the  $2 < p_{T, assoc} < 4$ GeV/c region, the middle plot shows the $N\sigma_{RB}$ for the  $1.5 < p_{T, assoc} < 2.5$ GeV/c region, and the bottom plot shows the $N\sigma_{RB}$ for the  $2.5 < p_{T, assoc} < 4$ GeV/c region. The red lines represent $N\sigma_{RB} = \pm 1$, and if the majority of the points for a given variation fall within those lines (across all multiplicity and $p_{T}$ bins), that variation is excluded from the systematic uncertainty calculation.}
+\label{barlow_check_yield_0_20}
+\end{figure}
+
+\clearpage 
+
+\subsubsection{ZYAM aside}
+\label{zyam_aside}
+While the ZYAM technique was initially considered as it is a fairly common yield extraction technique in pp correlation studies, it is \textit{physically} incompatible with the presence of $v_{2}$, which is certainly the case in high multiplicity p--Pb. We can see this very clearly in the 0-20\% bins of Figures \ref{h_lambda_dphi_v2fit} ($v_{2}$ inclusion) and \ref{h_lambda_dphi_uefit_zyam} (ZYAM), where the ``pedestal'' obtained by ZYAM is clearly not compatible with the pedestal obtained by the $v_{2}$ fit (draw a line through the center of the oscillations). Furthermore, from looking at the near-side and away-side yields obtained in the yield tables, we see that ZYAM deviates more than 15\% from our central values. Because of this, we do not consider ZYAM as a viable yield extraction technique and thus exclude it from our systematic uncertainty calculation.
+
+
+\subsubsection{Deviations from Central Values}
+In this section, we present the deviations from the central values for the yield extraction techniques in our 0-20\% multiplicity bin for each $p_{T, assoc}$ bin. The deviations are trivially calculated by $\frac{y_{var}}{y_{central}} - 1$, and are shown in Figures \ref{h_lambda_yield_deviations_0_20} ($h-\Lambda$) and \ref{h_h_yield_deviations_0_20} ($h-h$). 
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_0_20_yield_variation.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_0_20_lowpt_yield_variation.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_0_20_highpt_yield_variation.pdf}}
+\end{subfigure}
+\caption{Deviations from central values for the $h-\Lambda$ yield extraction techniques in the 0-20\% multiplicity bin for the central (top), lower (middle), and higher (bottom) $p_{T, assoc}$ bins.}
+\label{h_lambda_yield_deviations_0_20}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_0_20_yield_variation.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_0_20_lowpt_yield_variation.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_0_20_highpt_yield_variation.pdf}}
+\end{subfigure}
+\caption{Deviations from central values for the $h-h$ yield extraction techniques in the 0-20\% multiplicity bin for the central (top), lower (middle), and higher (bottom) $p_{T, assoc}$ bins.}
+\label{h_h_yield_deviations_0_20}
+\end{figure}
+
+\clearpage
 
 
 \subsubsection{Final Systematic Errors from Yield Extraction}
@@ -1674,12 +2009,11 @@ The final systematic errors for the yield extraction are calculated in the follo
 \item For every yield extraction technique, the yield in a given kinematic region is divided by the yield in the same region using our default technique (6-bin UE)
 \item This procedure is done for each of the variations (PID, signal region, sideband region)
 \item The RMS of the resulting ratios in each kinematic region is calculated
-\item For the near-side, 1/2 the result is added in quadrature with our track-merging systematic error (8\%), which gives the upper side of the systematic error. The lower side is simply 1/2 the result
 \end{itemize}
 
 The final systematic errors from the yield extraction in each kinematic region and multiplicity bin for the  $2 < p_{T, assoc} < 4$ GeV/c region can be seen in Tables \ref{h_lambda_yield_extraction_systematics} ($h-\Lambda$) and \ref{h_h_yield_extraction_systematics} ($h-h$). The same tables for the  $1.5 < p_{T, assoc} < 2.5$ GeV/c and  $1.5 < p_{T, assoc} < 2.5$ regions can also be seen starting at Table \ref{h_lambda_yield_extraction_systematics_lowpt}. 
 
-For the final ratio calculations, the $h-\Lambda$ and $h-h$ systematic errors are treated as uncorrelated.
+All systematic errors are reported in percentages. For the final ratio calculations, the $h-\Lambda$ and $h-h$ systematic errors are treated as uncorrelated.
 
 \begin{table}[h!]
 \centering
@@ -1687,9 +2021,11 @@ For the final ratio calculations, the $h-\Lambda$ and $h-h$ systematic errors ar
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & +9.07e-02, -4.28e-02 & 8.29e-02  & 4.04e-02 & 3.99e-02 \\
-20-50\% & +9.01e-02, -4.15e-02  & 7.95e-02  & 4.31e-02 & 4.22e-02 \\
-50-80\% & +8.64e-02, -3.27e-02  & 6.62e-02  & 5.66e-02 & 5.62e-02 \\
+
+0-20\% & 5.19e+00 & 5.70e+00  & 3.13e+00 & 3.10e+00 \\
+20-50\% & 5.67e+00 & 6.15e+00  & 3.27e+00 & 3.20e+00 \\
+50-80\% & 6.21e+00 & 7.51e+00  & 3.81e+00 & 3.60e+00 \\
+
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-\Lambda$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2 < p_{T}^{\Lambda} < 4$ GeV/c. The systematic errors are calculated using the method described in this section.}
@@ -1702,9 +2038,11 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & 5.14e-02   & 6.58e-02  & 3.57e-02 & 3.50e-02 \\
-20-50\% & 4.14e-02 & 4.98e-02  & 3.56e-02 & 3.50e-02 \\
-50-80\% & 4.40e-02 & 5.62e-02  & 3.77e-02 & 3.50e-02 \\
+
+0-20\% & 3.93e+00   & 4.15e+00  & 3.51e+00 & 3.50e+00 \\
+20-50\% & 3.64e+00 & 3.62e+00  & 3.50e+00 & 3.50e+00 \\
+50-80\% & 4.33e+00 & 5.41e+00  & 3.74e+00 & 3.50e+00 \\
+
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-h$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2 < p_{T}^{h} < 4$ GeV/c. The systematic errors are calculated using the method described in this section.}
@@ -1717,9 +2055,11 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & +9.24e-02, -4.62e-02 & 8.46e-02  & 4.01e-02 & 3.99e-02 \\
-20-50\% & +9.92e-02, -5.87e-02  & 1.07e-01  & 4.31e-02 & 4.22e-02 \\
-50-80\% & +1.34e-01, -1.08e-01  & 2.19e-01  & 6.11e-02 & 5.62e-02 \\
+
+0-20\% & 5.50e+00 & 5.57e+00  & 3.12e+00 & 3.10e+00 \\
+20-50\% & 4.94e+00 & 5.24e+00  & 3.22e+00 & 3.20e+00 \\
+50-80\% & 6.34e+00 & 7.19e+00  & 3.68e+00 & 3.60e+00 \\
+
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-\Lambda$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $1.5 < p_{T}^{\Lambda} < 2.5$ GeV/c. The systematic errors are calculated using the method described in this section.}
@@ -1732,9 +2072,11 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & 6.04e-02   & 7.37e-02  & 3.55e-02 & 3.50e-02 \\
-20-50\% & 4.87e-02 & 6.02e-02  & 3.56e-02 & 3.50e-02 \\
-50-80\% & 4.48e-02 & 5.44e-02  & 3.61e-02 & 3.50e-02 \\
+
+0-20\% & 4.46e+00   & 4.75e+00  & 3.51e+00 & 3.50e+00 \\
+20-50\% & 3.75e+00 & 3.63e+00  & 3.50e+00 & 3.50e+00 \\
+50-80\% & 4.94e+00 & 6.35e+00  & 3.67e+00 & 3.50e+00 \\
+
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-h$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $1.5 < p_{T}^{h} < 2.5$ GeV/c. The systematic errors are calculated using the method described in this section.}
@@ -1747,46 +2089,77 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & +8.42e-02, -2.61e-02 & 5.16e-02  & 4.00e-02 & 3.99e-02 \\
-20-50\% & +8.98e-02, -4.07e-02  & 8.24e-02  & 4.38e-02 & 4.22e-02 \\
-50-80\% & +8.72e-02, -3.48e-02  & 7.01e-02  & 5.72e-02 & 5.62e-02 \\
+0-20\% & 5.47e+00 & 6.10e+00  & 3.15e+00 & 3.10e+00 \\
+20-50\% & 5.88e+00 & 6.54e+00  & 3.33e+00 & 3.20e+00 \\
+50-80\% & 4.75e+00 & 5.25e+00  & 3.72e+00 & 3.60e+00 \\
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-\Lambda$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2.5 < p_{T}^{\Lambda} < 4.0$ GeV/c. The systematic errors are calculated using the method described in this section.}
 \label{h_lambda_yield_extraction_systematics_highpt}
 \end{table}
-
 \begin{table}[h!]
 \centering
 \begin{tabular}{| c | c | c | c | c | }
 \hline
 Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \hline
-0-20\% & 4.53e-02   & 5.70e-02  & 3.57e-02 & 3.50e-02 \\
-20-50\% & 4.06e-02 & 4.90e-02  & 3.59e-02 & 3.50e-02 \\
-50-80\% & 4.21e-02 & 5.29e-02  & 3.83e-02 & 3.50e-02 \\
+0-20\% & 3.80e+00   & 4.00e+00  & 3.51e+00 & 3.50e+00 \\
+20-50\% & 3.61e+00 & 3.63e+00  & 3.51e+00 & 3.50e+00 \\
+50-80\% & 4.17e+00 & 5.16e+00  & 3.81e+00 & 3.50e+00 \\
 \hline
 \end{tabular}
 \caption{Final systematic errors from the $h-h$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2.5 < p_{T}^{h} < 4.0$ GeV/c. The systematic errors are calculated using the method described in this section.}
 \label{h_h_yield_extraction_systematics_highpt}
 \end{table}
 
+\subsubsection{$N_{ch}$-Dependent Systematics (for yield extraction)}
 
+\label{nch_dep_systematics_yield}
+As mentioned in Section \ref{nch_dep_systematics_dphi}, in some of the results for this analysis, we take straight-line (pol1) fits of points vs. $<\frac{dN_{ch}}{d\eta}>$. Such fits should only be taken considering the fraction of systematic uncertainty that is uncorrelated with multiplicity ($N_{ch}$-dependent). Because of this, we approximate this multiplicity-uncorrelated fraction using the following formula:
+\begin{equation}
+\sigma_{uncor, i}^2 = \sum_{var}(R_{var, i} - 1)^2,
+\end{equation}
+where 
+\begin{equation}
+R_{var, i} = \frac{y_{var, i}}{y_{central, i}}/ \frac{y_{var}^{MB}}{y_{central}^{MB}},
+\end{equation}
+where ``i'' refers to the ith multiplicity bin, and ``MB'' refers to the min-bias (multiplicity-integrated) results. We calculate this across all yield extraction techniques (that we include in our final systematic error calculation) for each kinematic region. However, as the near-side and away-side yield extractions are actually slightly anti-correlated with multiplicity, this approximation fails for these two regions. Therefore for these two regions, we treat the systematic errors associated with yield extraction as fully uncorrelated with multiplicity. For the UE and total regions, we still use the above formula. The final $N_{ch}$-dependent systematic errors for each multiplicity bin in our central $p_{T}$ bin are shown in Tables \ref{h_lambda_yield_extraction_nch_dep_systematics} ($h-\Lambda$) and \ref{h_h_yield_extraction_nch_dep_systematics} ($h-h$).
 
-
-
-
-% \subsection{Summarizing Plots}
-% A plot summarizing all of the systematic errors contributing to the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions for each multiplicity bin can be seen in Figure \ref{systematic_summary_dphi}. 
-% A plot summarizing all of the systematic errors contributing to the $h-\Lambda$ and $h-h$ pairwise yield extractions for each multiplicity bin and kinematic region can be seen in Figure \ref{systematic_summary_yield}. 
-
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c || c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+0-20\% & 4.22e+00 & 4.83e+00  & 8.23e-01 & 6.40e-01 \\
+20-50\% & 4.78e+00 & 5.34e+00  & 1.32e+00 & 9.60e-01 \\
+50-80\% & 5.48e+00 & 6.92e+00  & 2.83e+00 & 2.10e+00 \\
+\hline
+\end{tabular}
+\caption{Final $N_{ch}$-dependent systematic errors from the $h-\Lambda$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2.0- < p_{T}^{\Lambda} < 4.0$ GeV/c. The errors are calculated using the method described in this section.}
+\label{h_lambda_yield_extraction_nch_dep_systematics}
+\end{table}
+\begin{table}[h!]
+\centering
+\begin{tabular}{| c || c | c | c | c | }
+\hline
+Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
+\hline
+0-20\% & 1.79e+00   & 2.22e+00  & 3.68e-01 & 0.00e+00 \\
+20-50\% & 1.00e+00 & 9.23e-01  & 4.26e-01 & 0.00e+00 \\
+50-80\% & 2.55e+00 & 4.12e+00  & 2.40e+00 & 0.00e+00 \\
+\hline
+\end{tabular}
+\caption{Final $N_{ch}$-dependent systematic errors from the $h-h$ yield extraction in each kinematic region and multiplicity bin, taken in the momentum range $2.0 < p_{T}^{h} < 4.0$ GeV/c. The errors are calculated using the method described in this section.}
+\label{h_h_yield_extraction_nch_dep_systematics}
+\end{table}
 
 \clearpage
 
 \section{Results and Comparisons}
 \label{results}
 \subsection{Per-trigger $h-\Lambda$, $h-h$ $\Delta\varphi$ Correlations}
-The final per-trigger $h-\Lambda$ and $h-h$ correlations for each multiplicity bin are shown in Figure \ref{h_lambda_dphi_final} ($h-\Lambda$) and Figure \ref{h_h_dphi_final}. To gain a better understanding of how each kinematic region evolves with multiplicity, we also provide a summarizing $\Delta\varphi$ plot where zero is not suppressed for each multiplicity bin in Figure \ref{h_lambda_dphi_final_full}.
+The final per-trigger $h-\Lambda$ and $h-h$ correlations for each multiplicity bin and $p_{T}$ bin are shown in Figures \ref{h_lambda_dphi_final} through \ref{h_h_dphi_final_highpt}. To gain a better understanding of how each kinematic region evolves with multiplicity, we also provide a summarizing $\Delta\varphi$ plot where zero is not suppressed for each multiplicity bin and $p_{T}$ bin in Figures \ref{h_lambda_dphi_final_full} through \ref{h_lambda_dphi_final_full_highpt}.
 
 \clearpage
 
@@ -1801,12 +2174,47 @@ The final per-trigger $h-\Lambda$ and $h-h$ correlations for each multiplicity b
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_lambda_dphi_50_80_stats_and_syst.pdf}}
 \end{subfigure}
-\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins.}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
 \label{h_lambda_dphi_final}
 \end{figure}
 
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_lambda_dphi_final_lowpt}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_0_20_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_20_50_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_lambda_dphi_50_80_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-\Lambda$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_lambda_dphi_final_highpt}
+\end{figure}
+
+
  \clearpage
- 
+
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
@@ -1818,9 +2226,46 @@ The final per-trigger $h-\Lambda$ and $h-h$ correlations for each multiplicity b
 \begin{subfigure}{
 \includegraphics[width=4in]{figures/h_h_dphi_50_80_stats_and_syst.pdf}}
 \end{subfigure}
-\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins.}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
 \label{h_h_dphi_final}
 \end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_stats_and_syst_lowpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_h_dphi_final_lowpt}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_0_20_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_20_50_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/h_h_dphi_50_80_stats_and_syst_highpt.pdf}}
+\end{subfigure}
+\caption{The final per-trigger $h-h$ $\Delta\varphi$ correlations with statistical (line) and systematic (shaded) errors for the 0-20\% (top), 20-50\%(center) and 50-80\% (bottom) multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T, assoc}$ bin.}
+\label{h_h_dphi_final_highpt}
+\end{figure}
+ 
+\clearpage
+
 
 \begin{figure}[ht]
 \centering
@@ -1830,48 +2275,11 @@ The final per-trigger $h-\Lambda$ and $h-h$ correlations for each multiplicity b
 \begin{subfigure}{
 \includegraphics[width=5in]{figures/h_h_dphi_all.pdf}}
 \end{subfigure}
-\caption{Summarizing plot of the $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the our central $p_{\text{T}}$ bin, with systematic errors shown in boxes. Zero is not suppressed to emphasize each kinematic region.}
+\caption{Summarizing plot of the $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the our central $p_{\text{T, assoc}}$ bin, with systematic errors shown in boxes. Zero is not suppressed to emphasize each kinematic region.}
 \label{h_lambda_dphi_final_full}
 \end{figure}
 
 \clearpage
-
-
-\subsection{$h-\Lambda$, $h-h$ Jet-like Yields}
-
-In order to investigate the multiplicity dependence of jet-like $\Lambda$ production, the $h-\Lambda$ and $h-h$ near-side and away-side per-trigger pairwise jet yields are plotted in Figure \ref{final_pairwise_yields}. The $h-\Lambda$ yield appears to increase by a large amount with respect to multiplicity, whereas the $h-h$ yield appears mostly flat. We also observe that the near and away side yields are roughly the same across all multiplicity bins.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=6in]{figures/pairwise_plot.pdf}
-\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 30 for clarity) and $h-h$ yields plotted with respect to our multiplicity bins, with systematic errors shown in boxes. The $h-\Lambda$ sees roughly a 70\% increase from the lowest multiplicity bin to the highest, while the $h-h$ yield only sees around a 5\% increase.}
-\label{final_pairwise_yields}
-\end{figure}
-
-
-\subsection{Multiplicity Dependent ($h-\Lambda$)/$(h-h)$ Ratios}
-
-Once we have extracted the per-trigger pairwise yields from our $h-\Lambda$ and $h-h$ correlations, we are able to measure the ratio of yields of $h-\Lambda$/$h-h$ pairs in each of the kinematic regions described in the previous section--near-side of jet, away-side of jet, underlying event and total yield--as a function of multiplicity. This result of this can be seen in Figure \ref{ratioplot}. Comparing the ratio in different kinematic regions as a function of multiplicity, we see a clear separation between the "jet-like" and "underlying event" components, with the underlying event seeing the largest $\frac{h-\Lambda}{h-h}$ ratio in all multiplicity bins, whereas both the near-side and away-side ratios are lower than the total ratio for all multiplicity bins. We also see a clear separation between the near-side and away-side ratios, with the away-side ratio being higher than the near-side across all multiplicity bins. All kinematic region rations see an increase with respect to multiplicity, but the underlying event ratio sees the smallest increase, while the away-side ratio sees the largest increase.
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=6in]{figures/ratio_plot.pdf}
-\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of multiplicity percentile for each of the kinematic regions, with corresponding systematic (boxes) and statistical (lines) errors. }
-\label{ratioplot}
-\end{figure}
-
-
-
-\subsection{Additional Momentum Bin Measurements}
-In order to gain more insight into the $\Lambda$ production in jets vs. the underlying event, we can also split the associated momentum bins into a high $p_{\text{T}}$ bin ($2.5 < p_{\text{T}} < \SI{4.0}{GeV/c}$) and a low $p_{\text{T}}$ bin ($1.5 < p_{\text{T}} < \SI{2.5}{GeV/c}$).  The correlation analysis and systematic error calculation is performed for these two separate momentum bins exactly as it was for our main $p_{T}$ bin, and is done for both h-$\Lambda$ and h-h correlated pairs. The results for the final $Delta\varphi$ distributions are shown in Figures \ref{dphi_all_low_pt} (low $p_{\text{T}}$ bin) and \ref{dphi_all_high_pt} (high $p_{\text{T}}$ bin).
-
-The per-trigger pairwise yields for both momentum bins can be seen in Figures \ref{low_momentum_yield} (low) and \ref{high_momentum_yield} (high). We observe similar trends across both momentum bins, including a much larger increase in both jet-like components of the $h-\Lambda$ yields when compared to the $h-h$ yields, which appear mostly flat in both $p_\text{T}$ bins. However, the lower momentum bin sees moderate tension between the near and away-side yields of the $h-\Lambda$ pairs, with the away-side production appearing to be slightly higher than the near-side production across all multiplicity bins. This may also be a hint that $\Lambda$ production is being enhanced via jet-medium interactions.
-
-By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momentum regions (Figures \ref{low_momentum_ratio} (low) and \ref{high_momentum_ratio} (high)), we still see the clear separation between the jet-like production and the underlying event production. We also observe a similar increase in the $h-\Lambda$/$h-h$ ratio as a function of multiplicity in both momentum bins. However, the increase in the UE and total ratios appear to be enhanced within the higher $p_{\text{T}}$ bin when compared with the lower $p_{\text{T}}$ bin.
-
- The lower momentum bin also sees a steeper increase in the ratio within the away-side jet as a function of multiplicity, hinting that jet-medium interactions in the low momentum region may be causing the away-side $h-\Lambda/h-h$ ratio to approach the underlying event ratio at high multiplicity.
 
 \begin{figure}[ht]
 \centering
@@ -1881,9 +2289,11 @@ By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momen
 \begin{subfigure}{
 \includegraphics[width=5in]{figures/h_h_dphi_all_lowpt.pdf}}
 \end{subfigure}
-\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the low $p_{\text{T}}$ bin, with systematic errors shown in boxes. The jet-like components appear suppressed when compared to our full momentum range measurement.}
-\label{dphi_all_low_pt}
+\caption{Summarizing plot of the $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the our lower $p_{\text{T, assoc}}$ bin, with systematic errors shown in boxes. Zero is not suppressed to emphasize each kinematic region.}
+\label{h_lambda_dphi_final_full_lowpt}
 \end{figure}
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
@@ -1893,46 +2303,176 @@ By comparing the ratio of $(h-\Lambda)/(h-h)$ pairs in these two different momen
 \begin{subfigure}{
 \includegraphics[width=5in]{figures/h_h_dphi_all_highpt.pdf}}
 \end{subfigure}
-\caption{Final $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the high $p_{\text{T}}$ bin, with systematic errors shown in boxes. There appears to be a slight enhancement of the jet-like components when compared to our full momentum range measurement.}
-\label{dphi_all_high_pt}
+\caption{Summarizing plot of the $h-\Lambda$ (top) and $h-h$ (bottom) $\Delta\varphi$ distributions in the our higher $p_{\text{T, assoc}}$ bin, with systematic errors shown in boxes. Zero is not suppressed to emphasize each kinematic region.}
+\label{h_lambda_dphi_final_full_highpt}
 \end{figure}
+
+\clearpage
+
+
+\subsection{$h-\Lambda$, $h-h$ Jet-like Yields}
+
+In order to investigate the multiplicity dependence of jet-like $\Lambda$ production, the $h-\Lambda$ and $h-h$ near-side and away-side per-trigger pairwise jet yields are plotted for each $p_{T, assoc}$ bin in Figures \ref{final_pairwise_yields} through \ref{final_pairwise_yields_highpt}. The $h-\Lambda$ yield appears to increase by a large amount with respect to multiplicity, whereas the $h-h$ yield appears mostly flat. We can quantify this increase by looking at $Yield_{0_20\%} / Yield_{50_80\%}$ in the two regions for the $h-\Lambda$ and $h-h$, which is shown for each $p_{T}$ bin in Figure \ref{pairwise_plot_increase}. The errors in this plot were calculated using only the $N_{ch}$-dependent systematic errors. We see that across all $p_{T}$ bins, the near and away-side $h-\Lambda$ increase is around 70\%, while the $h-h$ increase never exceeds 30\%. We also observe that the near-side increase is systematically lower than away-side increase, and the the difference between the near and away-side increase is maximized in the lower $p_{T}$ bin (possible medium modification?).
+
+We also show the same yields plotted against <$\frac{dN_{ch}}{d\eta}$> with straight-line fits in Figures \ref{pairwise_plot_dndeta} through \ref{pairwise_plot_dndeta_highpt}. The fits were taken using only the porition of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes). The fits provide optical evidence that the $h-\Lambda$ near and away-side yields appear to converge at higher multiplicity in our lower $p_{T, assoc}$ bin, but the slopes cannot be directly compared to the dihadron case as they depend on the total number of $h-\Lambda$ pairs, which is substantially less than the total number of $h-h$ pairs.
+
+\clearpage 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figures/pairwise_plot_lowpt.pdf}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin, with systematic errors shown in boxes.}
-\label{low_momentum_yield}
+\includegraphics[width=6in]{figures/pairwise_plot.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to our multiplicity bins in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The $h-\Lambda$ sees roughly a 70\% increase from the lowest multiplicity bin to the highest, while the $h-h$ yield sees a much smaller increase.}
+\label{final_pairwise_yields}
 \end{figure}
+
+\clearpage 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figures/pairwise_plot_highpt.pdf}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$ yields as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin, with systematic errors shown in boxes.}
-\label{high_momentum_yield}
+\includegraphics[width=6in]{figures/pairwise_plot_lowpt.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to our multiplicity bins in our lower (1.5 - 2.5 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The $h-\Lambda$ sees roughly a 70\% increase from the lowest multiplicity bin to the highest, while the $h-h$ yield sees a much smaller increase.}
+\label{final_pairwise_yields_lowpt}
 \end{figure}
 
+\clearpage 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figures/ratio_plot_lowpt.pdf}
-\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $1.5 < p_{\text{T}} < 2.5$ GeV/c bin, with systematic errors shown in boxes.}
-\label{low_momentum_ratio}
+\includegraphics[width=6in]{figures/pairwise_plot_highpt.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to our multiplicity bins in our higher (2.5 - 4.0 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The $h-\Lambda$ sees roughly a 70\% increase from the lowest multiplicity bin to the highest, while the $h-h$ yield sees a much smaller increase.}
+\label{final_pairwise_yields_highpt}
 \end{figure}
+
+\clearpage 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=5in]{figures/ratio_plot_highpt.pdf}
-\caption{The final $h-\Lambda$/$h-h$ ratios as a function of multiplicity in the $2.5 < p_{\text{T}} < 4.0$ GeV/c bin, with systematic errors shown in boxes.}
-\label{high_momentum_ratio}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_increase.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_increase_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_increase_highpt.pdf}}
+\end{subfigure}
+\caption{The increase in the $h-\Lambda$ and $h-h$ near-side and away-side yields from the lowest multiplicity bin to the highest multiplicity bin in our central (left), lower (middle) and higher (right) $p_{T, assoc}$ bin, normalized by the yield in the lowest multiplicity bin. The errors shown are calculated only using the $N_{ch}$-dependent systematics. The $h-\Lambda$ increase is roughly 70\% in all $p_{T}$ bins, while the $h-h$ increase never exceeds 30\%.}
+\label{pairwise_plot_increase}
 \end{figure}
 
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/pairwise_plot_new_x_axis_with_fits.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to <$\frac{dN_{ch}}{d\eta}$> in our central (2.0 - 4.0 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The fits were taken using only the porition of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes).}
+\label{final_pairwise_yields_dndeta}
+\end{figure}
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to <$\frac{dN_{ch}}{d\eta}$> in our lower (1.5 - 2.5 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The fits were taken using only the porition of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes).}
+\label{final_pairwise_yields_lowpt_dndeta}
+
+\clearpage 
+
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf}
+\caption{Per-trigger pairwise $h-\Lambda$ (scaled by 20 for clarity) and $h-h$ yields plotted with respect to <$\frac{dN_{ch}}{d\eta}$>  in our higher (2.5 - 4.0 GeV/c) $p_{T, assoc}$ bin, with systematic errors shown in boxes. The fits were taken using only the porition of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes).}
+\label{final_pairwise_yields_highpt_dndeta}
+\end{figure}
+
+\clearpage 
+
+
+\subsection{Multiplicity Dependent ($h-\Lambda$)/$(h-h)$ Ratios}
+
+Once we have extracted the per-trigger pairwise yields from our $h-\Lambda$ and $h-h$ correlations, we are able to measure the ratio of yields of $h-\Lambda$/$h-h$ pairs in each of the kinematic regions described in the previous section--near-side of jet, away-side of jet, underlying event and total yield--as a function of multiplicity. This result of this can be seen for each $p_{T}$ bin in Figures \ref{ratioplot} through \ref{ratio_plot_highpt}. Comparing the ratio in different kinematic regions as a function of multiplicity, we see a clear separation between the "jet-like" and "underlying event" components, with the underlying event seeing the largest $\frac{h-\Lambda}{h-h}$ ratio in all multiplicity bins, whereas both the near-side and away-side ratios are lower than the total ratio for all multiplicity bins. We also see a clear separation between the near-side and away-side ratios, with the away-side ratio being higher than the near-side across all multiplicity bins. All kinematic region rations see an increase with respect to multiplicity, but the underlying event ratio sees the smallest increase, while the away-side ratio sees the largest increase.
+
+This can be quantified even further by plotting vs. <$\frac{dN_{ch}}{d\eta}$>, fitting with a straight line, then extracting the slopes. The results of this can be seen in Figures \ref{final_ratios_dndeta} through \ref{final_ratios_dndeta_highpt}. The fits were taken using only the portion of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes). The slopes of the fits and their corresponding errors are plotted in Figure \ref{final_ratios_slopes}. We see that the underlying event slope is much lower than the near and away-side slopes in our low $p_{T}$ bin, but is consistent with the other slopes in our higher $p_{T}$ bin. We also see that there are no slopes which are consistent with zero, and the slopes tend to increase with $p_{T}$.
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of multiplicity percentile for each of the kinematic regions in our central $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. }
+\label{ratioplot}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot_lowpt.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of multiplicity percentile for each of the kinematic regions in our lower $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. }
+\label{ratioplot_lowpt}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot_highpt.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of multiplicity percentile for each of the kinematic regions in our higher $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. }
+\label{ratioplot_highpt}
+\end{figure}
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot_new_x_axis_with_fits.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of <$\frac{dN_{ch}}{d\eta}$> for each of the kinematic regions in our central $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. The straight-line fit was taken using only the portion of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes).}
+\label{final_ratios_dndeta}
+\end{figure}
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of <$\frac{dN_{ch}}{d\eta}$> for each of the kinematic regions in our lower $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. The straight-line fit was taken using only the portion of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes).}
+\label{final_ratios_dndeta_lowpt}
+\end{figure}
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/ratio_plot_new_x_axis_highpt_with_fits.pdf}
+\caption{Ratio of the per-trigger yields of $h-\Lambda$/$h-h$ pairs as a function of <$\frac{dN_{ch}}{d\eta}$> for each of the kinematic regions in our higher $p_{T, assoc}$ bin, with corresponding systematic (boxes) and statistical (lines) errors. The straight-line fit was taken using only the portion of systematic uncertainty that is multiplicity-uncorrelated (shaded boxes). }
+\label{final_ratios_dndeta_highpt}
+\end{figure}
+
+\clearpage 
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_slope_plot.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_slope_plot_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/ratio_slope_plot_highpt.pdf}}
+\end{subfigure}
+\caption{The slopes extracted from the fits of the ($h-\Lambda$)/($h-h$) ratio as a function of <$\frac{dN_{ch}}{d\eta}$> for each of the kinematic regions in our central (left), lower (middle), and higher (right) $p_{T, assoc}$ bins.}
+\label{final_ratios_slopes}
+\end{figure}
 
 \clearpage
 
 \subsection{Multiplicity Dependent ($h-\Lambda$)/($h-\phi$) Ratios}
 Using previously approved results from the $h-\phi$ analysis (found here: https://alice-notes.web.cern.ch/node/919), we can compare our final ($h-\Lambda, \phi$)/($h-h$) ratios. This comparison is shown in Figure \ref{lambda_phi_comp}. We can also investigate the ($h-\Lambda$)/($h-\phi$) ratio in each kinematic region as a function of multiplicity, which is done in Figures \ref{lambda_phi_ratio} through \ref{lambda_phi_ratio_highpt} (for our central, lower, and higher $p_{T}$ bins). We see from the comparison of the individual ratio plots that both the $\Lambda$ and $\phi$ behave very similarly, with the underlying event ratio dominating across all multiplicity bins. We also observe that the ratios in the jet are lower than the total ratios across all multiplicity bins, with the away side being systematically higher than the near side. However, the $\phi$ ratio in the near side appears much more flat with respect to multiplicity when compared to the $\Lambda$, but this could just be statistical fluctuations.
 
-In the ($h-\Lambda$)/($h-\phi$) ratio in our central $p_{T}$ bin, we see that the ratio in the near side of the jet is systematically higher across all multiplicity bins. We also observe that the ratio in the away side of the jet seems to decrease with respect to multiplicity. For our lower $p_{T}$ bin, we observe that both the near and away side ratios appear to decrease with respect to multiplicity, whereas the underlying event and total ratios appear mostly flat. For our higher $p_{T}$ bin, we observe a large spike in both the near and away side ratios in our middle multiplicity bin, which is being investigated.
+In the ($h-\Lambda$)/($h-\phi$) ratio in all $p_{T}$ bins, we see that the ratio in the near side of the jet is systematically higher across all multiplicity bins. We also observe that the ratio in the away side of the jet seems to decrease with respect to multiplicity. For our lower $p_{T}$ bin, we observe that both the near and away side ratios appear to decrease with respect to multiplicity, whereas the underlying event and total ratios appear mostly flat.
 
 \begin{figure}[ht]
 \centering
@@ -1972,6 +2512,8 @@ In the ($h-\Lambda$)/($h-\phi$) ratio in our central $p_{T}$ bin, we see that th
 \section{Cross Checks}
 \subsection{Resonance Technique for $\Lambda$ Reconstruction}
 \label{resonance_technique}
+
+\textbf{THIS SECTION NEEDS TO BE UPDATED TO REFLECT TWO-TRACK TEMPLATE USAGE AND BR CORRECTION, but the consistency between the two techniques should NOT CHANGE}
 
 While using the V0 finder to reconstruct $\Lambda$ baryons is the most common method, it is possible that the V0 finder algorithm introduces some topological biases in the $\Lambda$ reconstruction, even when no further topological cuts are being applied to the V0 or its corresponding daughters. Because of this, we also investigate another method for reconstructing $\Lambda$ baryons whereby all proton and pion pairs from the global AOD track list that pass the daughter cuts (Section \ref{daughtercuts}, but we require a TOF hit to reduce combinatorial background) within an event are combined to reconstruct the $\Lambda$s. This method is referred to as the \textit{resonance technique}, as it is the technique used to reconstruct short-lived particles that could otherwise not be reconstructed using the V0 finder.
 
@@ -2239,6 +2781,8 @@ The per-trigger near and away-side pairwise yields vs. multiplicity for the $h-\
 
 \subsection{Single Trigger $h-\Lambda$, $h-h$ Correlations}
 
+\textbf{THIS SECTION NEEDS TO BE UPDATED TO REFLECT TWO-TRACK TEMPLATE USAGE AND BR CORRECTION, but the final conclusion does NOT CHANGE}
+
 As our technique does not directly give the yields of the associated particles, it could be possible that event-by-event fluctuations in the number of trigger particles could lead to small differences between the number of associated pairs and the number of associated particles. To be more explicit, if there are two triggers and two associated particles in a single event, the correlation measurement will give a yield of four trigger-associated pairs, while the number of associated particles is only two. 
 
 Furthermore, if there are two triggers corresponding to two separate jets in an event, we would be misplacing the true kinematic regions of our trigger-associated pairs: if one of the trigger-associated pairs lies in the near-side jet, it's possible when that associated particle gets correlated with another trigger, it would be placed in the "underlying event". We can get a rough estimate of how often this occurs by looking at the number of triggers per event, shown in Figure \ref{trigs_per_event}.
@@ -2335,10 +2879,10 @@ The final reconstructed and ground-truth $h-h$ $\Delta\varphi$ distributions alo
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_h_mc_closure.pdf}}
+\includegraphics[width=3in]{figures/h_h_dphi_closure.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_h_mc_closure_ratio.pdf}}
+\includegraphics[width=3in]{figures/h_h_dphi_closure_ratio.pdf}}
 \end{subfigure}
 \caption{The reconstructed (red) and ground-truth (blue) $h-h$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The ratio is consistent with unity, and thus the corrections applied to the $h-h$ distributions are valid.}
 \label{h_h_mc_closure}
@@ -2353,7 +2897,8 @@ For the $h-\Lambda_{v0, res}$ reconstructed case:
 \item The $\Lambda$ daughter tracks are identified as $p (\bar{p})$, $\pi^{-} (\pi^{+})$ using their corresponding entries in the MC stack
 \item The trigger hadron is taken to be between $4 < p_{T} < 8$ GeV/c and the $\Lambda$ between $2 < p_{T} < 4$ GeV/c. 
 \item The efficiency and acceptance corrections are applied in the same was as described in Sections \ref{reconstruction_efficiency} and \ref{mixed_event_correction} (using a reconstructed mixed-event distribution). 
-\item The sideband subtraction is performed in the same way as described in Section \ref{removecomb} (resonance case only, V0 technique with MC-identified protons and pions gives negligible background)
+\item The two-track template is applied as described in Section \ref{twotrack_templates} (ONLY FOR V0 CASE, RESONANCE CASE IS NOT YET FINISHED)
+\item The sideband subtraction and signal scaling is performed in the same way as described in Section \ref{removecomb_v0} 
 \item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
 \end{itemize}
 
@@ -2367,17 +2912,17 @@ For the $h-\Lambda$ ground-truth case:
 \item The final $\Delta\varphi$ distributions are taken in the range $-1.2 < \Delta\eta < 1.2$
 \end{itemize}
 
-The final reconstructed and ground-truth $h-\Lambda$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit shown are shown in Figure \ref{h_lambda_mc_closure} (V0 technique) and Figure \ref{h_lambda_mc_closure_res} (resonance technique). Due to the track merging effect described in detail in Section \ref{trackmerge_efficiency}, there is a substantial non-closure around $\Delta\varphi = 0$ for the $h-\Lambda_{v0}$ case. However, we still conclude that our current corrections are valid, and in the event we are able to generate a template with enough statistics to correct for this track merging effect, we will revisit this non-closure.  
+The final reconstructed and ground-truth $h-\Lambda$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit shown are shown in Figure \ref{h_lambda_mc_closure} (V0 technique) and Figure \ref{h_lambda_mc_closure_res} (resonance technique). 
 
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_lambda_mc_closure.pdf}}
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure.pdf}}
 \end{subfigure}
 \begin{subfigure}{
-\includegraphics[width=3in]{figures/h_lambda_mc_closure_ratio.pdf}}
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure_ratio.pdf}}
 \end{subfigure}
-\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{v0}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The ratio is not consistent with unity due to the track merging effect, but all other corrections appear to be valid.}
+\caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{v0}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit. The ratio is consistent with unity.}
 \label{h_lambda_mc_closure}
 \end{figure}
 
@@ -2396,7 +2941,7 @@ The final reconstructed and ground-truth $h-\Lambda$ $\Delta\varphi$ distributio
 
 \clearpage
 
-For the $h-\Lambda_{res}$ reconstructed case, we see that the non-closure is gone and the ratio is consistent with unity, implying the track merging inefficiency does seem not affect $\Lambda$s reconstructed using the resonance technique. This is likely due to two factors:
+For the $h-\Lambda_{res}$ reconstructed case, even though it has not been corrected for the two-track merging effect, we see that the non-closure is gone and the ratio is consistent with unity, implying the track merging inefficiency does seem not affect $\Lambda$s reconstructed using the resonance technique. This is likely due to two factors:
 \begin{itemize}
 \item The resonance technique has a much lower S/B, and therefore the sideband subtraction introduces a large amount of statistical fluctuations
 \item The reconstructed daughter tracks have a larger fraction of higher quality tracks when compared to the V0 technique, and those tracks are less likely to be merged over by the trigger during reconstruction
@@ -2405,8 +2950,6 @@ For the $h-\Lambda_{res}$ reconstructed case, we see that the non-closure is gon
 To elaborate on the second point, while the resonance and V0 techniques use the same loose quality cuts (Section \ref{daughtercuts}), the daughter tracks coming from the V0 finder have a fairly major topological constraint: the V0 finder algorithm must be able to resolve a secondary vertex. While the $\Lambda$ decay length ($c\tau = 10 cm$) is fairly large, it is important to remember that decay length distributions are exponential ($e^{-t/\tau}$), and therefore there are a significant amount of $\Lambda$s that decay close enough to the primary vertex that the V0 finder cannot resolve a secondary vertex. Such $\Lambda$s are successfully reconstructed by the resonance technique, and their corresponding tracks will have a higher quality than those reconstructed by the V0 finder.
 
 To further investigate this surprising closure of the $h-\Lambda_{res}$ distribution, we perform the same closure test as described above, but for our reconstructed $h-\Lambda_{res}$ distribution, we require that reconstructed $\Lambda$ have a corresponding entry in the MC stack, making our combinatorial background exactly 0 and removing the need for sideband subtraction. The results of this test are shown in Figure \ref{h_lambda_mc_closure_res_no_sideband}. We see now that the ratio is no longer consistent with unity at small $\Delta\varphi$, but with a much smaller non-closure when compared to the V0 technique, as expected.
-
-Even though the resonance technique has less of a non-closure, we still use the V0 technique as the central points of this analysis due to the much better S/B which results in fewer statistical fluctuations in our final $\Delta\varphi$ distributions and corresponding ratios.
 
 \begin{figure}[ht]
 \centering
@@ -2418,6 +2961,59 @@ Even though the resonance technique has less of a non-closure, we still use the 
 \end{subfigure}
 \caption{The reconstructed (red) and ground-truth (blue) $h-\Lambda_{res}$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit, but instead requiring the reconstructed $\Lambda$ to have a corresponding entry in the MC stack so that the need for sideband subtraction is removed. The result is no longer consistent with unity at small $\Delta\varphi$ due to the track merging effect, but the non-closure is much smaller than the V0 technique.}
 \label{h_lambda_mc_closure_res_no_sideband}
+\end{figure}
+
+
+\subsubsection{Additional Momentum Bins}
+\label{mc_closure_additional_momentum_bins}
+The MC closure test for the h-h and $h-\Lambda_{V0}$ was also performed in our lower (1.5 - 2.5 GeV/c) and higher (2.5 - 4.0 GeV/c) momentum bins. The results are shown in Figures \ref{h_h_mc_closure_lowpt} to \ref{h_lambda_mc_closure_highpt}. We observe closure for all four cases.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_dphi_closure_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_dphi_closure_ratio_lowpt.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-h$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit in our lower momentum bin. The ratio is consistent with unity, and thus the corrections applied to the $h-h$ distributions are valid.}
+\label{h_h_mc_closure_lowpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_dphi_closure_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_dphi_closure_ratio_highpt.pdf}}
+\end{subfigure}
+\caption{The reconstructed (red) and ground-truth (blue) $h-h$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit in our higher momentum bin. The ratio is consistent with unity, and thus the corrections applied to the $h-h$ distributions are valid.}
+\label{h_h_mc_closure_highpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure_ratio_lowpt.pdf}}
+\end{subfigure}
+\caption{The reconstructed (pink) and ground-truth (blue) $h-\Lambda$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit in our lower momentum bin. The ratio is consistent with unity, and thus the corrections applied to the $h-\Lambda$ distributions are valid.}
+\label{h_lambda_mc_closure_lowpt}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure_highpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_dphi_closure_ratio_highpt.pdf}}
+\end{subfigure}
+\caption{The reconstructed (pink) and ground-truth (blue) $h-\Lambda$ $\Delta\varphi$ distributions along with a (reconstructed)/(ground-truth) ratio and straight-line fit in our higher momentum bin. The ratio is consistent with unity, and thus the corrections applied to the $h-\Lambda$ distributions are valid.}
+\label{h_lambda_mc_closure_highpt}
 \end{figure}
 
 
@@ -2462,184 +3058,6 @@ As both this analysis and the $\phi$ correlation analysis are run over the same 
 
 \clearpage
 
-\subsection{Ratio Plots vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$}
-
-Using the values for the number of charged particles with $|\eta| < 0.8$ in each multiplicity bin from Table 1 of this paper: \url{https://link.springer.com/article/10.1140/epjc/s10052-016-3915-1}, we can first calculate $\langle N_{ch} \rangle_{|\eta| < 0.8}$ in the multiplicity bins used in this analysis (shown in Table \ref{mult_to_nch}), and then re-plot our final ($h-\Lambda$)/($h-h$) ratio plots using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ instead of the multiplicity percentile. The results for our normal $p_{T}$ range, and the lower and higher $p_{T}$ ranges are shown in Figure \ref{ratio_vs_nch}. We also present a straight-line fit for each of the kinematic regions in Figure \ref{ratio_vs_nch_with_fits}, with slope values and errors shown in Table \ref{ratio_vs_nch_fit_table}. When comparing the lower and higher momentum bins, we see that the underlying event slope is consistent with zero in the lower momentum bin whereas the near side, away side and total ratios see a positive slope. This is not the case in the higher momentum bin, where all region ratios see a positive slope (that is not consistent with zero).
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{| c | c | c | c | c | }
-\hline
-Multiplicity Bin & $\langle N_{ch} \rangle_{|\eta| < 0.8}$ \\
-\hline
-0-20\% & 49.1 $\pm$ 2.0 \\
-20-50\% & 29.3 $\pm$ 1.2 \\
-50-80\% & 15.3 $\pm$ 0.6 \\
-\hline
-\end{tabular}
-\caption{Table containing conversion from our multiplicity percentile bins to $\langle N_{ch} \rangle_{|\eta| < 0.8}$, calculted from Table 1 in this paper: \url{https://link.springer.com/article/10.1140/epjc/s10052-016-3915-1}.}
-\label{mult_to_nch}
-\end{table}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{| c | c | c | c | c | }
-\hline
-$\Lambda$ $p_{T}$ Bin & Near Slope & Away Slope & UE Slope & Total Slope \\
-\hline
-2.0-4.0 GeV/c & 6.00e-04 $\pm$ 0.91 e-04  & 7.93e-04 $\pm$ 1.52e-04 &  5.70e-04 $\pm$ 0.30e-04 & 8.59e-04 $\pm$ 0.15e-04 \\
-1.5-2.5 GeV/c & 4.64e-04 $\pm$ 1.19e-04 & 4.35e-04 $\pm$ 1.74e-04 & 2.21e-04 $\pm$ 0.24e-04 & 4.03e-04 $\pm$ 0.131e-04 \\
-2.5-4.0 GeV/c & 6.03e-04 $\pm$ 1.01e-04 & 7.95e-04 $\pm$ 1.80e-04 & 7.72e-04 $\pm$ 0.43e-04 & 1.08e-03 $\pm$ 0.21e-04 \\
-\hline
-\end{tabular}
-\caption{Table containing the slope values and errors for the straight-line fits to the ratio plots for each kinematic region shown in Figure \ref{ratio_vs_nch_with_fits}.}
-\label{ratio_vs_nch_fit_table}
-\end{table}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_lowpt.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_highpt.pdf}}
-\end{subfigure}
-\caption{The final ($h-\Lambda$)/($h-h$) ratio plots in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
-\label{ratio_vs_nch}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_lowpt_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/ratio_plot_new_x_axis_highpt_with_fits.pdf}}
-\end{subfigure}
-\caption{The final ($h-\Lambda$)/($h-h$) ratio vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$ plots with straight line (pol1) fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda}$ bins. The slope values and errors are shown in Table \ref{ratio_vs_nch_fit_table}.}
-\label{ratio_vs_nch_with_fits}
-\end{figure}
-
-\clearpage
-
-We can also repeat the same procedure for the ($h-\Lambda$)/($h-\phi$) ratio plots, shown in Figure \ref{lambda_phi_ratio_vs_nch}. The plots with straight line fits are shown in Figure \ref{lambda_phi_ratio_vs_nch_with_fits}, with slope values and errors reported in Table \ref{lambda_phi_ratio_vs_nch_fit_table}. While most of the slopes are consistent with zero, in our lower momentum bin we see a fairly large negative slope in both the near and away side regions.
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{| c | c | c | c | c | }
-\hline
-$\Lambda$, $\phi$ $p_{T}$ Bin & Near Slope & Away Slope & UE Slope & Total Slope \\
-\hline
-2.0-4.0 GeV/c & -1.80e-02 $\pm$ 2.90e-02 & -4.79e-03 $\pm$ 2.99e-02 & 1.33e-03 $\pm$ 1.58e-03 & -1.64e-03 $\pm$ 2.13e-03 \\
-1.5-2.5 GeV/c & -6.64e-02 $\pm$ 7.03e-02 & -8.55e-02 $\pm$ 5.13e-02  & 1.73e-03 $\pm$ 1.86e-03 & -4.14e-03 $\pm$ 2.97e-03 \\
-2.5-4.0 GeV/c & 1.73e-03 $\pm$ 2.36e-02 & 5.01e-03 $\pm$ 2.55e-02 & 1.10e-02 $\pm$ 0.19e-02 & 6.13e-03 $\pm$ 2.41e-03 \\
-\hline
-\end{tabular}
-\caption{Table containing the slope values and errors for the straight line (pol1) fits to the ($h-\Lambda$)/($h-\phi$) ratio plots for each kinematic region shown in Figure \ref{lambda_phi_ratio_vs_nch_with_fits}.}
-\label{lambda_phi_ratio_vs_nch_fit_table}
-\end{table}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_lowpt.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_highpt.pdf}}
-\end{subfigure}
-\caption{The final ($h-\Lambda$)/($h-\phi$) ratio plots in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, \phi}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
-\label{lambda_phi_ratio_vs_nch}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_lowpt_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/lambda_phi_ratio_plot_new_x_axis_highpt_with_fits.pdf}}
-\end{subfigure}
-\caption{The final ($h-\Lambda$)/($h-\phi$) ratio vs. $\langle N_{ch} \rangle_{|\eta| < 0.8}$ plots with straight line (pol1) fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, \phi}$ bins. The slope values and errors are shown in Table \ref{lambda_phi_ratio_vs_nch_fit_table}.}
-\label{lambda_phi_ratio_vs_nch_with_fits}
-\end{figure}
-
-
-\clearpage
-
-We can also repeat this procedure for our per-trigger pairwise yields in the jet-like regions of the $h-\Lambda$ and $h-h$ distributions, in order to gain a better understanding of their relative increases with respect to $\langle N_{ch} \rangle_{|\eta| < 0.8}$. The results without straight line fits are shown in Figure \ref{pairwise_yields_vs_nch}, and the results with straight line fits are shown in Figure \ref{pairwise_yields_vs_nch_with_fits}. A table containing the slope values and errors for the straight line (pol1) fits is shown in Table \ref{pairwise_yields_vs_nch_fit_table}. 
-
-While looking at the values of the slopes, it is important to remember that the $h-\Lambda$ points have been scaled to be visible on the same plot as the $h-h$ points, therefore the slopes of the $h-\Lambda$ points are not directly comparable to the slopes of the $h-h$ points. We can, however, compare the difference (in number of $\sigma$) from zero for each slope, as this is unaffected by a scaling factor on the y-axis. We see that for all $p_{T}$ bins, the slope of the $h-\Lambda$ points is $> 5\sigma$ greater than zero for both the near and away side regions, while the $h-h$ near and away side slopes are all roughly within $1\sigma$ of zero. We also observe that the $h-\Lambda$ near and away side slopes in the higher $p_{T}$ bin (2.5 - 4.0) are over $1\sigma$ greater than the same slopes in the lower $p_{T}$ bin (1.5 - 2.5) by a little over $1\sigma$ ($4.9\sigma$ for the lower bin, $6.2\sigma$ for the higher bin). 
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{| c | c | c | c | c | }
-\hline
-$\Lambda$, $h$ $p_{T}$ Bin & $h-\Lambda$ Near Slope & $h-\Lambda$ Away Slope & $h-h$ Near Slope & $h-h$ Away Slope \\
-\hline
-2.0-4.0 GeV/c & 6.74e-03 $\pm$ 9.35e-04 & 7.84e-03 $\pm$ 9.55e-04 & 3.28e-04 $\pm$ 6.89e-04 & 1.00e-03 $\pm$ 5.49e-04 \\
-1.5-2.5 GeV/c & 6.58e-03 $\pm$ 1.33e-03 & 7.53e-03 $\pm$ 1.34e-03 & 9.49e-04 $\pm$ 8.40e-04 & 1.82e-03 $\pm$ 7.17e-04 \\
-2.5-4.0 GeV/c & 3.75e-03 $\pm$ 6.07e-04 & 3.86e-03 $\pm$ 6.21e-04 & 5.87e-05 $\pm$ 3.63e-04 & 3.66e-04 $\pm$ 2.70e-04 \\
-\hline
-\end{tabular}
-\caption{Table containing the slope values and errors for the straight-line fits to the ($h-\Lambda$)/($h-\phi$) ratio plots for each kinematic region shown in Figure \ref{pairwise_yields_vs_nch_with_fits}.}
-\label{pairwise_yields_vs_nch_fit_table}
-\end{table}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis_lowpt.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis_highpt.pdf}}
-\end{subfigure}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$  jet-like yield plots in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, h}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
-\label{pairwise_yields_vs_nch}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[ht]
-\centering
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis_lowpt_with_fits.pdf}}
-\end{subfigure}
-\begin{subfigure}{
-\includegraphics[width=4in]{figures/pairwise_plot_new_x_axis_highpt_with_fits.pdf}}
-\end{subfigure}
-\caption{The final per-trigger $h-\Lambda$ and $h-h$  jet-like yield plots with straight line (pol1) fits in our central (top), lower (middle) and higher (bottom) $p_{T}^{\Lambda, h}$ bins, using $\langle N_{ch} \rangle_{|\eta| < 0.8}$ as our x-axis instead of the multiplicity percentile.}
-\label{pairwise_yields_vs_nch_with_fits}
-\end{figure}
-
-\clearpage
 
 \subsection{ZYAM Baseline Projected onto $\Delta\eta$}
 It has been observed in previous analyses (Figure 6 from \url{https://arxiv.org/pdf/2211.08979.pdf}) that the baseline extracted using the ZYAM technique on the corresponding $\Delta\varphi$ distributions is often higher than the what the baseline would be if you were to extract it from the $\Delta\eta$ distribution instead. This is an important consideration, as in principle our ``underlying event'' baseline should contain no correlated pairs in both $\Delta\eta$ and $\Delta\varphi$, and if the ZYAM technique is extracting a baseline that is higher than it should be (and it is our lowest baseline of all the techniques), then it is possible that the baseline from all of our techniques are actually being contaminated by correlated pairs.
