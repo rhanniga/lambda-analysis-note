@@ -1078,6 +1078,34 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \label{width_extraction}
 In order to extract the near- and away-side widths from the $h-h$ and $h-\Lambda$ $\Delta\varphi$ distributions, we fit the distributions with the following function:
 
+\begin{equation}
+	\text{Fit}(\Delta\varphi) = Fit_{v_{2}} +
+	(\frac{A_{near}}{2\pi I_{0}(\kappa_{near})})e^{\kappa_{near} \cos(\Delta\varphi)} +  \\
+	(\frac{A_{away}}{2\pi I_{0}(\kappa_{away})})e^{\kappa_{away} \cos(\Delta\varphi)} 
+\end{equation}
+where 
+\begin{equation}
+Fit_{v_{2}} = A_{ped}\times(1 + 2v_{2, trig}v_{2, assoc}\cos(2\Delta\varphi))
+\end{equation}
+
+The $Fit_{v_{2}}$ term is meant to completely describe the underlying event, and all parameters are fixed to the values obtained during the procedure desrcribed in Section \ref{including_v2}. The exponential terms are referred to as ``Von Mises'' distributions, which are the periodic analogues of Gaussian distributions and describe the data very well. $I_{n}$ refers to the modified Bessel function of the nth kind. During the fitting, the amplitudes $A_{near, away}$ and kappas $\kappa_{near, away}$ are allowed to vary freely. 
+
+In order to extract the width from the kappa parameter, we use the following relationship:
+
+\begin{equation}
+\label{kappa_to_sigma}
+\sigma = \sqrt{-2\ln(\frac{I_{1}(\kappa)}{I_{0}(\kappa)})}
+\end{equation}
+
+where $\sigma$ is the ``normal'' width of the distribution (i.e. one that would be extracted from a Gaussian fit). The error on the width is then given by:
+
+\begin{equation}
+\sigma_{\sigma} = \sigma_{\kappa}\times\frac{I_{0}^{2}(\kappa) + I_{0}(\kappa)I_{2}(\kappa) - 2I_{1}^{2}(\kappa)}{2\sqrt{2}I_{0}(\kappa)I_{1}(\kappa)\sqrt{-\ln(\frac{I_{1}(\kappa)}{I_{0}(\kappa)})}}
+\end{equation}
+
+which is derived from propagation of errors on Equation \ref{kappa_to_sigma} (using the various relationships between Bessel functions and their derivatives).
+
+
 \section{Systematic Errors}
 \label{systematics}
 \subsection{Systematics Overview}
