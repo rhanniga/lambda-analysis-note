@@ -138,6 +138,8 @@ All of the offline analysis (as well as the code listed above) can be found in m
 This analysis was presented at the following ALICE meetings, in reverse chronological order:
 
 \begin{itemize}
+\item Correlations PAG Meeting: 16 May 2023 (\url{https://indico.cern.ch/event/1286625})
+\item Correlations PAG Meeting: 9 May 2023 (\url{https://indico.cern.ch/event/1284309})
 \item Physics Forum HP2023 Approvals: 13 March 2023 (\url{https://indico.cern.ch/event/1263018})
 \item PWG-CF HP2023 Approvals: 6 March 2023 (\url{https://indico.cern.ch/event/1259940})
 \item Physics Forum HP2023 Previews: 20 February 2023 (\url{https://indico.cern.ch/event/1253172})
@@ -1072,16 +1074,21 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 
 \clearpage
 
+\subsection{Extracting Near- and Away-Side Widths}
+\label{width_extraction}
+In order to extract the near- and away-side widths from the $h-h$ and $h-\Lambda$ $\Delta\varphi$ distributions, we fit the distributions with the following function:
+
 \section{Systematic Errors}
 \label{systematics}
 \subsection{Systematics Overview}
-This analysis has two major components:
+This analysis has three major components:
 \begin{enumerate}
 \item The generation of the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions
 \item The extraction of the pairwise yields from the $\Delta\varphi$ distributions
+\item The extraction of the near- and away-side widths from the fits of the $\Delta\varphi$ distributions
 \end{enumerate}
 
-As such, this Systematic Errors section is separated into two subsections, one for each of these components. In each section, we detail the different sources of systematic errors that we encounter, and how we account for them in our final results.
+As such, this Systematic Errors section is separated into three subsections, one for each of these components. In each section, we detail the different sources of systematic errors that we encounter, and how we account for them in our final results.
 
 
 \subsection{$\Delta\varphi$ Distribution Generation}
@@ -2156,6 +2163,8 @@ Multiplicity Bin & Near-side Jet & Away-side Jet & Underlying Event & Total  \\
 \end{table}
 
 \clearpage
+
+\subsection{Near- and Away-side Width Extraction}
 
 \section{Results and Comparisons}
 \label{results}

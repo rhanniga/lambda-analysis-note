@@ -5,10 +5,10 @@
 \contentsline {subsubsection}{\numberline {1.2.2}Event Selection}{5}{subsubsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.3}Code Locations}{5}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Relevant Contributions to ALICE Meetings}{6}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Track Selection}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Associated Hadron Track Cuts}{6}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Track Selection}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Associated Hadron Track Cuts}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}$\Lambda $ Daughter Proton and Pion Track Cuts}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Trigger Track Cuts}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Trigger Track Cuts}{8}{subsection.2.3}%
 \contentsline {section}{\numberline {3}$\Lambda $ Reconstruction}{11}{section.3}%
 \contentsline {subsection}{\numberline {3.1}V0 Selection}{11}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}V0 Daughter PID Cuts}{11}{subsection.3.2}%
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {4.1}Mixed Event Acceptance Correction}{18}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Reconstruction Efficiency}{22}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}$\Lambda $ Reconstruction Efficiency}{22}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Trigger and Associated Hadron Reconstruction Efficiency}{22}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2}Trigger and Associated Hadron Reconstruction Efficiency}{23}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Track Merging Efficiency}{26}{subsection.4.3}%
 \contentsline {section}{\numberline {5}Correlation Measurement Technique}{30}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Full Correlation Measurement Method}{30}{subsection.5.1}%
@@ -26,46 +26,48 @@
 \contentsline {subsection}{\numberline {5.2}Full h-$\Lambda $ and h-h Correlation Measurement}{31}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Extracting Near-side, Away-side, and Underlying Event Yields}{38}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Per-trigger Pairwise Yields}{38}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Extracting Near- and Away-Side Widths}{45}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Systematic Errors}{45}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Systematics Overview}{45}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}$\Delta \varphi $ Distribution Generation}{45}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Signal Region Selection}{45}{subsubsection.6.2.1}%
 \contentsline {subsubsection}{\numberline {6.2.2}Sideband Region Selection}{45}{subsubsection.6.2.2}%
 \contentsline {subsubsection}{\numberline {6.2.3}PID Cut Selection}{46}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Barlow Check ($\Delta \varphi $ distribution generation)}{49}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Other Sources of Systematic Uncertainty}{51}{subsubsection.6.2.5}%
-\contentsline {subsubsection}{\numberline {6.2.6}Final Systematic Errors from $\Delta \varphi $ Distribution Generation}{51}{subsubsection.6.2.6}%
-\contentsline {subsubsection}{\numberline {6.2.7}$N_{ch}$-Dependent Systematics (for $\Delta \varphi $ distributions)}{56}{subsubsection.6.2.7}%
-\contentsline {subsection}{\numberline {6.3}Yield Extraction}{58}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}4-bin Underlying Event Technique}{58}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}ZYAM Underlying Event Technique}{61}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}6-bin Underlying Event Technique With Non-Negative Constraint}{64}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Full 1D Correlation Fit (2 Gaussians)}{65}{subsubsection.6.3.4}%
-\contentsline {subsubsection}{\numberline {6.3.5}Including $v_{2}$ (Von Mises and just $v_{2}$)}{68}{subsubsection.6.3.5}%
-\contentsline {subsubsection}{\numberline {6.3.6}Full 1D Correlation Fit (Von Mises with $v_{2}$)}{68}{subsubsection.6.3.6}%
-\contentsline {subsubsection}{\numberline {6.3.7}Just $v_{2}$}{72}{subsubsection.6.3.7}%
-\contentsline {subsubsection}{\numberline {6.3.8}Barlow Check (yield extraction)}{75}{subsubsection.6.3.8}%
-\contentsline {subsubsection}{\numberline {6.3.9}ZYAM aside}{77}{subsubsection.6.3.9}%
-\contentsline {subsubsection}{\numberline {6.3.10}Deviations from Central Values}{77}{subsubsection.6.3.10}%
-\contentsline {subsubsection}{\numberline {6.3.11}Final Systematic Errors from Yield Extraction}{80}{subsubsection.6.3.11}%
-\contentsline {subsubsection}{\numberline {6.3.12}$N_{ch}$-Dependent Systematics (for yield extraction)}{81}{subsubsection.6.3.12}%
-\contentsline {section}{\numberline {7}Results and Comparisons}{83}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{83}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{93}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{101}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{109}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Cross Checks}{112}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{112}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{112}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{113}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{115}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{115}{subsubsection.8.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{115}{subsubsection.8.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{120}{subsubsection.8.1.6}%
-\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{122}{subsubsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{124}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{128}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{131}{subsubsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{134}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{137}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Additional Plots}{140}{section.9}%
+\contentsline {subsubsection}{\numberline {6.2.4}Barlow Check ($\Delta \varphi $ distribution generation)}{50}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Other Sources of Systematic Uncertainty}{52}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}Final Systematic Errors from $\Delta \varphi $ Distribution Generation}{52}{subsubsection.6.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.7}$N_{ch}$-Dependent Systematics (for $\Delta \varphi $ distributions)}{57}{subsubsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.3}Yield Extraction}{59}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}4-bin Underlying Event Technique}{59}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}ZYAM Underlying Event Technique}{62}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}6-bin Underlying Event Technique With Non-Negative Constraint}{65}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Full 1D Correlation Fit (2 Gaussians)}{66}{subsubsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.5}Including $v_{2}$ (Von Mises and just $v_{2}$)}{69}{subsubsection.6.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.6}Full 1D Correlation Fit (Von Mises with $v_{2}$)}{69}{subsubsection.6.3.6}%
+\contentsline {subsubsection}{\numberline {6.3.7}Just $v_{2}$}{73}{subsubsection.6.3.7}%
+\contentsline {subsubsection}{\numberline {6.3.8}Barlow Check (yield extraction)}{76}{subsubsection.6.3.8}%
+\contentsline {subsubsection}{\numberline {6.3.9}ZYAM aside}{78}{subsubsection.6.3.9}%
+\contentsline {subsubsection}{\numberline {6.3.10}Deviations from Central Values}{78}{subsubsection.6.3.10}%
+\contentsline {subsubsection}{\numberline {6.3.11}Final Systematic Errors from Yield Extraction}{81}{subsubsection.6.3.11}%
+\contentsline {subsubsection}{\numberline {6.3.12}$N_{ch}$-Dependent Systematics (for yield extraction)}{82}{subsubsection.6.3.12}%
+\contentsline {subsection}{\numberline {6.4}Near- and Away-side Width Extraction}{84}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Results and Comparisons}{84}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{84}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{94}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{102}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{110}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Cross Checks}{113}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{113}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{113}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{114}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{116}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{116}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{116}{subsubsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{121}{subsubsection.8.1.6}%
+\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{123}{subsubsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{125}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{129}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{132}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{135}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{138}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Additional Plots}{141}{section.9}%
