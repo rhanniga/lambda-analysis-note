@@ -28,47 +28,50 @@
 \contentsline {subsection}{\numberline {5.4}Per-trigger Pairwise Yields}{38}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Extracting Near- and Away-Side Widths}{45}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Von Mises Fits and Extracted Widths}{45}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Systematic Errors}{45}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Systematics Overview}{45}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}$\Delta \varphi $ Distribution Generation}{46}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Signal Region Selection}{46}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Sideband Region Selection}{46}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}PID Cut Selection}{47}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Barlow Check ($\Delta \varphi $ distribution generation)}{50}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Other Sources of Systematic Uncertainty}{52}{subsubsection.6.2.5}%
-\contentsline {subsubsection}{\numberline {6.2.6}Final Systematic Errors from $\Delta \varphi $ Distribution Generation}{52}{subsubsection.6.2.6}%
-\contentsline {subsubsection}{\numberline {6.2.7}$N_{ch}$-Dependent Systematics (for $\Delta \varphi $ distributions)}{57}{subsubsection.6.2.7}%
-\contentsline {subsection}{\numberline {6.3}Yield Extraction}{59}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}4-bin Underlying Event Technique}{59}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}ZYAM Underlying Event Technique}{62}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}6-bin Underlying Event Technique With Non-Negative Constraint}{65}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Full 1D Correlation Fit (2 Gaussians)}{66}{subsubsection.6.3.4}%
-\contentsline {subsubsection}{\numberline {6.3.5}Including $v_{2}$ (Von Mises and just $v_{2}$)}{69}{subsubsection.6.3.5}%
-\contentsline {subsubsection}{\numberline {6.3.6}Full 1D Correlation Fit (Von Mises with $v_{2}$)}{69}{subsubsection.6.3.6}%
-\contentsline {subsubsection}{\numberline {6.3.7}Just $v_{2}$}{73}{subsubsection.6.3.7}%
-\contentsline {subsubsection}{\numberline {6.3.8}Barlow Check (yield extraction)}{76}{subsubsection.6.3.8}%
-\contentsline {subsubsection}{\numberline {6.3.9}ZYAM aside}{78}{subsubsection.6.3.9}%
-\contentsline {subsubsection}{\numberline {6.3.10}Deviations from Central Values}{78}{subsubsection.6.3.10}%
-\contentsline {subsubsection}{\numberline {6.3.11}Final Systematic Errors from Yield Extraction}{81}{subsubsection.6.3.11}%
-\contentsline {subsubsection}{\numberline {6.3.12}$N_{ch}$-Dependent Systematics (for yield extraction)}{82}{subsubsection.6.3.12}%
-\contentsline {subsection}{\numberline {6.4}Near- and Away-side Width Extraction}{84}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Results and Comparisons}{84}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{84}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{94}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{102}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{110}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Cross Checks}{113}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{113}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{113}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{114}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{116}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{116}{subsubsection.8.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{116}{subsubsection.8.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{121}{subsubsection.8.1.6}%
-\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{123}{subsubsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{125}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{129}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{132}{subsubsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{135}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{138}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Additional Plots}{141}{section.9}%
+\contentsline {section}{\numberline {6}Systematic Errors}{53}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Systematics Overview}{53}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}$\Delta \varphi $ Distribution Generation}{53}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Signal Region Selection}{53}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Sideband Region Selection}{53}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}PID Cut Selection}{54}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Barlow Check ($\Delta \varphi $ distribution generation)}{58}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Other Sources of Systematic Uncertainty}{60}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}Final Systematic Errors from $\Delta \varphi $ Distribution Generation}{60}{subsubsection.6.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.7}$N_{ch}$-Dependent Systematics (for $\Delta \varphi $ distributions)}{65}{subsubsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.3}Yield Extraction}{67}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}4-bin Underlying Event Technique}{67}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}ZYAM Underlying Event Technique}{70}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}6-bin Underlying Event Technique With Non-Negative Constraint}{73}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Full 1D Correlation Fit (2 Gaussians)}{74}{subsubsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.5}Including $v_{2}$ (Von Mises and just $v_{2}$)}{77}{subsubsection.6.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.6}Full 1D Correlation Fit (Von Mises with $v_{2}$)}{77}{subsubsection.6.3.6}%
+\contentsline {subsubsection}{\numberline {6.3.7}Just $v_{2}$}{81}{subsubsection.6.3.7}%
+\contentsline {subsubsection}{\numberline {6.3.8}Barlow Check (yield extraction)}{84}{subsubsection.6.3.8}%
+\contentsline {subsubsection}{\numberline {6.3.9}ZYAM aside}{86}{subsubsection.6.3.9}%
+\contentsline {subsubsection}{\numberline {6.3.10}Deviations from Central Values}{86}{subsubsection.6.3.10}%
+\contentsline {subsubsection}{\numberline {6.3.11}Final Systematic Errors from Yield Extraction}{89}{subsubsection.6.3.11}%
+\contentsline {subsubsection}{\numberline {6.3.12}$N_{ch}$-Dependent Systematics (for yield extraction)}{90}{subsubsection.6.3.12}%
+\contentsline {subsection}{\numberline {6.4}Near- and Away-side Width Extraction}{92}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Signal Region Selection}{92}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Sideband Region Selection}{92}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}PID Cut Selection}{92}{subsubsection.6.4.3}%
+\contentsline {section}{\numberline {7}Results and Comparisons}{92}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{92}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{102}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{110}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{118}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Cross Checks}{121}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{121}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{121}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{122}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{124}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{124}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{124}{subsubsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{129}{subsubsection.8.1.6}%
+\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{131}{subsubsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{133}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{137}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{140}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{143}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{146}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Additional Plots}{149}{section.9}%
