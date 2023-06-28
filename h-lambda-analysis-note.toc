@@ -55,23 +55,35 @@
 \contentsline {subsubsection}{\numberline {6.4.1}Signal Region Selection}{92}{subsubsection.6.4.1}%
 \contentsline {subsubsection}{\numberline {6.4.2}Sideband Region Selection}{92}{subsubsection.6.4.2}%
 \contentsline {subsubsection}{\numberline {6.4.3}PID Cut Selection}{92}{subsubsection.6.4.3}%
-\contentsline {section}{\numberline {7}Results and Comparisons}{92}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{92}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{102}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{110}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{118}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Cross Checks}{121}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{121}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{121}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{122}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{124}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{124}{subsubsection.8.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{124}{subsubsection.8.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{129}{subsubsection.8.1.6}%
-\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{131}{subsubsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{133}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{137}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{140}{subsubsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{143}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{146}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Additional Plots}{149}{section.9}%
+\contentsline {subsubsection}{\numberline {6.4.4}Fitting Procedure}{102}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.5}Pedestal Variation Aside}{109}{subsubsection.6.4.5}%
+\contentsline {subsubsection}{\numberline {6.4.6}Other Sources of Systematic Uncertainty}{109}{subsubsection.6.4.6}%
+\contentsline {subsubsection}{\numberline {6.4.7}Final Systematic Errors from Width Extraction}{110}{subsubsection.6.4.7}%
+\contentsline {section}{\numberline {7}Results and Comparisons}{114}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Per-trigger $h-\Lambda $, $h-h$ $\Delta \varphi $ Correlations}{114}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}$h-\Lambda $, $h-h$ Jet-like Yields}{124}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Multiplicity Dependent ($h-\Lambda $)/$(h-h)$ Ratios}{132}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{140}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Multiplicity Dependent Near- and Away-side Widths}{143}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Model Comparisons}{145}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}2D Angular Correlation Distributions}{145}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}1D $\Delta \varphi $ Correlation Distributions}{147}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}Generating Multiplicity Percentiles}{147}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}Multiplicity Dependent ($h-\Lambda $)/($h-h$) Ratios}{147}{subsubsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.5}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{148}{subsubsection.7.6.5}%
+\contentsline {subsubsection}{\numberline {7.6.6}Multiplicity Dependent Near- and Away-Side Widths}{148}{subsubsection.7.6.6}%
+\contentsline {section}{\numberline {8}Cross Checks}{152}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{152}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{152}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{153}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{155}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{155}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{155}{subsubsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{160}{subsubsection.8.1.6}%
+\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{162}{subsubsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{164}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{168}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{171}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{174}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{177}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Additional Plots}{180}{section.9}%
