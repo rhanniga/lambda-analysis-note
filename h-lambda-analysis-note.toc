@@ -76,18 +76,18 @@
 \contentsline {subsubsection}{\numberline {7.6.7}Multiplicity Dependent ($h-\Lambda $)/($h-\phi $) Ratios}{157}{subsubsection.7.6.7}%
 \contentsline {subsubsection}{\numberline {7.6.8}Multiplicity Dependent Near- and Away-Side Widths}{157}{subsubsection.7.6.8}%
 \contentsline {subsection}{\numberline {7.7}Possible Paper Plots}{163}{subsection.7.7}%
-\contentsline {section}{\numberline {8}Cross Checks}{167}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{167}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{167}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{168}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{170}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{170}{subsubsection.8.1.4}%
-\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{170}{subsubsection.8.1.5}%
-\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{175}{subsubsection.8.1.6}%
-\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{177}{subsubsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{179}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{183}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{186}{subsubsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{189}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{192}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Additional Plots}{195}{section.9}%
+\contentsline {section}{\numberline {8}Cross Checks}{168}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Resonance Technique for $\Lambda $ Reconstruction}{168}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Combinatorial Background Estimation}{168}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Invariant Mass Regions}{169}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Efficiency Correction}{171}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Mixed Event Acceptance Correction}{171}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.5}Removal of Combinatorial $p-\pi $ Background}{171}{subsubsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.6}Near-side, Away-side and Underlying Event Yield Extraction}{176}{subsubsection.8.1.6}%
+\contentsline {subsubsection}{\numberline {8.1.7}Results and Comparison with V0 Technique}{178}{subsubsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.2}Single Trigger $h-\Lambda $, $h-h$ Correlations}{180}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}MonteCarlo Closure Tests}{184}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Additional Momentum Bins}{187}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Dihadron Comparison with $\phi $ Correlation Analysis}{190}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}ZYAM Baseline Projected onto $\Delta \eta $}{193}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Additional Plots}{196}{section.9}%
