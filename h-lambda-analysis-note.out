@@ -57,33 +57,37 @@
 \BOOKMARK [3][-]{subsubsection.6.4.3}{PID Cut Selection}{subsection.6.4}% 57
 \BOOKMARK [3][-]{subsubsection.6.4.4}{Fitting Procedure}{subsection.6.4}% 58
 \BOOKMARK [3][-]{subsubsection.6.4.5}{Pedestal Variation Aside}{subsection.6.4}% 59
-\BOOKMARK [3][-]{subsubsection.6.4.6}{Other Sources of Systematic Uncertainty}{subsection.6.4}% 60
-\BOOKMARK [3][-]{subsubsection.6.4.7}{Final Systematic Errors from Width Extraction}{subsection.6.4}% 61
-\BOOKMARK [1][-]{section.7}{Results and Comparisons}{}% 62
-\BOOKMARK [2][-]{subsection.7.1}{Per-trigger h-, h-h \040Correlations}{section.7}% 63
-\BOOKMARK [2][-]{subsection.7.2}{h-, h-h Jet-like Yields}{section.7}% 64
-\BOOKMARK [2][-]{subsection.7.3}{Multiplicity Dependent \(h-\)/\(h-h\) Ratios}{section.7}% 65
-\BOOKMARK [2][-]{subsection.7.4}{Multiplicity Dependent \(h-\)/\(h-\) Ratios}{section.7}% 66
-\BOOKMARK [2][-]{subsection.7.5}{Multiplicity Dependent Near- and Away-side Widths}{section.7}% 67
-\BOOKMARK [2][-]{subsection.7.6}{Model Comparisons}{section.7}% 68
-\BOOKMARK [3][-]{subsubsection.7.6.1}{2D Angular Correlation Distributions}{subsection.7.6}% 69
-\BOOKMARK [3][-]{subsubsection.7.6.2}{1D \040Correlation Distributions}{subsection.7.6}% 70
-\BOOKMARK [3][-]{subsubsection.7.6.3}{Generating Multiplicity Percentiles}{subsection.7.6}% 71
-\BOOKMARK [3][-]{subsubsection.7.6.4}{Multiplicity Dependent \(h-\)/\(h-h\) Ratios}{subsection.7.6}% 72
-\BOOKMARK [3][-]{subsubsection.7.6.5}{Multiplicity Dependent \(h-\)/\(h-\) Ratios}{subsection.7.6}% 73
-\BOOKMARK [3][-]{subsubsection.7.6.6}{Multiplicity Dependent Near- and Away-Side Widths}{subsection.7.6}% 74
-\BOOKMARK [1][-]{section.8}{Cross Checks}{}% 75
-\BOOKMARK [2][-]{subsection.8.1}{Resonance Technique for \040Reconstruction}{section.8}% 76
-\BOOKMARK [3][-]{subsubsection.8.1.1}{Combinatorial Background Estimation}{subsection.8.1}% 77
-\BOOKMARK [3][-]{subsubsection.8.1.2}{Invariant Mass Regions}{subsection.8.1}% 78
-\BOOKMARK [3][-]{subsubsection.8.1.3}{Efficiency Correction}{subsection.8.1}% 79
-\BOOKMARK [3][-]{subsubsection.8.1.4}{Mixed Event Acceptance Correction}{subsection.8.1}% 80
-\BOOKMARK [3][-]{subsubsection.8.1.5}{Removal of Combinatorial p- Background}{subsection.8.1}% 81
-\BOOKMARK [3][-]{subsubsection.8.1.6}{Near-side, Away-side and Underlying Event Yield Extraction}{subsection.8.1}% 82
-\BOOKMARK [3][-]{subsubsection.8.1.7}{Results and Comparison with V0 Technique}{subsection.8.1}% 83
-\BOOKMARK [2][-]{subsection.8.2}{Single Trigger h-, h-h Correlations}{section.8}% 84
-\BOOKMARK [2][-]{subsection.8.3}{MonteCarlo Closure Tests}{section.8}% 85
-\BOOKMARK [3][-]{subsubsection.8.3.1}{Additional Momentum Bins}{subsection.8.3}% 86
-\BOOKMARK [2][-]{subsection.8.4}{Dihadron Comparison with \040Correlation Analysis}{section.8}% 87
-\BOOKMARK [2][-]{subsection.8.5}{ZYAM Baseline Projected onto }{section.8}% 88
-\BOOKMARK [1][-]{section.9}{Additional Plots}{}% 89
+\BOOKMARK [3][-]{subsubsection.6.4.6}{Barlow Check \(width extraction\)}{subsection.6.4}% 60
+\BOOKMARK [3][-]{subsubsection.6.4.7}{Other Sources of Systematic Uncertainty}{subsection.6.4}% 61
+\BOOKMARK [3][-]{subsubsection.6.4.8}{Final Systematic Errors from Width Extraction}{subsection.6.4}% 62
+\BOOKMARK [1][-]{section.7}{Results and Comparisons}{}% 63
+\BOOKMARK [2][-]{subsection.7.1}{Per-trigger h-, h-h \040Correlations}{section.7}% 64
+\BOOKMARK [2][-]{subsection.7.2}{h-, h-h Jet-like Yields}{section.7}% 65
+\BOOKMARK [2][-]{subsection.7.3}{Multiplicity Dependent \(h-\)/\(h-h\) Ratios}{section.7}% 66
+\BOOKMARK [2][-]{subsection.7.4}{Multiplicity Dependent \(h-\)/\(h-\) Ratios}{section.7}% 67
+\BOOKMARK [2][-]{subsection.7.5}{Multiplicity Dependent Near- and Away-side Widths}{section.7}% 68
+\BOOKMARK [2][-]{subsection.7.6}{Model Comparisons}{section.7}% 69
+\BOOKMARK [3][-]{subsubsection.7.6.1}{2D Angular Correlation Distributions}{subsection.7.6}% 70
+\BOOKMARK [3][-]{subsubsection.7.6.2}{1D \040Correlation Distributions}{subsection.7.6}% 71
+\BOOKMARK [3][-]{subsubsection.7.6.3}{Generating Multiplicity Percentiles}{subsection.7.6}% 72
+\BOOKMARK [3][-]{subsubsection.7.6.4}{Systematic Uncertainties for DPMJet}{subsection.7.6}% 73
+\BOOKMARK [3][-]{subsubsection.7.6.5}{Multiplicity Dependent Per-trigger Jet-like Yields}{subsection.7.6}% 74
+\BOOKMARK [3][-]{subsubsection.7.6.6}{Multiplicity Dependent \(h-\)/\(h-h\) Ratios}{subsection.7.6}% 75
+\BOOKMARK [3][-]{subsubsection.7.6.7}{Multiplicity Dependent \(h-\)/\(h-\) Ratios}{subsection.7.6}% 76
+\BOOKMARK [3][-]{subsubsection.7.6.8}{Multiplicity Dependent Near- and Away-Side Widths}{subsection.7.6}% 77
+\BOOKMARK [2][-]{subsection.7.7}{Possible Paper Plots}{section.7}% 78
+\BOOKMARK [1][-]{section.8}{Cross Checks}{}% 79
+\BOOKMARK [2][-]{subsection.8.1}{Resonance Technique for \040Reconstruction}{section.8}% 80
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Combinatorial Background Estimation}{subsection.8.1}% 81
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Invariant Mass Regions}{subsection.8.1}% 82
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Efficiency Correction}{subsection.8.1}% 83
+\BOOKMARK [3][-]{subsubsection.8.1.4}{Mixed Event Acceptance Correction}{subsection.8.1}% 84
+\BOOKMARK [3][-]{subsubsection.8.1.5}{Removal of Combinatorial p- Background}{subsection.8.1}% 85
+\BOOKMARK [3][-]{subsubsection.8.1.6}{Near-side, Away-side and Underlying Event Yield Extraction}{subsection.8.1}% 86
+\BOOKMARK [3][-]{subsubsection.8.1.7}{Results and Comparison with V0 Technique}{subsection.8.1}% 87
+\BOOKMARK [2][-]{subsection.8.2}{Single Trigger h-, h-h Correlations}{section.8}% 88
+\BOOKMARK [2][-]{subsection.8.3}{MonteCarlo Closure Tests}{section.8}% 89
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Additional Momentum Bins}{subsection.8.3}% 90
+\BOOKMARK [2][-]{subsection.8.4}{Dihadron Comparison with \040Correlation Analysis}{section.8}% 91
+\BOOKMARK [2][-]{subsection.8.5}{ZYAM Baseline Projected onto }{section.8}% 92
+\BOOKMARK [1][-]{section.9}{Additional Plots}{}% 93

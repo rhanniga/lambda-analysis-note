@@ -131,6 +131,7 @@ The code for this analysis can be found in the following locations:
 \item  PWGLF/Strangeness/DPhi/AliAnalysisTaskLambdaHadronResClosure (for $\Lambda$s reconstructed using resonance technique) (TBD)
 \end{itemize}
 
+
 \textit{Offline Code}
 All of the offline analysis (as well as the code listed above) can be found in my personal github repository at \url{https://github.com/rhanniga}. I take no responsibility for profanity in the commit messages.
 
@@ -138,6 +139,8 @@ All of the offline analysis (as well as the code listed above) can be found in m
 This analysis was presented at the following ALICE meetings, in reverse chronological order:
 
 \begin{itemize}
+\item Physics Forum Paper Proposal: 5 July 2023 (\url{https://indico.cern.ch/event/1299305})
+\item Correlations PWG Paper Proposal: 30 June 2023 (\url{https://indico.cern.ch/event/1300098})
 \item Correlations PAG Meeting: 16 May 2023 (\url{https://indico.cern.ch/event/1286625})
 \item Correlations PAG Meeting: 9 May 2023 (\url{https://indico.cern.ch/event/1284309})
 \item Physics Forum HP2023 Approvals: 13 March 2023 (\url{https://indico.cern.ch/event/1263018})
@@ -2389,38 +2392,45 @@ The systematic uncertainties associated with extracting the near- and away-side 
 \item Uncertainties associated with the variations that affect our $\Delta\varphi$ distributions directly
 \item Uncertainties associated with the fitting procedure
 \end{enumerate}
-The variations from the first group have already been discussed in Section \ref{systematics_dphi} and include things like signal region/PID cuts/etc. As a Barlow check was already performed with these variations, we only include those variations which ``survived'' the check. The variations from the second group include choice of fit function as well as pedestal estimation. Details on these variations given in the following sections.
+The variations from the first group have already been discussed in Section \ref{systematics_dphi} and include things like signal region/PID cuts/etc. The variations from the second group include choice of fit function as well as pedestal estimation. Details on these variations given in the following sections.
 
 \subsubsection{Signal Region Selection}
 \label{signal_region_selection_systematics_width}
-Each post-Barlow variation in the signal region selection is applied to the $h-\Lambda$ $\Delta\varphi$ distributions, and the resulting near- and away-side widths are extracted using the ``central'' fitting procedure described in Section \ref{width_extraction}. As a reminder, these variations include:
+Each variation in the signal region selection is applied to the $h-\Lambda$ $\Delta\varphi$ distributions, and the resulting near- and away-side widths are extracted using the ``central'' fitting procedure described in Section \ref{width_extraction}. As a reminder, these variations include:
 
 \begin{itemize}
-\item $1.108 < M_{p\pi} < 1.124$ GeV/$c^2$ (narrow)
-\item $1.112 < M_{p\pi} < 1.120$ GeV/$c^2$ (narrower)
+\item $1.108 < M_{p\pi} < 1.124$ GeV/$c^2$ (centered, narrow)
+\item $1.112 < M_{p\pi} < 1.120$ GeV/$c^2$ (centered, narrower)
+\item $1.100 < M_{p\pi} < 1.132$ GeV/$c^2$ (centered, wide)
+\item $1.096 < M_{p\pi} < 1.136$ GeV/$c^2$ (centered, wider)
 \end{itemize}
 
 Plots containing the $h-\Lambda$ distributions and Von Mises fits for each signal variation along with their extracted near- and away-side widths can be seen in Figures \ref{signal_region_variations_width} to \ref{signal_region_variations_width_highpt}.
 
 \subsubsection{Sideband Region Selection}
 \label{sideband_region_selection_systematics_width}
-Each post-Barlow variation in the sideband region selection is applied to the $h-\Lambda$ $\Delta\varphi$ distributions, and the resulting near- and away-side widths are extracted using the ``central'' fitting procedure described in Section \ref{width_extraction}. These variations include:
+Each variation in the sideband region selection is applied to the $h-\Lambda$ $\Delta\varphi$ distributions, and the resulting near- and away-side widths are extracted using the ``central'' fitting procedure described in Section \ref{width_extraction}. These variations include:
+
 \begin{itemize}
+\item $1.135 M_{p\pi} < 1.16$ GeV/$c^2$ (wider)
+\item $1.135 < M_{p\pi} < 1.145$ GeV/$c^2$ (more narrow)
 \item $1.14 < M_{p\pi} < 1.155$ GeV/$c^2$ (shifted right)
 \item $1.086 < M_{p\pi} < 1.098$ GeV/$c^2$ (shifted left (on other side of signal region))
 \end{itemize}
+
 Plots containing the $h-\Lambda$ distributions and Von Mises fits for each sideband variation along with their extracted near- and away-side widths can be seen in Figures \ref{sideband_region_variations_width} to \ref{sideband_region_variations_width_highpt}.
 
 \subsubsection{PID Cut Selection}
 \label{pid_cut_selection_systematics_width}
 Each post-Barlow variation in the PID cut selection is applied to the $h-\Lambda$ $\Delta\varphi$ distributions, and the resulting near- and away-side widths are extracted using the ``central'' fitting procedure described in Section \ref{width_extraction}. These variations include:
+
 \begin{itemize}
 \item $|n\sigma_{TPC, TOF}^{p}| < 2.8$, $|n\sigma_{TPC, TOF}^{\pi}| < 4.2$ (40\% more wide, veto cut on TOF)
 \item $|n\sigma_{TPC, TOF}^{p}| < 1.2$, $|n\sigma_{TPC,TOF}^{\pi}| < 1.8$ (40\% more narrow, veto cut on TOF)
+\item $|n\sigma_{TPC, TOF}^{p}| < 2.0$, $|n\sigma_{TPC,TOF}^{\pi}| < 3.0$ (same width, require TOF hit)
 \end{itemize}
-Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID cut variation along with their extracted near- and away-side widths can be seen in Figures \ref{pid_cut_variations_width} to \ref{pid_cut_variations_width_highpt}.
 
-
+Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID cut variation along with their extracted near- and away-side widths can be seen in Figures \ref{pid_cut_variations_width} to \ref{pid_cut_variations_width_highpt}. As a large portion of the distributions where a TOF hit is required are too noisy to fit, the final uncertainty associated with PID does not include this variation. Furthermore, requiring a TOF hit for the $\Lambda$ daughters biases the $\Lambda$ distribution towards slightly higher momentum, which would in turn have a systematic effect on the extracted widths.
 
 \begin{figure}[ht]
 \centering
@@ -2490,7 +2500,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID c
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/signal_variations_width_50_80_highpt_widths.pdf}}
 \end{subfigure}
-\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the signal region variations within our lower associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe no dependence on the choice of signal region.}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the signal region variations within our higher associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe no dependence on the choice of signal region.}
 \label{signal_region_variations_width_highpt}
 \end{figure}
 \clearpage
@@ -2563,7 +2573,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID c
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/sideband_variations_width_50_80_highpt_widths.pdf}}
 \end{subfigure}
-\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the sideband region variations within our lower associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe no dependence on the choice of sideband region.}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the sideband region variations within our higher associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe no dependence on the choice of sideband region.}
 \label{sideband_region_variations_width_highpt}
 \end{figure}
 \clearpage
@@ -2588,7 +2598,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID c
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/pid_variations_width_50_80_widths.pdf}}
 \end{subfigure}
-\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our central associated $p_{T}$ bin (2.0 - 4.0 GeV/c). We observe no dependence on the choice of PID cuts.}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our central associated $p_{T}$ bin (2.0 - 4.0 GeV/c). We observe a dependence on requiring a TOF hit for the $\Lambda$ daughters, but the distributions are noisy and thus excluded from the final systematic uncertainty calculation.}
 \label{pid_cut_variations_width}
 \end{figure}
 \clearpage
@@ -2612,7 +2622,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID c
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/pid_variations_width_50_80_lowpt_widths.pdf}}
 \end{subfigure}
-\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our lower associated $p_{T}$ bin (1.5 - 2.5 GeV/c). We observe no dependence on the choice of PID cuts.}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our lower associated $p_{T}$ bin (1.5 - 2.5 GeV/c). We observe a dependence on requiring a TOF hit for the $\Lambda$ daughters, but the distributions are noisy and thus excluded from the final systematic uncertainty calculation.}
 \label{pid_cut_variations_width_lowpt}
 \end{figure}
 \clearpage
@@ -2636,7 +2646,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each PID c
 \begin{subfigure}{
 \includegraphics[width=3in]{figures/pid_variations_width_50_80_highpt_widths.pdf}}
 \end{subfigure}
-\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our lower associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe no dependence on the choice of PID cuts.}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 0-20\% (top), 20-50\% (middle) and 50-80\% (bottom) multiplicity bins for each of the PID cut variations within our higher associated $p_{T}$ bin (2.5 - 4.0 GeV/c). We observe a dependence on requiring a TOF hit for the $\Lambda$ daughters, but the distributions are noisy and thus excluded from the final systematic uncertainty calculation.}
 \label{pid_cut_variations_width_highpt}
 \end{figure}
 \clearpage
@@ -2774,6 +2784,7 @@ Plots containing the $h-\Lambda$ distributions and Von Mises fits for each fitti
 \label{hh_technique_variations_width_lowpt}
 \end{figure}
 \clearpage
+
 \begin{figure}[ht]
 \centering
 \begin{subfigure}{
@@ -2823,9 +2834,43 @@ we run into a unique issue: if the width is sufficienctly large, meaining $\kapp
 
 In most cases, this never presents an issue as the widths are usually such that $\kappa > 2$. However, in the lowest momentum bin for the more central $h-\Lambda$ $\Delta\varphi$ distributions, allowing the pedestal to vary had a very large effect on the corresponding $\kappa$ value as the fit was trying to ``absorb'' the offset into the pedestal. Because of this, variation of the pedestal directly was not included in the systematic error calculation. Instead, we chose different (reasonable) methods for calculating the pedestal value, then fix it during the fitting procedure.
 
+\subsubsection{Barlow Check (width extraction)}
+\label{barlow_check_width}
+
+In order to ensure the variations listed above are sensible and not just variations for the sake of variations, we perform a ``standard'' Barlow check procedure for the systematic uncertainty associated with width extraction (described here: \url{https://arxiv.org/abs/hep-ex/0207026}). For each jet region (near-side, away-side) bin, we calculate the following quantity:
+\begin{equation}
+	N\sigma_{RB} := \frac{y_{var} - y_{central}}{\sqrt{|\sigma_{var}^2 - \sigma_{central}^2|}},
+\end{equation}
+where $y_{var}$ and $\sigma_{var}$ are the width and width error for the variation, and $y_{central}$ and $\sigma_{central}$ are the width and width error for the central value. We just count the number of jet regions that have $|N\sigma_{RB}| < 1$, and if this is the majority of the regions (across ALL multiplicity and $p_{T, assoc}$ bins), we exclude the variation from our systematic calculation. The plots of $N\sigma_{RB}$ for each variation in our 20-50\% multiplicity bin and central $p_{T, assoc}$ are shown in Figure \ref{barlow_check_width_20_50}. The red lines represent $N\sigma_{RB} = \pm 1$.
+
+As a result of the check, the following variations were excluded from our systematic calculation:
+\begin{itemize}
+\item Signal: Wide, Wider
+\item Sideband: Wide, Narrow
+\end{itemize}
+
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/width_signal_barlow_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/width_sideband_barlow_20_50.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/width_pid_barlow_20_50.pdf}}
+\end{subfigure}
+\caption{Barlow check for the width extraction procedure for the signal (top), sideband (middle), and PID (bottom) variations in the 20-50\% multiplicity bin. The red lines represent $N\sigma_{RB} = \pm 1$, and if the majority of the points fall within the red lines (across all $p_{T}$ and multiplicity bins), they are excluded from the width systematic uncertainty calculation.}
+\label{barlow_check_width_20_50}
+\end{figure}
+
+\clearpage
+
+
 \subsubsection{Other Sources of Systematic Uncertainty}
 \label{other_systematic_sources_width}
-As was the case with the systematic uncertainties associated with $\Delta\varphi$ distribution generation, this analysis uses track quality cuts that have been used in previous analyses, and we therefore assign the following uncertainties to the extracted widths for quantities that were not varied in this analysis:
+As was the case with the systematic uncertainties associated with $\Delta\varphi$ distribution generation, this analysis uses track quality cuts that have been used in previous analyses. Those uncertainties are as follows:
 
 \begin{itemize}
 \item $\Lambda$ Topological Selection: 3.2\% (lower $p_{T}$), 3.0\% (central and higher $p_{T}$) (see here: \url{https://alice-notes.web.cern.ch/node/1191})
@@ -2833,7 +2878,46 @@ As was the case with the systematic uncertainties associated with $\Delta\varphi
 \item Associated hadron efficiency: 3.5\% (see here: \url{https://alice-notes.web.cern.ch/node/919})
 \end{itemize}
 
-As these sources would not be expected to affect the widths of the $\Delta\varphi$ distributions in a non-uniform manner, we assign them as a flat systematic uncertainty across all $\Delta\varphi$ distributions.
+While variations associated with material budget certainly would not affect the width of the corresponding $\Delta\varphi$ distributions, the other two sources could. To approximate the effect of these uncertainties on the width, we randomly (uniformly) vary each $\Delta\varphi$ bin from our nominal distribution within the systematic uncertainties reported above. We then extract the widths for each distribution using the same procedure as the nominal distribution, and calculate the RMS of the resulting widths. As these uncertainties were not multiplicity-dependent, we perform this procedure for each $p_{T, assoc}$ bin within our 20-50\% multiplicity bin, as the fits are most stable in this multiplicity range. The resulting randomized distributions and extracted widths can be seen in Figure \ref{topo_widths} ($h-\Lambda$, topological selection) and Figure \ref{eff_widths} ($h-h$, associated hadron efficiency). The resulting systematic uncertainties are shown in the following section.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_cent_20_50_trigger_4_8_assoc_15_25_topo_variations.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_cent_20_50_trigger_4_8_assoc_15_25_topo_variations_widths.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_cent_20_50_trigger_4_8_assoc_25_4_topo_variations.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_lambda_cent_20_50_trigger_4_8_assoc_25_4_topo_variations_widths.pdf}}
+\end{subfigure}
+\caption{The $h-\Lambda$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 20-50\% multiplicity bin for each of the random variations within the topological uncertainty in our lower (top) and higher (bottom) associated $p_{T}$ bins.}
+\label{topo_widths}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_cent_20_50_trigger_4_8_assoc_15_25_topo_variations.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_cent_20_50_trigger_4_8_assoc_15_25_topo_variations_widths.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_cent_20_50_trigger_4_8_assoc_25_4_topo_variations.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=3in]{figures/h_h_cent_20_50_trigger_4_8_assoc_25_4_topo_variations_widths.pdf}}
+\end{subfigure}
+\caption{The $h-h$ $\Delta\varphi$ distributions with Von Mises fits (left) and corresponding extracted near- and away-side widths within the 20-50\% multiplicity bin for each of the random variations within the associated hadron efficiency uncertainty in our lower (top) and higher (bottom) associated $p_{T}$ bins.}
+\label{eff_widths}
+\end{figure}
+
+\clearpage
+
 
 
 \subsubsection{Final Systematic Errors from Width Extraction}
@@ -2854,22 +2938,24 @@ where $RMS_{fixed}$ are the flat systematic errors described in Section \ref{oth
 \item This is done separately for the near- and away-side widths.
 \end{itemize}
 
-The final systematic errors from the width extraction are shown in table-form in Tables \ref{h_lambda_width_systematic_table} through \ref{h_lambda_width_systematic_table_highpt} ($h-\Lambda$) and Tables \ref{h_h_width_systematic_table} through \ref{h_h_width_systematic_table_highpt} ($h-h$). The systematic errors are plotted for each multiplicity bin and $p_{T}$ bin in Figures \ref{h_lambda_ns_width_systematics_plots} (near-side) and \ref{h_lambda_as_width_systematics_plots} (away-side).
+The final systematic errors from the width extraction are shown in table-form in Tables \ref{h_lambda_width_systematic_table} through \ref{h_lambda_width_systematic_table_highpt} ($h-\Lambda$) and Tables \ref{h_h_width_systematic_table} through \ref{h_h_width_systematic_table_highpt} ($h-h$). The systematic errors are plotted for each multiplicity bin and $p_{T}$ bin in Figures \ref{h_lambda_ns_width_systematics_plots} (near-side) and \ref{h_lambda_as_width_systematics_plots} (away-side) for the $h-\Lambda$ widths and Figures \ref{h_h_ns_width_systematics_plots} (near-side) and \ref{h_h_as_width_systematics_plots} (away-side) for the $h-h$ widths.
 
 All systematic errors are reported in percentages. 
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{|c|c||c|c|c|c|c|c||c|}
+\begin{tabular}{|c|c||c|c|c|c|c||c|}
 \hline
-Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & Total \\
+Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. &  Total \\
 \hline
-0-20\% & Near & 2.94 & 1.59 & 1.86 & 2.76 & 3.00 & 0.60 & 5.62 \\
-20-50\% & Near & 1.15 & 2.44 & 1.01 & 1.25 & 3.00 & 0.60 & 4.38 \\
-50-80\% & Near & 1.16 & 1.79 & 2.26 & 1.73 & 3.00 & 0.60 & 4.70 \\
-0-20\% & Away & 3.26 & 1.03 & 1.38 & 9.79 & 3.00 & 0.60 & 10.90 \\
-20-50\% & Away & 3.05 & 0.68 & 4.51 & 9.46 & 3.00 & 0.60 & 11.36 \\
-50-80\% & Away & 2.31 & 5.07 & 2.63 & 5.48 & 3.00 & 0.60 & 8.79 \\
+
+0-20\% & Near & 2.94 & 1.59 & 1.86 & 2.76 & 3.10 & 5.65 \\
+20-50\% & Near & 1.15 & 2.44 & 1.01 & 1.25 & 3.10 & 4.41 \\
+50-80\% & Near & 1.16 & 1.79 & 2.26 & 1.73 & 3.10 & 4.72 \\
+0-20\% & Away & 3.26 & 1.03 & 1.38 & 9.79 & 6.10 & 12.11 \\
+20-50\% & Away & 3.05 & 0.68 & 4.51 & 9.46 & 6.10 & 12.52 \\
+50-80\% & Away & 2.31 & 5.07 & 2.63 & 5.48 & 6.10 & 10.26 \\
+
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ width extraction  for each multiplicity bin in our central $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2878,16 +2964,18 @@ Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & To
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{|c|c||c|c|c|c|c|c||c|}
+\begin{tabular}{|c|c||c|c|c|c|c||c|}
 \hline
-Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & Total \\
+Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & Total \\
 \hline
-0-20\% & Near & 1.19 & 5.41 & 1.19 & 2.09 & 3.20 & 1.10 & 6.93 \\
-20-50\% & Near & 1.13 & 2.70 & 1.74 & 0.93 & 3.20 & 1.10 & 4.89 \\
-50-80\% & Near & 3.20 & 1.19 & 3.82 & 2.05 & 3.20 & 1.10 & 6.47 \\
-0-20\% & Away & 2.53 & 1.64 & 6.21 & 7.91 & 3.20 & 1.10 & 11.03 \\
-20-50\% & Away & 0.57 & 4.68 & 2.62 & 8.16 & 3.20 & 1.10 & 10.35 \\
-50-80\% & Away & 2.88 & 9.43 & 4.11 & 5.88 & 3.20 & 1.10 & 12.65 \\ 
+
+0-20\% & Near & 1.19 & 5.41 & 1.19 & 2.09 & 3.40 & 6.93 \\
+20-50\% & Near & 1.13 & 2.70 & 1.74 & 0.93 & 3.40 & 4.90 \\
+50-80\% & Near & 3.20 & 1.19 & 3.82 & 2.05 & 3.40 & 6.48 \\
+0-20\% & Away & 2.53 & 1.64 & 6.21 & 7.91 & 2.40 & 10.77 \\
+20-50\% & Away & 0.57 & 4.68 & 2.62 & 8.16 & 2.40 & 10.07 \\
+50-80\% & Away & 2.88 & 9.43 & 4.11 & 5.88 & 2.40 & 12.43 \\
+
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ width extraction  for each multiplicity bin in our lower $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2896,16 +2984,16 @@ Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & To
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{|c|c||c|c|c|c|c|c||c|}
+\begin{tabular}{|c|c||c|c|c|c|c||c|}
 \hline
-Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & Total \\
+Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & Total \\
 \hline
-0-20\% & Near & 3.44 & 1.66 & 2.19 & 3.51 & 3.00 & 0.60 & 6.41 \\
-20-50\% & Near & 1.10 & 0.48 & 1.09 & 1.35 & 3.00 & 0.60 & 3.72 \\
-50-80\% & Near & 2.46 & 0.56 & 1.68 & 1.54 & 3.00 & 0.60 & 4.57 \\
-0-20\% & Away & 0.51 & 1.00 & 1.99 & 8.95 & 3.00 & 0.60 & 9.73 \\
-20-50\% & Away & 1.56 & 1.93 & 5.02 & 10.33 & 3.00 & 0.60 & 12.14 \\
-50-80\% & Away & 3.93 & 5.74 & 10.80 & 5.40 & 3.00 & 0.60 & 14.27 \\ 
+0-20\% & Near & 3.44 & 1.66 & 2.19 & 3.51 & 3.10 & 6.43 \\
+20-50\% & Near & 1.10 & 0.48 & 1.09 & 1.35 & 3.10 & 3.75 \\
+50-80\% & Near & 2.46 & 0.56 & 1.68 & 1.54 & 3.10 & 4.60 \\
+0-20\% & Away & 0.51 & 1.00 & 1.99 & 8.95 & 6.10 & 11.07 \\
+20-50\% & Away & 1.56 & 1.93 & 5.02 & 10.33 & 6.10 & 13.24 \\
+50-80\% & Away & 3.93 & 5.74 & 10.80 & 5.40 & 6.10 & 15.21 \\
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-\Lambda$ $\Delta\varphi$ width extraction  for each multiplicity bin in our higher $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2918,12 +3006,14 @@ Mult. Bin & Peak & Signal & Sideband & PID & Fit Proc. & Topo Sel. & MatBud & To
 \hline
 Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \hline
-0-20\% & Near & 2.21 & 3.5 & 4.14 \\
-20-50\% & Near & 0.21 & 3.5 & 3.51 \\
-50-80\% & Near & 1.74 & 3.5 & 3.91 \\
-0-20\% & Away & 8.75 & 3.5 & 9.42 \\
-20-50\% & Away & 6.66 & 3.5 & 7.52 \\
-50-80\% & Away & 6.91 & 3.5 & 7.74 \\ 
+
+0-20\% & Near & 2.21 & 3.5 & 2.42 \\
+20-50\% & Near & 0.21 & 3.5 & 1.02 \\
+50-80\% & Near & 1.74 & 3.5 & 2.01 \\
+0-20\% & Away & 8.75 & 3.5 & 8.87 \\
+20-50\% & Away & 6.66 & 3.5 & 6.82 \\
+50-80\% & Away & 6.91 & 3.5 & 7.07 \\
+
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-h$ $\Delta\varphi$ width extraction  for each multiplicity bin in our central $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2936,12 +3026,14 @@ Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \hline
 Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \hline
-0-20\% & Near & 3.16 & 3.5 & 4.71 \\
-20-50\% & Near & 0.11 & 3.5 & 3.50 \\
-50-80\% & Near & 1.93 & 3.5 & 4.00 \\
-0-20\% & Away & 10.97 & 3.5 & 11.52 \\
-20-50\% & Away & 10.57 & 3.5 & 11.14 \\
-50-80\% & Away & 9.41 & 3.5 & 10.04 \\
+
+0-20\% & Near & 3.16 & 3.5 & 3.79 \\
+20-50\% & Near & 0.11 & 3.5 & 2.10 \\
+50-80\% & Near & 1.93 & 3.5 & 2.85 \\
+0-20\% & Away & 10.97 & 3.5 & 11.38 \\
+20-50\% & Away & 10.57 & 3.5 & 10.99 \\
+50-80\% & Away & 9.41 & 3.5 & 9.87 \\
+
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-h$ $\Delta\varphi$ width extraction  for each multiplicity bin in our lower $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2954,12 +3046,14 @@ Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \hline
 Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \hline
-0-20\% & Near & 1.86 & 3.5 & 3.96 \\
-20-50\% & Near & 0.12 & 3.5 & 3.50 \\
-50-80\% & Near & 1.47 & 3.5 & 3.80 \\
-0-20\% & Away & 8.02 & 3.5 & 8.75 \\
-20-50\% & Away & 6.06 & 3.5 & 7.00 \\
-50-80\% & Away & 5.73 & 3.5 & 6.72 \\
+
+0-20\% & Near & 1.86 & 3.5 & 2.11 \\
+20-50\% & Near & 0.12 & 3.5 & 1.01 \\
+50-80\% & Near & 1.47 & 3.5 & 1.78 \\
+0-20\% & Away & 8.02 & 3.5 & 8.16 \\
+20-50\% & Away & 6.06 & 3.5 & 6.24 \\
+50-80\% & Away & 5.73 & 3.5 & 5.93 \\
+
 \hline
 \end{tabular}
 \caption{The final systematic errors from the $h-h$ $\Delta\varphi$ width extraction  for each multiplicity bin in our higher $p_{T, assoc}$ bin. The total systematic error is calculated by adding each systematic error in quadrature.}
@@ -2980,6 +3074,7 @@ Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \caption{Final systematic errors for the $h-\Lambda$ $\Delta\varphi$ near-side width extraction for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins. We observe some dependence on $p_{T, assoc}$ for the total systematic error in each multiplicity bin as the widths at lower $p_{T}$ are larger and therefore more difficult to constrain.}
 \label{h_lambda_ns_width_systematics_plots}
 \end{figure}
+
 \clearpage
 
 \begin{figure}[ht]
@@ -2996,6 +3091,41 @@ Mult. Bin & Peak & Fit Proc. & AHad Eff. & Total \\
 \caption{Final systematic errors for the $h-\Lambda$ $\Delta\varphi$ away-side width extraction for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins. We observe some dependence on $p_{T, assoc}$ for the total systematic error in each multiplicity bin as the widths at lower $p_{T}$ are larger and therefore more difficult to constrain.}
 \label{h_lambda_as_width_systematics_plots}
 \end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_ns_hh_width_postbarlow.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_ns_hh_width_postbarlow_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_ns_hh_width_postbarlow_highpt.pdf}}
+\end{subfigure}
+\caption{Final systematic errors for the $h-h$ $\Delta\varphi$ near-side width extraction for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins.}
+\label{h_h_ns_width_systematics_plots}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_as_hh_width_postbarlow.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_as_hh_width_postbarlow_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/systematics_as_hh_width_postbarlow_highpt.pdf}}
+\end{subfigure}
+\caption{Final systematic errors for the $h-h$ $\Delta\varphi$ away-side width extraction for each multiplicity bin in the central (top), lower (center) and higher (bottom) $p_{T, assoc}$ bins.}
+\label{h_h_as_width_systematics_plots}
+\end{figure}
+
 \clearpage
 
 
@@ -3354,7 +3484,7 @@ In the ($h-\Lambda$)/($h-\phi$) ratio in all $p_{T}$ bins, we see that the ratio
 \subsection{Multiplicity Dependent Near- and Away-side Widths}
 Using the techniques described in Section \ref{width_extraction}, we can determine how both the near- and away-side widths evolve with respect to multiplicity for both the $h-\Lambda$ and $h-h$ $\Delta\varphi$ distributions. The final plots of the near- and away-side widths vs. multiplicity percentile can be seen in Figures \ref{width_vs_mult} to \ref{width_vs_mult_highpt}.
 
-We see that the near-side width is substantially higher than the away-side width across all multiplicity and associated $p_{T}$ bins for both the $h-\Lambda$ and $h-h$ distributions. We also see that the near-side width for the $h-\Lambda$ distribution is much higher than the near-side width for the $h-h$ distribution across all multiplicity and momentum bins, whereas the away-side widths are within eachothers systematic errors. We also observe a slight broadening of the away-side widths with respect to multiplicity, whereas the near-side widths remain more flat. 
+We see that the near-side width is substantially higher than the away-side width across all multiplicity and associated $p_{T}$ bins for both the $h-\Lambda$ and $h-h$ distributions. We also see that the near-side width for the $h-\Lambda$ distribution is higher than the near-side width for the $h-h$ distribution by around 30\% across all multiplicity and momentum bins, whereas the away-side widths are within eachothers systematic errors. We also observe a hint of broadening of the away-side widths with respect to multiplicity, whereas the near-side widths remain more flat. We also observe that the widths become around 15\% more narrow for each region as we increase the associated $p_{T}$ bin.
 
 \begin{figure}[ht]
 \centering
@@ -3382,8 +3512,8 @@ We see that the near-side width is substantially higher than the away-side width
 \label{model_comparisons}
 In this section, we detail how the results of this analysis in data compare to some of the best p--Pb model calculations. We consider the following models for comparison:
 \begin{itemize}
-\item \href{https://arxiv.org/pdf/hep-ph/0012252.pdf}{DPMJet} using LHC18f3 (Gen-purpose MC anchored to LHC16q)
-\item \href{https://arxiv.org/pdf/1306.0121.pdf}{EPOS-LHC} using LHC17f2a  (Gen-purpose MC anchored to LHC16q)
+\item \href{https://arxiv.org/pdf/hep-ph/0012252.pdf}{DPMJet} using LHC18f3
+\item \href{https://arxiv.org/pdf/1306.0121.pdf}{EPOS-LHC} using LHC17f2a
 \item \href{https://arxiv.org/pdf/0808.0022.pdf}{PHSD} through 200 million events generated using university computing resources
 \end{itemize}
 
@@ -3391,22 +3521,24 @@ For each of these comparisons, we apply the same techniques and cuts as they wer
 \begin{itemize}
 \item Event selection (require $>$ 2 charged hadrons at mid-rapidity)
 \item Multiplicity percentile selection (using charged hadrons in V0A acceptance, more details in Section \ref{model_mult_percentiles})
-\item Trigger $\eta$ range ($|\eta| < 0.8$)
+\item Trigger and associated $\eta$ range ($|\eta| < 0.8$)
 \item Trigger and associated $p_{T}$ ranges
 \item $\Delta\eta$ range ($|\Delta\eta| < 1.2$)
 \item $N_{bins}$ for $\Delta\varphi$ distributions (16 bins)
 \end{itemize}
 
-We do not apply any of the corrections we used in data (efficiency, two-track effects, etc.) to the models, as they are not required. Furthermore, we do not apply any mixed-event acceptance corrections to our correlation distributions, as we are able to access associated particles that lie outside of our detector acceptance. We only apply a mid-rapidity cut to the trigger hadron and then apply a $\Delta\eta$ cut to the trigger-associated pair.
+We do not apply any of the corrections we used in data (efficiency, two-track effects, etc.) to the models, as they are not required. However, we do apply the standard mixed-event correction procedure to all models except PHSD, whereby we simply remove the single-particle $\eta$ cut on the associated hadron to remove any geometric effects from finite acceptance. This is currently being investigated, as the $h-\Lambda$ 2D distributions in PHSD look a little strange...
 
 \subsubsection{2D Angular Correlation Distributions}
 \label{model_2d_correlations}
 
-The multiplicity-integrated per-trigger $h-\Lambda$ and $h-h$ 2D $\Delta\eta\Delta\varphi$ distributions in data and for each model can be seen in Figures \ref{h_lambda_2d_model} ($h-\Lambda$) and \ref{h_h_2d_model} ($h-h$). While these distributions are never used directly in this analysis, they reveal interesting features of each of the models. 
+The multiplicity-integrated per-trigger $h-\Lambda$ and $h-h$ 2D $\Delta\eta\Delta\varphi$ distributions in data and for each model can be seen in Figures \ref{h_lambda_2d_model} ($h-\Lambda$) and \ref{h_h_2d_model} ($h-h$). We also show the $h-\phi$ distributions for each model in Figure \ref{h_phi_2d_model}, but the multiplicity-integrated data is unavailable. While these distributions are never used directly in this analysis, they reveal interesting features of each of the models. 
 
 For the dihadron correlations, we see zero flow effects with DPMJet, whereas EPOS-LHC massively overestimates the $v_{2}$, with the away-side jet contribution being nearly washed out. PHSD appears to be a nice middleground between the two, with a nearly identical shape to the data (though the per-trigger yield is quite a bit smaller).
 
 For the $h-\Lambda$ correlations, we again see that there is no $v_{2}$ with DPMJet whereas EPOS-LHC has so much flow that even the near-side jet peak is barely visible. PHSD no longer appears to be a nice middle ground, as there is now a dome-like structure across $\Delta\eta$ that was not present in the dihadron case. 
+
+The $h-\phi$ distributions tell a similar story as the $h-\Lambda$ distributions, with DPMJet having no flow and EPOS-LHC having too much flow. It also appear as if PHSD is massively underestimating the per-trigger $\phi$ production, which requires investigation.
 
 
 \begin{figure}[ht]
@@ -3424,10 +3556,28 @@ For the $h-\Lambda$ correlations, we again see that there is no $v_{2}$ with DPM
 \end{figure}
 \clearpage
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/h_phi_2d_modelcomp.png}
+\caption{The multiplicity-integrated per-trigger $h-\phi$ 2D $\Delta\eta\Delta\varphi$ distributions for each model within our central associated $p_{T}$ bin (2.0 - 4.0 GeV/c).}
+\label{h_phi_2d_model}
+\end{figure}
+
 \subsubsection{1D $\Delta\varphi$ Correlation Distributions}
 \label{model_1d_correlations}
 
-The multiplicity-integrated per-trigger $h-\Lambda$ and $h-h$ $\Delta\varphi$ distribution fits in data and for each model can be seen in Figure \ref{1d_modelcomp}. Note that the underlying event has been subtracted off for each distribution, which was done by the $Fit_{v_{2}}$ procedure described in Section \ref{v2_background_technique} in the case of data, EPOS-LHC and PHSD, and by the average of 6 non-jet-containing $\Delta\varphi$ bins in the case of DPMJet. In the $h-\Lambda$ case, we are unable to generate fits for EPOS-LHC due to the fact that the away-side jet peak is completely washed out by the flow contribution.
+The multiplicity-integrated per-trigger $h-\Lambda$ and $h-h$ $\Delta\varphi$ distribution fits in data and for each model can be seen in Figure \ref{1d_modelcomp}. Note that the underlying event has been subtracted off for each distribution, which was done by fitting the near-side of EPOS-LHC and PHSD in the outer ($|\Delta\eta| > 1.2$) region to the following function:
+\begin{equation}
+Fit_{v_{4}} = \sum_{i=0}^{4} a_{i}cos(i\Delta\varphi),
+\end{equation}
+and by the average of 6 non-jet-containing $\Delta\varphi$ bins (1, 2, 7, 8, 9, 16) in the case of DPMJet. An example of the dihadron underlying event fit can be seen in Figure \ref{epos_ue_fit}. In the $h-\Lambda$ case, we are unable to generate fits for EPOS-LHC due to the fact that the underlying event subtraction procedure creates too much noise on the away-side of the distribution.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=4in]{figures/epos_ue_fit.png}
+\caption{An example of the underlying event fit for EPOS-LHC in the dihadron case, taken in the $|\Delta\eta| > 2$ range. Note that even though the $v_1$ and $v_3$ terms were allowed to vary, they were consistent with zero.}
+\label{epos_ue_fit}
+\end{figure}
 
 For the $h-\Lambda$ distributions, we see that both DPMJet and PHSD underestimate the near- and away-side jet yields, with PHSD being much lower than DPMJet. We also observe that DPMJet appears to underestimate the away-side width, whereas PHSD ``overestimates'' it (though the away-side is barely present in the first place).
 
@@ -3464,6 +3614,61 @@ As our final results are multiplicity-dependent, we must first sort our model-ge
 \end{figure}
 
 With the events sorted into multiplicity percentiles, we can now compare our final analysis results to the model(s). As mentioned previously, we will just be focusing on DPMJet for now.
+
+\subsubsection{Systematic Uncertainties for DPMJet}
+\label{dpmjet_systematics}
+While most of the systematics considered for this analysis are not relevant for model predictions, both the yield extraction procedure and width extraction procedure have systematics that should be taken into account. We provide a table of the systematic uncertainties in each multiplicity bin for our central momentum bin for DPMJet in Tables \ref{dpmjet_systematics_table_lambda} ($h-\Lambda$) and \ref{dpmjet_systematics_table_h} ($h-h$).
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c||c|c|c|c|c|c|c|}
+\hline
+Mult. Bin & NS width & AS width & NS yield & AS yield & UE yield  & Total yield \\
+\hline
+0-20\% &  1.0 & 0.9 & 0.6 & 0.9 & 0.8 & 0.0 \\
+20-50\% &  1.0 & 1.6 & 0.7 & 0.8 & 0.9 & 0.0 \\
+50-80\% &  0.4 & 1.0 & 0.6 & 0.8 & 0.6 & 0.0 \\
+\hline
+\end{tabular}
+\caption{The total systematic uncertainties associated with various extraction procedures in DPMJet for the $h-\Lambda$ distributions.}
+\label{dpmjet_systematics_table_lambda}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c||c|c|c|c|c|c|c|}
+\hline
+Mult. Bin & NS width & AS width & NS yield & AS yield & UE yield  & Total yield \\
+\hline
+0-20\% &  0.9 & 1.2 & 1.0 & 0.7 & 0.9 & 0.0 \\
+20-50\% &  0.7 & 1.2 & 1.0 & 0.7 & 0.7 & 0.0 \\
+50-80\% &  0.3 & 1.3 & 0.6 & 0.7 & 0.6 & 0.0 \\
+\hline
+\end{tabular}
+\caption{The total systematic uncertainties associated with various extraction procedures in DPMJet for the $h-h$ distributions.}
+\label{dpmjet_systematics_table_h}
+\end{table}
+
+\subsubsection{Multiplicity Dependent Per-trigger Jet-like Yields}
+\label{pairwise_yields_modelcomp}
+The per-trigger pairwise jet-like yields for both the $h-\Lambda$ and $h-h$ distributions  as a function of multiplicity for each associated $p_{T}$ bin in data and using DPMJet can be seen in Figure \ref{pairwise_yields_modelcomp_figure}.
+
+We see that DPMJet does a fairly good job predicting the dihadron near- and away-side yields, but severely underestimates the $h-\Lambda$ yields. We also observe no multiplicity dependence for DPMJet in any of the distributions, which is in stark contrast to the $h-\Lambda$ data.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_with_dpmjet.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_lowpt_with_dpmjet.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=4in]{figures/pairwise_plot_highpt_with_dpmjet.pdf}}
+\end{subfigure}
+\caption{The per-trigger pairwise jet-like yields of the $h-\Lambda$ and $h-h$ distributions as a function of multiplicity for each associated $p_{T}$ bin in data and using DPMJet. The top, middle and bottom plots correspond to the 2.0 - 4.0 GeV/c, 1.5 - 2.5 GeV/c and 2.5 - 4.0 GeV/c associated $p_{T}$ bins, respectively.}
+\label{pairwise_yields_modelcomp_figure}
+\end{figure}
 
 \subsubsection{Multiplicity Dependent ($h-\Lambda$)/($h-h$) Ratios}
 \label{lambda_hadron_ratio_modelcomp}
@@ -3535,6 +3740,44 @@ We see that DPMJet is mostly able to reproduce the near-side widths of the $h-h$
 
 \clearpage
 
+\subsection{Possible Paper Plots}
+\label{possible_paper_plots}
+This section contains some attempts at finalized plots as this analysis moves towards a paper.
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/dphi_final_lowpt.pdf}}
+\end{subfigure}
+\begin{subfigure}{
+\includegraphics[width=5in]{figures/dphi_final_highpt.pdf}}
+\end{subfigure}
+\caption{The $\Delta\varphi$ distributions in each multiplicity class for $h-\Lambda$ (local top) and $h-h$ (local bottom) pairs in the 1.5 - 2.5 GeV/c (top) and 2.5 - 4.0 GeV/c (bottom) associated $p_{T}$ bins.}
+\label{dphi_final_figure}
+\end{figure}
+\clearpage
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/final_pairwise_plot_new_x_axis_model_ratio.pdf}
+\caption{The $h-\Lambda$ and $h-h$ per-trigger pairwise jet-like yields as a function of $dN_{ch}/d\eta$ in the 1.5 - 2.5 GeV/c (left) and 2.5 - 4.0 GeV/c (right) associated $p_{T}$ bins, along with a comparison to DPMJet and corresponding model/data ratio.}
+\label{pairwise_final_figure}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/final_lambda_hadron_ratio_plot_new_x_axis_model_ratio.pdf}
+\caption{The per-trigger $h-\Lambda$/$h-h$ yield ratios in each of the kinematic regions as a function of $dN_{ch}/d\eta$ in the 1.5 - 2.5 GeV/c (left) and 2.5 - 4.0 GeV/c (right) associated $p_{T}$ bins, along with a comparison to DPMJet and corresponding model/data ratio.}
+\label{ratio_final_figure}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{figures/final_lambda_phi_ratio_plot_new_x_axis_model_ratio.pdf}
+\caption{The per-trigger $h-\Lambda$/$h-\phi$ yield ratios in each of the kinematic regions as a function of $dN_{ch}/d\eta$ in the 1.5 - 2.5 GeV/c (left) and 2.5 - 4.0 GeV/c (right) associated $p_{T}$ bins, along with a comparison to DPMJet and corresponding model/data ratio.}
+\label{phi_ratio_final_figure}
+\end{figure}
+\clearpage
 
 
 
